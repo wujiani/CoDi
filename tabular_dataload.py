@@ -68,9 +68,9 @@ def get_dataset(FLAGS, evaluation=False):
 
   batch_size = FLAGS.training_batch_size if not evaluation else FLAGS.eval_batch_size
 
-  if batch_size % torch.cuda.device_count() != 0:
-    raise ValueError(f'Batch sizes ({batch_size} must be divided by'
-                     f'the number of devices ({torch.cuda.device_count()})')
+  # if batch_size % torch.cuda.device_count() != 0:
+  #   raise ValueError(f'Batch sizes ({batch_size} must be divided by'
+  #                    f'the number of devices ({torch.cuda.device_count()})')
 
 
   # Create dataset builders for tabular data.

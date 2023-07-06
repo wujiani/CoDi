@@ -47,7 +47,7 @@ flags.DEFINE_float('beta_1', 0.00001, help='start beta value')
 flags.DEFINE_float('beta_T', 0.02, help='end beta value')
 flags.DEFINE_float('lr_con', 2e-03, help='target learning rate')
 flags.DEFINE_float('lr_dis', 2e-03, help='target learning rate')
-flags.DEFINE_integer('total_epochs_both', 20000, help='total training steps')
+flags.DEFINE_integer('total_epochs_both', 200, help='total training steps')
 flags.DEFINE_float('grad_clip', 1., help="gradient norm clipping")
 flags.DEFINE_bool('parallel', False, help='multi gpu training')
 

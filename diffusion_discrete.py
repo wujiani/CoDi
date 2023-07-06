@@ -72,6 +72,7 @@ class MultinomialDiffusion(torch.nn.Module):
         self.register_buffer('Lt_count', torch.zeros(timesteps))
 
     def multinomial_kl(self, log_prob1, log_prob2):
+        # kl divergence
         kl = (log_prob1.exp() * (log_prob1 - log_prob2))
         k=0
         kl_list = []
@@ -133,6 +134,8 @@ class MultinomialDiffusion(torch.nn.Module):
 
 
     def q_posterior(self, log_x_start, log_x_t, t):
+        # forward process所得到的标签
+
         # q(xt-1 | xt, x0) = q(xt | xt-1, x0) * q(xt-1 | x0) / q(xt | x0)
         # where q(xt | xt-1, x0) = q(xt | xt-1).
 

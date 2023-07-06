@@ -4,6 +4,7 @@ import torch.nn.functional as F
 import numpy as np
 import math
 def extract(v, t, x_shape):
+
     out = torch.gather(v, index=t, dim=0).float()
     return out.view([t.shape[0]] + [1] * (len(x_shape) - 1))
 
@@ -28,12 +29,14 @@ class GaussianDiffusionTrainer(nn.Module):
             'sqrt_recipm1_alphas_bar', torch.sqrt(1. / alphas_bar - 1))
 
     def make_x_t(self, x_0_con, t, noise):
+        # adding noise
         x_t_con = (
             extract(self.sqrt_alphas_bar, t, x_0_con.shape) * x_0_con +
             extract(self.sqrt_one_minus_alphas_bar, t, x_0_con.shape) * noise)
         return x_t_con
     
     def predict_xstart_from_eps(self, x_t, t, eps):
+        # for constrastive learning
         assert x_t.shape == eps.shape
         return (
             extract(self.sqrt_recip_alphas_bar, t, x_t.shape) * x_t -
@@ -74,14 +77,14 @@ class GaussianDiffusionSampler(nn.Module):
 
         # calculations for posterior q(x_{t-1} | x_t, x_0)
         self.register_buffer(
-            'posterior_var',
+            'posterior_var', # https://zhuanlan.zhihu.com/p/610505558, σt, 大一统 式(84)的Σ
             self.betas * (1. - alphas_bar_prev) / (1. - alphas_bar))
         # below: log calculation clipped because the posterior variance is 0 at
         # the beginning of the diffusion chain
         self.register_buffer(
             'posterior_log_var_clipped',
             torch.log(
-                torch.cat([self.posterior_var[1:2], self.posterior_var[1:]])))
+                torch.cat([self.posterior_var[1:2], self.posterior_var[1:]])))     #忽略t=1?
         self.register_buffer(
             'posterior_mean_coef1',
             torch.sqrt(alphas_bar_prev) * self.betas / (1. - alphas_bar))
@@ -96,8 +99,8 @@ class GaussianDiffusionSampler(nn.Module):
         """
         assert x_0.shape == x_t.shape
         posterior_mean = (
-            extract(self.posterior_mean_coef1, t, x_t.shape) * x_0 +
-            extract(self.posterior_mean_coef2, t, x_t.shape) * x_t
+            extract(self.posterior_mean_coef1, t, x_t.shape) * x_0 +  #大一统的（84）的mean
+            extract(self.posterior_mean_coef2, t, x_t.shape) * x_t      #只是它xt和x0顺序不一样
         )
         posterior_log_var_clipped = extract(
             self.posterior_log_var_clipped, t, x_t.shape)
@@ -106,7 +109,7 @@ class GaussianDiffusionSampler(nn.Module):
     def predict_xstart_from_eps(self, x_t, t, eps):
         assert x_t.shape == eps.shape
         return (
-            extract(self.sqrt_recip_alphas_bar, t, x_t.shape) * x_t -
+            extract(self.sqrt_recip_alphas_bar, t, x_t.shape) * x_t -   #和上面一个一样
             extract(self.sqrt_recipm1_alphas_bar, t, x_t.shape) * eps
         )
 
@@ -125,7 +128,7 @@ class GaussianDiffusionSampler(nn.Module):
         # Mean parameterization
         if self.mean_type == 'epsilon':   # the model predicts epsilon
             eps = self.model(x_t, t, cond)
-            x_0 = self.predict_xstart_from_eps(x_t, t, eps=eps)
+            x_0 = self.predict_xstart_from_eps(x_t, t, eps=eps)   #这个就是大一统里(94)的x hat,通过噪音数据xt来预测原始数据x0 的神经网络
             model_mean, _ = self.q_mean_variance(x_0, x_t, t)
         else:
             raise NotImplementedError(self.mean_type)

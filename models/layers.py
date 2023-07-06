@@ -90,40 +90,41 @@ class Encoder(nn.Module):
   def __init__(self, encoder_dim, tdim, FLAGS):
     super(Encoder, self).__init__()
     self.encoding_blocks = nn.ModuleList()
-    for i in range(len(encoder_dim)):
+    for i in range(len(encoder_dim)):   # encoder_dim=[64,128,256]
       if (i+1)==len(encoder_dim): break
       encoding_block = EncodingBlock(encoder_dim[i], encoder_dim[i+1], tdim, FLAGS)
-      self.encoding_blocks.append(encoding_block)
+      self.encoding_blocks.append(encoding_block)   #encoding_blocks=[(in=64,out=128),(in=128,out=256)]
+          #这些并不是nn的input和output，而是定义nn的一些初始值，input和output在forward里体现
 
   def forward(self, x, t):
     skip_connections = []
     for encoding_block in self.encoding_blocks:
-      x, skip_connection = encoding_block(x, t)
-      skip_connections.append(skip_connection)
-    return skip_connections, x
+      x, skip_connection = encoding_block(x, t) #有点难理解，看122-125，进去是多少，出来就是两个它的两倍  # input=128, 128 or 256, 256
+      skip_connections.append(skip_connection)   # [128, 256]
+    return skip_connections, x  #[128,256] , 256
 
 class EncodingBlock(nn.Module):
-  def __init__(self, dim_in, dim_out, tdim, FLAGS):
+  def __init__(self, dim_in, dim_out, tdim, FLAGS):   #每次out都是in的两倍
     super(EncodingBlock, self).__init__()
     self.layer1 = nn.Sequential( 
-        nn.Linear(dim_in, dim_out),
+        nn.Linear(dim_in, dim_out),  #nn(in, out)
         get_act(FLAGS)
     ) 
     self.temb_proj = nn.Sequential(
-        nn.Linear(tdim, dim_out),
+        nn.Linear(tdim, dim_out),  #nn(tdim, out)
         get_act(FLAGS)
     )
     self.layer2 = nn.Sequential(
-        nn.Linear(dim_out, dim_out),
+        nn.Linear(dim_out, dim_out),   #nn(out, out)
         get_act(FLAGS)
     )
     
   def forward(self, x, t):
-    x = self.layer1(x).clone()
-    x += self.temb_proj(t)
-    x = self.layer2(x)
-    skip_connection = x
-    return x, skip_connection
+    x = self.layer1(x).clone()   #nn(in, out), output=out
+    x += self.temb_proj(t)   #nn(tdim, out), result=x+out 维度是out，但是值是两个out维度的值相加
+    x = self.layer2(x)   #nn(out, out) output=out
+    skip_connection = x   # 用于之后decoder里的residual network
+    return x, skip_connection   #两个都是out维度
 
 class Decoder(nn.Module):
   def __init__(self, decoder_dim, tdim, FLAGS):
@@ -131,36 +132,36 @@ class Decoder(nn.Module):
     self.decoding_blocks = nn.ModuleList()
     for i in range(len(decoder_dim)):
       if (i+1)==len(decoder_dim): break
-      decoding_block = DecodingBlock(decoder_dim[i], decoder_dim[i+1], tdim, FLAGS)
+      decoding_block = DecodingBlock(decoder_dim[i], decoder_dim[i+1], tdim, FLAGS)   #[(256,128),(128,64)]
       self.decoding_blocks.append(decoding_block)
 
   def forward(self, skip_connections, x, t):
     zipped = zip(reversed(skip_connections), self.decoding_blocks)
     for skip_connection, decoding_block in zipped:
-      x = decoding_block(skip_connection, x, t)
+      x = decoding_block(skip_connection, x, t)  #(256,256,t=64)->output的x=128   /循环，重复利用x    #(128,128,t=64)->output的x=64
     return x
 
 class DecodingBlock(nn.Module):
   def __init__(self, dim_in, dim_out, tdim, FLAGS):
     super(DecodingBlock, self).__init__()
     self.layer1 = nn.Sequential( 
-        nn.Linear(dim_in*2, dim_in),
-        get_act(FLAGS)
+        nn.Linear(dim_in*2, dim_in), # nn(in*2, in)  #nn(256*2, 256) , nn(128*2, 128)
+        get_act(FLAGS)  # relu
     )
-    self.temb_proj = nn.Sequential(
-        nn.Linear(tdim, dim_in),
+    self.temb_proj = nn.Sequential(   #这个layer只是让时间变得和input一样的维度，对于time的embedding还是在tabular_unet里
+        nn.Linear(tdim, dim_in),   #nn(t, in)  # nn(64, 256),    nn(64, 128)
         get_act(FLAGS)
     )
     self.layer2 = nn.Sequential(
-        nn.Linear(dim_in, dim_out),
+        nn.Linear(dim_in, dim_out),  # nn(in, out)   # nn(256, 128),    nn(128, 64)
         get_act(FLAGS)
     )
     
   def forward(self, skip_connection, x, t):
     
-    x = torch.cat((skip_connection, x), dim=1)
-    x = self.layer1(x).clone()
-    x += self.temb_proj(t)
-    x = self.layer2(x)
+    x = torch.cat((skip_connection, x), dim=1)   # residual network,              skip_connection=256, x=256 -> x=256*2  or x=128*2
+    x = self.layer1(x).clone()  # nn(in*2, in)   # output=in                                   #nn(256*2, 256) , nn(128*2, 128)
+    x += self.temb_proj(t)   # nn(t, in) input=t, output=in, 前一个x+这次的output=in             # nn(64, 256),    nn(64, 128)
+    x = self.layer2(x)   # nn(in, out), output=out                                            # nn(256, 128),    nn(128, 64)
 
     return x

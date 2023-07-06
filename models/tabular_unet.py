@@ -26,68 +26,71 @@ class tabularUnet(nn.Module):
   def __init__(self, FLAGS):
     super().__init__()
 
-    self.embed_dim = FLAGS.nf
-    tdim = self.embed_dim*4
+    self.embed_dim = FLAGS.nf # 16
+    tdim = self.embed_dim*4 # 64
     self.act = get_act(FLAGS)
 
     modules = []
-    modules.append(nn.Linear(self.embed_dim, tdim))
-    modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)
-    nn.init.zeros_(modules[-1].bias)
-    modules.append(nn.Linear(tdim, tdim))
-    modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)
-    nn.init.zeros_(modules[-1].bias)
+    modules.append(nn.Linear(self.embed_dim, tdim))   #[nn(16,64) ]
+    modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)   #nn(16,64),权重值初始化
+    nn.init.zeros_(modules[-1].bias)   #nn(16,64),bias初始化
+    modules.append(nn.Linear(tdim, tdim))  #[nn(16,64),nn(64,64) ]
+    modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)   #nn(64,64),权重值初始化
+    nn.init.zeros_(modules[-1].bias)   #nn(64,64),bias初始化
 
-    cond = FLAGS.cond_size
-    cond_out = (FLAGS.input_size)//2
+    cond = FLAGS.cond_size   # condition size
+    cond_out = (FLAGS.input_size)//2   # input/2
     if cond_out < 2:
-      cond_out = FLAGS.input_size
-    modules.append(nn.Linear(cond, cond_out))
-    modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)
-    nn.init.zeros_(modules[-1].bias)
+      cond_out = FLAGS.input_size   # input_size=3 or 2 or 2
+    modules.append(nn.Linear(cond, cond_out))  #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
+    modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)   #weight初始化
+    nn.init.zeros_(modules[-1].bias)   #bias初始化
 
     self.all_modules = nn.ModuleList(modules)
 
-    dim_in = FLAGS.input_size + cond_out
+    dim_in = FLAGS.input_size + cond_out   #  input  是input data和condition layer的output的维度
     dim_out = list(FLAGS.encoder_dim)[0]
-    self.inputs = nn.Linear(dim_in, dim_out) # input layer
+    self.inputs = nn.Linear(dim_in, dim_out) # input layer      nn(input, 64)
 
-    self.encoder = layers.Encoder(list(FLAGS.encoder_dim), tdim, FLAGS) # encoder
+    self.encoder = layers.Encoder(list(FLAGS.encoder_dim), tdim, FLAGS) # encoder   Encoder([64,128,256],64, FLAGS)
 
-    dim_in = list(FLAGS.encoder_dim)[-1]
-    dim_out = list(FLAGS.encoder_dim)[-1]
-    self.bottom_block = nn.Linear(dim_in, dim_out) #bottom_layer
+    dim_in = list(FLAGS.encoder_dim)[-1]   # 256
+    dim_out = list(FLAGS.encoder_dim)[-1]   # 256
+    self.bottom_block = nn.Linear(dim_in, dim_out) #bottom_block_layer     nn(256,256)
     
-    self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, FLAGS) #decoder
+    self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, FLAGS) #decoder     Decoder([256,128,64],64, FLAGS)
 
     dim_in = list(FLAGS.encoder_dim)[0]
     dim_out = FLAGS.output_size
-    self.outputs = nn.Linear(dim_in, dim_out) #output layer
+    self.outputs = nn.Linear(dim_in, dim_out) #output layer    nn(64, output)
 
 
   def forward(self, x, time_cond, cond):
 
-    modules = self.all_modules 
+    modules = self.all_modules   #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
     m_idx = 0
 
     #time embedding
-    temb = layers.get_timestep_embedding(time_cond, self.embed_dim)
-    temb = modules[m_idx](temb)
+    temb = layers.get_timestep_embedding(time_cond, self.embed_dim)   # output的维度 self.embed_dim=16
+    temb = modules[m_idx](temb)    # nn(16,64)       # input=16, output=64
     m_idx += 1
-    temb= self.act(temb)
-    temb = modules[m_idx](temb)
+    temb= self.act(temb)      # relu
+    temb = modules[m_idx](temb)    # nn(64,64)     # input=64, output=64
     m_idx += 1
     
     #condition layer
-    cond = modules[m_idx](cond)
+    cond = modules[m_idx](cond)   # nn(condition_size, cond_out)    # input=condition_size, output=cond_out(或为input的1半)
     m_idx += 1
 
-    x = torch.cat([x, cond], dim=1).float()
-    inputs = self.inputs(x) #input layer
-    skip_connections, encoding = self.encoder(inputs, temb)
-    encoding = self.bottom_block(encoding)
-    encoding = self.act(encoding)
-    x = self.decoder(skip_connections, encoding, temb) 
-    outputs = self.outputs(x)
+    x = torch.cat([x, cond], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
+    # x = torch.cat([x], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
+    inputs = self.inputs(x) #input layer   nn(input, 64)    #  input  是input data和condition layer的output ,
+    # output=64 asa inputs(value)=64
+    skip_connections, encoding = self.encoder(inputs, temb)   #encoder input=64, output=256（layers第104行，x=64->128->256)
+    encoding = self.bottom_block(encoding)   #nn(256,256)  input=256, output=256
+    encoding = self.act(encoding)    # relu output=256
+    x = self.decoder(skip_connections, encoding, temb) # decoder([128,256],256,t=64),  output的x=64
+
+    outputs = self.outputs(x)    #   nn(64, output)
 
     return outputs
