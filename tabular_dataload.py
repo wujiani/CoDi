@@ -15,8 +15,8 @@
 
 # pylint: skip-file
 """Return training and evaluation/test datasets from config files."""
-import torch
-import numpy as np
+# import torch
+# import numpy as np
 from tabular_transformer import GeneralTransformer
 import json
 import logging
@@ -86,6 +86,7 @@ def get_dataset(FLAGS, evaluation=False):
   #new index
   cat_idx_ = list(np.arange(train_dis.shape[1]))[:len(cols[0])]
 
+
   transformer_con = GeneralTransformer()
   transformer_dis = GeneralTransformer()
 
@@ -94,6 +95,7 @@ def get_dataset(FLAGS, evaluation=False):
 
   train_con_data = transformer_con.transform(train_con)
   train_dis_data = transformer_dis.transform(train_dis)
+  print('train', train_dis_data[0,:], train_dis[0,:], cols[1], con_idx)
 
 
   return train, train_con_data, train_dis_data, test, (transformer_con, transformer_dis, cols[1]), con_idx, dis_idx

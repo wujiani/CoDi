@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F
 import numpy as np
-from inspect import isfunction
+# from inspect import isfunction
 
 
 """
@@ -116,9 +116,9 @@ class MultinomialDiffusion(torch.nn.Module):
 
         return log_probs
 
-    def predict_start(self, log_x_t, t, cond_con):
+    def predict_start(self, log_x_t, t):
         x_t = log_x_t
-        out = self._denoise_fn(x_t, t, cond_con)
+        out = self._denoise_fn(x_t, t)
 
         assert out.size(0) == x_t.size(0)
 
@@ -166,20 +166,21 @@ class MultinomialDiffusion(torch.nn.Module):
 
         return log_EV_xtmin_given_xt_given_xstart
 
-    def p_pred(self, log_x, t, cond_con):
+    def p_pred(self, log_x, t):
         if self.parametrization == 'x0':
-            log_x_recon = self.predict_start(log_x, t=t, cond_con = cond_con)
+            log_x_recon = self.predict_start(log_x, t=t)
             log_model_pred = self.q_posterior(
                 log_x_start=log_x_recon, log_x_t=log_x, t=t)
         elif self.parametrization == 'direct':
-            log_model_pred = self.predict_start(log_x, t=t, cond_con = cond_con)
+            log_model_pred = self.predict_start(log_x, t=t)
         else:
             raise ValueError
         return log_model_pred, log_x_recon
 
     @torch.no_grad()
-    def p_sample(self, log_x, t, cond_con):
-        model_log_prob, log_x_recon = self.p_pred(log_x=log_x, t=t, cond_con=cond_con)
+    # def p_sample(self, log_x, t, cond_con):
+    def p_sample(self, log_x, t):
+        model_log_prob, log_x_recon = self.p_pred(log_x=log_x, t=t)
         out = self.log_sample_categorical(model_log_prob).to(log_x.device)
         return out
 
@@ -217,11 +218,11 @@ class MultinomialDiffusion(torch.nn.Module):
         kl_prior = self.multinomial_kl(log_qxT_prob, log_half_prob).mean(dim=1)
         return kl_prior
 
-    def compute_Lt(self, log_x_start, log_x_t, t, cond_con, detach_mean=False):
+    def compute_Lt(self, log_x_start, log_x_t, t, detach_mean=False):
         log_true_prob = self.q_posterior(
             log_x_start=log_x_start, log_x_t=log_x_t, t=t)
 
-        log_model_prob, log_x_recon = self.p_pred(log_x=log_x_t, t=t, cond_con=cond_con)
+        log_model_prob, log_x_recon = self.p_pred(log_x=log_x_t, t=t)
 
         if detach_mean:
             log_model_prob = log_model_prob.detach()
