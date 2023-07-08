@@ -31,18 +31,18 @@ def apply_activate(data, output_info):
             assert 0
     return torch.cat(data_t, dim=1)
 
-def log_sample_categorical(logits, num_classes):
+def log_sample_categorical(logits, num_class):
     full_sample = []
-    k=0
-    for i in range(len(num_classes)):
-        logits_column = logits[:,k:num_classes[i]+k]
-        k+=num_classes[i]
-        uniform = torch.rand_like(logits_column)
-        gumbel_noise = -torch.log(-torch.log(uniform+1e-30)+1e-30)
-        sample = (gumbel_noise + logits_column).argmax(dim=1)
-        col_t =np.zeros(logits_column.shape)
-        col_t[np.arange(logits_column.shape[0]), sample.detach().cpu()] = 1
-        full_sample.append(col_t)
+    # k=0
+    # for i in range(len(num_classes)):
+    logits_column = logits
+    # k+=num_classes[i]
+    uniform = torch.rand_like(logits_column)
+    gumbel_noise = -torch.log(-torch.log(uniform+1e-30)+1e-30)
+    sample = (gumbel_noise + logits_column).argmax(dim=1)
+    col_t =np.zeros(logits_column.shape)
+    col_t[np.arange(logits_column.shape[0]), sample.detach().cpu()] = 1
+    full_sample.append(col_t)
     full_sample = torch.tensor(np.concatenate(full_sample, axis=1))
     log_sample = torch.log(full_sample.float().clamp(min=1e-30))
     return log_sample

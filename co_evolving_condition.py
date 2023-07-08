@@ -33,8 +33,8 @@ def train(FLAGS):
     num_class = np.array(num_class)
     print('num_class',num_class)
     train_dis_data_list = []
+    k = 0
     for i in range(len(num_class)):
-        k = 0
         train_dis_data_list.append(train_dis_data[:,k:k+num_class[i]])
         k+=num_class[i]
     print('train_dis_data_list', train_dis_data_list)
@@ -73,7 +73,7 @@ def train(FLAGS):
         model_dis_list[i] = tabularUnet(FLAGS, i)
         optim_dis_list[i] = torch.optim.Adam(model_dis_list[i].parameters(), lr=FLAGS.lr_dis)
         sched_dis_list[i] = torch.optim.lr_scheduler.LambdaLR(optim_dis_list[i], lr_lambda=warmup_lr)
-        trainer_dis_list[i] = MultinomialDiffusion(num_class, train_dis_data_list[i].shape, model_dis_list[i], FLAGS, timesteps=FLAGS.T,loss_type='vb_stochastic').to(device)
+        trainer_dis_list[i] = MultinomialDiffusion(num_class[i], train_dis_data_list[i].shape, model_dis_list[i], FLAGS, timesteps=FLAGS.T,loss_type='vb_stochastic').to(device)
 
     # if FLAGS.parallel:
     #     trainer = torch.nn.DataParallel(trainer)
@@ -132,12 +132,12 @@ def train(FLAGS):
                 # optim_con.step()
                 # sched_con.step()
 
-                optim_dis_list[i].zero_grad()
                 loss_dis.backward()
-                torch.nn.utils.clip_grad_value_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)#, self.args.clip_value)
-                torch.nn.utils.clip_grad_norm_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)#, self.args.clip_norm)
                 optim_dis_list[i].step()
                 sched_dis_list[i].step()
+                optim_dis_list[i].zero_grad()
+                torch.nn.utils.clip_grad_value_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)#, self.args.clip_value)
+                torch.nn.utils.clip_grad_norm_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)#, self.args.clip_norm)
 
                 # log
                 # writer.add_scalar('loss_continuous', con_loss, step)
@@ -146,6 +146,7 @@ def train(FLAGS):
                 # writer.add_scalar('loss_discrete_ns', dis_loss_ns, step)
                 # writer.add_scalar('total_continuous', loss_con, step)
                 writer.add_scalar('total_discrete', loss_dis, step)
+                model_dis_list[i].train(mode=False)
 
             if (step+1) % int(train.shape[0]/FLAGS.training_batch_size+1) == 0:
 
@@ -167,9 +168,9 @@ def train(FLAGS):
                     model_dis_list[i].eval()
                     with torch.no_grad():
                         # x_T_con = torch.randn(train_con_data.shape[0], train_con_data.shape[1]).to(device)
-                        log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class).to(device)
+                        log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
                         x_dis_list[i] = sampling_with(log_x_T_dis_list[i], trainer_dis_list[i],  FLAGS)
-                        x_dis = apply_activate(x_dis_list[i], transformer_dis.output_info)
+                        # x_dis = apply_activate(x_dis_list[i], transformer_dis.output_info)
                         print('x_dis_list',type(x_dis_list), x_dis_list)
                 x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
                 print('x_dis', x_dis)
@@ -213,19 +214,22 @@ def train(FLAGS):
         # model_con.eval()
             model_dis_list[i].eval()
         # fake_sample=[]
-        for i in range(1):
-            logging.info(f"sampling {i}")
+        for ii in range(1):
+            logging.info(f"sampling {ii}")
             log_x_T_dis_list = [0]*len(num_class)
             x_dis_list = [0]*len(num_class)
             for i in range(len(num_class)):
                 with torch.no_grad():
                     # x_T_con = torch.randn(train_con_data.shape[0], train_con_data.shape[1]).to(device)
-                    log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class).to(device)
+                    log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
                     x_dis_list[i]= sampling_with(log_x_T_dis_list[i], trainer_dis_list[i], FLAGS)
             x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
             x_dis = apply_activate(x_dis, transformer_dis.output_info)
             # sample_con = transformer_con.inverse_transform(x_con.detach().cpu().numpy())
             sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
+            print('sample_dis',sample_dis.shape)
+            sample_pd = pd.DataFrame(sample).dropna()
+            sample_pd.to_csv(rf'C:\Users\19wuj\Desktop\test_{ii}.csv', index=False)
             # sample = np.array()
             # sample = np.zeros([train_dis_data.shape[0], len(dis_idx)])
             # for i in range(len(con_idx)):
@@ -250,32 +254,31 @@ def train(FLAGS):
             model_dis_list[i].load_state_dict(ckpt[f'model_dis_{i}'])
             # model_con.eval()
             model_dis_list[i].eval()
-        fake_sample = [0]*len(num_class)
+        # fake_sample = [0]*len(num_class)
         log_x_T_dis_list = [0]*len(num_class)
         x_dis_list = [0]*len(num_class)
-        for i in range(1):
-            logging.info(f"sampling {i}")
+        for ii in range(1):
+            logging.info(f"sampling {ii}")
             for i in range(len(num_class)):
                 with torch.no_grad():
                     # x_T_con = torch.randn(train_con_data.shape[0], train_con_data.shape[1]).to(device)
-                    log_x_T_dis_list[i] = log_sample_categorical(
-                        torch.zeros((30000,8), device=device), num_class).to(device)
-                    print('log_x_T_dis_list[i]', log_x_T_dis_list[i])
+                    log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
                     x_dis_list[i] = sampling_with(log_x_T_dis_list[i], trainer_dis_list[i], FLAGS)
-                    print('x_dis_list[i]', x_dis_list[i])
+                    print('x_dis_list[i]', x_dis_list[i].shape)
             x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
+            print('x_dis', x_dis.shape)
             x_dis = apply_activate(x_dis, transformer_dis.output_info)
             # sample_con = transformer_con.inverse_transform(x_con.detach().cpu().numpy())
             sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
-            sample = np.zeros([30000, len(dis_idx)])
-            # for i in range(len(con_idx)):
-            #     # sample[:,con_idx[i]]=sample_con[:,i]
-            for i in range(len(dis_idx)):
-                sample[:,dis_idx[i]]=sample_dis[:,i]
-            sample_pd = pd.DataFrame(sample).dropna()
+            # sample = np.zeros([30000, len(dis_idx)])
+            # # for i in range(len(con_idx)):
+            # #     # sample[:,con_idx[i]]=sample_con[:,i]
+            # for j in range(len(dis_idx)):
+            #     sample[:,dis_idx[j]]=sample_dis[:,j]
+            sample_pd = pd.DataFrame(sample_dis).dropna()
             # print(sample_pd)
-            fake_sample.append(sample)
-            sample_pd.to_csv(r'C:\Users\19wuj\Desktop\lll.csv', index=False)
+            # fake_sample.append(sample)
+            sample_pd.to_csv(rf'C:\Users\19wuj\Desktop\test_using_2_{ii}.csv', index=False)
         # scores, std = evaluation.compute_scores(train=train, test = test, synthesized_data=fake_sample, metadata=meta, eval=ckpt['ml_param'])
         # div_mean, div_std = evaluation.compute_diversity(train=train, fake=fake_sample)
         # scores['coverage'] = div_mean['coverage']

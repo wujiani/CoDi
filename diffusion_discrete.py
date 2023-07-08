@@ -9,6 +9,20 @@ Based in part on: https://github.com/lucidrains/denoising-diffusion-pytorch/blob
 """
 eps = 1e-8
 
+
+def sum_except_batch(x, num_dims=1):
+    '''
+    Sums all dimensions except the first.
+
+    Args:
+        x: Tensor, shape (batch_size, ...)
+        num_dims: int, number of batch dims (default=1)
+
+    Returns:
+        x_sum: Tensor, shape (batch_size,)
+    '''
+    return x.reshape(*x.shape[:num_dims], -1).sum(-1)
+
 def log_1_min_a(a):
     return torch.log(1 - a.exp() + 1e-40)
 
@@ -57,7 +71,7 @@ class MultinomialDiffusion(torch.nn.Module):
 
         log_1_min_alpha = log_1_min_a(log_alpha)
         log_1_min_cumprod_alpha = log_1_min_a(log_cumprod_alpha)
-        self.num_classes_column = np.concatenate([self.num_classes[i].repeat(self.num_classes[i]) for i in range(len(self.num_classes))])
+        # self.num_classes_column = np.concatenate([self.num_classes[i].repeat(self.num_classes[i]) for i in range(len(self.num_classes))])
         assert log_add_exp(log_alpha, log_1_min_alpha).abs().sum().item() < 1.e-5
         assert log_add_exp(log_cumprod_alpha, log_1_min_cumprod_alpha).abs().sum().item() < 1e-5
         assert (np.cumsum(log_alpha) - log_cumprod_alpha).abs().sum().item() < 1.e-5
@@ -73,27 +87,11 @@ class MultinomialDiffusion(torch.nn.Module):
 
     def multinomial_kl(self, log_prob1, log_prob2):
         # kl divergence
-        kl = (log_prob1.exp() * (log_prob1 - log_prob2))
-        k=0
-        kl_list = []
-        for i in self.num_classes:
-            sub = kl[:, k:i+k].mean(dim=1)
-            kl_list.append(sub)
-            k+=i
-        kl = torch.stack(kl_list, 1)
+        kl = (log_prob1.exp() * (log_prob1 - log_prob2)).sum(dim=1)
         return kl
     
     def log_categorical(self, log_x_start, log_prob):
-        kl = (log_x_start.exp() * log_prob)
-        k=0
-        kl_list = []
-        for i in self.num_classes:
-            sub =  kl[:, k:i+k].mean(dim=1)
-            kl_list.append(sub)
-            k+=i
-        kl = torch.stack(kl_list, 1)
-
-        return kl
+        return (log_x_start.exp() * log_prob).sum(dim=1)
 
     def q_pred_one_timestep(self, log_x_t, t):
         log_alpha_t = extract(self.log_alpha, t, log_x_t.shape)
@@ -101,7 +99,7 @@ class MultinomialDiffusion(torch.nn.Module):
 
         log_probs = log_add_exp(
             log_x_t + log_alpha_t,
-            log_1_min_alpha_t -torch.tensor(np.log(self.num_classes_column)).to(log_1_min_alpha_t.device)
+            log_1_min_alpha_t -np.log(self.num_classes)
         )
 
         return log_probs
@@ -111,7 +109,7 @@ class MultinomialDiffusion(torch.nn.Module):
         log_1_min_cumprod_alpha = extract(self.log_1_min_cumprod_alpha, t, log_x_start.shape)
         log_probs = log_add_exp(
             log_x_start + log_cumprod_alpha_t,
-            log_1_min_cumprod_alpha - torch.tensor(np.log(self.num_classes_column)).to(log_1_min_cumprod_alpha.device)
+            log_1_min_cumprod_alpha - np.log(self.num_classes)
         )
 
         return log_probs
@@ -121,15 +119,9 @@ class MultinomialDiffusion(torch.nn.Module):
         out = self._denoise_fn(x_t, t)
 
         assert out.size(0) == x_t.size(0)
+        assert out.size(1) == self.num_classes
 
-        k=0
-        log_pred = torch.empty_like(out)
-        full_sample=[]
-        for i in range(len(self.num_classes)):
-            out_column = out[:, k:self.num_classes[i]+k]
-            log_pred[:, k:self.num_classes[i]+k] = F.log_softmax(out_column, dim=1) 
-            k+=self.num_classes[i]
-        
+        log_pred = F.log_softmax(out, dim=1)
         return log_pred
 
 
@@ -151,18 +143,9 @@ class MultinomialDiffusion(torch.nn.Module):
         # Note: _NOT_ x_tmin1, which is how the formula is typically used!!!
         # Not very easy to see why this is true. But it is :)
         unnormed_logprobs = log_EV_qxtmin_x0 + self.q_pred_one_timestep(log_x_t, t)
-        k=0
-        unnormed_logprobs_column_list=[]
-        for i in range(len(self.num_classes)):
-            unnormed_logprobs_column = unnormed_logprobs[:,k:self.num_classes[i]+k]
-            k+=self.num_classes[i]
-            for j in range(self.num_classes[i]):
-                unnormed_logprobs_column_list.append(torch.logsumexp(unnormed_logprobs_column, dim=1, keepdim=True))
-        unnormed_logprobs_column_ = torch.stack(unnormed_logprobs_column_list,1).squeeze()
-
-
         log_EV_xtmin_given_xt_given_xstart = \
-            unnormed_logprobs - unnormed_logprobs_column_
+            unnormed_logprobs \
+            - torch.logsumexp(unnormed_logprobs, dim=1, keepdim=True)
 
         return log_EV_xtmin_given_xt_given_xstart
 
@@ -186,16 +169,16 @@ class MultinomialDiffusion(torch.nn.Module):
 
     def log_sample_categorical(self, logits):
         full_sample = []
-        k=0
-        for i in range(len(self.num_classes)):
-            logits_column = logits[:,k:self.num_classes[i]+k]
-            k+=self.num_classes[i]
-            uniform = torch.rand_like(logits_column)
-            gumbel_noise = -torch.log(-torch.log(uniform+1e-30)+1e-30)
-            sample = (gumbel_noise + logits_column).argmax(dim=1)
-            col_t =np.zeros(logits_column.shape)
-            col_t[np.arange(logits_column.shape[0]), sample.detach().cpu()] = 1
-            full_sample.append(col_t)
+        # k=0
+        # for i in range(len(num_classes)):
+        logits_column = logits
+        # k+=num_classes[i]
+        uniform = torch.rand_like(logits_column)
+        gumbel_noise = -torch.log(-torch.log(uniform + 1e-30) + 1e-30)
+        sample = (gumbel_noise + logits_column).argmax(dim=1)
+        col_t = np.zeros(logits_column.shape)
+        col_t[np.arange(logits_column.shape[0]), sample.detach().cpu()] = 1
+        full_sample.append(col_t)
         full_sample = torch.tensor(np.concatenate(full_sample, axis=1))
         log_sample = index_to_log_onehot(full_sample, self.num_classes)
         return log_sample
@@ -213,10 +196,10 @@ class MultinomialDiffusion(torch.nn.Module):
         ones = torch.ones(b, device=device).long()
 
         log_qxT_prob = self.q_pred(log_x_start, t=(self.num_timesteps - 1) * ones)
-        log_half_prob = -torch.log(torch.tensor(self.num_classes_column, device=device) * torch.ones_like(log_qxT_prob))
+        log_half_prob = -torch.log(torch.tensor(self.num_classes, device=device) * torch.ones_like(log_qxT_prob))
 
-        kl_prior = self.multinomial_kl(log_qxT_prob, log_half_prob).mean(dim=1)
-        return kl_prior
+        kl_prior = self.multinomial_kl(log_qxT_prob, log_half_prob)
+        return sum_except_batch(kl_prior)
 
     def compute_Lt(self, log_x_start, log_x_t, t, detach_mean=False):
         log_true_prob = self.q_posterior(
@@ -227,9 +210,11 @@ class MultinomialDiffusion(torch.nn.Module):
         if detach_mean:
             log_model_prob = log_model_prob.detach()
 
-        kl = self.multinomial_kl(log_true_prob, log_model_prob).mean(dim=1)
+        kl = self.multinomial_kl(log_true_prob, log_model_prob)
+        kl = sum_except_batch(kl)
 
-        decoder_nll = -self.log_categorical(log_x_start, log_model_prob).mean(dim=1)
+        decoder_nll = -self.log_categorical(log_x_start, log_model_prob)
+        decoder_nll = sum_except_batch(decoder_nll)
 
         mask = (t == torch.zeros_like(t)).float()
         loss = mask * decoder_nll + (1. - mask) * kl

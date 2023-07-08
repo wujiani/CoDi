@@ -61,6 +61,7 @@ class GeneralTransformer(Transformer):
     def transform(self, data):
         data_t = []
         col_t = np.array(0)
+        output = 0
         self.output_info = []
         for id_, info in enumerate(self.meta):
             col = data[:, id_]
@@ -73,19 +74,21 @@ class GeneralTransformer(Transformer):
 
             else:
                 col_t = np.zeros([len(data), info['size']])
+                print('col', col)
                 idx = list(map(info['i2s'].index, col))
+                print("info['i2s']", info['i2s'])
                 col_t[np.arange(len(data)), idx] = 1
                 print(col_t.shape)
                 data_t.append(col_t)
                 self.output_info.append((info['size'], 'softmax'))
                 print('data_t',data_t)
-
-        return col_t
+        return np.concatenate(data_t, axis=1)
 
     def inverse_transform(self, data):
         data_t = np.zeros([len(data), len(self.meta)])
 
         data = data.copy()
+        # info = self.meta[id_]
         for id_, info in enumerate(self.meta):
             if info['type'] == CONTINUOUS:
                 current = data[:, 0]

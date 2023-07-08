@@ -93,7 +93,8 @@ def get_dataset(FLAGS, evaluation=False):
   transformer_con.fit(train_con, [])
   transformer_dis.fit(train_dis, cat_idx_)
 
-  train_con_data = transformer_con.transform(train_con)
+  # train_con_data = transformer_con.transform(train_con)
+  train_con_data = 0
   train_dis_data = transformer_dis.transform(train_dis)
   print('train', train_dis_data[0,:], train_dis[0,:], cols[1], con_idx)
 
