@@ -87,11 +87,11 @@ class tabularUnet(nn.Module):
     m_idx += 1
     
     #condition layer
-
+    all_cond = None
     for each_cond in range(len(cond)):
       cond = modules[m_idx](cond[each_cond])   # nn(condition_size, cond_out)    # input=condition_size, output=cond_out(或为input的1半)
       m_idx += 1
-      all_cond = None
+
       if each_cond == 0:
         all_cond = cond
       else:
