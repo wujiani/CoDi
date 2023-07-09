@@ -91,9 +91,9 @@ class tabularUnet(nn.Module):
     for each_cond in range(len(cond)):
       cond = modules[m_idx](cond[each_cond])   # nn(condition_size, cond_out)    # input=condition_size, output=cond_out(或为input的1半)
       m_idx += 1
-      all_cond = cond
+      all_cond = None
       if each_cond == 0:
-        pass
+        all_cond = cond
       else:
         all_cond = torch.cat([all_cond, cond], dim=1).float()
 
