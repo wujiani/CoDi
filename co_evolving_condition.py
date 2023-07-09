@@ -278,7 +278,7 @@ def train(FLAGS):
                 with torch.no_grad():
                     # x_T_con = torch.randn(train_con_data.shape[0], train_con_data.shape[1]).to(device)
                     log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-            x_dis_list = sampling_with(log_x_T_dis_list, trainer_dis_list, FLAGS)
+            x_dis_list = sampling_with(log_x_T_dis_list, trainer_dis_list, FLAGS, still_cond_used_for_sampling)
                     # print('x_dis_list[i]', x_dis_list[i].shape)
             x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
             print('x_dis', x_dis.shape)
