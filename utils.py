@@ -72,9 +72,9 @@ def sampling_with(log_x_T_dis, trainer_dis, FLAGS):
                     cond.append(x_t_dis[j])
             x_t_minus_1_dis = trainer_dis[i].p_sample(x_t_dis[i], t, cond)
             # x_t_con = x_t_minus_1_con
-            x_t_dis[i] = x_t_minus_1_dis.detach().cpu()
+            x_t_dis[i] = x_t_minus_1_dis
 
-    return  x_t_dis
+    return  [x.detach().cpu() for x in x_t_dis]
 
 # def training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, trans, FLAGS):
 def training_with(x_0_dis, trainer_dis, FLAGS):
