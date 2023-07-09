@@ -49,23 +49,30 @@ def log_sample_categorical(logits, num_class):
 
 
 # def sampling_with(x_T_con, log_x_T_dis, net_sampler, trainer_dis, trans, FLAGS):
-def sampling_with(log_x_T_dis,trainer_dis, FLAGS):
-    # x_t_con = x_T_con
-    x_t_dis = log_x_T_dis
+def sampling_with(log_x_T_dis, trainer_dis, FLAGS):
+    x_t_dis = [0]*len(log_x_T_dis)
+    for i in range(len(log_x_T_dis)):
+        # x_t_con = x_T_con
+        x_t_dis[i] = log_x_T_dis[i]
 
     for time_step in reversed(range(FLAGS.T)):
+        for i in range(len(log_x_T_dis)):
         # t = x_t_con.new_ones([x_t_con.shape[0], ], dtype=torch.long) * time_step
-        t = x_t_dis.new_ones([x_t_dis.shape[0], ], dtype=torch.long) * time_step
-        # mean, log_var = net_sampler.p_mean_variance(x_t=x_t_con, t=t, cond = x_t_dis.to(x_t_con.device), trans=trans)
-        # if time_step > 0:
-            # noise = torch.randn_like(x_t_con)
-        # elif time_step == 0:
-        #     noise = 0
-        # x_t_minus_1_con = mean + torch.exp(0.5 * log_var) * noise
-        # x_t_minus_1_con = torch.clip(x_t_minus_1_con, -1., 1.)
-        x_t_minus_1_dis = trainer_dis.p_sample(x_t_dis, t)
-        # x_t_con = x_t_minus_1_con
-        x_t_dis = x_t_minus_1_dis
+            t = x_t_dis[i].new_ones([x_t_dis[i].shape[0], ], dtype=torch.long) * time_step
+            # mean, log_var = net_sampler.p_mean_variance(x_t=x_t_con, t=t, cond = x_t_dis.to(x_t_con.device), trans=trans)
+            # if time_step > 0:
+                # noise = torch.randn_like(x_t_con)
+            # elif time_step == 0:
+            #     noise = 0
+            # x_t_minus_1_con = mean + torch.exp(0.5 * log_var) * noise
+            # x_t_minus_1_con = torch.clip(x_t_minus_1_con, -1., 1.)
+            cond = []
+            for j in range(len(log_x_T_dis)):
+                if j!=i:
+                    cond.append(x_t_dis[j])
+            x_t_minus_1_dis = trainer_dis[i].p_sample(x_t_dis[i], t, cond)
+            # x_t_con = x_t_minus_1_con
+            x_t_dis[i] = x_t_minus_1_dis
 
     return  x_t_dis
 
@@ -73,22 +80,31 @@ def sampling_with(log_x_T_dis,trainer_dis, FLAGS):
 def training_with(x_0_dis, trainer_dis, FLAGS):
 
     # t = torch.randint(FLAGS.T, size=(x_0_con.shape[0], ), device=x_0_con.device)
-    t = torch.randint(FLAGS.T, size=(x_0_dis.shape[0], ), device=x_0_dis.device)
+    t = torch.randint(FLAGS.T, size=(x_0_dis[-1].shape[0], ), device=x_0_dis[-1].device)
     pt = torch.ones_like(t).float() / FLAGS.T
 
     #co-evolving training and predict positive samples
     # noise = torch.randn_like(x_0_con)
     # x_t_con = trainer.make_x_t(x_0_con, t, noise)
-    log_x_start = torch.log(x_0_dis.float().clamp(min=1e-30))
-    x_t_dis = trainer_dis.q_sample(log_x_start=log_x_start, t=t)
-    # eps = trainer.model(x_t_con, t, x_t_dis.to(x_t_con.device))
-    # ps_0_con = trainer.predict_xstart_from_eps(x_t_con, t, eps=eps)
-    # con_loss = F.mse_loss(eps, noise, reduction='none')
-    # con_loss = con_loss.mean()
-    kl, ps_0_dis = trainer_dis.compute_Lt(log_x_start, x_t_dis, t)
-    ps_0_dis = torch.exp(ps_0_dis)
-    kl_prior = trainer_dis.kl_prior(log_x_start)
-    dis_loss = (kl / pt + kl_prior).mean()
+    log_x_start = [0]*len(x_0_dis)
+    x_t_dis = [0]*len(x_0_dis)
+    for i in range(len(x_0_dis)):
+        log_x_start[i] = torch.log(x_0_dis[i].float().clamp(min=1e-30))
+        x_t_dis[i] = trainer_dis[i].q_sample(log_x_start=log_x_start[i], t=t)
+        # eps = trainer.model(x_t_con, t, x_t_dis.to(x_t_con.device))
+        # ps_0_con = trainer.predict_xstart_from_eps(x_t_con, t, eps=eps)
+        # con_loss = F.mse_loss(eps, noise, reduction='none')
+        # con_loss = con_loss.mean()
+    dis_loss = [0]*len(x_0_dis)
+    for i in range(len(x_0_dis)):
+        cond = []
+        for j in range(len(x_0_dis)):
+            if j != i:
+                cond.append(x_t_dis[j])
+        kl, ps_0_dis = trainer_dis[i].compute_Lt(log_x_start[i], x_t_dis[i], t, cond)
+        ps_0_dis = torch.exp(ps_0_dis)
+        kl_prior = trainer_dis[i].kl_prior(log_x_start[i])
+        dis_loss[i] = (kl / pt + kl_prior).mean()
 
     # # negative condition -> predict negative samples
     # noise_ns = torch.randn_like(ns_con)
