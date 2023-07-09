@@ -89,14 +89,13 @@ class tabularUnet(nn.Module):
     #condition layer
     all_cond = None
     for each_cond in range(len(cond)):
-      cond = modules[m_idx](cond[each_cond])   # nn(condition_size, cond_out)    # input=condition_size, output=cond_out(或为input的1半)
+      cond_ = modules[m_idx](cond[each_cond])   # nn(condition_size, cond_out)    # input=condition_size, output=cond_out(或为input的1半)
       m_idx += 1
 
       if each_cond == 0:
-        all_cond = cond
+        all_cond = cond_
       else:
-        all_cond = torch.cat([all_cond, cond], dim=1).float()
-
+        all_cond = torch.cat([all_cond, cond_], dim=1).float()
     x = torch.cat([x, all_cond], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
     # x = torch.cat([x], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
     inputs = self.inputs(x) #input layer   nn(input, 64)    #  input  是input data和condition layer的output ,
