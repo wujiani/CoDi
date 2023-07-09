@@ -21,6 +21,7 @@ def train(FLAGS):
 
     #Load Datasets
     train, train_con_data, train_dis_data, test, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
+    still_condition = FLAGS.still_condition
     print('train_dis_data', type(train_dis_data), train_dis_data.shape)
     # train_iter_con = DataLoader(train_con_data, batch_size=FLAGS.training_batch_size)
     # train_iter_dis = DataLoader(train_dis_data, batch_size=FLAGS.training_batch_size)
@@ -36,6 +37,8 @@ def train(FLAGS):
     train_dis_con_data_list = []
     k = 0
     for i in range(len(num_class)):
+        if i == still_condition:
+            still_cond_used_for_sampling = train_dis_data[:,k:k+num_class[i]]
         train_dis_data_list.append(train_dis_data[:,k:k+num_class[i]])
         con_list = []
         kk = 0
@@ -181,7 +184,7 @@ def train(FLAGS):
                     with torch.no_grad():
                         # x_T_con = torch.randn(train_con_data.shape[0], train_con_data.shape[1]).to(device)
                         log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-                x_dis_list = sampling_with(log_x_T_dis_list, trainer_dis_list,  FLAGS)
+                x_dis_list = sampling_with(log_x_T_dis_list, trainer_dis_list,  FLAGS, still_cond_used_for_sampling)
                         # x_dis = apply_activate(x_dis_list[i], transformer_dis.output_info)
                 print('x_dis_list',type(x_dis_list), x_dis_list)
                 x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
@@ -234,7 +237,7 @@ def train(FLAGS):
                 with torch.no_grad():
                     # x_T_con = torch.randn(train_con_data.shape[0], train_con_data.shape[1]).to(device)
                     log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-            x_dis_list= sampling_with(log_x_T_dis_list, trainer_dis_list, FLAGS)
+            x_dis_list= sampling_with(log_x_T_dis_list, trainer_dis_list, FLAGS, still_cond_used_for_sampling)
             x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
             x_dis = apply_activate(x_dis, transformer_dis.output_info)
             # sample_con = transformer_con.inverse_transform(x_con.detach().cpu().numpy())

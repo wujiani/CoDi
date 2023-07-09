@@ -49,14 +49,19 @@ def log_sample_categorical(logits, num_class):
 
 
 # def sampling_with(x_T_con, log_x_T_dis, net_sampler, trainer_dis, trans, FLAGS):
-def sampling_with(log_x_T_dis, trainer_dis, FLAGS):
+def sampling_with(log_x_T_dis, trainer_dis, FLAGS, still_cond_used_for_sampling):
     x_t_dis = [0]*len(log_x_T_dis)
     for i in range(len(log_x_T_dis)):
-        # x_t_con = x_T_con
+        # if i == FLAGS.still_condition:
+        #     x_t_dis[i] = torch.tensor(still_cond_used_for_sampling)
+        # # x_t_con = x_T_con
+        # else:
         x_t_dis[i] = log_x_T_dis[i]
 
     for time_step in reversed(range(FLAGS.T)):
+
         for i in range(len(log_x_T_dis)):
+
         # t = x_t_con.new_ones([x_t_con.shape[0], ], dtype=torch.long) * time_step
             t = x_t_dis[i].new_ones([x_t_dis[i].shape[0], ], dtype=torch.long) * time_step
             # mean, log_var = net_sampler.p_mean_variance(x_t=x_t_con, t=t, cond = x_t_dis.to(x_t_con.device), trans=trans)
@@ -68,12 +73,19 @@ def sampling_with(log_x_T_dis, trainer_dis, FLAGS):
             # x_t_minus_1_con = torch.clip(x_t_minus_1_con, -1., 1.)
             cond = []
             for j in range(len(log_x_T_dis)):
-                if j!=i:
-                    cond.append(x_t_dis[j])
+
+                if j != i:
+                    if j == FLAGS.still_condition:
+
+                        cond.append(torch.tensor(still_cond_used_for_sampling).to(torch.float32))
+                    else:
+                        cond.append(x_t_dis[j])
+                    # print(x_t_dis[j].shape)
             x_t_minus_1_dis = trainer_dis[i].p_sample(x_t_dis[i], t, cond)
             # x_t_con = x_t_minus_1_con
             x_t_dis[i] = x_t_minus_1_dis
 
+    x_t_dis[FLAGS.still_condition] = torch.tensor(still_cond_used_for_sampling).to(torch.float32)
     return  [x.detach().cpu() for x in x_t_dis]
 
 # def training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, trans, FLAGS):
@@ -100,7 +112,11 @@ def training_with(x_0_dis, trainer_dis, FLAGS):
         cond = []
         for j in range(len(x_0_dis)):
             if j != i:
-                cond.append(x_t_dis[j])
+                if j == FLAGS.still_condition:
+                    cond.append(x_0_dis[j].to(torch.float32))
+                else:
+                    cond.append(x_t_dis[j])
+
         kl, ps_0_dis = trainer_dis[i].compute_Lt(log_x_start[i], x_t_dis[i], t, cond)
         ps_0_dis = torch.exp(ps_0_dis)
         kl_prior = trainer_dis[i].kl_prior(log_x_start[i])
