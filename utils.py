@@ -77,7 +77,7 @@ def sampling_with(log_x_T_dis, trainer_dis, FLAGS, still_cond_used_for_sampling)
                 if j != i:
                     if j == FLAGS.still_condition:
 
-                        cond.append(torch.tensor(still_cond_used_for_sampling).to(torch.float32))
+                        cond.append(torch.tensor(still_cond_used_for_sampling.to(x_t_dis[j].device)).to(torch.float32))
                     else:
                         cond.append(x_t_dis[j])
                     # print(x_t_dis[j].shape)
@@ -85,7 +85,7 @@ def sampling_with(log_x_T_dis, trainer_dis, FLAGS, still_cond_used_for_sampling)
             # x_t_con = x_t_minus_1_con
             x_t_dis[i] = x_t_minus_1_dis
 
-    x_t_dis[FLAGS.still_condition] = torch.tensor(still_cond_used_for_sampling).to(torch.float32)
+    x_t_dis[FLAGS.still_condition] = torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[FLAGS.still_condition].device)
     return  [x.detach().cpu() for x in x_t_dis]
 
 # def training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, trans, FLAGS):
