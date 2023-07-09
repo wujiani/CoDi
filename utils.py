@@ -77,7 +77,7 @@ def sampling_with(log_x_T_dis, trainer_dis, FLAGS, still_cond_used_for_sampling)
                 if j != i:
                     if j == FLAGS.still_condition:
 
-                        cond.append(torch.tensor(still_cond_used_for_sampling.to(x_t_dis[j].device)).to(torch.float32))
+                        cond.append(torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[j].device))
                     else:
                         cond.append(x_t_dis[j])
                     # print(x_t_dis[j].shape)
