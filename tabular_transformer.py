@@ -74,14 +74,14 @@ class GeneralTransformer(Transformer):
 
             else:
                 col_t = np.zeros([len(data), info['size']])
-                print('col', col)
+                # print('col', col)
                 idx = list(map(info['i2s'].index, col))
-                print("info['i2s']", info['i2s'])
+                # print("info['i2s']", info['i2s'])
                 col_t[np.arange(len(data)), idx] = 1
-                print(col_t.shape)
+                # print(col_t.shape)
                 data_t.append(col_t)
                 self.output_info.append((info['size'], 'softmax'))
-                print('data_t',data_t)
+                # print('data_t',data_t)
         return np.concatenate(data_t, axis=1)
 
     def inverse_transform(self, data):
