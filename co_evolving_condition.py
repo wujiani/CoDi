@@ -241,7 +241,7 @@ def train(FLAGS):
             sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
             print('sample_dis',sample_dis.shape)
             sample_pd = pd.DataFrame(sample).dropna()
-            sample_pd.to_csv(rf'test_{ii}.csv', index=False)
+            sample_pd.to_csv(os.path.join(FLAGS.logdir, f'test_{ii}.csv'), index=False)
             # sample = np.array()
             # sample = np.zeros([train_dis_data.shape[0], len(dis_idx)])
             # for i in range(len(con_idx)):
@@ -290,7 +290,7 @@ def train(FLAGS):
             sample_pd = pd.DataFrame(sample_dis).dropna()
             # print(sample_pd)
             # fake_sample.append(sample)
-            sample_pd.to_csv(rf'test_using_2_{ii}.csv', index=False)
+            sample_pd.to_csv(os.path.join(FLAGS.logdir, f'test_sample_{ii}.csv'), index=False)
         # scores, std = evaluation.compute_scores(train=train, test = test, synthesized_data=fake_sample, metadata=meta, eval=ckpt['ml_param'])
         # div_mean, div_std = evaluation.compute_diversity(train=train, fake=fake_sample)
         # scores['coverage'] = div_mean['coverage']
