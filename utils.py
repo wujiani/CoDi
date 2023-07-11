@@ -156,7 +156,7 @@ def training_with(x_0_dis, trainer_dis, FLAGS, neg_cond):
 
             triplet_dis = sum(triplet_dis)/len(triplet_dis)
     # return con_loss, triplet_con, dis_loss, triplet_dis
-    return [torch.tensor(x) for x in dis_loss], torch.tensor(triplet_dis)
+    return [x.detach().cpu() for x in dis_loss], triplet_dis.detach().cpu()
 def make_negative_condition(x_0_con, x_0_dis):
 
     device = x_0_con.device
