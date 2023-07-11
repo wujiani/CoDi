@@ -136,7 +136,7 @@ def training_with(x_0_dis, trainer_dis, FLAGS, neg_cond):
     # ns_t_dis = trainer_dis.q_sample(log_x_start=log_ns_start, t=t)
     # eps_ns = trainer.model(x_t_con, t, ns_t_dis.to(ns_t_dis.device))
     # ns_0_con = trainer.predict_xstart_from_eps(x_t_con, t, eps=eps_ns)
-
+    triplet_dis = 0
     for i in range(len(x_0_dis)):
         if i != FLAGS.still_condition:
             _, ns_0_dis = trainer_dis[i].compute_Lt(log_x_start[i], x_t_dis[i], t, [neg_cond])
@@ -144,9 +144,9 @@ def training_with(x_0_dis, trainer_dis, FLAGS, neg_cond):
             ns_0_dis = torch.exp(ns_0_dis)
 
     # contrastive learning loss
-            triplet_loss = torch.nn.TripletMarginLoss(margin=1.0, p=2)
+    #         triplet_loss = torch.nn.TripletMarginLoss(margin=1.0, p=2)
             # triplet_con = triplet_loss(x_0_con, ps_0_con, ns_0_con)
-            st=0
+            # st=0
             triplet_dis = []
 
             ps_dis = F.cross_entropy(ps_0_dis[i], torch.argmax(x_0_dis[i], dim=-1).long(), reduction='none')
@@ -156,7 +156,7 @@ def training_with(x_0_dis, trainer_dis, FLAGS, neg_cond):
 
             triplet_dis = sum(triplet_dis)/len(triplet_dis)
     # return con_loss, triplet_con, dis_loss, triplet_dis
-    return dis_loss, triplet_dis
+    return dis_loss, torch.tensor(triplet_dis)
 def make_negative_condition(x_0_con, x_0_dis):
 
     device = x_0_con.device
