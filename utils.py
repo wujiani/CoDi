@@ -2,6 +2,7 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 import pandas as pd
+import random
 
 def warmup_lr(step):
     return min(step, 5000) / 5000
@@ -91,7 +92,7 @@ def sampling_with(log_x_T_dis, trainer_dis, FLAGS, still_cond_used_for_sampling)
     return  [x.detach().cpu() for x in x_t_dis]
 
 # def training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, trans, FLAGS):
-def training_with(x_0_dis, trainer_dis, FLAGS):
+def training_with(x_0_dis, trainer_dis, FLAGS, neg_cond):
 
     # t = torch.randint(FLAGS.T, size=(x_0_con.shape[0], ), device=x_0_con.device)
     t = torch.randint(FLAGS.T, size=(x_0_dis[-1].shape[0], ), device=x_0_dis[-1].device)
@@ -111,6 +112,7 @@ def training_with(x_0_dis, trainer_dis, FLAGS):
             # con_loss = F.mse_loss(eps, noise, reduction='none')
             # con_loss = con_loss.mean()
     dis_loss = [0]*len(x_0_dis)
+    ps_0_dis = [0]*len(x_0_dis)
     for i in range(len(x_0_dis)):
         if i != FLAGS.still_condition:
             cond = []
@@ -121,36 +123,40 @@ def training_with(x_0_dis, trainer_dis, FLAGS):
                     else:
                         cond.append(x_t_dis[j])
 
-            kl, ps_0_dis = trainer_dis[i].compute_Lt(log_x_start[i], x_t_dis[i], t, cond)
-            ps_0_dis = torch.exp(ps_0_dis)
+            kl, temp_ps_0_dis = trainer_dis[i].compute_Lt(log_x_start[i], x_t_dis[i], t, cond)
+
+            ps_0_dis[i] = torch.exp(temp_ps_0_dis)
             kl_prior = trainer_dis[i].kl_prior(log_x_start[i])
             dis_loss[i] = (kl / pt + kl_prior).mean()
 
-    # # negative condition -> predict negative samples
+    # negative condition -> predict negative samples
     # noise_ns = torch.randn_like(ns_con)
     # ns_t_con = trainer.make_x_t(ns_con, t, noise_ns)
     # log_ns_start = torch.log(ns_dis.float().clamp(min=1e-30))
     # ns_t_dis = trainer_dis.q_sample(log_x_start=log_ns_start, t=t)
     # eps_ns = trainer.model(x_t_con, t, ns_t_dis.to(ns_t_dis.device))
     # ns_0_con = trainer.predict_xstart_from_eps(x_t_con, t, eps=eps_ns)
-    # _, ns_0_dis = trainer_dis.compute_Lt(log_x_start, x_t_dis, t, ns_t_con)
-    # ns_0_dis = torch.exp(ns_0_dis)
-    
+
+    for i in range(len(x_0_dis)):
+        if i != FLAGS.still_condition:
+            _, ns_0_dis = trainer_dis[i].compute_Lt(log_x_start[i], x_t_dis[i], t, [neg_cond])
+
+            ns_0_dis = torch.exp(ns_0_dis)
+
     # contrastive learning loss
-    # triplet_loss = torch.nn.TripletMarginLoss(margin=1.0, p=2)
-    # triplet_con = triplet_loss(x_0_con, ps_0_con, ns_0_con)
-    # st=0
-    # triplet_dis = []
-    # for item in trans.output_info:
-    #     ed = st + item[0]
-    #     ps_dis = F.cross_entropy(ps_0_dis[:, st:ed], torch.argmax(x_0_dis[:, st:ed], dim=-1).long(), reduction='none')
-    #     ns_dis = F.cross_entropy(ns_0_dis[:, st:ed], torch.argmax(x_0_dis[:, st:ed], dim=-1).long(), reduction='none')
-    #
-    #     triplet_dis.append(max((ps_dis-ns_dis).mean()+1,0))
-    #     st = ed
-    # triplet_dis = sum(triplet_dis)/len(triplet_dis)
+            triplet_loss = torch.nn.TripletMarginLoss(margin=1.0, p=2)
+            # triplet_con = triplet_loss(x_0_con, ps_0_con, ns_0_con)
+            st=0
+            triplet_dis = []
+
+            ps_dis = F.cross_entropy(ps_0_dis[i], torch.argmax(x_0_dis[i], dim=-1).long(), reduction='none')
+            ns_dis = F.cross_entropy(ns_0_dis, torch.argmax(x_0_dis[i], dim=-1).long(), reduction='none')
+
+            triplet_dis.append(max((ps_dis-ns_dis).mean()+1,0))
+
+            triplet_dis = sum(triplet_dis)/len(triplet_dis)
     # return con_loss, triplet_con, dis_loss, triplet_dis
-    return dis_loss
+    return dis_loss, triplet_dis
 def make_negative_condition(x_0_con, x_0_dis):
 
     device = x_0_con.device
@@ -165,3 +171,19 @@ def make_negative_condition(x_0_con, x_0_dis):
     ns_dis = nsd
 
     return torch.tensor(ns_con).to(device), torch.tensor(ns_dis).to(device)
+
+
+def neg_condition(x_0_dis_list, res_no_act_list, transformer_dis, FLAGS, i, still_condition):
+
+    idx = np.argmax(x_0_dis_list[i], axis=1)
+    a = list(map(transformer_dis.meta[i]['i2s'].__getitem__, idx))
+    oo = []
+    for each in a:
+        oo.append(random.choice(res_no_act_list[str(each)]))
+
+    col_t = np.zeros([len(oo), transformer_dis.meta[still_condition]['size']])
+    idx = list(map(transformer_dis.meta[still_condition]['i2s'].index, oo))
+    # print("info['i2s']", info['i2s'])
+    col_t[np.arange(len(oo)), idx] = 1
+    neg_cond = torch.tensor(col_t).to(torch.float32)
+    return neg_cond

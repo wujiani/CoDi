@@ -10,6 +10,8 @@ from models.tabular_unet import tabularUnet
 from diffusion_discrete import MultinomialDiffusion
 # import evaluation
 import logging
+import json
+import random
 # import numpy as np
 # import pandas as pd
 from utils import *
@@ -22,11 +24,14 @@ def train(FLAGS):
     #Load Datasets
     train, train_con_data, train_dis_data, test, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
     still_condition = FLAGS.still_condition
-    print('train_dis_data', type(train_dis_data), train_dis_data.shape)
+    print('train', type(train_dis_data), train)
     # train_iter_con = DataLoader(train_con_data, batch_size=FLAGS.training_batch_size)
     # train_iter_dis = DataLoader(train_dis_data, batch_size=FLAGS.training_batch_size)
     # datalooper_train_con = infiniteloop(train_iter_con)
     # datalooper_train_dis = infiniteloop(train_iter_dis)
+
+    with open('tabular_datasets/res_not_act_dict.json') as json_file:
+        res_no_act_list = json.load(json_file)
 
     num_class=[]
     for i in transformer_dis.output_info:
@@ -134,15 +139,16 @@ def train(FLAGS):
 
                     # x_0_con = next(datalooper_train_con).to(device).float()
                 x_0_dis_list[i] = next(datalooper_train_dis_list[i]).to(device)
-
+                if i != FLAGS.still_condition:
+                    neg_cond = neg_condition(x_0_dis_list, res_no_act_list, transformer_dis, FLAGS, i, still_condition)
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
-            dis_loss_list = training_with(x_0_dis_list,trainer_dis_list,FLAGS)
+            dis_loss_list, triplet_dis = training_with(x_0_dis_list,trainer_dis_list,FLAGS, neg_cond)
             for i in range(len(num_class)):
                 # loss_con = con_loss + FLAGS.lambda_con * con_loss_ns
                 # loss_dis = dis_loss + FLAGS.lambda_dis * dis_loss_ns
                 if i != FLAGS.still_condition:
-                    loss_dis = dis_loss_list[i]
+                    loss_dis = dis_loss_list[i]+ FLAGS.lambda_dis * triplet_dis
 
                 # optim_con.zero_grad()
                 # loss_con.backward()
@@ -161,7 +167,8 @@ def train(FLAGS):
                     # writer.add_scalar('loss_continuous', con_loss, step)
                     writer.add_scalar('loss_discrete', dis_loss_list[i], step)
                     # writer.add_scalar('loss_continuous_ns', con_loss_ns, step)
-                    # writer.add_scalar('loss_discrete_ns', dis_loss_ns, step)
+                    writer.add_scalar('loss_discrete_ns', triplet_dis, step)
+                    logging.info(f"Epoch :{epoch}, loss_discrete_ns loss: {triplet_dis:.6f}")
                     # writer.add_scalar('total_continuous', loss_con, step)
                     writer.add_scalar('total_discrete', loss_dis, step)
                     model_dis_list[i].train(mode=False)
@@ -174,6 +181,7 @@ def train(FLAGS):
                 for i in range(len(num_class)):
                     if i != FLAGS.still_condition:
                         logging.info(f"Epoch :{epoch}, discrete loss: {dis_loss_list[i]:.6f}")
+
                 epoch +=1
 
             if step > 0 and sample_step > 0 and step % sample_step == 0 or step==(total_steps_both-1):

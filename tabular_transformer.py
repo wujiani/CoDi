@@ -76,7 +76,7 @@ class GeneralTransformer(Transformer):
                 col_t = np.zeros([len(data), info['size']])
                 print('col', col)
                 idx = list(map(info['i2s'].index, col))
-                print("info['i2s']", info['i2s'])
+                # print("info['i2s']", info['i2s'])
                 col_t[np.arange(len(data)), idx] = 1
                 print(col_t.shape)
                 data_t.append(col_t)
@@ -105,5 +105,6 @@ class GeneralTransformer(Transformer):
                 data = data[:, info['size']:]
                 idx = np.argmax(current, axis=1)
                 data_t[:, id_] = list(map(info['i2s'].__getitem__, idx))
+
 
         return data_t
