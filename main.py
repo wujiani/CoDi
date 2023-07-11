@@ -26,7 +26,7 @@ flags.DEFINE_string('data', 'heart', help='dataset')
 flags.DEFINE_string('logdir', './codi_exp', help='log directory')
 flags.DEFINE_bool('train', True, help='train from scratch')
 flags.DEFINE_bool('eval', False, help='load ckpt.pt and evaluate')
-flags.DEFINE_integer('still_condition', None, help='still condition')
+flags.DEFINE_integer('still_condition', 0, help='still condition')
 
 # Network Architecture
 flags.DEFINE_multi_integer('encoder_dim', None, help='encoder_dim')

@@ -35,6 +35,7 @@ def train(FLAGS):
     print('num_class',num_class)
     train_dis_data_list = []
     train_dis_con_data_list = []
+    still_cond_used_for_sampling = None
     k = 0
     for i in range(len(num_class)):
         if i == still_condition:
@@ -127,10 +128,11 @@ def train(FLAGS):
         writer.flush()
         for step in range(total_steps_both):
             for i in range(len(num_class)):
-                # model_con.train()
-                model_dis_list[i].train()
+                if i != FLAGS.still_condition:
+                    # model_con.train()
+                    model_dis_list[i].train()
 
-                # x_0_con = next(datalooper_train_con).to(device).float()
+                    # x_0_con = next(datalooper_train_con).to(device).float()
                 x_0_dis_list[i] = next(datalooper_train_dis_list[i]).to(device)
 
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
@@ -139,7 +141,8 @@ def train(FLAGS):
             for i in range(len(num_class)):
                 # loss_con = con_loss + FLAGS.lambda_con * con_loss_ns
                 # loss_dis = dis_loss + FLAGS.lambda_dis * dis_loss_ns
-                loss_dis = dis_loss_list[i]
+                if i != FLAGS.still_condition:
+                    loss_dis = dis_loss_list[i]
 
                 # optim_con.zero_grad()
                 # loss_con.backward()
@@ -147,21 +150,21 @@ def train(FLAGS):
                 # optim_con.step()
                 # sched_con.step()
 
-                loss_dis.backward()
-                optim_dis_list[i].step()
-                sched_dis_list[i].step()
-                optim_dis_list[i].zero_grad()
-                torch.nn.utils.clip_grad_value_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)#, self.args.clip_value)
-                torch.nn.utils.clip_grad_norm_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)#, self.args.clip_norm)
+                    loss_dis.backward()
+                    optim_dis_list[i].step()
+                    sched_dis_list[i].step()
+                    optim_dis_list[i].zero_grad()
+                    torch.nn.utils.clip_grad_value_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)#, self.args.clip_value)
+                    torch.nn.utils.clip_grad_norm_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)#, self.args.clip_norm)
 
-                # log
-                # writer.add_scalar('loss_continuous', con_loss, step)
-                writer.add_scalar('loss_discrete', dis_loss_list[i], step)
-                # writer.add_scalar('loss_continuous_ns', con_loss_ns, step)
-                # writer.add_scalar('loss_discrete_ns', dis_loss_ns, step)
-                # writer.add_scalar('total_continuous', loss_con, step)
-                writer.add_scalar('total_discrete', loss_dis, step)
-                model_dis_list[i].train(mode=False)
+                    # log
+                    # writer.add_scalar('loss_continuous', con_loss, step)
+                    writer.add_scalar('loss_discrete', dis_loss_list[i], step)
+                    # writer.add_scalar('loss_continuous_ns', con_loss_ns, step)
+                    # writer.add_scalar('loss_discrete_ns', dis_loss_ns, step)
+                    # writer.add_scalar('total_continuous', loss_con, step)
+                    writer.add_scalar('total_discrete', loss_dis, step)
+                    model_dis_list[i].train(mode=False)
 
             if (step+1) % int(train.shape[0]/FLAGS.training_batch_size+1) == 0:
 
@@ -169,7 +172,8 @@ def train(FLAGS):
                 # logging.info(f"Epoch :{epoch}, CL continuous loss: {con_loss_ns:.3f}, discrete loss: {dis_loss_ns:.3f}")
                 # logging.info(f"Epoch :{epoch}, Total continuous loss: {loss_con:.3f}, discrete loss: {loss_dis:.3f}")
                 for i in range(len(num_class)):
-                    logging.info(f"Epoch :{epoch}, discrete loss: {dis_loss_list[i]:.6f}")
+                    if i != FLAGS.still_condition:
+                        logging.info(f"Epoch :{epoch}, discrete loss: {dis_loss_list[i]:.6f}")
                 epoch +=1
 
             if step > 0 and sample_step > 0 and step % sample_step == 0 or step==(total_steps_both-1):
@@ -244,7 +248,7 @@ def train(FLAGS):
             sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
             print('sample_dis',sample_dis.shape)
             sample_pd = pd.DataFrame(sample).dropna()
-            sample_pd.to_csv(rf'test_{ii}.csv', index=False)
+            sample_pd.to_csv(os.path.join(FLAGS.logdir, f'test_sample_{ii}.csv'), index=False)
             # sample = np.array()
             # sample = np.zeros([train_dis_data.shape[0], len(dis_idx)])
             # for i in range(len(con_idx)):
@@ -266,9 +270,10 @@ def train(FLAGS):
         ckpt = torch.load(os.path.join(FLAGS.logdir, 'ckpt.pt'),  map_location=torch.device('cpu') )
         # model_con.load_state_dict(ckpt['model_con'])
         for i in range(len(num_class)):
-            model_dis_list[i].load_state_dict(ckpt[f'model_dis_{i}'])
-            # model_con.eval()
-            model_dis_list[i].eval()
+            if i != FLAGS.still_condition:
+                model_dis_list[i].load_state_dict(ckpt[f'model_dis_{i}'])
+                # model_con.eval()
+                model_dis_list[i].eval()
         # fake_sample = [0]*len(num_class)
         log_x_T_dis_list = [0]*len(num_class)
         x_dis_list = [0]*len(num_class)
@@ -276,7 +281,7 @@ def train(FLAGS):
             logging.info(f"sampling {ii}")
             for i in range(len(num_class)):
                 with torch.no_grad():
-                    # x_T_con = torch.randn(train_con_data.shape[0], train_con_data.shape[1]).to(device)
+                        # x_T_con = torch.randn(train_con_data.shape[0], train_con_data.shape[1]).to(device)
                     log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
             x_dis_list = sampling_with(log_x_T_dis_list, trainer_dis_list, FLAGS, still_cond_used_for_sampling)
                     # print('x_dis_list[i]', x_dis_list[i].shape)
@@ -293,7 +298,7 @@ def train(FLAGS):
             sample_pd = pd.DataFrame(sample_dis).dropna()
             # print(sample_pd)
             # fake_sample.append(sample)
-            sample_pd.to_csv(rf'test_using_2_{ii}.csv', index=False)
+            sample_pd.to_csv(os.path.join(FLAGS.logdir, f'test_sample_{ii}.csv'), index=False)
         # scores, std = evaluation.compute_scores(train=train, test = test, synthesized_data=fake_sample, metadata=meta, eval=ckpt['ml_param'])
         # div_mean, div_std = evaluation.compute_diversity(train=train, fake=fake_sample)
         # scores['coverage'] = div_mean['coverage']
