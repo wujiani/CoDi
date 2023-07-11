@@ -132,6 +132,7 @@ def train(FLAGS):
         writer = SummaryWriter(FLAGS.logdir)
         writer.flush()
         for step in range(total_steps_both):
+            triplet_dis_list = [0]*len(num_class)
             for i in range(len(num_class)):
                 if i != FLAGS.still_condition:
                     # model_con.train()
@@ -144,11 +145,12 @@ def train(FLAGS):
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
             dis_loss_list, triplet_dis = training_with(x_0_dis_list,trainer_dis_list,FLAGS, neg_cond)
+            triplet_dis_list[i] = triplet_dis
             for i in range(len(num_class)):
                 # loss_con = con_loss + FLAGS.lambda_con * con_loss_ns
                 # loss_dis = dis_loss + FLAGS.lambda_dis * dis_loss_ns
                 if i != FLAGS.still_condition:
-                    loss_dis = dis_loss_list[i]+ FLAGS.lambda_dis * triplet_dis
+                    loss_dis = dis_loss_list[i]+ FLAGS.lambda_dis * triplet_dis_list[i]
 
                 # optim_con.zero_grad()
                 # loss_con.backward()
@@ -168,7 +170,7 @@ def train(FLAGS):
                     writer.add_scalar('loss_discrete', dis_loss_list[i], step)
                     # writer.add_scalar('loss_continuous_ns', con_loss_ns, step)
                     writer.add_scalar('loss_discrete_ns', triplet_dis, step)
-                    logging.info(f"Epoch :{epoch}, loss_discrete_ns loss: {triplet_dis:.6f}")
+
                     # writer.add_scalar('total_continuous', loss_con, step)
                     writer.add_scalar('total_discrete', loss_dis, step)
                     model_dis_list[i].train(mode=False)
@@ -181,6 +183,7 @@ def train(FLAGS):
                 for i in range(len(num_class)):
                     if i != FLAGS.still_condition:
                         logging.info(f"Epoch :{epoch}, discrete loss: {dis_loss_list[i]:.6f}")
+                        logging.info(f"Epoch :{epoch}, loss_discrete_ns loss: {triplet_dis[i]:.6f}")
 
                 epoch +=1
 
