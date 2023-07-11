@@ -183,7 +183,7 @@ def train(FLAGS):
                 for i in range(len(num_class)):
                     if i != FLAGS.still_condition:
                         logging.info(f"Epoch :{epoch}, discrete loss: {dis_loss_list[i]:.6f}")
-                        logging.info(f"Epoch :{epoch}, loss_discrete_ns loss: {triplet_dis[i]:.6f}")
+                        logging.info(f"Epoch :{epoch}, loss_discrete_ns loss: {triplet_dis_list[i]:.6f}")
 
                 epoch +=1
 
