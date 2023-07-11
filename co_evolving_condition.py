@@ -30,7 +30,7 @@ def train(FLAGS):
     # datalooper_train_con = infiniteloop(train_iter_con)
     # datalooper_train_dis = infiniteloop(train_iter_dis)
 
-    with open('tabular_datasets/res_not_act_dict.json') as json_file:
+    with open(os.path.join(os.path.dirname(__file__), 'tabular_datasets/res_not_act_dict.json')) as json_file:
         res_no_act_list = json.load(json_file)
 
     num_class=[]
