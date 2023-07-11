@@ -175,7 +175,7 @@ def make_negative_condition(x_0_con, x_0_dis):
 
 def neg_condition(x_0_dis_list, res_no_act_list, transformer_dis, FLAGS, i, still_condition):
 
-    idx = np.argmax(x_0_dis_list[i], axis=1)
+    idx = torch.argmax(x_0_dis_list[i], dim=1)
     a = list(map(transformer_dis.meta[i]['i2s'].__getitem__, idx))
     oo = []
     for each in a:
