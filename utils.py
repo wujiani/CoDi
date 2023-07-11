@@ -185,5 +185,5 @@ def neg_condition(x_0_dis_list, res_no_act_list, transformer_dis, FLAGS, i, stil
     idx = list(map(transformer_dis.meta[still_condition]['i2s'].index, oo))
     # print("info['i2s']", info['i2s'])
     col_t[np.arange(len(oo)), idx] = 1
-    neg_cond = torch.tensor(col_t).to(torch.float32)
+    neg_cond = torch.tensor(col_t).to(torch.float32).to(x_0_dis_list[i].device)
     return neg_cond
