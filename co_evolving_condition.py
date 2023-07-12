@@ -7,7 +7,7 @@ from diffusion_continuous import GaussianDiffusionTrainer, GaussianDiffusionSamp
 import tabular_dataload
 from torch.utils.data import DataLoader
 from models.tabular_unet import tabularUnet
-# from diffusion_discrete import MultinomialDiffusion
+from diffusion_discrete import MultinomialDiffusion
 # import evaluation
 import logging
 # import numpy as np
@@ -38,44 +38,65 @@ def train(FLAGS):
     for i in transformer_dis.output_info:
         num_class.append(i[0])
     num_class = np.array(num_class)
-    print('num_class', num_class)
-
+    print('num_class',num_class)
+    train_dis_data_list = []
+    train_dis_con_data_list = []
     still_cond_used_for_sampling = None
     k = 0
     for i in range(len(num_class)):
         if i == still_condition:
             still_cond_used_for_sampling = train_dis_data[:,k:k+num_class[i]]
+        train_dis_data_list.append(train_dis_data[:,k:k+num_class[i]])
+        con_list = []
+        kk = 0
+        for j in range(len(num_class)):
+            dis_data = train_dis_data[:,kk:kk+num_class[j]]
+            kk+=num_class[j]
+            if j != i:
+                con_list.append(dis_data)
+        k+=num_class[i]
+        con_list.append(train_cont_data)
+        train_dis_con_data_list.append(con_list)
 
-    
+
     # if meta['problem_type'] == 'binary_classification':
     #     metric = 'binary_f1'
     # elif meta['problem_type'] == 'regression': metric = "r2"
     # else: metric = 'macro_f1'
     
     # Condtinuous Diffusion Model Setup
-    FLAGS.input_size = train_cont_data.shape[1]
-    FLAGS.cond_size = [still_cond_used_for_sampling.shape[1]]
-    FLAGS.output_size = train_cont_data.shape[1]
+    FLAGS.cont_input_size = train_cont_data.shape[1]
+    FLAGS.cont_cond_size = [each_cond.shape[1] for each_cond in train_dis_data_list]
+    print('FLAGS.cont_cond_size',FLAGS.cont_cond_size)
+    FLAGS.cont_output_size = train_cont_data.shape[1]
     FLAGS.encoder_dim =  list(map(int, FLAGS.encoder_dim_con.split(',')))
     FLAGS.nf =  FLAGS.nf_con
-    model_cont = tabularUnet(FLAGS, 0)
+    model_cont = tabularUnet(FLAGS, '0')
     optim_cont = torch.optim.Adam(model_cont.parameters(), lr=FLAGS.lr_con)
     sched_cont = torch.optim.lr_scheduler.LambdaLR(optim_cont, lr_lambda=warmup_lr)
     trainer_cont = GaussianDiffusionTrainer(model_cont, FLAGS.beta_1, FLAGS.beta_T, FLAGS.T).to(device)
     net_sampler = GaussianDiffusionSampler(model_cont, FLAGS.beta_1, FLAGS.beta_T, FLAGS.T, FLAGS.mean_type, FLAGS.var_type).to(device)
 
-    # for i in range(len(num_class)):
-    #     # Discrete Diffusion Model Setup
-    #
-    #     FLAGS.input_size[i] = train_dis_data_list[i].shape[1]
-    #     FLAGS.cond_size[i] = [each_cond.shape[1] for each_cond in train_dis_con_data_list[i]]
-    #     FLAGS.output_size[i] = train_dis_data_list[i].shape[1]
-    #     FLAGS.encoder_dim =  list(map(int, FLAGS.encoder_dim_dis.split(',')))
-    #     FLAGS.nf =  FLAGS.nf_dis
-    #     model_dis_list[i] = tabularUnet(FLAGS, i)
-    #     optim_dis_list[i] = torch.optim.Adam(model_dis_list[i].parameters(), lr=FLAGS.lr_dis)
-    #     sched_dis_list[i] = torch.optim.lr_scheduler.LambdaLR(optim_dis_list[i], lr_lambda=warmup_lr)
-    #     trainer_dis_list[i] = MultinomialDiffusion(num_class[i], train_dis_data_list[i].shape, model_dis_list[i], FLAGS, timesteps=FLAGS.T,loss_type='vb_stochastic').to(device)
+    FLAGS.dis_input_size = [0]*len(num_class)
+    FLAGS.dis_cond_size = [0]*len(num_class)
+    FLAGS.dis_output_size = [0]*len(num_class)
+    model_dis_list = [0]*len(num_class)
+    optim_dis_list = [0]*len(num_class)
+    sched_dis_list = [0]*len(num_class)
+    trainer_dis_list = [0]*len(num_class)
+    for i in range(len(num_class)):
+        # Discrete Diffusion Model Setup
+
+        FLAGS.dis_input_size[i] = train_dis_data_list[i].shape[1]
+        FLAGS.dis_cond_size[i] = [each_cond.shape[1] for each_cond in train_dis_con_data_list[i]]
+        print('FLAGS.dis_cond_size[i]',FLAGS.dis_cond_size[i])
+        FLAGS.dis_output_size[i] = train_dis_data_list[i].shape[1]
+        FLAGS.encoder_dim =  list(map(int, FLAGS.encoder_dim_dis.split(',')))
+        FLAGS.nf =  FLAGS.nf_dis
+        model_dis_list[i] = tabularUnet(FLAGS, i)
+        optim_dis_list[i] = torch.optim.Adam(model_dis_list[i].parameters(), lr=FLAGS.lr_dis)
+        sched_dis_list[i] = torch.optim.lr_scheduler.LambdaLR(optim_dis_list[i], lr_lambda=warmup_lr)
+        trainer_dis_list[i] = MultinomialDiffusion(num_class[i], train_dis_data_list[i].shape, model_dis_list[i], FLAGS, timesteps=FLAGS.T,loss_type='vb_stochastic').to(device)
 
     if FLAGS.parallel:
         trainer = torch.nn.DataParallel(trainer_cont)
@@ -96,15 +117,23 @@ def train(FLAGS):
     logging.info("Total steps: %d" %total_steps_both)
     logging.info("Sample steps: %d" %sample_step)
     logging.info("Continuous: %d, %d" %(train_cont_data.shape[0], train_cont_data.shape[1]))
-    # logging.info("Discrete: %d, %d"%(train_dis_data.shape[0], train_dis_data.shape[1]))
-    #
+    logging.info("Discrete: %d, %d"%(train_dis_data.shape[0], train_dis_data.shape[1]))
+
     # Start Training
     if FLAGS.eval==False:
+        train_iter_dis_list = [0]*len(num_class)
+        datalooper_train_dis_list = [0]*len(num_class)
+        x_0_dis_list = [0]*len(num_class)
         epoch = 0
         train_iter_cont = DataLoader(train_cont_data, batch_size=FLAGS.training_batch_size)
         # train_iter_dis_list[i] = DataLoader(train_dis_data_list[i], batch_size=FLAGS.training_batch_size)
         datalooper_train_cont = infiniteloop(train_iter_cont)
         # datalooper_train_dis_list[i] = infiniteloop(train_iter_dis_list[i])
+        for i in range(len(num_class)):
+            # train_iter_con = DataLoader(train_con_data, batch_size=FLAGS.training_batch_size)
+            train_iter_dis_list[i] = DataLoader(train_dis_data_list[i], batch_size=FLAGS.training_batch_size)
+            # datalooper_train_con = infiniteloop(train_iter_con)
+            datalooper_train_dis_list[i] = infiniteloop(train_iter_dis_list[i])
         writer = SummaryWriter(FLAGS.logdir)
         writer.flush()
         for step in range(total_steps_both):
@@ -114,21 +143,42 @@ def train(FLAGS):
 
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
-            cont_loss = training_with(x_0_cont,trainer_cont, trainer_cont, FLAGS, still_cond_used_for_sampling)
+
+            for i in range(len(num_class)):
+                if i != FLAGS.still_condition:
+                    # model_con.train()
+                    model_dis_list[i].train()
+
+                    # x_0_con = next(datalooper_train_con).to(device).float()
+                x_0_dis_list[i] = next(datalooper_train_dis_list[i]).to(device)
+
+                # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
+                # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
+            # !dis_loss_list = training_with(x_0_dis_list, trainer_dis_list, FLAGS)
+            cont_loss, dis_loss_list = training_with(x_0_cont, x_0_dis_list, trainer_cont, trainer_dis_list, trainer_cont, FLAGS, still_cond_used_for_sampling)
             # loss_con = con_loss + FLAGS.lambda_con * con_loss_ns
             # loss_dis = dis_loss + FLAGS.lambda_dis * dis_loss_ns
-
             loss_cont = cont_loss
-
             optim_cont.zero_grad()
             loss_cont.backward()
             torch.nn.utils.clip_grad_norm_(model_cont.parameters(), FLAGS.grad_clip)
             optim_cont.step()
             sched_cont.step()
+            writer.add_scalar('loss_continuous', cont_loss, step)
+            for i in range(len(num_class)):
+                # loss_con = con_loss + FLAGS.lambda_con * con_loss_ns
+                # loss_dis = dis_loss + FLAGS.lambda_dis * dis_loss_ns
+                if i != FLAGS.still_condition:
+                    loss_dis = dis_loss_list[i]
+                    loss_dis.backward()
+                    optim_dis_list[i].step()
+                    sched_dis_list[i].step()
+                    optim_dis_list[i].zero_grad()
+                    torch.nn.utils.clip_grad_value_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)  # , self.args.clip_value)
+                    torch.nn.utils.clip_grad_norm_(trainer_dis_list[i].parameters(), FLAGS.grad_clip)  # , self.args.clip_norm)
+                    writer.add_scalar('loss_discrete', dis_loss_list[i], step)
 
             # log
-            writer.add_scalar('loss_continuous', cont_loss, step)
-            # writer.add_scalar('loss_discrete', dis_loss_list[i], step)
             # writer.add_scalar('loss_continuous_ns', con_loss_ns, step)
             # writer.add_scalar('loss_discrete_ns', dis_loss_ns, step)
             # writer.add_scalar('total_continuous', loss_con, step)
@@ -141,17 +191,32 @@ def train(FLAGS):
                 # logging.info(f"Epoch :{epoch}, CL continuous loss: {con_loss_ns:.3f}, discrete loss: {dis_loss_ns:.3f}")
                 # logging.info(f"Epoch :{epoch}, Total continuous loss: {loss_con:.3f}, discrete loss: {loss_dis:.3f}")
                 logging.info(f"Epoch :{epoch}, continuous loss: {cont_loss:.6f}")
+                for i in range(len(num_class)):
+                    if i != FLAGS.still_condition:
+                        logging.info(f"Epoch :{epoch}, discrete loss: {dis_loss_list[i]:.6f}")
                 epoch +=1
 
             if step > 0 and sample_step > 0 and step % sample_step == 0 or step==(total_steps_both-1):
                 print('llll')
+                log_x_T_dis_list = [0] * len(num_class)
+                x_dis_list = [0] * len(num_class)
+                sample_dis_list = [0] * len(num_class)
+                sample_list = [0] * len(num_class)
+
                 model_cont.eval()
+                for i in range(len(num_class)):
+                    if i != FLAGS.still_condition:
+                        model_dis_list[i].eval()
                 with torch.no_grad():
                     x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
-                    x_cont = sampling_with(x_T_cont, net_sampler, transformer_con, FLAGS, still_cond_used_for_sampling)
+                    for i in range(len(num_class)):
+                        log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
+                    x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, net_sampler, trainer_dis_list, transformer_con, FLAGS, still_cond_used_for_sampling)
                 sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
-                sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
-                # print('sample_dis',sample_dis.shape)
+                # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
+                x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
+                x_dis = apply_activate(x_dis, transformer_dis.output_info)
+                sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
                 sample = np.zeros([train_cont_data.shape[0], len(con_idx + dis_idx)])
                 for i in range(len(con_idx)):
                     sample[:, con_idx[i]] = sample_cont[:, i]
@@ -181,6 +246,10 @@ def train(FLAGS):
                         'sample': sample,
                         # 'ml_param': param
                     }
+                    for i in range(len(num_class)):
+                        ckpt[f'model_dis_{i}'] = model_dis_list[i].state_dict()
+                        ckpt[f'sched_dis_{i}'] = sched_dis_list[i].state_dict()
+                        ckpt[f'optim_dis_{i}'] = optim_dis_list[i].state_dict()
                         # 'ml_param': param
 
                     torch.save(ckpt, os.path.join(FLAGS.logdir, 'ckpt.pt'))
@@ -190,23 +259,35 @@ def train(FLAGS):
         ckpt = torch.load(os.path.join(FLAGS.logdir, 'ckpt.pt'))
         model_cont.load_state_dict(ckpt['model_con'])
         model_cont.eval()
+        for i in range(len(num_class)):
+            if i != FLAGS.still_condition:
+                model_dis_list[i].load_state_dict(ckpt[f'model_dis_{i}'])
+                # model_con.eval()
+                model_dis_list[i].eval()
+
+
         # fake_sample=[]
         for ii in range(1):
             logging.info(f"sampling {ii}")
             with torch.no_grad():
                 x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
-                # log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-                x_cont= sampling_with(x_T_cont, net_sampler, transformer_con, FLAGS, still_cond_used_for_sampling)
+                for i in range(len(num_class)):
+                    log_x_T_dis_list[i] = log_sample_categorical(
+                        torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
+                x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, net_sampler, trainer_dis_list,
+                                                   transformer_con, FLAGS, still_cond_used_for_sampling)
             sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
-            sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
-            # print('sample_dis',sample_dis.shape)
+            # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
+            x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
+            x_dis = apply_activate(x_dis, transformer_dis.output_info)
+            sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
             sample = np.zeros([train_cont_data.shape[0], len(con_idx + dis_idx)])
             for i in range(len(con_idx)):
-                sample[:,con_idx[i]]=sample_cont[:,i]
+                sample[:, con_idx[i]] = sample_cont[:, i]
             for i in range(len(dis_idx)):
-                sample[:,dis_idx[i]]=sample_dis[:,i]
+                sample[:, dis_idx[i]] = sample_dis[:, i]
             sample_pd = pd.DataFrame(sample).dropna()
-            sample_pd.to_csv(os.path.join(FLAGS.logdir, f'test_sample_{ii}.csv'), index=False)
+            sample_pd.to_csv(os.path.join(FLAGS.logdir, f'{FLAGS.logdir}_sample_{ii}.csv'), index=False)
             # sample = np.array()
             # sample = np.zeros([train_dis_data.shape[0], len(dis_idx)])
             # for i in range(len(con_idx)):
@@ -228,23 +309,35 @@ def train(FLAGS):
         ckpt = torch.load(os.path.join(FLAGS.logdir, 'ckpt.pt'),  map_location=torch.device('cpu') )
         model_cont.load_state_dict(ckpt['model_con'])
         model_cont.eval()
+        for i in range(len(num_class)):
+            if i != FLAGS.still_condition:
+                model_dis_list[i].load_state_dict(ckpt[f'model_dis_{i}'])
+                # model_con.eval()
+                model_dis_list[i].eval()
         # fake_sample=[]
+        log_x_T_dis_list = [0]*len(num_class)
+        x_dis_list = [0]*len(num_class)
         for ii in range(2):
             logging.info(f"sampling {ii}")
             with torch.no_grad():
                 x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
-                # log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-                x_cont= sampling_with(x_T_cont, net_sampler, transformer_con, FLAGS, still_cond_used_for_sampling)
+                for i in range(len(num_class)):
+                    log_x_T_dis_list[i] = log_sample_categorical(
+                        torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
+                x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, net_sampler, trainer_dis_list,
+                                                   transformer_con, FLAGS, still_cond_used_for_sampling)
             sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
-            sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
-            # print('sample_dis',sample_dis.shape)
+            # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
+            x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
+            x_dis = apply_activate(x_dis, transformer_dis.output_info)
+            sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
             sample = np.zeros([train_cont_data.shape[0], len(con_idx + dis_idx)])
             for i in range(len(con_idx)):
-                sample[:,con_idx[i]]=sample_cont[:,i]
+                sample[:, con_idx[i]] = sample_cont[:, i]
             for i in range(len(dis_idx)):
-                sample[:,dis_idx[i]]=sample_dis[:,i]
+                sample[:, dis_idx[i]] = sample_dis[:, i]
             sample_pd = pd.DataFrame(sample).dropna()
-            sample_pd.to_csv(os.path.join(FLAGS.logdir, f'test_sample_{ii}.csv'), index=False)
+            sample_pd.to_csv(os.path.join(FLAGS.logdir, f'{FLAGS.logdir}_sample_{ii}.csv'), index=False)
         # scores, std = evaluation.compute_scores(train=train, test = test, synthesized_data=fake_sample, metadata=meta, eval=ckpt['ml_param'])
         # div_mean, div_std = evaluation.compute_diversity(train=train, fake=fake_sample)
         # scores['coverage'] = div_mean['coverage']

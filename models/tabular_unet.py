@@ -39,24 +39,36 @@ class tabularUnet(nn.Module):
     nn.init.zeros_(modules[-1].bias)   #nn(64,64),bias初始化
 
     cond_out_list = []
-    for each_cond in range(len(FLAGS.cond_size)):
-      cond = FLAGS.cond_size[each_cond]   # condition size
-      cond_out = (FLAGS.input_size)//2   # input/2
-      if cond_out < 2:
-        cond_out = FLAGS.input_size   # input_size=3 or 2 or 2
-      cond_out_list.append(cond_out)
-      modules.append(nn.Linear(cond, cond_out))  #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
-      modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)   #weight初始化
-      nn.init.zeros_(modules[-1].bias)   #bias初始化
-
+    if i == '0':
+      for each_cond in range(len(FLAGS.cont_cond_size)):
+        cond = FLAGS.cont_cond_size[each_cond]   # condition size
+        cond_out = (FLAGS.cont_input_size)//2   # input/2
+        if cond_out < 2:
+          cond_out = FLAGS.cont_input_size   # input_size=3 or 2 or 2
+        cond_out_list.append(cond_out)
+        modules.append(nn.Linear(cond, cond_out))  #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
+        modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)   #weight初始化
+        nn.init.zeros_(modules[-1].bias)   #bias初始化
+    else:
+      for each_cond in range(len(FLAGS.dis_cond_size[i])):
+        cond = FLAGS.dis_cond_size[i][each_cond]  # condition size
+        cond_out = (FLAGS.dis_input_size[i]) // 2  # input/2
+        if cond_out < 2:
+          cond_out = FLAGS.dis_input_size[i]  # input_size=3 or 2 or 2
+        cond_out_list.append(cond_out)
+        modules.append(nn.Linear(cond, cond_out))  # [nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
+        modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)  # weight初始化
+        nn.init.zeros_(modules[-1].bias)  # bias初始化
     self.all_modules = nn.ModuleList(modules)
 
 
     # for each_cond in range(len(FLAGS.cond_size[i])):
     cond_size = sum(cond_out_list)
-    dim_in = FLAGS.input_size + cond_size   #  input  是input data和condition layer的output的维度
+    if i == '0':
+      dim_in = FLAGS.cont_input_size + cond_size   #  input  是input data和condition layer的output的维度
+    else:
+      dim_in = FLAGS.dis_input_size[i] + cond_size   #  input  是input data和condition layer的output的维度
     # dim_in = FLAGS.input_size[i] #  input  是input data和condition layer的output的维度
-
     dim_out = list(FLAGS.encoder_dim)[0]
     self.inputs = nn.Linear(dim_in, dim_out) # input layer      nn(input, 64)
 
@@ -69,12 +81,14 @@ class tabularUnet(nn.Module):
     self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, FLAGS) #decoder     Decoder([256,128,64],64, FLAGS)
 
     dim_in = list(FLAGS.encoder_dim)[0]
-    dim_out = FLAGS.output_size
+    if i == '0':
+      dim_out = FLAGS.cont_output_size
+    else:
+      dim_out = FLAGS.dis_output_size[i]
     self.outputs = nn.Linear(dim_in, dim_out) #output layer    nn(64, output)
 
 
   def forward(self, x, time_cond, cond):
-
     modules = self.all_modules   #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
     m_idx = 0
 
@@ -98,7 +112,7 @@ class tabularUnet(nn.Module):
         all_cond = torch.cat([all_cond, cond_], dim=1).float()
     x = torch.cat([x, all_cond], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
     # x = torch.cat([x], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
-    inputs = self.inputs(x) #input layer   nn(input, 64)    #  input  是input data和condition layer的output ,
+    inputs = self.inputs(x) #input layer   nn(input, 64)    #   input  是input data和condition layer的output ,
     # output=64 asa inputs(value)=64
     skip_connections, encoding = self.encoder(inputs, temb)   #encoder input=64, output=256（layers第104行，x=64->128->256)
     encoding = self.bottom_block(encoding)   #nn(256,256)  input=256, output=256

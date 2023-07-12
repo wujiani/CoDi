@@ -40,6 +40,13 @@ flags.DEFINE_integer('cond_size', None, help='cond_size')
 flags.DEFINE_integer('output_size', None, help='output_size')
 flags.DEFINE_string('activation', 'relu', help='activation')
 
+flags.DEFINE_integer('cont_input_size', None, help='input_size')
+flags.DEFINE_integer('cont_cond_size', None, help='cond_size')
+flags.DEFINE_integer('cont_output_size', None, help='output_size')
+flags.DEFINE_integer('dis_input_size', None, help='input_size')
+flags.DEFINE_integer('dis_cond_size', None, help='cond_size')
+flags.DEFINE_integer('dis_output_size', None, help='output_size')
+
 # Training
 flags.DEFINE_integer('training_batch_size', 2100, help='batch size')
 flags.DEFINE_integer('eval_batch_size', 2100, help='batch size')
