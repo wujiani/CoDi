@@ -39,11 +39,11 @@ class tabularUnet(nn.Module):
     nn.init.zeros_(modules[-1].bias)   #nn(64,64),bias初始化
 
     cond_out_list = []
-    for each_cond in range(len(FLAGS.cond_size[i])):
-      cond = FLAGS.cond_size[i][each_cond]   # condition size
-      cond_out = (FLAGS.input_size[i])//2   # input/2
+    for each_cond in range(len(FLAGS.cond_size)):
+      cond = FLAGS.cond_size[each_cond]   # condition size
+      cond_out = (FLAGS.input_size)//2   # input/2
       if cond_out < 2:
-        cond_out = FLAGS.input_size[i]   # input_size=3 or 2 or 2
+        cond_out = FLAGS.input_size   # input_size=3 or 2 or 2
       cond_out_list.append(cond_out)
       modules.append(nn.Linear(cond, cond_out))  #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
       modules[-1].weight.data = default_initializer()(modules[-1].weight.shape)   #weight初始化
@@ -54,7 +54,7 @@ class tabularUnet(nn.Module):
 
     # for each_cond in range(len(FLAGS.cond_size[i])):
     cond_size = sum(cond_out_list)
-    dim_in = FLAGS.input_size[i] + cond_size   #  input  是input data和condition layer的output的维度
+    dim_in = FLAGS.input_size + cond_size   #  input  是input data和condition layer的output的维度
     # dim_in = FLAGS.input_size[i] #  input  是input data和condition layer的output的维度
 
     dim_out = list(FLAGS.encoder_dim)[0]
@@ -69,7 +69,7 @@ class tabularUnet(nn.Module):
     self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, FLAGS) #decoder     Decoder([256,128,64],64, FLAGS)
 
     dim_in = list(FLAGS.encoder_dim)[0]
-    dim_out = FLAGS.output_size[i]
+    dim_out = FLAGS.output_size
     self.outputs = nn.Linear(dim_in, dim_out) #output layer    nn(64, output)
 
 
