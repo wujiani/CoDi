@@ -105,16 +105,22 @@ def train(FLAGS):
         # train_iter_dis_list[i] = DataLoader(train_dis_data_list[i], batch_size=FLAGS.training_batch_size)
         datalooper_train_cont = infiniteloop(train_iter_cont)
         # datalooper_train_dis_list[i] = infiniteloop(train_iter_dis_list[i])
+        still_cond = DataLoader(still_cond_used_for_sampling, batch_size=FLAGS.training_batch_size)
+        # datalooper_train_con = infiniteloop(train_iter_con)
+        datalooper_still_cond = infiniteloop(still_cond)
+
+
         writer = SummaryWriter(FLAGS.logdir)
         writer.flush()
         for step in range(total_steps_both):
             model_cont.train()
 
             x_0_cont = next(datalooper_train_cont).to(device)
+            x_cond = next(datalooper_still_cond).to(device)
 
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
-            cont_loss = training_with(x_0_cont,trainer_cont, trainer_cont, FLAGS, still_cond_used_for_sampling)
+            cont_loss = training_with(x_0_cont,trainer_cont, trainer_cont, FLAGS, x_cond)
             # loss_con = con_loss + FLAGS.lambda_con * con_loss_ns
             # loss_dis = dis_loss + FLAGS.lambda_dis * dis_loss_ns
 

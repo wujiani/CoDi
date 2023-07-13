@@ -64,14 +64,14 @@ def sampling_with(x_T_cont, net_sampler, trans, FLAGS, still_cond_used_for_sampl
 
     return  x_t_cont
 
-def training_with(x_0_cont,  trainer_cont, trans, FLAGS, still_cond_used_for_sampling):
+def training_with(x_0_cont,  trainer_cont, trans, FLAGS, x_cond):
 
     t = torch.randint(FLAGS.T, size=(x_0_cont.shape[0], ), device=x_0_cont.device)
 
     #co-evolving training and predict positive samples
     noise = torch.randn_like(x_0_cont)
     x_t_cont = trainer_cont.make_x_t(x_0_cont, t, noise)
-    eps = trainer_cont.model(x_t_cont, t, [torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_cont.device)])
+    eps = trainer_cont.model(x_t_cont, t, [torch.tensor(x_cond).to(torch.float32).to(x_t_cont.device)])
     # print('[torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_cont.device)]', [torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_cont.device)])
     ps_0_con = trainer_cont.predict_xstart_from_eps(x_t_cont, t, eps=eps)
     cont_loss = F.mse_loss(eps, noise, reduction='none')
