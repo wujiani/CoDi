@@ -19,6 +19,8 @@ from . import layers
 import torch.nn as nn
 import torch
 
+from models.AttentionBlock import AttentionBlock
+
 get_act = layers.get_act
 default_initializer = layers.default_init
 
@@ -87,8 +89,9 @@ class tabularUnet(nn.Module):
       dim_out = FLAGS.dis_output_size[i]
     self.outputs = nn.Linear(dim_in, dim_out) #output layer    nn(64, output)
 
+    self.attention = AttentionBlock(FLAGS.src_vocab_size, FLAGS.tgt_vocab_size, len(FLAGS.dis_cond_size))
 
-  def forward(self, x, time_cond, cond):
+  def forward(self, x, time_cond, cond, x_attention):
     modules = self.all_modules   #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
     m_idx = 0
 
@@ -110,7 +113,11 @@ class tabularUnet(nn.Module):
         all_cond = cond_
       else:
         all_cond = torch.cat([all_cond, cond_], dim=1).float()
-    x = torch.cat([x, all_cond], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
+
+    # attention
+    attention = self.attention(x_attention[:-1], x_attention[-1])
+
+    x = torch.cat([x, all_cond, attention], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
     # x = torch.cat([x], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
     inputs = self.inputs(x) #input layer   nn(input, 64)    #   input  是input data和condition layer的output ,
     # output=64 asa inputs(value)=64

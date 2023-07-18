@@ -144,6 +144,8 @@ def train(FLAGS):
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
 
+            x_attention = next(datalooper_train_attention).to(device)
+
             for i in range(len(num_class)):
                 if i != FLAGS.still_condition:
                     # model_con.train()
@@ -152,10 +154,14 @@ def train(FLAGS):
                     # x_0_con = next(datalooper_train_con).to(device).float()
                 x_0_dis_list[i] = next(datalooper_train_dis_list[i]).to(device)
 
+
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
             # !dis_loss_list = training_with(x_0_dis_list, trainer_dis_list, FLAGS)
-            cont_loss, dis_loss_list = training_with(x_0_cont, x_0_dis_list, trainer_cont, trainer_dis_list, trainer_cont, FLAGS, still_cond_used_for_sampling)
+            cont_loss, dis_loss_list = training_with(x_0_cont, x_0_dis_list, x_attention,
+                                                     trainer_cont, trainer_dis_list,
+                                                     trainer_cont, FLAGS,
+                                                     still_cond_used_for_sampling)
             # loss_con = con_loss + FLAGS.lambda_con * con_loss_ns
             # loss_dis = dis_loss + FLAGS.lambda_dis * dis_loss_ns
             loss_cont = cont_loss

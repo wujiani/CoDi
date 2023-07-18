@@ -89,7 +89,7 @@ def sampling_with(x_T_cont, log_x_T_dis, net_sampler, trainer_dis, trans, FLAGS,
     x_t_dis[FLAGS.still_condition] = torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[FLAGS.still_condition].device)
     return  x_t_cont, [x.detach().cpu() for x in x_t_dis]
 
-def training_with(x_0_cont, x_0_dis, trainer_cont, trainer_dis, trans, FLAGS, still_cond_used_for_sampling):
+def training_with(x_0_cont, x_0_dis, x_attention, trainer_cont, trainer_dis, trans, FLAGS, still_cond_used_for_sampling):
 
     t = torch.randint(FLAGS.T, size=(x_0_cont.shape[0], ), device=x_0_cont.device)
     pt = torch.ones_like(t).float() / FLAGS.T
@@ -110,7 +110,7 @@ def training_with(x_0_cont, x_0_dis, trainer_cont, trainer_dis, trans, FLAGS, st
             cond.append(x_0_dis[j].to(torch.float32))
         else:
             cond.append(x_t_dis[j])
-    eps = trainer_cont.model(x_t_cont, t, cond)
+    eps = trainer_cont.model(x_t_cont, t, cond, x_attention)
     # eps = trainer_cont.model(x_t_cont, t, cond.to(x_t_cont.device))
     # print('[torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_cont.device)]', [torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_cont.device)])
     ps_0_con = trainer_cont.predict_xstart_from_eps(x_t_cont, t, eps=eps)
