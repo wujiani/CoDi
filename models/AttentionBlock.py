@@ -33,7 +33,7 @@ class AttentionBlock(nn.Module):
         :param memory_key_padding_mask: 用来Mask掉Encoder输出的memory中不同序列的padding部分 [batch_size, src_len]
         :return:
         """
-        src_embed_list = [self.src_token_embedding_list[i](src.to(tgt.device)) for i, src in enumerate(src_list)]  # [src_len, batch_size, embed_dim]
+        src_embed_list = [self.src_token_embedding_list[i](src) for i, src in enumerate(src_list)]  # [src_len, batch_size, embed_dim]
         src_embed_list = [self.pos_embedding(src_embed) for src_embed in src_embed_list]  # [src_len, batch_size, embed_dim]
         tgt_embed = self.src_token_embedding_list[0](tgt)  # [tgt_len, batch_size, embed_dim]
         tgt_embed = self.pos_embedding(tgt_embed)  # [tgt_len, batch_size, embed_dim]
