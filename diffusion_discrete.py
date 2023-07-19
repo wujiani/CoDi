@@ -114,9 +114,9 @@ class MultinomialDiffusion(torch.nn.Module):
 
         return log_probs
 
-    def predict_start(self, log_x_t, t, cond):
+    def predict_start(self, log_x_t, t, cond, attention):
         x_t = log_x_t
-        out = self._denoise_fn(x_t, t, cond)
+        out = self._denoise_fn(x_t, t, cond, attention)
 
         assert out.size(0) == x_t.size(0)
         assert out.size(1) == self.num_classes
@@ -149,21 +149,21 @@ class MultinomialDiffusion(torch.nn.Module):
 
         return log_EV_xtmin_given_xt_given_xstart
 
-    def p_pred(self, log_x, t, cond):
+    def p_pred(self, log_x, t, cond, attention):
         if self.parametrization == 'x0':
-            log_x_recon = self.predict_start(log_x, t=t, cond=cond)
+            log_x_recon = self.predict_start(log_x, t=t, cond=cond, attention=attention)
             log_model_pred = self.q_posterior(
                 log_x_start=log_x_recon, log_x_t=log_x, t=t)
         elif self.parametrization == 'direct':
-            log_model_pred = self.predict_start(log_x, t=t, cond=cond)
+            log_model_pred = self.predict_start(log_x, t=t, cond=cond, attention=attention)
         else:
             raise ValueError
         return log_model_pred, log_x_recon
 
     @torch.no_grad()
     # def p_sample(self, log_x, t, cond_con):
-    def p_sample(self, log_x, t, cond):
-        model_log_prob, log_x_recon = self.p_pred(log_x=log_x, t=t, cond=cond)
+    def p_sample(self, log_x, t, cond, attention):
+        model_log_prob, log_x_recon = self.p_pred(log_x=log_x, t=t, cond=cond, attention=attention)
         out = self.log_sample_categorical(model_log_prob).to(log_x.device)
         return out
 
@@ -201,11 +201,11 @@ class MultinomialDiffusion(torch.nn.Module):
         kl_prior = self.multinomial_kl(log_qxT_prob, log_half_prob)
         return sum_except_batch(kl_prior)
 
-    def compute_Lt(self, log_x_start, log_x_t, t, cond, detach_mean=False):
+    def compute_Lt(self, log_x_start, log_x_t, t, cond, attention, detach_mean=False):
         log_true_prob = self.q_posterior(
             log_x_start=log_x_start, log_x_t=log_x_t, t=t)
 
-        log_model_prob, log_x_recon = self.p_pred(log_x=log_x_t, t=t, cond=cond)
+        log_model_prob, log_x_recon = self.p_pred(log_x=log_x_t, t=t, cond=cond, attention = attention)
 
         if detach_mean:
             log_model_prob = log_model_prob.detach()

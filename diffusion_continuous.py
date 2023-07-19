@@ -114,7 +114,7 @@ class GaussianDiffusionSampler(nn.Module):
         )
 
 
-    def p_mean_variance(self, x_t, t, cond, trans):
+    def p_mean_variance(self, x_t, t, cond, attention, trans):
         # below: only log_variance is used in the KL computations
         model_log_var = {
             # for fixedlarge, we set the initial (log-)variance like so to
@@ -127,7 +127,7 @@ class GaussianDiffusionSampler(nn.Module):
 
         # Mean parameterization
         if self.mean_type == 'epsilon':   # the model predicts epsilon
-            eps = self.model(x_t, t, cond)
+            eps = self.model(x_t, t, cond, attention)
             x_0 = self.predict_xstart_from_eps(x_t, t, eps=eps)   #这个就是大一统里(94)的x hat,通过噪音数据xt来预测原始数据x0 的神经网络
             model_mean, _ = self.q_mean_variance(x_0, x_t, t)
         else:

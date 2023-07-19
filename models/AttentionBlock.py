@@ -11,7 +11,7 @@ class AttentionBlock(nn.Module):
                  num_decoder_layers=6, dim_feedforward=2048,
                  dropout=0.1):
         super(AttentionBlock, self).__init__()
-        self.my_transformer = MyTransformer(d_model=d_model * n_dis,
+        self.my_transformer = MyTransformer(d_model=d_model,
                                             nhead=nhead,
                                             num_encoder_layers=num_encoder_layers,
                                             num_decoder_layers=num_decoder_layers,
@@ -33,19 +33,22 @@ class AttentionBlock(nn.Module):
         :param memory_key_padding_mask: 用来Mask掉Encoder输出的memory中不同序列的padding部分 [batch_size, src_len]
         :return:
         """
-
         src_embed_list = [self.src_token_embedding_list[i](src) for i, src in enumerate(src_list)]  # [src_len, batch_size, embed_dim]
         src_embed_list = [self.pos_embedding(src_embed) for src_embed in src_embed_list]  # [src_len, batch_size, embed_dim]
         tgt_embed = self.src_token_embedding_list[0](tgt)  # [tgt_len, batch_size, embed_dim]
         tgt_embed = self.pos_embedding(tgt_embed)  # [tgt_len, batch_size, embed_dim]
-        src_embed = torch.cat(src_embed_list, dim=-1)
+        src_embed = torch.cat(src_embed_list, dim=1)
+        src_key_padding_mask = torch.cat(src_key_padding_mask, dim=1)
 
+        src_embed=src_embed.permute(1,0,2)
+        tgt_embed = tgt_embed.permute(1, 0, 2)
         outs = self.my_transformer(src=src_embed, tgt=tgt_embed, src_mask=src_mask,
                                    tgt_mask=tgt_mask, memory_mask=memory_mask,
                                    src_key_padding_mask=src_key_padding_mask,
                                    tgt_key_padding_mask=tgt_key_padding_mask,
                                    memory_key_padding_mask=memory_key_padding_mask)
         # [tgt_len,batch_size,embed_dim]
+        outs = outs.squeeze(0)
         return outs
 
     def encoder(self, src):

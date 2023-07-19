@@ -48,7 +48,7 @@ def log_sample_categorical(logits, num_class):
     return log_sample
 
 
-def sampling_with(x_T_cont, log_x_T_dis, net_sampler, trainer_dis, trans, FLAGS, still_cond_used_for_sampling):
+def sampling_with(x_T_cont, log_x_T_dis, attention, net_sampler, trainer_dis, trans, FLAGS, still_cond_used_for_sampling):
     x_t_cont = x_T_cont
     x_t_dis = [0]*len(log_x_T_dis)
     for i in range(len(log_x_T_dis)):
@@ -62,7 +62,7 @@ def sampling_with(x_T_cont, log_x_T_dis, net_sampler, trainer_dis, trans, FLAGS,
                 cond.append(torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[j].device))
             else:
                 cond.append(x_t_dis[j])
-        mean, log_var = net_sampler.p_mean_variance(x_t=x_t_cont, t=t, cond = cond, trans=trans)
+        mean, log_var = net_sampler.p_mean_variance(x_t=x_t_cont, t=t, cond = cond, attention = attention, trans=trans)
         if time_step > 0:
             noise = torch.randn_like(x_t_cont)
         elif time_step == 0:
@@ -81,12 +81,12 @@ def sampling_with(x_T_cont, log_x_T_dis, net_sampler, trainer_dis, trans, FLAGS,
                         else:
                             cond.append(x_t_dis[j])
                 cond.append(x_t_cont)
-                x_t_minus_1_dis = trainer_dis[i].p_sample(x_t_dis[i], t, cond)
+                x_t_minus_1_dis = trainer_dis[i].p_sample(x_t_dis[i], t, cond, attention)
 
                 x_t_cont = x_t_minus_1_cont
                 x_t_dis[i] = x_t_minus_1_dis
 
-    x_t_dis[FLAGS.still_condition] = torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[FLAGS.still_condition].device)
+    # x_t_dis[FLAGS.still_condition] = torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[FLAGS.still_condition].device)
     return  x_t_cont, [x.detach().cpu() for x in x_t_dis]
 
 def training_with(x_0_cont, x_0_dis, x_attention, trainer_cont, trainer_dis, trans, FLAGS, still_cond_used_for_sampling):
@@ -128,7 +128,7 @@ def training_with(x_0_cont, x_0_dis, x_attention, trainer_cont, trainer_dis, tra
                     else:
                         cond.append(x_t_dis[j])
             cond.append(x_t_cont)
-            kl, ps_0_dis = trainer_dis[i].compute_Lt(log_x_start[i], x_t_dis[i], t, cond)
+            kl, ps_0_dis = trainer_dis[i].compute_Lt(log_x_start[i], x_t_dis[i], t, cond, x_attention)
             ps_0_dis = torch.exp(ps_0_dis)
             kl_prior = trainer_dis[i].kl_prior(log_x_start[i])
             dis_loss[i] = (kl / pt + kl_prior).mean()

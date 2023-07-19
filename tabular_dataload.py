@@ -58,14 +58,14 @@ def load_data(name, benchmark=False):
     meta = _load_file(name + '.json', _load_json)
     categorical_columns = _get_columns(meta)
     print('categorical_columns',categorical_columns)
-    train = data['train'][:,:-3]
+    train = data['train']
     print('train', train.shape)
-    test = data['test'][:,:-3]
-    attention_train = data['train'][:,-3:]
-    attention_test = data['test'][:, -3:]
+    test = data['test']
+    attention_train_list = [data['train_attention'][:,i].tolist() for i in range(data['train_attention'].shape[1])]
+    attention_test_list = [data['train_attention'][:,i].tolist() for i in range(data['train_attention'].shape[1])]
 
 
-    return train, test, (categorical_columns, meta), attention_train, attention_test
+    return train, test, (categorical_columns, meta), attention_train_list, attention_test_list
 
 def get_dataset(FLAGS, evaluation=False):
 
@@ -77,7 +77,7 @@ def get_dataset(FLAGS, evaluation=False):
 
 
   # Create dataset builders for tabular data.
-  train, test, cols, attention_train, attention_test = load_data(FLAGS.data)
+  train, test, cols, attention_train_list, attention_test_list = load_data(FLAGS.data)
   cols_idx = list(np.arange(train.shape[1]))
   dis_idx = cols[0]
   con_idx = [x for x in cols_idx if x not in dis_idx]
@@ -97,12 +97,10 @@ def get_dataset(FLAGS, evaluation=False):
 
   train_cont_data = transformer_con.transform(train_con)
   train_dis_data = transformer_dis.transform(train_dis)
-  print('train', train_cont_data[0,:], train_dis[0,:], cols[1], con_idx)
-  print('train', train_cont_data.shape)
-  FLAGS.src_vocab_size_list = [each['size'] for each in cols[1]['attention']]
+  FLAGS.src_vocab_size_list = [each['size']+1 for each in cols[1]['attention']]
 
   FLAGS.tgt_vocab_size = FLAGS.src_vocab_size_list[0]
   print('FLAGS.src_vocab_size_list', FLAGS.tgt_vocab_size)
 
-  return train, train_cont_data, train_dis_data, test, attention_train, attention_test, (transformer_con, transformer_dis, cols[1]), con_idx, dis_idx
+  return train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, (transformer_con, transformer_dis, cols[1]), con_idx, dis_idx
       

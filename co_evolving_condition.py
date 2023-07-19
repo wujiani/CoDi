@@ -1,4 +1,6 @@
 import os
+
+import torch
 from absl import flags
 # import torch
 # import matplotlib.pyplot as plt
@@ -13,6 +15,7 @@ import logging
 # import numpy as np
 # import pandas as pd
 from utils import *
+from torchvision import transforms
 
 def train(FLAGS):
 
@@ -20,12 +23,13 @@ def train(FLAGS):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     #Load Datasets
-    train, train_cont_data, train_dis_data, test, attention_train, attention_test, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
+    train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
     # for att_i in attention_train
+    attention_tensor_list = [torch.tensor(attention_train) for attention_train in attention_train_list]
 
 
     still_condition = FLAGS.still_condition
-    print('train_dis_data', type(train_dis_data), train_dis_data.shape)
+    # print('train_dis_data', type(train_dis_data), train_dis_data.shape)
     train_iter_cont = DataLoader(train_cont_data, batch_size=FLAGS.training_batch_size)
     # train_iter_dis = DataLoader(train_dis_data, batch_size=FLAGS.training_batch_size)
     datalooper_train_cont = infiniteloop(train_iter_cont)
@@ -128,11 +132,11 @@ def train(FLAGS):
         datalooper_train_dis_list = [0]*len(num_class)
         x_0_dis_list = [0]*len(num_class)
         epoch = 0
-        print('train_cont_data', train_cont_data.shape)
+        print('train_cont_data', train_cont_data)
         train_iter_cont = DataLoader(train_cont_data, batch_size=FLAGS.training_batch_size)
-        # train_iter_dis_list[i] = DataLoader(train_dis_data_list[i], batch_size=FLAGS.training_batch_size)
+        train_iter_attention_list = [DataLoader(torch.tensor(attention_train), batch_size=FLAGS.training_batch_size) for attention_train in attention_train_list]
         datalooper_train_cont = infiniteloop(train_iter_cont)
-        # datalooper_train_dis_list[i] = infiniteloop(train_iter_dis_list[i])
+        datalooper_train_attention_list = [infiniteloop(train_iter_attention) for train_iter_attention in train_iter_attention_list]
         for i in range(len(num_class)):
             # train_iter_con = DataLoader(train_con_data, batch_size=FLAGS.training_batch_size)
             train_iter_dis_list[i] = DataLoader(train_dis_data_list[i], batch_size=FLAGS.training_batch_size)
@@ -143,13 +147,10 @@ def train(FLAGS):
         for step in range(total_steps_both):
             model_cont.train()
             x_0_cont = next(datalooper_train_cont).to(device)
-            print('x_0_cont.shape', x_0_cont.shape)
-
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
 
-            # x_attention = next(datalooper_train_attention).to(device)
-
+            x_attention_list = [next(datalooper_train_attention) for datalooper_train_attention in datalooper_train_attention_list]
             for i in range(len(num_class)):
                 if i != FLAGS.still_condition:
                     # model_con.train()
@@ -162,7 +163,7 @@ def train(FLAGS):
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
             # !dis_loss_list = training_with(x_0_dis_list, trainer_dis_list, FLAGS)
-            cont_loss, dis_loss_list = training_with(x_0_cont, x_0_dis_list, x_attention,
+            cont_loss, dis_loss_list = training_with(x_0_cont, x_0_dis_list, x_attention_list,
                                                      trainer_cont, trainer_dis_list,
                                                      trainer_cont, FLAGS,
                                                      still_cond_used_for_sampling)
@@ -221,7 +222,7 @@ def train(FLAGS):
                     x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
                     for i in range(len(num_class)):
                         log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-                    x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, net_sampler, trainer_dis_list, transformer_con, FLAGS, still_cond_used_for_sampling)
+                    x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, attention_tensor_list, net_sampler, trainer_dis_list, transformer_con, FLAGS, still_cond_used_for_sampling)
                 sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
                 # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
                 x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
@@ -284,7 +285,7 @@ def train(FLAGS):
                 for i in range(len(num_class)):
                     log_x_T_dis_list[i] = log_sample_categorical(
                         torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-                x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, net_sampler, trainer_dis_list,
+                x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list,attention_tensor_list, net_sampler, trainer_dis_list,
                                                    transformer_con, FLAGS, still_cond_used_for_sampling)
             sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
             # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
@@ -334,7 +335,7 @@ def train(FLAGS):
                 for i in range(len(num_class)):
                     log_x_T_dis_list[i] = log_sample_categorical(
                         torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-                x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, net_sampler, trainer_dis_list,
+                x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, attention_tensor_list, net_sampler, trainer_dis_list,
                                                    transformer_con, FLAGS, still_cond_used_for_sampling)
             sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
             # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
