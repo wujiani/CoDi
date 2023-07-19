@@ -25,7 +25,7 @@ def train(FLAGS):
     #Load Datasets
     train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
     # for att_i in attention_train
-    attention_tensor_list = [torch.tensor(attention_train) for attention_train in attention_train_list].to(device)
+    attention_tensor_list = [torch.tensor(attention_train).to(device) for attention_train in attention_train_list]
 
 
     still_condition = FLAGS.still_condition
