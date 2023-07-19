@@ -116,7 +116,7 @@ class MultinomialDiffusion(torch.nn.Module):
 
     def predict_start(self, log_x_t, t, cond, attention):
         x_t = log_x_t
-        out = self._denoise_fn(x_t, t, cond, attention)
+        out = self._denoise_fn(x_t, t, cond, attention, False)
 
         assert out.size(0) == x_t.size(0)
         assert out.size(1) == self.num_classes
