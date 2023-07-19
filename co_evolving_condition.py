@@ -25,7 +25,7 @@ def train(FLAGS):
     #Load Datasets
     train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
     # for att_i in attention_train
-    attention_tensor_list = [torch.tensor(attention_train) for attention_train in attention_train_list]
+    attention_tensor_list = [torch.tensor(attention_train) for attention_train in attention_train_list].to(device)
 
 
     still_condition = FLAGS.still_condition
@@ -150,7 +150,7 @@ def train(FLAGS):
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
 
-            x_attention_list = [next(datalooper_train_attention) for datalooper_train_attention in datalooper_train_attention_list]
+            x_attention_list = [next(datalooper_train_attention) for datalooper_train_attention in datalooper_train_attention_list].to(device)
             for i in range(len(num_class)):
                 if i != FLAGS.still_condition:
                     # model_con.train()
