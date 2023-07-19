@@ -150,7 +150,7 @@ def train(FLAGS):
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
 
-            x_attention_list = [next(datalooper_train_attention) for datalooper_train_attention in datalooper_train_attention_list].to(device)
+            x_attention_list = [next(datalooper_train_attention).to(device) for datalooper_train_attention in datalooper_train_attention_list]
             for i in range(len(num_class)):
                 if i != FLAGS.still_condition:
                     # model_con.train()
