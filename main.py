@@ -47,6 +47,9 @@ flags.DEFINE_integer('dis_input_size', None, help='input_size')
 flags.DEFINE_integer('dis_cond_size', None, help='cond_size')
 flags.DEFINE_integer('dis_output_size', None, help='output_size')
 
+flags.DEFINE_integer('src_vocab_size_list', None, help='attention')
+flags.DEFINE_integer('tgt_vocab_size', None, help='attention')
+
 # Training
 flags.DEFINE_integer('training_batch_size', 2100, help='batch size')
 flags.DEFINE_integer('eval_batch_size', 2100, help='batch size')

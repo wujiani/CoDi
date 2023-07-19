@@ -89,7 +89,7 @@ class tabularUnet(nn.Module):
       dim_out = FLAGS.dis_output_size[i]
     self.outputs = nn.Linear(dim_in, dim_out) #output layer    nn(64, output)
 
-    self.attention = AttentionBlock(FLAGS.src_vocab_size, FLAGS.tgt_vocab_size, len(FLAGS.dis_cond_size))
+    self.attention = AttentionBlock(FLAGS.src_vocab_size_list, FLAGS.tgt_vocab_size, len(FLAGS.src_vocab_size_list))
 
   def forward(self, x, time_cond, cond, x_attention):
     modules = self.all_modules   #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]

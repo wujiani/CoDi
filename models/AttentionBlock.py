@@ -6,7 +6,7 @@ from models.Embedding import PositionalEncoding, TokenEmbedding
 
 
 class AttentionBlock(nn.Module):
-    def __init__(self, src_vocab_size, tgt_vocab_size, n_dis,
+    def __init__(self, src_vocab_size_list, tgt_vocab_size, n_dis,
                  d_model=512, nhead=8, num_encoder_layers=6,
                  num_decoder_layers=6, dim_feedforward=2048,
                  dropout=0.1):
@@ -18,7 +18,7 @@ class AttentionBlock(nn.Module):
                                             dim_feedforward=dim_feedforward,
                                             dropout=dropout)
         self.pos_embedding = PositionalEncoding(d_model=d_model, dropout=dropout)
-        self.src_token_embedding_list = [TokenEmbedding(src_vocab_size, d_model)] * n_dis
+        self.src_token_embedding_list = [TokenEmbedding(src_vocab_size, d_model) for src_vocab_size in src_vocab_size_list]
         self._reset_parameters()
 
     def forward(self, src_list=None, tgt=None, src_mask=None,

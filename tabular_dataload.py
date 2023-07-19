@@ -56,13 +56,16 @@ def _get_columns(metadata):
 def load_data(name, benchmark=False):
     data = _load_file(name + '.npz', np.load)
     meta = _load_file(name + '.json', _load_json)
-
     categorical_columns = _get_columns(meta)
-    train = data['train']
-    test = data['test']
+    print('categorical_columns',categorical_columns)
+    train = data['train'][:,:-3]
+    print('train', train.shape)
+    test = data['test'][:,:-3]
+    attention_train = data['train'][:,-3:]
+    attention_test = data['test'][:, -3:]
 
 
-    return train, test, (categorical_columns, meta)
+    return train, test, (categorical_columns, meta), attention_train, attention_test
 
 def get_dataset(FLAGS, evaluation=False):
 
@@ -74,7 +77,7 @@ def get_dataset(FLAGS, evaluation=False):
 
 
   # Create dataset builders for tabular data.
-  train, test, cols = load_data(FLAGS.data)
+  train, test, cols, attention_train, attention_test = load_data(FLAGS.data)
   cols_idx = list(np.arange(train.shape[1]))
   dis_idx = cols[0]
   con_idx = [x for x in cols_idx if x not in dis_idx]
@@ -95,7 +98,11 @@ def get_dataset(FLAGS, evaluation=False):
   train_cont_data = transformer_con.transform(train_con)
   train_dis_data = transformer_dis.transform(train_dis)
   print('train', train_cont_data[0,:], train_dis[0,:], cols[1], con_idx)
+  print('train', train_cont_data.shape)
+  FLAGS.src_vocab_size_list = [each['size'] for each in cols[1]['attention']]
 
+  FLAGS.tgt_vocab_size = FLAGS.src_vocab_size_list[0]
+  print('FLAGS.src_vocab_size_list', FLAGS.tgt_vocab_size)
 
-  return train, train_cont_data, train_dis_data, test, (transformer_con, transformer_dis, cols[1]), con_idx, dis_idx
+  return train, train_cont_data, train_dis_data, test, attention_train, attention_test, (transformer_con, transformer_dis, cols[1]), con_idx, dis_idx
       

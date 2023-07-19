@@ -20,7 +20,10 @@ def train(FLAGS):
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     #Load Datasets
-    train, train_cont_data, train_dis_data, test, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
+    train, train_cont_data, train_dis_data, test, attention_train, attention_test, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
+    # for att_i in attention_train
+
+
     still_condition = FLAGS.still_condition
     print('train_dis_data', type(train_dis_data), train_dis_data.shape)
     train_iter_cont = DataLoader(train_cont_data, batch_size=FLAGS.training_batch_size)
@@ -125,6 +128,7 @@ def train(FLAGS):
         datalooper_train_dis_list = [0]*len(num_class)
         x_0_dis_list = [0]*len(num_class)
         epoch = 0
+        print('train_cont_data', train_cont_data.shape)
         train_iter_cont = DataLoader(train_cont_data, batch_size=FLAGS.training_batch_size)
         # train_iter_dis_list[i] = DataLoader(train_dis_data_list[i], batch_size=FLAGS.training_batch_size)
         datalooper_train_cont = infiniteloop(train_iter_cont)
@@ -138,13 +142,13 @@ def train(FLAGS):
         writer.flush()
         for step in range(total_steps_both):
             model_cont.train()
-
             x_0_cont = next(datalooper_train_cont).to(device)
+            print('x_0_cont.shape', x_0_cont.shape)
 
                 # ns_con, ns_dis = make_negative_condition(x_0_con, x_0_dis)
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
 
-            x_attention = next(datalooper_train_attention).to(device)
+            # x_attention = next(datalooper_train_attention).to(device)
 
             for i in range(len(num_class)):
                 if i != FLAGS.still_condition:

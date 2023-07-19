@@ -51,6 +51,7 @@ class GeneralTransformer(Transformer):
 
     def fit(self, data, categorical_columns=tuple()):
         self.meta = self.get_metadata(data, categorical_columns)
+        print('self.meta',self.meta)
         self.output_dim = 0
         for info in self.meta:
             if info['type'] in [CONTINUOUS]:
