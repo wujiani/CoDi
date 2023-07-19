@@ -115,8 +115,8 @@ class tabularUnet(nn.Module):
         all_cond = torch.cat([all_cond, cond_], dim=1).float()
 
     # attention
-    attention = self.attention(src_list=x_attention[:-3], tgt=x_attention[-1], src_key_padding_mask=x_attention[-3:-1])
-    x = torch.cat([x, all_cond, attention], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
+    # attention = self.attention(src_list=x_attention[:-3], tgt=x_attention[-1], src_key_padding_mask=x_attention[-3:-1])
+    x = torch.cat([x, all_cond], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
     # x = torch.cat([x], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
     inputs = self.inputs(x) #input layer   nn(input, 64)    #   input  是input data和condition layer的output ,
     # output=64 asa inputs(value)=64
