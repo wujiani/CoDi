@@ -1,0 +1,1358 @@
+,caseid,act,index,last,next,if_para,start_timestamp,end_timestamp,resource
+1,1,Start,1,None,2,0,,,Start
+2,1,Traer informacion estudiante - banner,2,1,3,0,,,Traer informacion estudiante - banner
+3,1,Radicar Solicitud Homologacion,3,2,4,0,,,Radicar Solicitud Homologacion
+4,1,Notificacion estudiante cancelacion soli,4,3,5,0,,,Notificacion estudiante cancelacion soli
+5,1,End,5,4,None,0,,,End
+8,2,Start,8,None,9,0,,,Start
+9,2,Traer informacion estudiante - banner,9,8,10,0,,,Traer informacion estudiante - banner
+10,2,Radicar Solicitud Homologacion,10,9,11,0,,,Radicar Solicitud Homologacion
+11,2,Notificacion estudiante cancelacion soli,11,10,12,0,,,Notificacion estudiante cancelacion soli
+12,2,End,12,11,None,0,,,End
+15,3,Start,15,None,16,0,,,Start
+16,3,Traer informacion estudiante - banner,16,15,17,0,,,Traer informacion estudiante - banner
+17,3,Radicar Solicitud Homologacion,17,16,18,0,,,Radicar Solicitud Homologacion
+18,3,Notificacion estudiante cancelacion soli,18,17,19,0,,,Notificacion estudiante cancelacion soli
+19,3,End,19,18,None,0,,,End
+22,4,Start,22,None,23,0,,,Start
+23,4,Traer informacion estudiante - banner,23,22,24,0,,,Traer informacion estudiante - banner
+24,4,Radicar Solicitud Homologacion,24,23,25,0,,,Radicar Solicitud Homologacion
+25,4,Cancelar Solicitud,25,24,26,0,,,Cancelar Solicitud
+26,4,Notificacion estudiante cancelacion soli,26,25,27,0,,,Notificacion estudiante cancelacion soli
+27,4,End,27,26,None,0,,,End
+30,5,Start,30,None,31,0,,,Start
+31,5,Traer informacion estudiante - banner,31,30,32,0,,,Traer informacion estudiante - banner
+32,5,Radicar Solicitud Homologacion,32,31,33,0,,,Radicar Solicitud Homologacion
+33,5,Validar solicitud,33,32,"(34, 35)",0,,,Validar solicitud
+34,5,Homologacion por grupo de cursos,34,33,37,1,,,Homologacion por grupo de cursos
+35,5,Revisar curso,35,33,36,1,,,Revisar curso
+36,5,Evaluacion curso,36,35,37,1,,,Evaluacion curso
+37,5,Validacion final,37,"(34, 36)",38,0,,,Validacion final
+38,5,Visto Bueno Cierre Proceso,38,37,39,0,,,Visto Bueno Cierre Proceso
+39,5,End,39,38,None,0,,,End
+42,6,Start,42,None,43,0,,,Start
+43,6,Traer informacion estudiante - banner,43,42,44,0,,,Traer informacion estudiante - banner
+44,6,Radicar Solicitud Homologacion,44,43,45,0,,,Radicar Solicitud Homologacion
+45,6,Validar solicitud,45,44,46,0,,,Validar solicitud
+46,6,Homologacion por grupo de cursos,46,45,47,0,,,Homologacion por grupo de cursos
+47,6,End,47,46,None,0,,,End
+50,7,Start,50,None,51,0,,,Start
+51,7,Traer informacion estudiante - banner,51,50,52,0,,,Traer informacion estudiante - banner
+52,7,Radicar Solicitud Homologacion,52,51,53,0,,,Radicar Solicitud Homologacion
+53,7,Validar solicitud,53,52,"(54, 55)",0,,,Validar solicitud
+54,7,Homologacion por grupo de cursos,54,53,57,1,,,Homologacion por grupo de cursos
+55,7,Revisar curso,55,53,56,1,,,Revisar curso
+56,7,Evaluacion curso,56,55,57,1,,,Evaluacion curso
+57,7,Validacion final,57,"(54, 56)",58,0,,,Validacion final
+58,7,Visto Bueno Cierre Proceso,58,57,59,0,,,Visto Bueno Cierre Proceso
+59,7,Transferir Creditos,59,58,60,0,,,Transferir Creditos
+60,7,End,60,59,None,0,,,End
+63,8,Start,63,None,64,0,,,Start
+64,8,Traer informacion estudiante - banner,64,63,65,0,,,Traer informacion estudiante - banner
+65,8,Radicar Solicitud Homologacion,65,64,66,0,,,Radicar Solicitud Homologacion
+66,8,Cancelar Solicitud,66,65,67,0,,,Cancelar Solicitud
+67,8,Notificacion estudiante cancelacion soli,67,66,68,0,,,Notificacion estudiante cancelacion soli
+68,8,End,68,67,None,0,,,End
+71,9,Start,71,None,72,0,,,Start
+72,9,Traer informacion estudiante - banner,72,71,73,0,,,Traer informacion estudiante - banner
+73,9,Radicar Solicitud Homologacion,73,72,74,0,,,Radicar Solicitud Homologacion
+74,9,Validar solicitud,74,73,75,0,,,Validar solicitud
+75,9,Homologacion por grupo de cursos,75,74,76,0,,,Homologacion por grupo de cursos
+76,9,End,76,75,None,0,,,End
+79,10,Start,79,None,80,0,,,Start
+80,10,Traer informacion estudiante - banner,80,79,81,0,,,Traer informacion estudiante - banner
+81,10,Radicar Solicitud Homologacion,81,80,82,0,,,Radicar Solicitud Homologacion
+82,10,Validar solicitud,82,81,83,0,,,Validar solicitud
+83,10,Homologacion por grupo de cursos,83,82,84,0,,,Homologacion por grupo de cursos
+84,10,End,84,83,None,0,,,End
+87,11,Start,87,None,88,0,,,Start
+88,11,Traer informacion estudiante - banner,88,87,89,0,,,Traer informacion estudiante - banner
+89,11,Radicar Solicitud Homologacion,89,88,90,0,,,Radicar Solicitud Homologacion
+90,11,Cancelar Solicitud,90,89,91,0,,,Cancelar Solicitud
+91,11,Notificacion estudiante cancelacion soli,91,90,92,0,,,Notificacion estudiante cancelacion soli
+92,11,End,92,91,None,0,,,End
+95,12,Start,95,None,96,0,,,Start
+96,12,Traer informacion estudiante - banner,96,95,97,0,,,Traer informacion estudiante - banner
+97,12,Radicar Solicitud Homologacion,97,96,98,0,,,Radicar Solicitud Homologacion
+98,12,Cancelar Solicitud,98,97,99,0,,,Cancelar Solicitud
+99,12,Notificacion estudiante cancelacion soli,99,98,100,0,,,Notificacion estudiante cancelacion soli
+100,12,End,100,99,None,0,,,End
+103,13,Start,103,None,104,0,,,Start
+104,13,Traer informacion estudiante - banner,104,103,105,0,,,Traer informacion estudiante - banner
+105,13,Radicar Solicitud Homologacion,105,104,106,0,,,Radicar Solicitud Homologacion
+106,13,Validar solicitud,106,105,"(107, 108)",0,,,Validar solicitud
+107,13,Homologacion por grupo de cursos,107,106,110,1,,,Homologacion por grupo de cursos
+108,13,Revisar curso,108,106,109,1,,,Revisar curso
+109,13,Evaluacion curso,109,108,110,1,,,Evaluacion curso
+110,13,Validar solicitud / pre-homologacion,110,"(107, 109)",111,0,,,Validar solicitud / pre-homologacion
+111,13,Validacion final,111,110,112,0,,,Validacion final
+112,13,Validacion final,112,111,"(113, 114)",0,,,Validacion final
+113,13,Visto Bueno Cierre Proceso,113,112,115,1,,,Visto Bueno Cierre Proceso
+114,13,Visto Bueno Cierre Proceso,114,112,115,1,,,Visto Bueno Cierre Proceso
+115,13,Transferir Creditos,115,"(113, 114)",116,0,,,Transferir Creditos
+116,13,Transferir creditos homologables,116,115,117,0,,,Transferir creditos homologables
+117,13,Transferir creditos homologables,117,116,118,0,,,Transferir creditos homologables
+118,13,Transferir Creditos,118,117,119,0,,,Transferir Creditos
+119,13,Transferir creditos homologables,119,118,120,0,,,Transferir creditos homologables
+120,13,Transferir creditos homologables,120,119,121,0,,,Transferir creditos homologables
+121,13,Transferir creditos homologables,121,120,122,0,,,Transferir creditos homologables
+122,13,End,122,121,None,0,,,End
+125,14,Start,125,None,126,0,,,Start
+126,14,Traer informacion estudiante - banner,126,125,127,0,,,Traer informacion estudiante - banner
+127,14,Radicar Solicitud Homologacion,127,126,128,0,,,Radicar Solicitud Homologacion
+128,14,Cancelar Solicitud,128,127,129,0,,,Cancelar Solicitud
+129,14,Notificacion estudiante cancelacion soli,129,128,130,0,,,Notificacion estudiante cancelacion soli
+130,14,End,130,129,None,0,,,End
+133,15,Start,133,None,134,0,,,Start
+134,15,Traer informacion estudiante - banner,134,133,135,0,,,Traer informacion estudiante - banner
+135,15,Radicar Solicitud Homologacion,135,134,136,0,,,Radicar Solicitud Homologacion
+136,15,Cancelar Solicitud,136,135,137,0,,,Cancelar Solicitud
+137,15,Notificacion estudiante cancelacion soli,137,136,138,0,,,Notificacion estudiante cancelacion soli
+138,15,End,138,137,None,0,,,End
+141,16,Start,141,None,142,0,,,Start
+142,16,Traer informacion estudiante - banner,142,141,143,0,,,Traer informacion estudiante - banner
+143,16,Radicar Solicitud Homologacion,143,142,144,0,,,Radicar Solicitud Homologacion
+144,16,Validar solicitud,144,143,"(145, 146)",0,,,Validar solicitud
+145,16,Homologacion por grupo de cursos,145,144,147,1,,,Homologacion por grupo de cursos
+146,16,Revisar curso,146,144,147,1,,,Revisar curso
+147,16,Evaluacion curso,147,"(145, 146)",148,0,,,Evaluacion curso
+148,16,Validacion final,148,147,149,0,,,Validacion final
+149,16,Visto Bueno Cierre Proceso,149,148,150,0,,,Visto Bueno Cierre Proceso
+150,16,Transferir Creditos,150,149,151,0,,,Transferir Creditos
+151,16,Transferir creditos homologables,151,150,152,0,,,Transferir creditos homologables
+152,16,End,152,151,None,0,,,End
+155,17,Start,155,None,156,0,,,Start
+156,17,Traer informacion estudiante - banner,156,155,157,0,,,Traer informacion estudiante - banner
+157,17,Radicar Solicitud Homologacion,157,156,158,0,,,Radicar Solicitud Homologacion
+158,17,Validar solicitud,158,157,"(159, 160)",0,,,Validar solicitud
+159,17,Homologacion por grupo de cursos,159,158,162,1,,,Homologacion por grupo de cursos
+160,17,Revisar curso,160,158,161,1,,,Revisar curso
+161,17,Evaluacion curso,161,160,162,1,,,Evaluacion curso
+162,17,Validacion final,162,"(159, 161)",163,0,,,Validacion final
+163,17,Visto Bueno Cierre Proceso,163,162,164,0,,,Visto Bueno Cierre Proceso
+164,17,End,164,163,None,0,,,End
+167,18,Start,167,None,168,0,,,Start
+168,18,Traer informacion estudiante - banner,168,167,169,0,,,Traer informacion estudiante - banner
+169,18,Radicar Solicitud Homologacion,169,168,170,0,,,Radicar Solicitud Homologacion
+170,18,Cancelar Solicitud,170,169,171,0,,,Cancelar Solicitud
+171,18,Notificacion estudiante cancelacion soli,171,170,172,0,,,Notificacion estudiante cancelacion soli
+172,18,End,172,171,None,0,,,End
+175,19,Start,175,None,176,0,,,Start
+176,19,Traer informacion estudiante - banner,176,175,177,0,,,Traer informacion estudiante - banner
+177,19,Radicar Solicitud Homologacion,177,176,178,0,,,Radicar Solicitud Homologacion
+178,19,Validar solicitud,178,177,179,0,,,Validar solicitud
+179,19,Homologacion por grupo de cursos,179,178,180,0,,,Homologacion por grupo de cursos
+180,19,End,180,179,None,0,,,End
+183,20,Start,183,None,184,0,,,Start
+184,20,Traer informacion estudiante - banner,184,183,185,0,,,Traer informacion estudiante - banner
+185,20,Radicar Solicitud Homologacion,185,184,186,0,,,Radicar Solicitud Homologacion
+186,20,Validar solicitud,186,185,187,0,,,Validar solicitud
+187,20,Homologacion por grupo de cursos,187,186,188,0,,,Homologacion por grupo de cursos
+188,20,End,188,187,None,0,,,End
+191,21,Start,191,None,192,0,,,Start
+192,21,Traer informacion estudiante - banner,192,191,193,0,,,Traer informacion estudiante - banner
+193,21,Radicar Solicitud Homologacion,193,192,194,0,,,Radicar Solicitud Homologacion
+194,21,Validar solicitud,194,193,"(195, 196)",0,,,Validar solicitud
+195,21,Homologacion por grupo de cursos,195,194,197,1,,,Homologacion por grupo de cursos
+196,21,Revisar curso,196,194,197,1,,,Revisar curso
+197,21,Evaluacion curso,197,"(195, 196)",198,0,,,Evaluacion curso
+198,21,Validar solicitud / pre-homologacion,198,197,199,0,,,Validar solicitud / pre-homologacion
+199,21,End,199,198,None,0,,,End
+202,22,Start,202,None,203,0,,,Start
+203,22,Traer informacion estudiante - banner,203,202,204,0,,,Traer informacion estudiante - banner
+204,22,Radicar Solicitud Homologacion,204,203,205,0,,,Radicar Solicitud Homologacion
+205,22,Validar solicitud,205,204,206,0,,,Validar solicitud
+206,22,Homologacion por grupo de cursos,206,205,207,0,,,Homologacion por grupo de cursos
+207,22,End,207,206,None,0,,,End
+210,23,Start,210,None,211,0,,,Start
+211,23,Traer informacion estudiante - banner,211,210,212,0,,,Traer informacion estudiante - banner
+212,23,Radicar Solicitud Homologacion,212,211,213,0,,,Radicar Solicitud Homologacion
+213,23,Validar solicitud,213,212,214,0,,,Validar solicitud
+214,23,Homologacion por grupo de cursos,214,213,215,0,,,Homologacion por grupo de cursos
+215,23,End,215,214,None,0,,,End
+218,24,Start,218,None,219,0,,,Start
+219,24,Traer informacion estudiante - banner,219,218,220,0,,,Traer informacion estudiante - banner
+220,24,Radicar Solicitud Homologacion,220,219,"(221, 222)",0,,,Radicar Solicitud Homologacion
+221,24,Cancelar Solicitud,221,220,223,1,,,Cancelar Solicitud
+222,24,Validar solicitud,222,220,223,1,,,Validar solicitud
+223,24,Notificacion estudiante cancelacion soli,223,"(221, 222)",224,0,,,Notificacion estudiante cancelacion soli
+224,24,End,224,223,None,0,,,End
+227,25,Start,227,None,228,0,,,Start
+228,25,Traer informacion estudiante - banner,228,227,229,0,,,Traer informacion estudiante - banner
+229,25,Radicar Solicitud Homologacion,229,228,230,0,,,Radicar Solicitud Homologacion
+230,25,Cancelar Solicitud,230,229,231,0,,,Cancelar Solicitud
+231,25,Notificacion estudiante cancelacion soli,231,230,232,0,,,Notificacion estudiante cancelacion soli
+232,25,End,232,231,None,0,,,End
+235,26,Start,235,None,236,0,,,Start
+236,26,Traer informacion estudiante - banner,236,235,237,0,,,Traer informacion estudiante - banner
+237,26,Radicar Solicitud Homologacion,237,236,238,0,,,Radicar Solicitud Homologacion
+238,26,Validar solicitud,238,237,"(239, 240)",0,,,Validar solicitud
+239,26,Homologacion por grupo de cursos,239,238,242,1,,,Homologacion por grupo de cursos
+240,26,Revisar curso,240,238,241,1,,,Revisar curso
+241,26,Evaluacion curso,241,240,242,1,,,Evaluacion curso
+242,26,Validar solicitud / pre-homologacion,242,"(239, 241)",243,0,,,Validar solicitud / pre-homologacion
+243,26,Validacion final,243,242,244,0,,,Validacion final
+244,26,Visto Bueno Cierre Proceso,244,243,245,0,,,Visto Bueno Cierre Proceso
+245,26,Transferir Creditos,245,244,246,0,,,Transferir Creditos
+246,26,Transferir creditos homologables,246,245,247,0,,,Transferir creditos homologables
+247,26,End,247,246,None,0,,,End
+250,27,Start,250,None,251,0,,,Start
+251,27,Traer informacion estudiante - banner,251,250,252,0,,,Traer informacion estudiante - banner
+252,27,Radicar Solicitud Homologacion,252,251,253,0,,,Radicar Solicitud Homologacion
+253,27,Validar solicitud,253,252,254,0,,,Validar solicitud
+254,27,Homologacion por grupo de cursos,254,253,255,0,,,Homologacion por grupo de cursos
+255,27,End,255,254,None,0,,,End
+258,28,Start,258,None,259,0,,,Start
+259,28,Traer informacion estudiante - banner,259,258,260,0,,,Traer informacion estudiante - banner
+260,28,Radicar Solicitud Homologacion,260,259,261,0,,,Radicar Solicitud Homologacion
+261,28,Validar solicitud,261,260,262,0,,,Validar solicitud
+262,28,Homologacion por grupo de cursos,262,261,263,0,,,Homologacion por grupo de cursos
+263,28,End,263,262,None,0,,,End
+266,29,Start,266,None,267,0,,,Start
+267,29,Traer informacion estudiante - banner,267,266,268,0,,,Traer informacion estudiante - banner
+268,29,Radicar Solicitud Homologacion,268,267,269,0,,,Radicar Solicitud Homologacion
+269,29,Validar solicitud,269,268,"(270, 271)",0,,,Validar solicitud
+270,29,Homologacion por grupo de cursos,270,269,273,1,,,Homologacion por grupo de cursos
+271,29,Revisar curso,271,269,272,1,,,Revisar curso
+272,29,Evaluacion curso,272,271,273,1,,,Evaluacion curso
+273,29,Validacion final,273,"(270, 272)",274,0,,,Validacion final
+274,29,Visto Bueno Cierre Proceso,274,273,275,0,,,Visto Bueno Cierre Proceso
+275,29,Transferir creditos homologables,275,274,276,0,,,Transferir creditos homologables
+276,29,Transferir Creditos,276,275,277,0,,,Transferir Creditos
+277,29,End,277,276,None,0,,,End
+280,30,Start,280,None,281,0,,,Start
+281,30,Traer informacion estudiante - banner,281,280,282,0,,,Traer informacion estudiante - banner
+282,30,Radicar Solicitud Homologacion,282,281,283,0,,,Radicar Solicitud Homologacion
+283,30,Validar solicitud,283,282,284,0,,,Validar solicitud
+284,30,Homologacion por grupo de cursos,284,283,285,0,,,Homologacion por grupo de cursos
+285,30,End,285,284,None,0,,,End
+288,31,Start,288,None,289,0,,,Start
+289,31,Traer informacion estudiante - banner,289,288,290,0,,,Traer informacion estudiante - banner
+290,31,Radicar Solicitud Homologacion,290,289,291,0,,,Radicar Solicitud Homologacion
+291,31,Cancelar Solicitud,291,290,292,0,,,Cancelar Solicitud
+292,31,Notificacion estudiante cancelacion soli,292,291,293,0,,,Notificacion estudiante cancelacion soli
+293,31,End,293,292,None,0,,,End
+296,32,Start,296,None,297,0,,,Start
+297,32,Traer informacion estudiante - banner,297,296,298,0,,,Traer informacion estudiante - banner
+298,32,Radicar Solicitud Homologacion,298,297,299,0,,,Radicar Solicitud Homologacion
+299,32,Cancelar Solicitud,299,298,300,0,,,Cancelar Solicitud
+300,32,Notificacion estudiante cancelacion soli,300,299,301,0,,,Notificacion estudiante cancelacion soli
+301,32,End,301,300,None,0,,,End
+304,33,Start,304,None,305,0,,,Start
+305,33,Traer informacion estudiante - banner,305,304,306,0,,,Traer informacion estudiante - banner
+306,33,Radicar Solicitud Homologacion,306,305,307,0,,,Radicar Solicitud Homologacion
+307,33,Validar solicitud,307,306,"(308, 309)",0,,,Validar solicitud
+308,33,Homologacion por grupo de cursos,308,307,311,1,,,Homologacion por grupo de cursos
+309,33,Revisar curso,309,307,310,1,,,Revisar curso
+310,33,Evaluacion curso,310,309,311,1,,,Evaluacion curso
+311,33,Validacion final,311,"(308, 310)",312,0,,,Validacion final
+312,33,Visto Bueno Cierre Proceso,312,311,313,0,,,Visto Bueno Cierre Proceso
+313,33,End,313,312,None,0,,,End
+316,34,Start,316,None,317,0,,,Start
+317,34,Traer informacion estudiante - banner,317,316,318,0,,,Traer informacion estudiante - banner
+318,34,Radicar Solicitud Homologacion,318,317,319,0,,,Radicar Solicitud Homologacion
+319,34,Cancelar Solicitud,319,318,320,0,,,Cancelar Solicitud
+320,34,Notificacion estudiante cancelacion soli,320,319,321,0,,,Notificacion estudiante cancelacion soli
+321,34,End,321,320,None,0,,,End
+324,35,Start,324,None,325,0,,,Start
+325,35,Traer informacion estudiante - banner,325,324,326,0,,,Traer informacion estudiante - banner
+326,35,Radicar Solicitud Homologacion,326,325,327,0,,,Radicar Solicitud Homologacion
+327,35,Notificacion estudiante cancelacion soli,327,326,328,0,,,Notificacion estudiante cancelacion soli
+328,35,End,328,327,None,0,,,End
+331,36,Start,331,None,332,0,,,Start
+332,36,Traer informacion estudiante - banner,332,331,333,0,,,Traer informacion estudiante - banner
+333,36,Radicar Solicitud Homologacion,333,332,"(334, 335)",0,,,Radicar Solicitud Homologacion
+334,36,Cancelar Solicitud,334,333,336,1,,,Cancelar Solicitud
+335,36,Validar solicitud,335,333,336,1,,,Validar solicitud
+336,36,Notificacion estudiante cancelacion soli,336,"(334, 335)",337,0,,,Notificacion estudiante cancelacion soli
+337,36,End,337,336,None,0,,,End
+340,37,Start,340,None,341,0,,,Start
+341,37,Radicar Solicitud Homologacion,341,340,342,0,,,Radicar Solicitud Homologacion
+342,37,End,342,341,None,0,,,End
+345,38,Start,345,None,346,0,,,Start
+346,38,Traer informacion estudiante - banner,346,345,347,0,,,Traer informacion estudiante - banner
+347,38,Radicar Solicitud Homologacion,347,346,348,0,,,Radicar Solicitud Homologacion
+348,38,Validar solicitud,348,347,349,0,,,Validar solicitud
+349,38,Homologacion por grupo de cursos,349,348,350,0,,,Homologacion por grupo de cursos
+350,38,End,350,349,None,0,,,End
+353,39,Start,353,None,354,0,,,Start
+354,39,Traer informacion estudiante - banner,354,353,355,0,,,Traer informacion estudiante - banner
+355,39,Radicar Solicitud Homologacion,355,354,356,0,,,Radicar Solicitud Homologacion
+356,39,Validar solicitud,356,355,357,0,,,Validar solicitud
+357,39,Homologacion por grupo de cursos,357,356,358,0,,,Homologacion por grupo de cursos
+358,39,Cancelar curso,358,357,359,0,,,Cancelar curso
+359,39,End,359,358,None,0,,,End
+362,40,Start,362,None,363,0,,,Start
+363,40,Traer informacion estudiante - banner,363,362,364,0,,,Traer informacion estudiante - banner
+364,40,Radicar Solicitud Homologacion,364,363,365,0,,,Radicar Solicitud Homologacion
+365,40,Cancelar Solicitud,365,364,366,0,,,Cancelar Solicitud
+366,40,Notificacion estudiante cancelacion soli,366,365,367,0,,,Notificacion estudiante cancelacion soli
+367,40,End,367,366,None,0,,,End
+370,41,Start,370,None,371,0,,,Start
+371,41,Traer informacion estudiante - banner,371,370,372,0,,,Traer informacion estudiante - banner
+372,41,Radicar Solicitud Homologacion,372,371,373,0,,,Radicar Solicitud Homologacion
+373,41,Validar solicitud,373,372,"(374, 375)",0,,,Validar solicitud
+374,41,Homologacion por grupo de cursos,374,373,377,1,,,Homologacion por grupo de cursos
+375,41,Revisar curso,375,373,376,1,,,Revisar curso
+376,41,Evaluacion curso,376,375,377,1,,,Evaluacion curso
+377,41,Validacion final,377,"(374, 376)",378,0,,,Validacion final
+378,41,Visto Bueno Cierre Proceso,378,377,379,0,,,Visto Bueno Cierre Proceso
+379,41,End,379,378,None,0,,,End
+382,42,Start,382,None,383,0,,,Start
+383,42,Traer informacion estudiante - banner,383,382,384,0,,,Traer informacion estudiante - banner
+384,42,Radicar Solicitud Homologacion,384,383,385,0,,,Radicar Solicitud Homologacion
+385,42,Validar solicitud,385,384,386,0,,,Validar solicitud
+386,42,Homologacion por grupo de cursos,386,385,387,0,,,Homologacion por grupo de cursos
+387,42,End,387,386,None,0,,,End
+390,43,Start,390,None,391,0,,,Start
+391,43,Traer informacion estudiante - banner,391,390,392,0,,,Traer informacion estudiante - banner
+392,43,Radicar Solicitud Homologacion,392,391,393,0,,,Radicar Solicitud Homologacion
+393,43,Validar solicitud,393,392,"(394, 395)",0,,,Validar solicitud
+394,43,Homologacion por grupo de cursos,394,393,396,1,,,Homologacion por grupo de cursos
+395,43,Revisar curso,395,393,396,1,,,Revisar curso
+396,43,Evaluacion curso,396,"(394, 395)",397,0,,,Evaluacion curso
+397,43,Validar solicitud / pre-homologacion,397,396,398,0,,,Validar solicitud / pre-homologacion
+398,43,End,398,397,None,0,,,End
+401,44,Start,401,None,402,0,,,Start
+402,44,Traer informacion estudiante - banner,402,401,403,0,,,Traer informacion estudiante - banner
+403,44,Radicar Solicitud Homologacion,403,402,404,0,,,Radicar Solicitud Homologacion
+404,44,Cancelar Solicitud,404,403,405,0,,,Cancelar Solicitud
+405,44,Notificacion estudiante cancelacion soli,405,404,406,0,,,Notificacion estudiante cancelacion soli
+406,44,End,406,405,None,0,,,End
+409,45,Start,409,None,410,0,,,Start
+410,45,Traer informacion estudiante - banner,410,409,411,0,,,Traer informacion estudiante - banner
+411,45,Radicar Solicitud Homologacion,411,410,412,0,,,Radicar Solicitud Homologacion
+412,45,Cancelar Solicitud,412,411,413,0,,,Cancelar Solicitud
+413,45,Notificacion estudiante cancelacion soli,413,412,414,0,,,Notificacion estudiante cancelacion soli
+414,45,End,414,413,None,0,,,End
+417,46,Start,417,None,418,0,,,Start
+418,46,Traer informacion estudiante - banner,418,417,419,0,,,Traer informacion estudiante - banner
+419,46,Radicar Solicitud Homologacion,419,418,420,0,,,Radicar Solicitud Homologacion
+420,46,Validar solicitud,420,419,421,0,,,Validar solicitud
+421,46,Homologacion por grupo de cursos,421,420,422,0,,,Homologacion por grupo de cursos
+422,46,End,422,421,None,0,,,End
+425,47,Start,425,None,426,0,,,Start
+426,47,Traer informacion estudiante - banner,426,425,427,0,,,Traer informacion estudiante - banner
+427,47,Radicar Solicitud Homologacion,427,426,428,0,,,Radicar Solicitud Homologacion
+428,47,Validar solicitud,428,427,"(429, 430)",0,,,Validar solicitud
+429,47,Homologacion por grupo de cursos,429,428,431,1,,,Homologacion por grupo de cursos
+430,47,Validacion final,430,428,431,1,,,Validacion final
+431,47,Visto Bueno Cierre Proceso,431,"(429, 430)",432,0,,,Visto Bueno Cierre Proceso
+432,47,End,432,431,None,0,,,End
+435,48,Start,435,None,436,0,,,Start
+436,48,Traer informacion estudiante - banner,436,435,437,0,,,Traer informacion estudiante - banner
+437,48,Radicar Solicitud Homologacion,437,436,438,0,,,Radicar Solicitud Homologacion
+438,48,Validar solicitud,438,437,439,0,,,Validar solicitud
+439,48,Homologacion por grupo de cursos,439,438,440,0,,,Homologacion por grupo de cursos
+440,48,End,440,439,None,0,,,End
+443,49,Start,443,None,444,0,,,Start
+444,49,Traer informacion estudiante - banner,444,443,445,0,,,Traer informacion estudiante - banner
+445,49,Radicar Solicitud Homologacion,445,444,446,0,,,Radicar Solicitud Homologacion
+446,49,Validar solicitud,446,445,447,0,,,Validar solicitud
+447,49,Homologacion por grupo de cursos,447,446,448,0,,,Homologacion por grupo de cursos
+448,49,Revisar curso,448,447,449,0,,,Revisar curso
+449,49,Evaluacion curso,449,448,450,0,,,Evaluacion curso
+450,49,Validar solicitud / pre-homologacion,450,449,451,0,,,Validar solicitud / pre-homologacion
+451,49,End,451,450,None,0,,,End
+454,50,Start,454,None,455,0,,,Start
+455,50,Traer informacion estudiante - banner,455,454,456,0,,,Traer informacion estudiante - banner
+456,50,Radicar Solicitud Homologacion,456,455,457,0,,,Radicar Solicitud Homologacion
+457,50,Notificacion estudiante cancelacion soli,457,456,458,0,,,Notificacion estudiante cancelacion soli
+458,50,End,458,457,None,0,,,End
+461,51,Start,461,None,462,0,,,Start
+462,51,Traer informacion estudiante - banner,462,461,463,0,,,Traer informacion estudiante - banner
+463,51,Radicar Solicitud Homologacion,463,462,464,0,,,Radicar Solicitud Homologacion
+464,51,Cancelar Solicitud,464,463,465,0,,,Cancelar Solicitud
+465,51,Notificacion estudiante cancelacion soli,465,464,466,0,,,Notificacion estudiante cancelacion soli
+466,51,End,466,465,None,0,,,End
+469,52,Start,469,None,470,0,,,Start
+470,52,Traer informacion estudiante - banner,470,469,471,0,,,Traer informacion estudiante - banner
+471,52,Radicar Solicitud Homologacion,471,470,"(472, 473)",0,,,Radicar Solicitud Homologacion
+472,52,Cancelar Solicitud,472,471,474,1,,,Cancelar Solicitud
+473,52,Validar solicitud,473,471,474,1,,,Validar solicitud
+474,52,Notificacion estudiante cancelacion soli,474,"(472, 473)",475,0,,,Notificacion estudiante cancelacion soli
+475,52,End,475,474,None,0,,,End
+478,53,Start,478,None,479,0,,,Start
+479,53,Cancelar Solicitud,479,478,480,0,,,Cancelar Solicitud
+480,53,Traer informacion estudiante - banner,480,479,481,0,,,Traer informacion estudiante - banner
+481,53,Radicar Solicitud Homologacion,481,480,482,0,,,Radicar Solicitud Homologacion
+482,53,Notificacion estudiante cancelacion soli,482,481,483,0,,,Notificacion estudiante cancelacion soli
+483,53,End,483,482,None,0,,,End
+486,54,Start,486,None,487,0,,,Start
+487,54,Traer informacion estudiante - banner,487,486,488,0,,,Traer informacion estudiante - banner
+488,54,Radicar Solicitud Homologacion,488,487,489,0,,,Radicar Solicitud Homologacion
+489,54,Validar solicitud,489,488,490,0,,,Validar solicitud
+490,54,Homologacion por grupo de cursos,490,489,491,0,,,Homologacion por grupo de cursos
+491,54,End,491,490,None,0,,,End
+494,55,Start,494,None,495,0,,,Start
+495,55,Traer informacion estudiante - banner,495,494,496,0,,,Traer informacion estudiante - banner
+496,55,Radicar Solicitud Homologacion,496,495,497,0,,,Radicar Solicitud Homologacion
+497,55,Cancelar Solicitud,497,496,498,0,,,Cancelar Solicitud
+498,55,Notificacion estudiante cancelacion soli,498,497,499,0,,,Notificacion estudiante cancelacion soli
+499,55,End,499,498,None,0,,,End
+502,56,Start,502,None,503,0,,,Start
+503,56,Traer informacion estudiante - banner,503,502,504,0,,,Traer informacion estudiante - banner
+504,56,Radicar Solicitud Homologacion,504,503,505,0,,,Radicar Solicitud Homologacion
+505,56,Cancelar Solicitud,505,504,506,0,,,Cancelar Solicitud
+506,56,Notificacion estudiante cancelacion soli,506,505,507,0,,,Notificacion estudiante cancelacion soli
+507,56,End,507,506,None,0,,,End
+510,57,Start,510,None,511,0,,,Start
+511,57,Traer informacion estudiante - banner,511,510,512,0,,,Traer informacion estudiante - banner
+512,57,Radicar Solicitud Homologacion,512,511,513,0,,,Radicar Solicitud Homologacion
+513,57,Radicar Solicitud Homologacion,513,512,514,0,,,Radicar Solicitud Homologacion
+514,57,Cancelar Solicitud,514,513,515,0,,,Cancelar Solicitud
+515,57,Notificacion estudiante cancelacion soli,515,514,516,0,,,Notificacion estudiante cancelacion soli
+516,57,End,516,515,None,0,,,End
+519,58,Start,519,None,520,0,,,Start
+520,58,Traer informacion estudiante - banner,520,519,521,0,,,Traer informacion estudiante - banner
+521,58,Radicar Solicitud Homologacion,521,520,522,0,,,Radicar Solicitud Homologacion
+522,58,Cancelar Solicitud,522,521,523,0,,,Cancelar Solicitud
+523,58,Notificacion estudiante cancelacion soli,523,522,524,0,,,Notificacion estudiante cancelacion soli
+524,58,End,524,523,None,0,,,End
+527,59,Start,527,None,528,0,,,Start
+528,59,Traer informacion estudiante - banner,528,527,529,0,,,Traer informacion estudiante - banner
+529,59,Radicar Solicitud Homologacion,529,528,530,0,,,Radicar Solicitud Homologacion
+530,59,Cancelar Solicitud,530,529,531,0,,,Cancelar Solicitud
+531,59,Notificacion estudiante cancelacion soli,531,530,532,0,,,Notificacion estudiante cancelacion soli
+532,59,End,532,531,None,0,,,End
+535,60,Start,535,None,536,0,,,Start
+536,60,Traer informacion estudiante - banner,536,535,537,0,,,Traer informacion estudiante - banner
+537,60,Radicar Solicitud Homologacion,537,536,538,0,,,Radicar Solicitud Homologacion
+538,60,Cancelar Solicitud,538,537,539,0,,,Cancelar Solicitud
+539,60,Notificacion estudiante cancelacion soli,539,538,540,0,,,Notificacion estudiante cancelacion soli
+540,60,End,540,539,None,0,,,End
+543,61,Start,543,None,544,0,,,Start
+544,61,Traer informacion estudiante - banner,544,543,545,0,,,Traer informacion estudiante - banner
+545,61,Radicar Solicitud Homologacion,545,544,"(546, 547)",0,,,Radicar Solicitud Homologacion
+546,61,Cancelar Solicitud,546,545,548,1,,,Cancelar Solicitud
+547,61,Validar solicitud,547,545,548,1,,,Validar solicitud
+548,61,Revisar curso,548,"(546, 547)",549,0,,,Revisar curso
+549,61,Notificacion estudiante cancelacion soli,549,548,550,0,,,Notificacion estudiante cancelacion soli
+550,61,End,550,549,None,0,,,End
+553,62,Start,553,None,554,0,,,Start
+554,62,Traer informacion estudiante - banner,554,553,555,0,,,Traer informacion estudiante - banner
+555,62,Radicar Solicitud Homologacion,555,554,556,0,,,Radicar Solicitud Homologacion
+556,62,Cancelar Solicitud,556,555,557,0,,,Cancelar Solicitud
+557,62,Notificacion estudiante cancelacion soli,557,556,558,0,,,Notificacion estudiante cancelacion soli
+558,62,End,558,557,None,0,,,End
+561,63,Start,561,None,562,0,,,Start
+562,63,Traer informacion estudiante - banner,562,561,563,0,,,Traer informacion estudiante - banner
+563,63,Radicar Solicitud Homologacion,563,562,564,0,,,Radicar Solicitud Homologacion
+564,63,Revisar curso,564,563,565,0,,,Revisar curso
+565,63,Validar solicitud,565,564,566,0,,,Validar solicitud
+566,63,Cancelar Solicitud,566,565,567,0,,,Cancelar Solicitud
+567,63,Notificacion estudiante cancelacion soli,567,566,568,0,,,Notificacion estudiante cancelacion soli
+568,63,End,568,567,None,0,,,End
+571,64,Start,571,None,572,0,,,Start
+572,64,Traer informacion estudiante - banner,572,571,573,0,,,Traer informacion estudiante - banner
+573,64,Radicar Solicitud Homologacion,573,572,574,0,,,Radicar Solicitud Homologacion
+574,64,Validar solicitud,574,573,"(575, 576)",0,,,Validar solicitud
+575,64,Homologacion por grupo de cursos,575,574,577,1,,,Homologacion por grupo de cursos
+576,64,Revisar curso,576,574,577,1,,,Revisar curso
+577,64,Evaluacion curso,577,"(575, 576)",578,0,,,Evaluacion curso
+578,64,End,578,577,None,0,,,End
+581,65,Start,581,None,582,0,,,Start
+582,65,Traer informacion estudiante - banner,582,581,583,0,,,Traer informacion estudiante - banner
+583,65,Radicar Solicitud Homologacion,583,582,584,0,,,Radicar Solicitud Homologacion
+584,65,Validar solicitud,584,583,"(585, 586)",0,,,Validar solicitud
+585,65,Homologacion por grupo de cursos,585,584,587,1,,,Homologacion por grupo de cursos
+586,65,Revisar curso,586,584,587,1,,,Revisar curso
+587,65,Evaluacion curso,587,"(585, 586)",588,0,,,Evaluacion curso
+588,65,Validacion final,588,587,589,0,,,Validacion final
+589,65,Visto Bueno Cierre Proceso,589,588,590,0,,,Visto Bueno Cierre Proceso
+590,65,End,590,589,None,0,,,End
+593,66,Start,593,None,594,0,,,Start
+594,66,Traer informacion estudiante - banner,594,593,595,0,,,Traer informacion estudiante - banner
+595,66,Radicar Solicitud Homologacion,595,594,596,0,,,Radicar Solicitud Homologacion
+596,66,Validar solicitud,596,595,"(597, 598)",0,,,Validar solicitud
+597,66,Homologacion por grupo de cursos,597,596,600,1,,,Homologacion por grupo de cursos
+598,66,Revisar curso,598,596,599,1,,,Revisar curso
+599,66,Evaluacion curso,599,598,600,1,,,Evaluacion curso
+600,66,Validar solicitud / pre-homologacion,600,"(597, 599)",601,0,,,Validar solicitud / pre-homologacion
+601,66,Evaluacion curso,601,600,602,0,,,Evaluacion curso
+602,66,End,602,601,None,0,,,End
+605,67,Start,605,None,606,0,,,Start
+606,67,Traer informacion estudiante - banner,606,605,607,0,,,Traer informacion estudiante - banner
+607,67,Radicar Solicitud Homologacion,607,606,608,0,,,Radicar Solicitud Homologacion
+608,67,Cancelar Solicitud,608,607,609,0,,,Cancelar Solicitud
+609,67,Notificacion estudiante cancelacion soli,609,608,610,0,,,Notificacion estudiante cancelacion soli
+610,67,End,610,609,None,0,,,End
+613,68,Start,613,None,614,0,,,Start
+614,68,Traer informacion estudiante - banner,614,613,615,0,,,Traer informacion estudiante - banner
+615,68,Radicar Solicitud Homologacion,615,614,616,0,,,Radicar Solicitud Homologacion
+616,68,Cancelar Solicitud,616,615,617,0,,,Cancelar Solicitud
+617,68,Notificacion estudiante cancelacion soli,617,616,618,0,,,Notificacion estudiante cancelacion soli
+618,68,End,618,617,None,0,,,End
+621,69,Start,621,None,622,0,,,Start
+622,69,Traer informacion estudiante - banner,622,621,623,0,,,Traer informacion estudiante - banner
+623,69,Radicar Solicitud Homologacion,623,622,"(624, 625)",0,,,Radicar Solicitud Homologacion
+624,69,Revisar curso,624,623,626,1,,,Revisar curso
+625,69,Revisar curso,625,623,626,1,,,Revisar curso
+626,69,Validar solicitud,626,"(624, 625)",627,0,,,Validar solicitud
+627,69,End,627,626,None,0,,,End
+630,70,Start,630,None,631,0,,,Start
+631,70,Traer informacion estudiante - banner,631,630,632,0,,,Traer informacion estudiante - banner
+632,70,Radicar Solicitud Homologacion,632,631,633,0,,,Radicar Solicitud Homologacion
+633,70,Cancelar Solicitud,633,632,634,0,,,Cancelar Solicitud
+634,70,Notificacion estudiante cancelacion soli,634,633,635,0,,,Notificacion estudiante cancelacion soli
+635,70,End,635,634,None,0,,,End
+638,71,Start,638,None,"(639, 640)",0,,,Start
+639,71,Homologacion por grupo de cursos,639,638,643,1,,,Homologacion por grupo de cursos
+640,71,Traer informacion estudiante - banner,640,638,641,1,,,Traer informacion estudiante - banner
+641,71,Radicar Solicitud Homologacion,641,640,642,1,,,Radicar Solicitud Homologacion
+642,71,Validar solicitud,642,641,643,1,,,Validar solicitud
+643,71,End,643,"(639, 642)",None,0,,,End
+646,72,Start,646,None,647,0,,,Start
+647,72,Traer informacion estudiante - banner,647,646,648,0,,,Traer informacion estudiante - banner
+648,72,Radicar Solicitud Homologacion,648,647,649,0,,,Radicar Solicitud Homologacion
+649,72,Validar solicitud,649,648,650,0,,,Validar solicitud
+650,72,Homologacion por grupo de cursos,650,649,651,0,,,Homologacion por grupo de cursos
+651,72,End,651,650,None,0,,,End
+654,73,Start,654,None,655,0,,,Start
+655,73,Traer informacion estudiante - banner,655,654,656,0,,,Traer informacion estudiante - banner
+656,73,Radicar Solicitud Homologacion,656,655,657,0,,,Radicar Solicitud Homologacion
+657,73,Cancelar Solicitud,657,656,658,0,,,Cancelar Solicitud
+658,73,Notificacion estudiante cancelacion soli,658,657,659,0,,,Notificacion estudiante cancelacion soli
+659,73,End,659,658,None,0,,,End
+662,74,Start,662,None,663,0,,,Start
+663,74,Traer informacion estudiante - banner,663,662,664,0,,,Traer informacion estudiante - banner
+664,74,Radicar Solicitud Homologacion,664,663,665,0,,,Radicar Solicitud Homologacion
+665,74,Validar solicitud,665,664,"(666, 667)",0,,,Validar solicitud
+666,74,Homologacion por grupo de cursos,666,665,669,1,,,Homologacion por grupo de cursos
+667,74,Revisar curso,667,665,668,1,,,Revisar curso
+668,74,Evaluacion curso,668,667,669,1,,,Evaluacion curso
+669,74,Validacion final,669,"(666, 668)",670,0,,,Validacion final
+670,74,Visto Bueno Cierre Proceso,670,669,671,0,,,Visto Bueno Cierre Proceso
+671,74,Transferir Creditos,671,670,672,0,,,Transferir Creditos
+672,74,Transferir creditos homologables,672,671,673,0,,,Transferir creditos homologables
+673,74,End,673,672,None,0,,,End
+676,75,Start,676,None,677,0,,,Start
+677,75,Traer informacion estudiante - banner,677,676,678,0,,,Traer informacion estudiante - banner
+678,75,Radicar Solicitud Homologacion,678,677,"(679, 680)",0,,,Radicar Solicitud Homologacion
+679,75,Cancelar Solicitud,679,678,681,1,,,Cancelar Solicitud
+680,75,Validar solicitud,680,678,681,1,,,Validar solicitud
+681,75,Revisar curso,681,"(679, 680)",682,0,,,Revisar curso
+682,75,Notificacion estudiante cancelacion soli,682,681,683,0,,,Notificacion estudiante cancelacion soli
+683,75,End,683,682,None,0,,,End
+686,76,Start,686,None,687,0,,,Start
+687,76,Traer informacion estudiante - banner,687,686,688,0,,,Traer informacion estudiante - banner
+688,76,Radicar Solicitud Homologacion,688,687,689,0,,,Radicar Solicitud Homologacion
+689,76,Validar solicitud,689,688,690,0,,,Validar solicitud
+690,76,Homologacion por grupo de cursos,690,689,691,0,,,Homologacion por grupo de cursos
+691,76,End,691,690,None,0,,,End
+694,77,Start,694,None,695,0,,,Start
+695,77,Traer informacion estudiante - banner,695,694,696,0,,,Traer informacion estudiante - banner
+696,77,Radicar Solicitud Homologacion,696,695,"(697, 698)",0,,,Radicar Solicitud Homologacion
+697,77,Cancelar Solicitud,697,696,699,1,,,Cancelar Solicitud
+698,77,Validar solicitud,698,696,699,1,,,Validar solicitud
+699,77,Revisar curso,699,"(697, 698)",700,0,,,Revisar curso
+700,77,Notificacion estudiante cancelacion soli,700,699,701,0,,,Notificacion estudiante cancelacion soli
+701,77,End,701,700,None,0,,,End
+704,78,Start,704,None,705,0,,,Start
+705,78,Traer informacion estudiante - banner,705,704,706,0,,,Traer informacion estudiante - banner
+706,78,Radicar Solicitud Homologacion,706,705,707,0,,,Radicar Solicitud Homologacion
+707,78,Validar solicitud,707,706,"(708, 709)",0,,,Validar solicitud
+708,78,Homologacion por grupo de cursos,708,707,710,1,,,Homologacion por grupo de cursos
+709,78,Revisar curso,709,707,710,1,,,Revisar curso
+710,78,Evaluacion curso,710,"(708, 709)",711,0,,,Evaluacion curso
+711,78,Validar solicitud / pre-homologacion,711,710,712,0,,,Validar solicitud / pre-homologacion
+712,78,End,712,711,None,0,,,End
+715,79,Start,715,None,716,0,,,Start
+716,79,Traer informacion estudiante - banner,716,715,717,0,,,Traer informacion estudiante - banner
+717,79,Radicar Solicitud Homologacion,717,716,718,0,,,Radicar Solicitud Homologacion
+718,79,Cancelar Solicitud,718,717,719,0,,,Cancelar Solicitud
+719,79,Notificacion estudiante cancelacion soli,719,718,720,0,,,Notificacion estudiante cancelacion soli
+720,79,End,720,719,None,0,,,End
+723,80,Start,723,None,724,0,,,Start
+724,80,Traer informacion estudiante - banner,724,723,725,0,,,Traer informacion estudiante - banner
+725,80,Radicar Solicitud Homologacion,725,724,726,0,,,Radicar Solicitud Homologacion
+726,80,Notificacion estudiante cancelacion soli,726,725,727,0,,,Notificacion estudiante cancelacion soli
+727,80,End,727,726,None,0,,,End
+730,81,Start,730,None,731,0,,,Start
+731,81,Traer informacion estudiante - banner,731,730,732,0,,,Traer informacion estudiante - banner
+732,81,Radicar Solicitud Homologacion,732,731,733,0,,,Radicar Solicitud Homologacion
+733,81,Cancelar Solicitud,733,732,734,0,,,Cancelar Solicitud
+734,81,Notificacion estudiante cancelacion soli,734,733,735,0,,,Notificacion estudiante cancelacion soli
+735,81,End,735,734,None,0,,,End
+738,82,Start,738,None,739,0,,,Start
+739,82,Traer informacion estudiante - banner,739,738,740,0,,,Traer informacion estudiante - banner
+740,82,Radicar Solicitud Homologacion,740,739,741,0,,,Radicar Solicitud Homologacion
+741,82,Validar solicitud,741,740,742,0,,,Validar solicitud
+742,82,Homologacion por grupo de cursos,742,741,743,0,,,Homologacion por grupo de cursos
+743,82,End,743,742,None,0,,,End
+746,83,Start,746,None,747,0,,,Start
+747,83,Traer informacion estudiante - banner,747,746,748,0,,,Traer informacion estudiante - banner
+748,83,Radicar Solicitud Homologacion,748,747,749,0,,,Radicar Solicitud Homologacion
+749,83,Validar solicitud,749,748,750,0,,,Validar solicitud
+750,83,Homologacion por grupo de cursos,750,749,751,0,,,Homologacion por grupo de cursos
+751,83,End,751,750,None,0,,,End
+754,84,Start,754,None,755,0,,,Start
+755,84,Traer informacion estudiante - banner,755,754,756,0,,,Traer informacion estudiante - banner
+756,84,Radicar Solicitud Homologacion,756,755,757,0,,,Radicar Solicitud Homologacion
+757,84,Cancelar Solicitud,757,756,758,0,,,Cancelar Solicitud
+758,84,Notificacion estudiante cancelacion soli,758,757,759,0,,,Notificacion estudiante cancelacion soli
+759,84,End,759,758,None,0,,,End
+762,85,Start,762,None,763,0,,,Start
+763,85,Traer informacion estudiante - banner,763,762,764,0,,,Traer informacion estudiante - banner
+764,85,Radicar Solicitud Homologacion,764,763,765,0,,,Radicar Solicitud Homologacion
+765,85,Cancelar Solicitud,765,764,766,0,,,Cancelar Solicitud
+766,85,Notificacion estudiante cancelacion soli,766,765,767,0,,,Notificacion estudiante cancelacion soli
+767,85,End,767,766,None,0,,,End
+770,86,Start,770,None,771,0,,,Start
+771,86,Traer informacion estudiante - banner,771,770,772,0,,,Traer informacion estudiante - banner
+772,86,Radicar Solicitud Homologacion,772,771,773,0,,,Radicar Solicitud Homologacion
+773,86,Cancelar Solicitud,773,772,774,0,,,Cancelar Solicitud
+774,86,Notificacion estudiante cancelacion soli,774,773,775,0,,,Notificacion estudiante cancelacion soli
+775,86,End,775,774,None,0,,,End
+778,87,Start,778,None,779,0,,,Start
+779,87,Traer informacion estudiante - banner,779,778,780,0,,,Traer informacion estudiante - banner
+780,87,Radicar Solicitud Homologacion,780,779,781,0,,,Radicar Solicitud Homologacion
+781,87,Cancelar Solicitud,781,780,782,0,,,Cancelar Solicitud
+782,87,Notificacion estudiante cancelacion soli,782,781,783,0,,,Notificacion estudiante cancelacion soli
+783,87,End,783,782,None,0,,,End
+786,88,Start,786,None,787,0,,,Start
+787,88,Traer informacion estudiante - banner,787,786,788,0,,,Traer informacion estudiante - banner
+788,88,Radicar Solicitud Homologacion,788,787,789,0,,,Radicar Solicitud Homologacion
+789,88,Cancelar Solicitud,789,788,790,0,,,Cancelar Solicitud
+790,88,Notificacion estudiante cancelacion soli,790,789,791,0,,,Notificacion estudiante cancelacion soli
+791,88,End,791,790,None,0,,,End
+794,89,Start,794,None,795,0,,,Start
+795,89,Traer informacion estudiante - banner,795,794,796,0,,,Traer informacion estudiante - banner
+796,89,Radicar Solicitud Homologacion,796,795,"(797, 798)",0,,,Radicar Solicitud Homologacion
+797,89,Cancelar Solicitud,797,796,799,1,,,Cancelar Solicitud
+798,89,Validar solicitud,798,796,799,1,,,Validar solicitud
+799,89,Notificacion estudiante cancelacion soli,799,"(797, 798)",800,0,,,Notificacion estudiante cancelacion soli
+800,89,End,800,799,None,0,,,End
+803,90,Start,803,None,804,0,,,Start
+804,90,Traer informacion estudiante - banner,804,803,805,0,,,Traer informacion estudiante - banner
+805,90,Radicar Solicitud Homologacion,805,804,806,0,,,Radicar Solicitud Homologacion
+806,90,Cancelar Solicitud,806,805,807,0,,,Cancelar Solicitud
+807,90,Notificacion estudiante cancelacion soli,807,806,808,0,,,Notificacion estudiante cancelacion soli
+808,90,End,808,807,None,0,,,End
+811,91,Start,811,None,812,0,,,Start
+812,91,Traer informacion estudiante - banner,812,811,813,0,,,Traer informacion estudiante - banner
+813,91,Radicar Solicitud Homologacion,813,812,814,0,,,Radicar Solicitud Homologacion
+814,91,Validar solicitud,814,813,815,0,,,Validar solicitud
+815,91,Homologacion por grupo de cursos,815,814,816,0,,,Homologacion por grupo de cursos
+816,91,End,816,815,None,0,,,End
+819,92,Start,819,None,820,0,,,Start
+820,92,Traer informacion estudiante - banner,820,819,821,0,,,Traer informacion estudiante - banner
+821,92,Radicar Solicitud Homologacion,821,820,822,0,,,Radicar Solicitud Homologacion
+822,92,Cancelar Solicitud,822,821,823,0,,,Cancelar Solicitud
+823,92,Notificacion estudiante cancelacion soli,823,822,824,0,,,Notificacion estudiante cancelacion soli
+824,92,End,824,823,None,0,,,End
+827,93,Start,827,None,828,0,,,Start
+828,93,Traer informacion estudiante - banner,828,827,829,0,,,Traer informacion estudiante - banner
+829,93,Radicar Solicitud Homologacion,829,828,830,0,,,Radicar Solicitud Homologacion
+830,93,Validar solicitud,830,829,"(831, 832)",0,,,Validar solicitud
+831,93,Homologacion por grupo de cursos,831,830,833,1,,,Homologacion por grupo de cursos
+832,93,Revisar curso,832,830,833,1,,,Revisar curso
+833,93,Evaluacion curso,833,"(831, 832)",834,0,,,Evaluacion curso
+834,93,Validacion final,834,833,835,0,,,Validacion final
+835,93,Visto Bueno Cierre Proceso,835,834,836,0,,,Visto Bueno Cierre Proceso
+836,93,End,836,835,None,0,,,End
+839,94,Start,839,None,840,0,,,Start
+840,94,Traer informacion estudiante - banner,840,839,841,0,,,Traer informacion estudiante - banner
+841,94,Radicar Solicitud Homologacion,841,840,842,0,,,Radicar Solicitud Homologacion
+842,94,Cancelar Solicitud,842,841,843,0,,,Cancelar Solicitud
+843,94,Notificacion estudiante cancelacion soli,843,842,844,0,,,Notificacion estudiante cancelacion soli
+844,94,End,844,843,None,0,,,End
+847,95,Start,847,None,848,0,,,Start
+848,95,Traer informacion estudiante - banner,848,847,849,0,,,Traer informacion estudiante - banner
+849,95,Radicar Solicitud Homologacion,849,848,850,0,,,Radicar Solicitud Homologacion
+850,95,Validar solicitud,850,849,851,0,,,Validar solicitud
+851,95,Homologacion por grupo de cursos,851,850,852,0,,,Homologacion por grupo de cursos
+852,95,End,852,851,None,0,,,End
+855,96,Start,855,None,856,0,,,Start
+856,96,Traer informacion estudiante - banner,856,855,857,0,,,Traer informacion estudiante - banner
+857,96,Radicar Solicitud Homologacion,857,856,858,0,,,Radicar Solicitud Homologacion
+858,96,Validar solicitud,858,857,859,0,,,Validar solicitud
+859,96,Homologacion por grupo de cursos,859,858,860,0,,,Homologacion por grupo de cursos
+860,96,Validar solicitud / pre-homologacion,860,859,861,0,,,Validar solicitud / pre-homologacion
+861,96,End,861,860,None,0,,,End
+864,97,Start,864,None,865,0,,,Start
+865,97,Traer informacion estudiante - banner,865,864,866,0,,,Traer informacion estudiante - banner
+866,97,Radicar Solicitud Homologacion,866,865,867,0,,,Radicar Solicitud Homologacion
+867,97,Cancelar Solicitud,867,866,868,0,,,Cancelar Solicitud
+868,97,Notificacion estudiante cancelacion soli,868,867,869,0,,,Notificacion estudiante cancelacion soli
+869,97,End,869,868,None,0,,,End
+872,98,Start,872,None,873,0,,,Start
+873,98,Traer informacion estudiante - banner,873,872,874,0,,,Traer informacion estudiante - banner
+874,98,Radicar Solicitud Homologacion,874,873,875,0,,,Radicar Solicitud Homologacion
+875,98,Cancelar Solicitud,875,874,876,0,,,Cancelar Solicitud
+876,98,Notificacion estudiante cancelacion soli,876,875,877,0,,,Notificacion estudiante cancelacion soli
+877,98,End,877,876,None,0,,,End
+880,99,Start,880,None,881,0,,,Start
+881,99,Traer informacion estudiante - banner,881,880,882,0,,,Traer informacion estudiante - banner
+882,99,Radicar Solicitud Homologacion,882,881,883,0,,,Radicar Solicitud Homologacion
+883,99,Notificacion estudiante cancelacion soli,883,882,884,0,,,Notificacion estudiante cancelacion soli
+884,99,End,884,883,None,0,,,End
+887,100,Start,887,None,888,0,,,Start
+888,100,Traer informacion estudiante - banner,888,887,889,0,,,Traer informacion estudiante - banner
+889,100,Radicar Solicitud Homologacion,889,888,890,0,,,Radicar Solicitud Homologacion
+890,100,Cancelar Solicitud,890,889,891,0,,,Cancelar Solicitud
+891,100,Notificacion estudiante cancelacion soli,891,890,892,0,,,Notificacion estudiante cancelacion soli
+892,100,End,892,891,None,0,,,End
+895,101,Start,895,None,896,0,,,Start
+896,101,Traer informacion estudiante - banner,896,895,897,0,,,Traer informacion estudiante - banner
+897,101,Radicar Solicitud Homologacion,897,896,"(898, 899)",0,,,Radicar Solicitud Homologacion
+898,101,Cancelar Solicitud,898,897,900,1,,,Cancelar Solicitud
+899,101,Validar solicitud,899,897,900,1,,,Validar solicitud
+900,101,Notificacion estudiante cancelacion soli,900,"(898, 899)",901,0,,,Notificacion estudiante cancelacion soli
+901,101,End,901,900,None,0,,,End
+904,102,Start,904,None,905,0,,,Start
+905,102,Traer informacion estudiante - banner,905,904,906,0,,,Traer informacion estudiante - banner
+906,102,Radicar Solicitud Homologacion,906,905,907,0,,,Radicar Solicitud Homologacion
+907,102,Validar solicitud,907,906,"(908, 909)",0,,,Validar solicitud
+908,102,Homologacion por grupo de cursos,908,907,910,1,,,Homologacion por grupo de cursos
+909,102,Revisar curso,909,907,910,1,,,Revisar curso
+910,102,Evaluacion curso,910,"(908, 909)",911,0,,,Evaluacion curso
+911,102,Validacion final,911,910,912,0,,,Validacion final
+912,102,Visto Bueno Cierre Proceso,912,911,913,0,,,Visto Bueno Cierre Proceso
+913,102,Transferir Creditos,913,912,914,0,,,Transferir Creditos
+914,102,Transferir creditos homologables,914,913,915,0,,,Transferir creditos homologables
+915,102,End,915,914,None,0,,,End
+918,103,Start,918,None,919,0,,,Start
+919,103,Traer informacion estudiante - banner,919,918,920,0,,,Traer informacion estudiante - banner
+920,103,Radicar Solicitud Homologacion,920,919,921,0,,,Radicar Solicitud Homologacion
+921,103,Validar solicitud,921,920,922,0,,,Validar solicitud
+922,103,Homologacion por grupo de cursos,922,921,923,0,,,Homologacion por grupo de cursos
+923,103,End,923,922,None,0,,,End
+926,104,Start,926,None,927,0,,,Start
+927,104,Traer informacion estudiante - banner,927,926,928,0,,,Traer informacion estudiante - banner
+928,104,Radicar Solicitud Homologacion,928,927,929,0,,,Radicar Solicitud Homologacion
+929,104,Validar solicitud,929,928,930,0,,,Validar solicitud
+930,104,Homologacion por grupo de cursos,930,929,931,0,,,Homologacion por grupo de cursos
+931,104,End,931,930,None,0,,,End
+934,105,Start,934,None,935,0,,,Start
+935,105,Traer informacion estudiante - banner,935,934,936,0,,,Traer informacion estudiante - banner
+936,105,Radicar Solicitud Homologacion,936,935,937,0,,,Radicar Solicitud Homologacion
+937,105,Validar solicitud,937,936,938,0,,,Validar solicitud
+938,105,Homologacion por grupo de cursos,938,937,939,0,,,Homologacion por grupo de cursos
+939,105,End,939,938,None,0,,,End
+942,106,Start,942,None,943,0,,,Start
+943,106,Traer informacion estudiante - banner,943,942,944,0,,,Traer informacion estudiante - banner
+944,106,Radicar Solicitud Homologacion,944,943,"(945, 946)",0,,,Radicar Solicitud Homologacion
+945,106,Cancelar Solicitud,945,944,947,1,,,Cancelar Solicitud
+946,106,Validar solicitud,946,944,947,1,,,Validar solicitud
+947,106,Notificacion estudiante cancelacion soli,947,"(945, 946)",948,0,,,Notificacion estudiante cancelacion soli
+948,106,End,948,947,None,0,,,End
+951,107,Start,951,None,952,0,,,Start
+952,107,Traer informacion estudiante - banner,952,951,953,0,,,Traer informacion estudiante - banner
+953,107,Radicar Solicitud Homologacion,953,952,954,0,,,Radicar Solicitud Homologacion
+954,107,Cancelar Solicitud,954,953,955,0,,,Cancelar Solicitud
+955,107,Notificacion estudiante cancelacion soli,955,954,956,0,,,Notificacion estudiante cancelacion soli
+956,107,End,956,955,None,0,,,End
+959,108,Start,959,None,960,0,,,Start
+960,108,Traer informacion estudiante - banner,960,959,961,0,,,Traer informacion estudiante - banner
+961,108,Radicar Solicitud Homologacion,961,960,962,0,,,Radicar Solicitud Homologacion
+962,108,Validar solicitud,962,961,"(963, 964)",0,,,Validar solicitud
+963,108,Homologacion por grupo de cursos,963,962,966,1,,,Homologacion por grupo de cursos
+964,108,Revisar curso,964,962,965,1,,,Revisar curso
+965,108,Evaluacion curso,965,964,966,1,,,Evaluacion curso
+966,108,Validacion final,966,"(963, 965)",967,0,,,Validacion final
+967,108,Visto Bueno Cierre Proceso,967,966,968,0,,,Visto Bueno Cierre Proceso
+968,108,Evaluacion curso,968,967,969,0,,,Evaluacion curso
+969,108,Transferir Creditos,969,968,970,0,,,Transferir Creditos
+970,108,Validacion final,970,969,971,0,,,Validacion final
+971,108,Visto Bueno Cierre Proceso,971,970,972,0,,,Visto Bueno Cierre Proceso
+972,108,Transferir Creditos,972,971,973,0,,,Transferir Creditos
+973,108,End,973,972,None,0,,,End
+976,109,Start,976,None,977,0,,,Start
+977,109,Validar solicitud,977,976,978,0,,,Validar solicitud
+978,109,Cancelar Solicitud,978,977,979,0,,,Cancelar Solicitud
+979,109,Traer informacion estudiante - banner,979,978,980,0,,,Traer informacion estudiante - banner
+980,109,Radicar Solicitud Homologacion,980,979,981,0,,,Radicar Solicitud Homologacion
+981,109,Notificacion estudiante cancelacion soli,981,980,982,0,,,Notificacion estudiante cancelacion soli
+982,109,End,982,981,None,0,,,End
+985,110,Start,985,None,986,0,,,Start
+986,110,Traer informacion estudiante - banner,986,985,987,0,,,Traer informacion estudiante - banner
+987,110,Radicar Solicitud Homologacion,987,986,988,0,,,Radicar Solicitud Homologacion
+988,110,Validar solicitud,988,987,989,0,,,Validar solicitud
+989,110,Homologacion por grupo de cursos,989,988,990,0,,,Homologacion por grupo de cursos
+990,110,End,990,989,None,0,,,End
+993,111,Start,993,None,994,0,,,Start
+994,111,Traer informacion estudiante - banner,994,993,995,0,,,Traer informacion estudiante - banner
+995,111,Radicar Solicitud Homologacion,995,994,996,0,,,Radicar Solicitud Homologacion
+996,111,Radicar Solicitud Homologacion,996,995,997,0,,,Radicar Solicitud Homologacion
+997,111,Notificacion estudiante cancelacion soli,997,996,998,0,,,Notificacion estudiante cancelacion soli
+998,111,End,998,997,None,0,,,End
+1001,112,Start,1001,None,1002,0,,,Start
+1002,112,Traer informacion estudiante - banner,1002,1001,1003,0,,,Traer informacion estudiante - banner
+1003,112,Radicar Solicitud Homologacion,1003,1002,1004,0,,,Radicar Solicitud Homologacion
+1004,112,Notificacion estudiante cancelacion soli,1004,1003,1005,0,,,Notificacion estudiante cancelacion soli
+1005,112,End,1005,1004,None,0,,,End
+1008,113,Start,1008,None,1009,0,,,Start
+1009,113,Traer informacion estudiante - banner,1009,1008,1010,0,,,Traer informacion estudiante - banner
+1010,113,Radicar Solicitud Homologacion,1010,1009,1011,0,,,Radicar Solicitud Homologacion
+1011,113,Validar solicitud,1011,1010,"(1012, 1013)",0,,,Validar solicitud
+1012,113,Homologacion por grupo de cursos,1012,1011,1016,1,,,Homologacion por grupo de cursos
+1013,113,Revisar curso,1013,1011,1014,1,,,Revisar curso
+1014,113,Evaluacion curso,1014,1013,1015,1,,,Evaluacion curso
+1015,113,Validar solicitud / pre-homologacion,1015,1014,1016,1,,,Validar solicitud / pre-homologacion
+1016,113,End,1016,"(1012, 1015)",None,0,,,End
+1019,114,Start,1019,None,1020,0,,,Start
+1020,114,Traer informacion estudiante - banner,1020,1019,1021,0,,,Traer informacion estudiante - banner
+1021,114,Radicar Solicitud Homologacion,1021,1020,1022,0,,,Radicar Solicitud Homologacion
+1022,114,Validar solicitud,1022,1021,1023,0,,,Validar solicitud
+1023,114,Homologacion por grupo de cursos,1023,1022,1024,0,,,Homologacion por grupo de cursos
+1024,114,End,1024,1023,None,0,,,End
+1027,115,Start,1027,None,1028,0,,,Start
+1028,115,Traer informacion estudiante - banner,1028,1027,1029,0,,,Traer informacion estudiante - banner
+1029,115,Radicar Solicitud Homologacion,1029,1028,1030,0,,,Radicar Solicitud Homologacion
+1030,115,Validar solicitud,1030,1029,1031,0,,,Validar solicitud
+1031,115,Homologacion por grupo de cursos,1031,1030,1032,0,,,Homologacion por grupo de cursos
+1032,115,End,1032,1031,None,0,,,End
+1035,116,Start,1035,None,1036,0,,,Start
+1036,116,Traer informacion estudiante - banner,1036,1035,1037,0,,,Traer informacion estudiante - banner
+1037,116,Radicar Solicitud Homologacion,1037,1036,1038,0,,,Radicar Solicitud Homologacion
+1038,116,Cancelar Solicitud,1038,1037,1039,0,,,Cancelar Solicitud
+1039,116,Notificacion estudiante cancelacion soli,1039,1038,1040,0,,,Notificacion estudiante cancelacion soli
+1040,116,End,1040,1039,None,0,,,End
+1043,117,Start,1043,None,1044,0,,,Start
+1044,117,Traer informacion estudiante - banner,1044,1043,1045,0,,,Traer informacion estudiante - banner
+1045,117,Radicar Solicitud Homologacion,1045,1044,1046,0,,,Radicar Solicitud Homologacion
+1046,117,Cancelar Solicitud,1046,1045,1047,0,,,Cancelar Solicitud
+1047,117,Notificacion estudiante cancelacion soli,1047,1046,1048,0,,,Notificacion estudiante cancelacion soli
+1048,117,End,1048,1047,None,0,,,End
+1051,118,Start,1051,None,1052,0,,,Start
+1052,118,Traer informacion estudiante - banner,1052,1051,1053,0,,,Traer informacion estudiante - banner
+1053,118,Radicar Solicitud Homologacion,1053,1052,"(1054, 1055)",0,,,Radicar Solicitud Homologacion
+1054,118,Cancelar Solicitud,1054,1053,1056,1,,,Cancelar Solicitud
+1055,118,Validar solicitud,1055,1053,1056,1,,,Validar solicitud
+1056,118,Notificacion estudiante cancelacion soli,1056,"(1054, 1055)",1057,0,,,Notificacion estudiante cancelacion soli
+1057,118,End,1057,1056,None,0,,,End
+1060,119,Start,1060,None,1061,0,,,Start
+1061,119,Traer informacion estudiante - banner,1061,1060,1062,0,,,Traer informacion estudiante - banner
+1062,119,Radicar Solicitud Homologacion,1062,1061,1063,0,,,Radicar Solicitud Homologacion
+1063,119,Validar solicitud,1063,1062,"(1064, 1065)",0,,,Validar solicitud
+1064,119,Homologacion por grupo de cursos,1064,1063,1067,1,,,Homologacion por grupo de cursos
+1065,119,Revisar curso,1065,1063,1066,1,,,Revisar curso
+1066,119,Evaluacion curso,1066,1065,1067,1,,,Evaluacion curso
+1067,119,Validar solicitud / pre-homologacion,1067,"(1064, 1066)",1068,0,,,Validar solicitud / pre-homologacion
+1068,119,End,1068,1067,None,0,,,End
+1071,120,Start,1071,None,1072,0,,,Start
+1072,120,Traer informacion estudiante - banner,1072,1071,1073,0,,,Traer informacion estudiante - banner
+1073,120,Radicar Solicitud Homologacion,1073,1072,1074,0,,,Radicar Solicitud Homologacion
+1074,120,Cancelar Solicitud,1074,1073,1075,0,,,Cancelar Solicitud
+1075,120,Notificacion estudiante cancelacion soli,1075,1074,1076,0,,,Notificacion estudiante cancelacion soli
+1076,120,End,1076,1075,None,0,,,End
+1079,121,Start,1079,None,1080,0,,,Start
+1080,121,Traer informacion estudiante - banner,1080,1079,1081,0,,,Traer informacion estudiante - banner
+1081,121,Radicar Solicitud Homologacion,1081,1080,1082,0,,,Radicar Solicitud Homologacion
+1082,121,Cancelar Solicitud,1082,1081,1083,0,,,Cancelar Solicitud
+1083,121,Validar solicitud,1083,1082,1084,0,,,Validar solicitud
+1084,121,Notificacion estudiante cancelacion soli,1084,1083,1085,0,,,Notificacion estudiante cancelacion soli
+1085,121,End,1085,1084,None,0,,,End
+1088,122,Start,1088,None,1089,0,,,Start
+1089,122,Traer informacion estudiante - banner,1089,1088,1090,0,,,Traer informacion estudiante - banner
+1090,122,Radicar Solicitud Homologacion,1090,1089,1091,0,,,Radicar Solicitud Homologacion
+1091,122,Validar solicitud,1091,1090,"(1092, 1093)",0,,,Validar solicitud
+1092,122,Homologacion por grupo de cursos,1092,1091,1094,1,,,Homologacion por grupo de cursos
+1093,122,Revisar curso,1093,1091,1094,1,,,Revisar curso
+1094,122,Evaluacion curso,1094,"(1092, 1093)",1095,0,,,Evaluacion curso
+1095,122,Validacion final,1095,1094,1096,0,,,Validacion final
+1096,122,Visto Bueno Cierre Proceso,1096,1095,1097,0,,,Visto Bueno Cierre Proceso
+1097,122,End,1097,1096,None,0,,,End
+1100,123,Start,1100,None,1101,0,,,Start
+1101,123,Traer informacion estudiante - banner,1101,1100,1102,0,,,Traer informacion estudiante - banner
+1102,123,Radicar Solicitud Homologacion,1102,1101,1103,0,,,Radicar Solicitud Homologacion
+1103,123,Validar solicitud,1103,1102,"(1104, 1105)",0,,,Validar solicitud
+1104,123,Homologacion por grupo de cursos,1104,1103,1107,1,,,Homologacion por grupo de cursos
+1105,123,Revisar curso,1105,1103,1106,1,,,Revisar curso
+1106,123,Evaluacion curso,1106,1105,1107,1,,,Evaluacion curso
+1107,123,End,1107,"(1104, 1106)",None,0,,,End
+1110,124,Start,1110,None,1111,0,,,Start
+1111,124,Traer informacion estudiante - banner,1111,1110,1112,0,,,Traer informacion estudiante - banner
+1112,124,Radicar Solicitud Homologacion,1112,1111,1113,0,,,Radicar Solicitud Homologacion
+1113,124,Validar solicitud,1113,1112,1114,0,,,Validar solicitud
+1114,124,Homologacion por grupo de cursos,1114,1113,1115,0,,,Homologacion por grupo de cursos
+1115,124,End,1115,1114,None,0,,,End
+1118,125,Start,1118,None,1119,0,,,Start
+1119,125,Traer informacion estudiante - banner,1119,1118,1120,0,,,Traer informacion estudiante - banner
+1120,125,Radicar Solicitud Homologacion,1120,1119,1121,0,,,Radicar Solicitud Homologacion
+1121,125,Validar solicitud,1121,1120,"(1122, 1123)",0,,,Validar solicitud
+1122,125,Homologacion por grupo de cursos,1122,1121,1125,1,,,Homologacion por grupo de cursos
+1123,125,Revisar curso,1123,1121,1124,1,,,Revisar curso
+1124,125,Evaluacion curso,1124,1123,1125,1,,,Evaluacion curso
+1125,125,Validacion final,1125,"(1122, 1124)",1126,0,,,Validacion final
+1126,125,Visto Bueno Cierre Proceso,1126,1125,1127,0,,,Visto Bueno Cierre Proceso
+1127,125,Transferir Creditos,1127,1126,1128,0,,,Transferir Creditos
+1128,125,Transferir creditos homologables,1128,1127,1129,0,,,Transferir creditos homologables
+1129,125,Transferir creditos homologables,1129,1128,1130,0,,,Transferir creditos homologables
+1130,125,Transferir creditos homologables,1130,1129,1131,0,,,Transferir creditos homologables
+1131,125,End,1131,1130,None,0,,,End
+1134,126,Start,1134,None,1135,0,,,Start
+1135,126,Traer informacion estudiante - banner,1135,1134,1136,0,,,Traer informacion estudiante - banner
+1136,126,Radicar Solicitud Homologacion,1136,1135,1137,0,,,Radicar Solicitud Homologacion
+1137,126,Validar solicitud,1137,1136,1138,0,,,Validar solicitud
+1138,126,Homologacion por grupo de cursos,1138,1137,1139,0,,,Homologacion por grupo de cursos
+1139,126,End,1139,1138,None,0,,,End
+1142,127,Start,1142,None,1143,0,,,Start
+1143,127,Traer informacion estudiante - banner,1143,1142,1144,0,,,Traer informacion estudiante - banner
+1144,127,Radicar Solicitud Homologacion,1144,1143,1145,0,,,Radicar Solicitud Homologacion
+1145,127,Validar solicitud,1145,1144,1146,0,,,Validar solicitud
+1146,127,Homologacion por grupo de cursos,1146,1145,1147,0,,,Homologacion por grupo de cursos
+1147,127,End,1147,1146,None,0,,,End
+1150,128,Start,1150,None,1151,0,,,Start
+1151,128,Traer informacion estudiante - banner,1151,1150,1152,0,,,Traer informacion estudiante - banner
+1152,128,Radicar Solicitud Homologacion,1152,1151,1153,0,,,Radicar Solicitud Homologacion
+1153,128,Cancelar Solicitud,1153,1152,1154,0,,,Cancelar Solicitud
+1154,128,Notificacion estudiante cancelacion soli,1154,1153,1155,0,,,Notificacion estudiante cancelacion soli
+1155,128,End,1155,1154,None,0,,,End
+1158,129,Start,1158,None,1159,0,,,Start
+1159,129,Traer informacion estudiante - banner,1159,1158,1160,0,,,Traer informacion estudiante - banner
+1160,129,Radicar Solicitud Homologacion,1160,1159,1161,0,,,Radicar Solicitud Homologacion
+1161,129,Validar solicitud,1161,1160,1162,0,,,Validar solicitud
+1162,129,Homologacion por grupo de cursos,1162,1161,1163,0,,,Homologacion por grupo de cursos
+1163,129,End,1163,1162,None,0,,,End
+1166,130,Start,1166,None,1167,0,,,Start
+1167,130,Traer informacion estudiante - banner,1167,1166,1168,0,,,Traer informacion estudiante - banner
+1168,130,Radicar Solicitud Homologacion,1168,1167,1169,0,,,Radicar Solicitud Homologacion
+1169,130,Validar solicitud,1169,1168,"(1170, 1171)",0,,,Validar solicitud
+1170,130,Homologacion por grupo de cursos,1170,1169,1173,1,,,Homologacion por grupo de cursos
+1171,130,Revisar curso,1171,1169,1172,1,,,Revisar curso
+1172,130,Evaluacion curso,1172,1171,1173,1,,,Evaluacion curso
+1173,130,Validacion final,1173,"(1170, 1172)",1174,0,,,Validacion final
+1174,130,Visto Bueno Cierre Proceso,1174,1173,1175,0,,,Visto Bueno Cierre Proceso
+1175,130,End,1175,1174,None,0,,,End
+1178,131,Start,1178,None,1179,0,,,Start
+1179,131,Traer informacion estudiante - banner,1179,1178,1180,0,,,Traer informacion estudiante - banner
+1180,131,Radicar Solicitud Homologacion,1180,1179,1181,0,,,Radicar Solicitud Homologacion
+1181,131,Cancelar Solicitud,1181,1180,1182,0,,,Cancelar Solicitud
+1182,131,Notificacion estudiante cancelacion soli,1182,1181,1183,0,,,Notificacion estudiante cancelacion soli
+1183,131,End,1183,1182,None,0,,,End
+1186,132,Start,1186,None,1187,0,,,Start
+1187,132,Notificacion estudiante cancelacion soli,1187,1186,1188,0,,,Notificacion estudiante cancelacion soli
+1188,132,Traer informacion estudiante - banner,1188,1187,1189,0,,,Traer informacion estudiante - banner
+1189,132,Radicar Solicitud Homologacion,1189,1188,1190,0,,,Radicar Solicitud Homologacion
+1190,132,Cancelar Solicitud,1190,1189,1191,0,,,Cancelar Solicitud
+1191,132,End,1191,1190,None,0,,,End
+1194,133,Start,1194,None,1195,0,,,Start
+1195,133,Traer informacion estudiante - banner,1195,1194,1196,0,,,Traer informacion estudiante - banner
+1196,133,Radicar Solicitud Homologacion,1196,1195,1197,0,,,Radicar Solicitud Homologacion
+1197,133,Notificacion estudiante cancelacion soli,1197,1196,1198,0,,,Notificacion estudiante cancelacion soli
+1198,133,End,1198,1197,None,0,,,End
+1201,134,Start,1201,None,1202,0,,,Start
+1202,134,Traer informacion estudiante - banner,1202,1201,1203,0,,,Traer informacion estudiante - banner
+1203,134,Radicar Solicitud Homologacion,1203,1202,1204,0,,,Radicar Solicitud Homologacion
+1204,134,Cancelar Solicitud,1204,1203,1205,0,,,Cancelar Solicitud
+1205,134,Notificacion estudiante cancelacion soli,1205,1204,1206,0,,,Notificacion estudiante cancelacion soli
+1206,134,End,1206,1205,None,0,,,End
+1209,135,Start,1209,None,1210,0,,,Start
+1210,135,Traer informacion estudiante - banner,1210,1209,1211,0,,,Traer informacion estudiante - banner
+1211,135,Radicar Solicitud Homologacion,1211,1210,1212,0,,,Radicar Solicitud Homologacion
+1212,135,Cancelar Solicitud,1212,1211,1213,0,,,Cancelar Solicitud
+1213,135,Notificacion estudiante cancelacion soli,1213,1212,1214,0,,,Notificacion estudiante cancelacion soli
+1214,135,End,1214,1213,None,0,,,End
+1217,136,Start,1217,None,1218,0,,,Start
+1218,136,Traer informacion estudiante - banner,1218,1217,1219,0,,,Traer informacion estudiante - banner
+1219,136,Radicar Solicitud Homologacion,1219,1218,1220,0,,,Radicar Solicitud Homologacion
+1220,136,Validar solicitud,1220,1219,1221,0,,,Validar solicitud
+1221,136,Homologacion por grupo de cursos,1221,1220,1222,0,,,Homologacion por grupo de cursos
+1222,136,End,1222,1221,None,0,,,End
+1225,137,Start,1225,None,1226,0,,,Start
+1226,137,Traer informacion estudiante - banner,1226,1225,1227,0,,,Traer informacion estudiante - banner
+1227,137,Radicar Solicitud Homologacion,1227,1226,1228,0,,,Radicar Solicitud Homologacion
+1228,137,Notificacion estudiante cancelacion soli,1228,1227,1229,0,,,Notificacion estudiante cancelacion soli
+1229,137,End,1229,1228,None,0,,,End
+1232,138,Start,1232,None,1233,0,,,Start
+1233,138,Traer informacion estudiante - banner,1233,1232,1234,0,,,Traer informacion estudiante - banner
+1234,138,Radicar Solicitud Homologacion,1234,1233,1235,0,,,Radicar Solicitud Homologacion
+1235,138,Validar solicitud,1235,1234,1236,0,,,Validar solicitud
+1236,138,Homologacion por grupo de cursos,1236,1235,1237,0,,,Homologacion por grupo de cursos
+1237,138,End,1237,1236,None,0,,,End
+1240,139,Start,1240,None,1241,0,,,Start
+1241,139,Traer informacion estudiante - banner,1241,1240,1242,0,,,Traer informacion estudiante - banner
+1242,139,Radicar Solicitud Homologacion,1242,1241,1243,0,,,Radicar Solicitud Homologacion
+1243,139,Validar solicitud,1243,1242,1244,0,,,Validar solicitud
+1244,139,Homologacion por grupo de cursos,1244,1243,1245,0,,,Homologacion por grupo de cursos
+1245,139,End,1245,1244,None,0,,,End
+1248,140,Start,1248,None,1249,0,,,Start
+1249,140,Traer informacion estudiante - banner,1249,1248,1250,0,,,Traer informacion estudiante - banner
+1250,140,Radicar Solicitud Homologacion,1250,1249,1251,0,,,Radicar Solicitud Homologacion
+1251,140,Validar solicitud,1251,1250,"(1252, 1253)",0,,,Validar solicitud
+1252,140,Homologacion por grupo de cursos,1252,1251,1254,1,,,Homologacion por grupo de cursos
+1253,140,Revisar curso,1253,1251,1254,1,,,Revisar curso
+1254,140,Evaluacion curso,1254,"(1252, 1253)",1255,0,,,Evaluacion curso
+1255,140,Validar solicitud / pre-homologacion,1255,1254,1256,0,,,Validar solicitud / pre-homologacion
+1256,140,End,1256,1255,None,0,,,End
+1259,141,Start,1259,None,1260,0,,,Start
+1260,141,Traer informacion estudiante - banner,1260,1259,1261,0,,,Traer informacion estudiante - banner
+1261,141,Radicar Solicitud Homologacion,1261,1260,"(1262, 1263)",0,,,Radicar Solicitud Homologacion
+1262,141,Homologacion por grupo de cursos,1262,1261,1264,1,,,Homologacion por grupo de cursos
+1263,141,Validar solicitud,1263,1261,1264,1,,,Validar solicitud
+1264,141,End,1264,"(1262, 1263)",None,0,,,End
+1267,142,Start,1267,None,1268,0,,,Start
+1268,142,Traer informacion estudiante - banner,1268,1267,1269,0,,,Traer informacion estudiante - banner
+1269,142,Radicar Solicitud Homologacion,1269,1268,1270,0,,,Radicar Solicitud Homologacion
+1270,142,Validar solicitud,1270,1269,"(1271, 1272)",0,,,Validar solicitud
+1271,142,Homologacion por grupo de cursos,1271,1270,1274,1,,,Homologacion por grupo de cursos
+1272,142,Revisar curso,1272,1270,1273,1,,,Revisar curso
+1273,142,Evaluacion curso,1273,1272,1274,1,,,Evaluacion curso
+1274,142,Validar solicitud / pre-homologacion,1274,"(1271, 1273)",1275,0,,,Validar solicitud / pre-homologacion
+1275,142,Validacion final,1275,1274,1276,0,,,Validacion final
+1276,142,Visto Bueno Cierre Proceso,1276,1275,1277,0,,,Visto Bueno Cierre Proceso
+1277,142,Transferir Creditos,1277,1276,1278,0,,,Transferir Creditos
+1278,142,Transferir creditos homologables,1278,1277,1279,0,,,Transferir creditos homologables
+1279,142,Transferir creditos homologables,1279,1278,1280,0,,,Transferir creditos homologables
+1280,142,Transferir creditos homologables,1280,1279,1281,0,,,Transferir creditos homologables
+1281,142,Transferir creditos homologables,1281,1280,1282,0,,,Transferir creditos homologables
+1282,142,Transferir creditos homologables,1282,1281,1283,0,,,Transferir creditos homologables
+1283,142,Transferir creditos homologables,1283,1282,1284,0,,,Transferir creditos homologables
+1284,142,End,1284,1283,None,0,,,End
+1287,143,Start,1287,None,1288,0,,,Start
+1288,143,Traer informacion estudiante - banner,1288,1287,1289,0,,,Traer informacion estudiante - banner
+1289,143,Radicar Solicitud Homologacion,1289,1288,1290,0,,,Radicar Solicitud Homologacion
+1290,143,Cancelar Solicitud,1290,1289,1291,0,,,Cancelar Solicitud
+1291,143,Notificacion estudiante cancelacion soli,1291,1290,1292,0,,,Notificacion estudiante cancelacion soli
+1292,143,End,1292,1291,None,0,,,End
+1295,144,Start,1295,None,"(1296, 1299)",0,,,Start
+1296,144,Traer informacion estudiante - banner,1296,1295,1297,1,,,Traer informacion estudiante - banner
+1297,144,Radicar Solicitud Homologacion,1297,1296,1298,1,,,Radicar Solicitud Homologacion
+1298,144,Homologacion por grupo de cursos,1298,1297,1301,1,,,Homologacion por grupo de cursos
+1299,144,Validar solicitud,1299,1295,1300,1,,,Validar solicitud
+1300,144,Homologacion por grupo de cursos,1300,1299,1301,1,,,Homologacion por grupo de cursos
+1301,144,Evaluacion curso,1301,"(1298, 1300)",1302,0,,,Evaluacion curso
+1302,144,Visto Bueno Cierre Proceso,1302,1301,1303,0,,,Visto Bueno Cierre Proceso
+1303,144,Validacion final,1303,1302,1304,0,,,Validacion final
+1304,144,Transferir Creditos,1304,1303,1305,0,,,Transferir Creditos
+1305,144,Transferir creditos homologables,1305,1304,1306,0,,,Transferir creditos homologables
+1306,144,Transferir creditos homologables,1306,1305,1307,0,,,Transferir creditos homologables
+1307,144,Transferir creditos homologables,1307,1306,1308,0,,,Transferir creditos homologables
+1308,144,Transferir creditos homologables,1308,1307,1309,0,,,Transferir creditos homologables
+1309,144,End,1309,1308,None,0,,,End
+1312,145,Start,1312,None,1313,0,,,Start
+1313,145,Traer informacion estudiante - banner,1313,1312,1314,0,,,Traer informacion estudiante - banner
+1314,145,Radicar Solicitud Homologacion,1314,1313,1315,0,,,Radicar Solicitud Homologacion
+1315,145,Cancelar Solicitud,1315,1314,1316,0,,,Cancelar Solicitud
+1316,145,Notificacion estudiante cancelacion soli,1316,1315,1317,0,,,Notificacion estudiante cancelacion soli
+1317,145,End,1317,1316,None,0,,,End
+1320,146,Start,1320,None,1321,0,,,Start
+1321,146,Traer informacion estudiante - banner,1321,1320,1322,0,,,Traer informacion estudiante - banner
+1322,146,Radicar Solicitud Homologacion,1322,1321,1323,0,,,Radicar Solicitud Homologacion
+1323,146,Validar solicitud,1323,1322,"(1324, 1325)",0,,,Validar solicitud
+1324,146,Homologacion por grupo de cursos,1324,1323,1327,1,,,Homologacion por grupo de cursos
+1325,146,Revisar curso,1325,1323,1326,1,,,Revisar curso
+1326,146,Evaluacion curso,1326,1325,1327,1,,,Evaluacion curso
+1327,146,Validacion final,1327,"(1324, 1326)",1328,0,,,Validacion final
+1328,146,Visto Bueno Cierre Proceso,1328,1327,1329,0,,,Visto Bueno Cierre Proceso
+1329,146,End,1329,1328,None,0,,,End
+1332,147,Start,1332,None,1333,0,,,Start
+1333,147,Traer informacion estudiante - banner,1333,1332,1334,0,,,Traer informacion estudiante - banner
+1334,147,Radicar Solicitud Homologacion,1334,1333,1335,0,,,Radicar Solicitud Homologacion
+1335,147,Validar solicitud,1335,1334,1336,0,,,Validar solicitud
+1336,147,Homologacion por grupo de cursos,1336,1335,1337,0,,,Homologacion por grupo de cursos
+1337,147,End,1337,1336,None,0,,,End
+1340,148,Start,1340,None,1341,0,,,Start
+1341,148,Traer informacion estudiante - banner,1341,1340,1342,0,,,Traer informacion estudiante - banner
+1342,148,Radicar Solicitud Homologacion,1342,1341,1343,0,,,Radicar Solicitud Homologacion
+1343,148,Validar solicitud,1343,1342,"(1344, 1345)",0,,,Validar solicitud
+1344,148,Homologacion por grupo de cursos,1344,1343,1347,1,,,Homologacion por grupo de cursos
+1345,148,Revisar curso,1345,1343,1346,1,,,Revisar curso
+1346,148,Evaluacion curso,1346,1345,1347,1,,,Evaluacion curso
+1347,148,Validar solicitud / pre-homologacion,1347,"(1344, 1346)",1348,0,,,Validar solicitud / pre-homologacion
+1348,148,Validacion final,1348,1347,1349,0,,,Validacion final
+1349,148,Visto Bueno Cierre Proceso,1349,1348,1350,0,,,Visto Bueno Cierre Proceso
+1350,148,Transferir Creditos,1350,1349,1351,0,,,Transferir Creditos
+1351,148,Transferir creditos homologables,1351,1350,1352,0,,,Transferir creditos homologables
+1352,148,Transferir creditos homologables,1352,1351,1353,0,,,Transferir creditos homologables
+1353,148,Transferir creditos homologables,1353,1352,1354,0,,,Transferir creditos homologables
+1354,148,Transferir creditos homologables,1354,1353,1355,0,,,Transferir creditos homologables
+1355,148,Transferir creditos homologables,1355,1354,1356,0,,,Transferir creditos homologables
+1356,148,Transferir creditos homologables,1356,1355,1357,0,,,Transferir creditos homologables
+1357,148,End,1357,1356,None,0,,,End
+1360,149,Start,1360,None,1361,0,,,Start
+1361,149,Traer informacion estudiante - banner,1361,1360,1362,0,,,Traer informacion estudiante - banner
+1362,149,Radicar Solicitud Homologacion,1362,1361,1363,0,,,Radicar Solicitud Homologacion
+1363,149,Cancelar Solicitud,1363,1362,1364,0,,,Cancelar Solicitud
+1364,149,Notificacion estudiante cancelacion soli,1364,1363,1365,0,,,Notificacion estudiante cancelacion soli
+1365,149,End,1365,1364,None,0,,,End
+1368,150,Start,1368,None,1369,0,,,Start
+1369,150,Radicar Solicitud Homologacion,1369,1368,1370,0,,,Radicar Solicitud Homologacion
+1370,150,End,1370,1369,None,0,,,End
+1373,151,Start,1373,None,1374,0,,,Start
+1374,151,Traer informacion estudiante - banner,1374,1373,1375,0,,,Traer informacion estudiante - banner
+1375,151,Radicar Solicitud Homologacion,1375,1374,1376,0,,,Radicar Solicitud Homologacion
+1376,151,Validar solicitud,1376,1375,"(1377, 1378)",0,,,Validar solicitud
+1377,151,Homologacion por grupo de cursos,1377,1376,1379,1,,,Homologacion por grupo de cursos
+1378,151,Revisar curso,1378,1376,1379,1,,,Revisar curso
+1379,151,Evaluacion curso,1379,"(1377, 1378)",1380,0,,,Evaluacion curso
+1380,151,Validar solicitud / pre-homologacion,1380,1379,1381,0,,,Validar solicitud / pre-homologacion
+1381,151,End,1381,1380,None,0,,,End
+1384,152,Start,1384,None,1385,0,,,Start
+1385,152,Traer informacion estudiante - banner,1385,1384,1386,0,,,Traer informacion estudiante - banner
+1386,152,Radicar Solicitud Homologacion,1386,1385,1387,0,,,Radicar Solicitud Homologacion
+1387,152,Cancelar Solicitud,1387,1386,1388,0,,,Cancelar Solicitud
+1388,152,Notificacion estudiante cancelacion soli,1388,1387,1389,0,,,Notificacion estudiante cancelacion soli
+1389,152,End,1389,1388,None,0,,,End
+1392,153,Start,1392,None,1393,0,,,Start
+1393,153,Traer informacion estudiante - banner,1393,1392,1394,0,,,Traer informacion estudiante - banner
+1394,153,Radicar Solicitud Homologacion,1394,1393,1395,0,,,Radicar Solicitud Homologacion
+1395,153,Notificacion estudiante cancelacion soli,1395,1394,1396,0,,,Notificacion estudiante cancelacion soli
+1396,153,Cancelar Solicitud,1396,1395,1397,0,,,Cancelar Solicitud
+1397,153,End,1397,1396,None,0,,,End
+1400,154,Start,1400,None,1401,0,,,Start
+1401,154,Traer informacion estudiante - banner,1401,1400,1402,0,,,Traer informacion estudiante - banner
+1402,154,Radicar Solicitud Homologacion,1402,1401,1403,0,,,Radicar Solicitud Homologacion
+1403,154,Validar solicitud,1403,1402,"(1404, 1405)",0,,,Validar solicitud
+1404,154,Homologacion por grupo de cursos,1404,1403,1407,1,,,Homologacion por grupo de cursos
+1405,154,Revisar curso,1405,1403,1406,1,,,Revisar curso
+1406,154,Evaluacion curso,1406,1405,1407,1,,,Evaluacion curso
+1407,154,Validar solicitud / pre-homologacion,1407,"(1404, 1406)",1408,0,,,Validar solicitud / pre-homologacion
+1408,154,End,1408,1407,None,0,,,End
+1411,155,Start,1411,None,1412,0,,,Start
+1412,155,Traer informacion estudiante - banner,1412,1411,1413,0,,,Traer informacion estudiante - banner
+1413,155,Radicar Solicitud Homologacion,1413,1412,1414,0,,,Radicar Solicitud Homologacion
+1414,155,Cancelar Solicitud,1414,1413,1415,0,,,Cancelar Solicitud
+1415,155,Notificacion estudiante cancelacion soli,1415,1414,1416,0,,,Notificacion estudiante cancelacion soli
+1416,155,End,1416,1415,None,0,,,End
+1419,156,Start,1419,None,1420,0,,,Start
+1420,156,Traer informacion estudiante - banner,1420,1419,1421,0,,,Traer informacion estudiante - banner
+1421,156,Radicar Solicitud Homologacion,1421,1420,1422,0,,,Radicar Solicitud Homologacion
+1422,156,Validar solicitud,1422,1421,"(1423, 1424)",0,,,Validar solicitud
+1423,156,Homologacion por grupo de cursos,1423,1422,1427,1,,,Homologacion por grupo de cursos
+1424,156,Revisar curso,1424,1422,1425,1,,,Revisar curso
+1425,156,Evaluacion curso,1425,1424,1426,1,,,Evaluacion curso
+1426,156,Validar solicitud / pre-homologacion,1426,1425,1427,1,,,Validar solicitud / pre-homologacion
+1427,156,End,1427,"(1423, 1426)",None,0,,,End
+1430,157,Start,1430,None,1431,0,,,Start
+1431,157,Traer informacion estudiante - banner,1431,1430,1432,0,,,Traer informacion estudiante - banner
+1432,157,Radicar Solicitud Homologacion,1432,1431,1433,0,,,Radicar Solicitud Homologacion
+1433,157,Validar solicitud,1433,1432,1434,0,,,Validar solicitud
+1434,157,Homologacion por grupo de cursos,1434,1433,1435,0,,,Homologacion por grupo de cursos
+1435,157,End,1435,1434,None,0,,,End
+1438,158,Start,1438,None,1439,0,,,Start
+1439,158,Traer informacion estudiante - banner,1439,1438,1440,0,,,Traer informacion estudiante - banner
+1440,158,Radicar Solicitud Homologacion,1440,1439,1441,0,,,Radicar Solicitud Homologacion
+1441,158,Validar solicitud,1441,1440,1442,0,,,Validar solicitud
+1442,158,Homologacion por grupo de cursos,1442,1441,1443,0,,,Homologacion por grupo de cursos
+1443,158,End,1443,1442,None,0,,,End
+1446,159,Start,1446,None,1447,0,,,Start
+1447,159,Traer informacion estudiante - banner,1447,1446,1448,0,,,Traer informacion estudiante - banner
+1448,159,Radicar Solicitud Homologacion,1448,1447,1449,0,,,Radicar Solicitud Homologacion
+1449,159,Cancelar Solicitud,1449,1448,1450,0,,,Cancelar Solicitud
+1450,159,Notificacion estudiante cancelacion soli,1450,1449,1451,0,,,Notificacion estudiante cancelacion soli
+1451,159,End,1451,1450,None,0,,,End
+1454,160,Start,1454,None,1455,0,,,Start
+1455,160,Traer informacion estudiante - banner,1455,1454,1456,0,,,Traer informacion estudiante - banner
+1456,160,Radicar Solicitud Homologacion,1456,1455,1457,0,,,Radicar Solicitud Homologacion
+1457,160,Cancelar Solicitud,1457,1456,1458,0,,,Cancelar Solicitud
+1458,160,Notificacion estudiante cancelacion soli,1458,1457,1459,0,,,Notificacion estudiante cancelacion soli
+1459,160,End,1459,1458,None,0,,,End
+1462,161,Start,1462,None,1463,0,,,Start
+1463,161,Traer informacion estudiante - banner,1463,1462,1464,0,,,Traer informacion estudiante - banner
+1464,161,Radicar Solicitud Homologacion,1464,1463,1465,0,,,Radicar Solicitud Homologacion
+1465,161,Validar solicitud,1465,1464,"(1466, 1467, 1468)",0,,,Validar solicitud
+1466,161,Homologacion por grupo de cursos,1466,1465,1470,1,,,Homologacion por grupo de cursos
+1467,161,Recepcion de documentos,1467,1465,1470,1,,,Recepcion de documentos
+1468,161,Revisar curso,1468,1465,1469,1,,,Revisar curso
+1469,161,Evaluacion curso,1469,1468,1470,1,,,Evaluacion curso
+1470,161,Validar solicitud / pre-homologacion,1470,"(1466, 1467, 1469)",1471,0,,,Validar solicitud / pre-homologacion
+1471,161,End,1471,1470,None,0,,,End
+1474,162,Start,1474,None,1475,0,,,Start
+1475,162,Traer informacion estudiante - banner,1475,1474,1476,0,,,Traer informacion estudiante - banner
+1476,162,Radicar Solicitud Homologacion,1476,1475,"(1477, 1478)",0,,,Radicar Solicitud Homologacion
+1477,162,Cancelar Solicitud,1477,1476,1479,1,,,Cancelar Solicitud
+1478,162,Validar solicitud,1478,1476,1479,1,,,Validar solicitud
+1479,162,Revisar curso,1479,"(1477, 1478)",1480,0,,,Revisar curso
+1480,162,Notificacion estudiante cancelacion soli,1480,1479,1481,0,,,Notificacion estudiante cancelacion soli
+1481,162,End,1481,1480,None,0,,,End
+1484,163,Start,1484,None,1485,0,,,Start
+1485,163,Traer informacion estudiante - banner,1485,1484,1486,0,,,Traer informacion estudiante - banner
+1486,163,Radicar Solicitud Homologacion,1486,1485,1487,0,,,Radicar Solicitud Homologacion
+1487,163,Cancelar Solicitud,1487,1486,1488,0,,,Cancelar Solicitud
+1488,163,Notificacion estudiante cancelacion soli,1488,1487,1489,0,,,Notificacion estudiante cancelacion soli
+1489,163,End,1489,1488,None,0,,,End
+1492,164,Start,1492,None,1493,0,,,Start
+1493,164,Traer informacion estudiante - banner,1493,1492,1494,0,,,Traer informacion estudiante - banner
+1494,164,Radicar Solicitud Homologacion,1494,1493,1495,0,,,Radicar Solicitud Homologacion
+1495,164,Validar solicitud,1495,1494,1496,0,,,Validar solicitud
+1496,164,Homologacion por grupo de cursos,1496,1495,1497,0,,,Homologacion por grupo de cursos
+1497,164,End,1497,1496,None,0,,,End
+1500,165,Start,1500,None,1501,0,,,Start
+1501,165,Traer informacion estudiante - banner,1501,1500,1502,0,,,Traer informacion estudiante - banner
+1502,165,Radicar Solicitud Homologacion,1502,1501,1503,0,,,Radicar Solicitud Homologacion
+1503,165,Validar solicitud,1503,1502,1504,0,,,Validar solicitud
+1504,165,Homologacion por grupo de cursos,1504,1503,1505,0,,,Homologacion por grupo de cursos
+1505,165,End,1505,1504,None,0,,,End
+1508,166,Start,1508,None,1509,0,,,Start
+1509,166,Traer informacion estudiante - banner,1509,1508,1510,0,,,Traer informacion estudiante - banner
+1510,166,Radicar Solicitud Homologacion,1510,1509,1511,0,,,Radicar Solicitud Homologacion
+1511,166,Validar solicitud,1511,1510,1512,0,,,Validar solicitud
+1512,166,Homologacion por grupo de cursos,1512,1511,1513,0,,,Homologacion por grupo de cursos
+1513,166,End,1513,1512,None,0,,,End
+1516,167,Start,1516,None,1517,0,,,Start
+1517,167,Traer informacion estudiante - banner,1517,1516,1518,0,,,Traer informacion estudiante - banner
+1518,167,Radicar Solicitud Homologacion,1518,1517,1519,0,,,Radicar Solicitud Homologacion
+1519,167,Validar solicitud,1519,1518,1520,0,,,Validar solicitud
+1520,167,Homologacion por grupo de cursos,1520,1519,1521,0,,,Homologacion por grupo de cursos
+1521,167,Cancelar curso,1521,1520,1522,0,,,Cancelar curso
+1522,167,End,1522,1521,None,0,,,End
+1525,168,Start,1525,None,1526,0,,,Start
+1526,168,Traer informacion estudiante - banner,1526,1525,1527,0,,,Traer informacion estudiante - banner
+1527,168,Radicar Solicitud Homologacion,1527,1526,1528,0,,,Radicar Solicitud Homologacion
+1528,168,Cancelar Solicitud,1528,1527,1529,0,,,Cancelar Solicitud
+1529,168,Notificacion estudiante cancelacion soli,1529,1528,1530,0,,,Notificacion estudiante cancelacion soli
+1530,168,End,1530,1529,None,0,,,End
+1533,169,Start,1533,None,1534,0,,,Start
+1534,169,Traer informacion estudiante - banner,1534,1533,1535,0,,,Traer informacion estudiante - banner
+1535,169,Radicar Solicitud Homologacion,1535,1534,1536,0,,,Radicar Solicitud Homologacion
+1536,169,Validar solicitud,1536,1535,1537,0,,,Validar solicitud
+1537,169,Homologacion por grupo de cursos,1537,1536,1538,0,,,Homologacion por grupo de cursos
+1538,169,End,1538,1537,None,0,,,End
+1541,170,Start,1541,None,1542,0,,,Start
+1542,170,Traer informacion estudiante - banner,1542,1541,1543,0,,,Traer informacion estudiante - banner
+1543,170,Radicar Solicitud Homologacion,1543,1542,1544,0,,,Radicar Solicitud Homologacion
+1544,170,Validar solicitud,1544,1543,"(1545, 1546, 1547)",0,,,Validar solicitud
+1545,170,Homologacion por grupo de cursos,1545,1544,1548,1,,,Homologacion por grupo de cursos
+1546,170,Recepcion de documentos,1546,1544,1548,1,,,Recepcion de documentos
+1547,170,Revisar curso,1547,1544,1548,1,,,Revisar curso
+1548,170,Evaluacion curso,1548,"(1545, 1546, 1547)",1549,0,,,Evaluacion curso
+1549,170,End,1549,1548,None,0,,,End
+1552,171,Start,1552,None,1553,0,,,Start
+1553,171,Traer informacion estudiante - banner,1553,1552,1554,0,,,Traer informacion estudiante - banner
+1554,171,Radicar Solicitud Homologacion,1554,1553,1555,0,,,Radicar Solicitud Homologacion
+1555,171,Validar solicitud,1555,1554,1556,0,,,Validar solicitud
+1556,171,Homologacion por grupo de cursos,1556,1555,1557,0,,,Homologacion por grupo de cursos
+1557,171,End,1557,1556,None,0,,,End
+1560,172,Start,1560,None,1561,0,,,Start
+1561,172,Traer informacion estudiante - banner,1561,1560,1562,0,,,Traer informacion estudiante - banner
+1562,172,Radicar Solicitud Homologacion,1562,1561,1563,0,,,Radicar Solicitud Homologacion
+1563,172,Validar solicitud,1563,1562,"(1564, 1565)",0,,,Validar solicitud
+1564,172,Homologacion por grupo de cursos,1564,1563,1566,1,,,Homologacion por grupo de cursos
+1565,172,Revisar curso,1565,1563,1566,1,,,Revisar curso
+1566,172,Evaluacion curso,1566,"(1564, 1565)",1567,0,,,Evaluacion curso
+1567,172,Validar solicitud / pre-homologacion,1567,1566,1568,0,,,Validar solicitud / pre-homologacion
+1568,172,End,1568,1567,None,0,,,End
+1571,173,Start,1571,None,1572,0,,,Start
+1572,173,Traer informacion estudiante - banner,1572,1571,1573,0,,,Traer informacion estudiante - banner
+1573,173,Radicar Solicitud Homologacion,1573,1572,1574,0,,,Radicar Solicitud Homologacion
+1574,173,Cancelar Solicitud,1574,1573,1575,0,,,Cancelar Solicitud
+1575,173,Notificacion estudiante cancelacion soli,1575,1574,1576,0,,,Notificacion estudiante cancelacion soli
+1576,173,End,1576,1575,None,0,,,End
+1579,174,Start,1579,None,1580,0,,,Start
+1580,174,Traer informacion estudiante - banner,1580,1579,1581,0,,,Traer informacion estudiante - banner
+1581,174,Radicar Solicitud Homologacion,1581,1580,1582,0,,,Radicar Solicitud Homologacion
+1582,174,Cancelar Solicitud,1582,1581,1583,0,,,Cancelar Solicitud
+1583,174,Notificacion estudiante cancelacion soli,1583,1582,1584,0,,,Notificacion estudiante cancelacion soli
+1584,174,End,1584,1583,None,0,,,End
+1587,175,Start,1587,None,1588,0,,,Start
+1588,175,Traer informacion estudiante - banner,1588,1587,1589,0,,,Traer informacion estudiante - banner
+1589,175,Radicar Solicitud Homologacion,1589,1588,"(1590, 1591)",0,,,Radicar Solicitud Homologacion
+1590,175,Cancelar Solicitud,1590,1589,1592,1,,,Cancelar Solicitud
+1591,175,Validar solicitud,1591,1589,1592,1,,,Validar solicitud
+1592,175,Notificacion estudiante cancelacion soli,1592,"(1590, 1591)",1593,0,,,Notificacion estudiante cancelacion soli
+1593,175,End,1593,1592,None,0,,,End
+1596,176,Start,1596,None,1597,0,,,Start
+1597,176,Traer informacion estudiante - banner,1597,1596,1598,0,,,Traer informacion estudiante - banner
+1598,176,Radicar Solicitud Homologacion,1598,1597,1599,0,,,Radicar Solicitud Homologacion
+1599,176,Cancelar Solicitud,1599,1598,1600,0,,,Cancelar Solicitud
+1600,176,Notificacion estudiante cancelacion soli,1600,1599,1601,0,,,Notificacion estudiante cancelacion soli
+1601,176,End,1601,1600,None,0,,,End
+1604,177,Start,1604,None,1605,0,,,Start
+1605,177,Traer informacion estudiante - banner,1605,1604,1606,0,,,Traer informacion estudiante - banner
+1606,177,Radicar Solicitud Homologacion,1606,1605,1607,0,,,Radicar Solicitud Homologacion
+1607,177,Validar solicitud,1607,1606,1608,0,,,Validar solicitud
+1608,177,Validacion final,1608,1607,"(1609, 1610)",0,,,Validacion final
+1609,177,Homologacion por grupo de cursos,1609,1608,1612,1,,,Homologacion por grupo de cursos
+1610,177,Revisar curso,1610,1608,1611,1,,,Revisar curso
+1611,177,Evaluacion curso,1611,1610,1612,1,,,Evaluacion curso
+1612,177,Visto Bueno Cierre Proceso,1612,"(1609, 1611)",1613,0,,,Visto Bueno Cierre Proceso
+1613,177,End,1613,1612,None,0,,,End
+1616,178,Start,1616,None,1617,0,,,Start
+1617,178,Traer informacion estudiante - banner,1617,1616,1618,0,,,Traer informacion estudiante - banner
+1618,178,Radicar Solicitud Homologacion,1618,1617,"(1619, 1620)",0,,,Radicar Solicitud Homologacion
+1619,178,Cancelar Solicitud,1619,1618,1621,1,,,Cancelar Solicitud
+1620,178,Validar solicitud,1620,1618,1621,1,,,Validar solicitud
+1621,178,Revisar curso,1621,"(1619, 1620)",1622,0,,,Revisar curso
+1622,178,Notificacion estudiante cancelacion soli,1622,1621,1623,0,,,Notificacion estudiante cancelacion soli
+1623,178,End,1623,1622,None,0,,,End
+1626,179,Start,1626,None,1627,0,,,Start
+1627,179,Traer informacion estudiante - banner,1627,1626,1628,0,,,Traer informacion estudiante - banner
+1628,179,Radicar Solicitud Homologacion,1628,1627,1629,0,,,Radicar Solicitud Homologacion
+1629,179,Validar solicitud,1629,1628,"(1630, 1631)",0,,,Validar solicitud
+1630,179,Homologacion por grupo de cursos,1630,1629,1632,1,,,Homologacion por grupo de cursos
+1631,179,Revisar curso,1631,1629,1632,1,,,Revisar curso
+1632,179,Evaluacion curso,1632,"(1630, 1631)",1633,0,,,Evaluacion curso
+1633,179,Validacion final,1633,1632,1634,0,,,Validacion final
+1634,179,Visto Bueno Cierre Proceso,1634,1633,1635,0,,,Visto Bueno Cierre Proceso
+1635,179,End,1635,1634,None,0,,,End
+1638,180,Start,1638,None,1639,0,,,Start
+1639,180,Traer informacion estudiante - banner,1639,1638,1640,0,,,Traer informacion estudiante - banner
+1640,180,Radicar Solicitud Homologacion,1640,1639,1641,0,,,Radicar Solicitud Homologacion
+1641,180,Cancelar Solicitud,1641,1640,1642,0,,,Cancelar Solicitud
+1642,180,Notificacion estudiante cancelacion soli,1642,1641,1643,0,,,Notificacion estudiante cancelacion soli
+1643,180,End,1643,1642,None,0,,,End
+1646,181,Start,1646,None,1647,0,,,Start
+1647,181,Traer informacion estudiante - banner,1647,1646,1648,0,,,Traer informacion estudiante - banner
+1648,181,Radicar Solicitud Homologacion,1648,1647,1649,0,,,Radicar Solicitud Homologacion
+1649,181,Cancelar Solicitud,1649,1648,1650,0,,,Cancelar Solicitud
+1650,181,Notificacion estudiante cancelacion soli,1650,1649,1651,0,,,Notificacion estudiante cancelacion soli
+1651,181,End,1651,1650,None,0,,,End
+1654,182,Start,1654,None,1655,0,,,Start
+1655,182,Traer informacion estudiante - banner,1655,1654,1656,0,,,Traer informacion estudiante - banner
+1656,182,Radicar Solicitud Homologacion,1656,1655,1657,0,,,Radicar Solicitud Homologacion
+1657,182,Validar solicitud,1657,1656,"(1658, 1659)",0,,,Validar solicitud
+1658,182,Homologacion por grupo de cursos,1658,1657,1661,1,,,Homologacion por grupo de cursos
+1659,182,Revisar curso,1659,1657,1660,1,,,Revisar curso
+1660,182,Evaluacion curso,1660,1659,1661,1,,,Evaluacion curso
+1661,182,Validar solicitud / pre-homologacion,1661,"(1658, 1660)",1662,0,,,Validar solicitud / pre-homologacion
+1662,182,End,1662,1661,None,0,,,End
+1665,183,Start,1665,None,1666,0,,,Start
+1666,183,Traer informacion estudiante - banner,1666,1665,1667,0,,,Traer informacion estudiante - banner
+1667,183,Radicar Solicitud Homologacion,1667,1666,1668,0,,,Radicar Solicitud Homologacion
+1668,183,Cancelar Solicitud,1668,1667,1669,0,,,Cancelar Solicitud
+1669,183,Notificacion estudiante cancelacion soli,1669,1668,1670,0,,,Notificacion estudiante cancelacion soli
+1670,183,End,1670,1669,None,0,,,End
+1673,184,Start,1673,None,1674,0,,,Start
+1674,184,Traer informacion estudiante - banner,1674,1673,1675,0,,,Traer informacion estudiante - banner
+1675,184,Radicar Solicitud Homologacion,1675,1674,1676,0,,,Radicar Solicitud Homologacion
+1676,184,Notificacion estudiante cancelacion soli,1676,1675,1677,0,,,Notificacion estudiante cancelacion soli
+1677,184,End,1677,1676,None,0,,,End
+1680,185,Start,1680,None,1681,0,,,Start
+1681,185,Traer informacion estudiante - banner,1681,1680,1682,0,,,Traer informacion estudiante - banner
+1682,185,Radicar Solicitud Homologacion,1682,1681,"(1683, 1684)",0,,,Radicar Solicitud Homologacion
+1683,185,Cancelar Solicitud,1683,1682,1685,1,,,Cancelar Solicitud
+1684,185,Validar solicitud,1684,1682,1685,1,,,Validar solicitud
+1685,185,Revisar curso,1685,"(1683, 1684)",1686,0,,,Revisar curso
+1686,185,Evaluacion curso,1686,1685,1687,0,,,Evaluacion curso
+1687,185,Validar solicitud / pre-homologacion,1687,1686,1688,0,,,Validar solicitud / pre-homologacion
+1688,185,Notificacion estudiante cancelacion soli,1688,1687,1689,0,,,Notificacion estudiante cancelacion soli
+1689,185,End,1689,1688,None,0,,,End
+1692,186,Start,1692,None,1693,0,,,Start
+1693,186,Traer informacion estudiante - banner,1693,1692,1694,0,,,Traer informacion estudiante - banner
+1694,186,Radicar Solicitud Homologacion,1694,1693,1695,0,,,Radicar Solicitud Homologacion
+1695,186,Cancelar Solicitud,1695,1694,1696,0,,,Cancelar Solicitud
+1696,186,Notificacion estudiante cancelacion soli,1696,1695,1697,0,,,Notificacion estudiante cancelacion soli
+1697,186,End,1697,1696,None,0,,,End
+1700,187,Start,1700,None,1701,0,,,Start
+1701,187,Traer informacion estudiante - banner,1701,1700,1702,0,,,Traer informacion estudiante - banner
+1702,187,Radicar Solicitud Homologacion,1702,1701,1703,0,,,Radicar Solicitud Homologacion
+1703,187,Validar solicitud,1703,1702,1704,0,,,Validar solicitud
+1704,187,Homologacion por grupo de cursos,1704,1703,1705,0,,,Homologacion por grupo de cursos
+1705,187,End,1705,1704,None,0,,,End
+1708,188,Start,1708,None,1709,0,,,Start
+1709,188,Traer informacion estudiante - banner,1709,1708,1710,0,,,Traer informacion estudiante - banner
+1710,188,Radicar Solicitud Homologacion,1710,1709,1711,0,,,Radicar Solicitud Homologacion
+1711,188,Cancelar Solicitud,1711,1710,1712,0,,,Cancelar Solicitud
+1712,188,Notificacion estudiante cancelacion soli,1712,1711,1713,0,,,Notificacion estudiante cancelacion soli
+1713,188,End,1713,1712,None,0,,,End
+1716,189,Start,1716,None,1717,0,,,Start
+1717,189,Traer informacion estudiante - banner,1717,1716,1718,0,,,Traer informacion estudiante - banner
+1718,189,Radicar Solicitud Homologacion,1718,1717,1719,0,,,Radicar Solicitud Homologacion
+1719,189,Cancelar Solicitud,1719,1718,1720,0,,,Cancelar Solicitud
+1720,189,Notificacion estudiante cancelacion soli,1720,1719,1721,0,,,Notificacion estudiante cancelacion soli
+1721,189,End,1721,1720,None,0,,,End
+1724,190,Start,1724,None,1725,0,,,Start
+1725,190,Traer informacion estudiante - banner,1725,1724,1726,0,,,Traer informacion estudiante - banner
+1726,190,Radicar Solicitud Homologacion,1726,1725,1727,0,,,Radicar Solicitud Homologacion
+1727,190,Cancelar Solicitud,1727,1726,1728,0,,,Cancelar Solicitud
+1728,190,Notificacion estudiante cancelacion soli,1728,1727,1729,0,,,Notificacion estudiante cancelacion soli
+1729,190,End,1729,1728,None,0,,,End
+1732,191,Start,1732,None,1733,0,,,Start
+1733,191,Cancelar Solicitud,1733,1732,1734,0,,,Cancelar Solicitud
+1734,191,Traer informacion estudiante - banner,1734,1733,1735,0,,,Traer informacion estudiante - banner
+1735,191,Radicar Solicitud Homologacion,1735,1734,1736,0,,,Radicar Solicitud Homologacion
+1736,191,Notificacion estudiante cancelacion soli,1736,1735,1737,0,,,Notificacion estudiante cancelacion soli
+1737,191,End,1737,1736,None,0,,,End

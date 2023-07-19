@@ -1,0 +1,1358 @@
+caseid,task,start_timestamp,end_timestamp,resource
+Case1,Start,2016-02-01 15:01:55,2016-02-01 15:01:55,Start
+Case1,Traer informacion estudiante - banner,2016-02-01 15:01:55,2016-02-01 15:01:55,Traer informacion estudiante - banner
+Case1,Radicar Solicitud Homologacion,2016-02-01 15:02:02,2016-02-01 15:02:02,Radicar Solicitud Homologacion
+Case1,Notificacion estudiante cancelacion soli,2016-02-03 13:02:47,2016-02-03 13:02:47,Notificacion estudiante cancelacion soli
+Case1,End,2016-02-03 13:02:47,2016-02-03 13:02:47,End
+Case2,Start,2016-02-02 07:03:45,2016-02-02 07:03:45,Start
+Case2,Traer informacion estudiante - banner,2016-02-02 07:03:45,2016-02-02 07:03:45,Traer informacion estudiante - banner
+Case2,Radicar Solicitud Homologacion,2016-02-02 07:03:47,2016-02-02 07:06:31,Radicar Solicitud Homologacion
+Case2,Notificacion estudiante cancelacion soli,2016-02-02 17:44:24,2016-02-02 17:44:24,Notificacion estudiante cancelacion soli
+Case2,End,2016-02-02 17:44:24,2016-02-02 17:44:24,End
+Case3,Start,2016-02-10 07:50:31,2016-02-10 07:50:31,Start
+Case3,Traer informacion estudiante - banner,2016-02-10 07:50:31,2016-02-10 07:50:31,Traer informacion estudiante - banner
+Case3,Radicar Solicitud Homologacion,2016-02-10 07:50:38,2016-02-10 07:50:38,Radicar Solicitud Homologacion
+Case3,Notificacion estudiante cancelacion soli,2016-02-10 07:50:38,2016-02-10 07:50:38,Notificacion estudiante cancelacion soli
+Case3,End,2016-02-10 07:50:38,2016-02-10 07:50:38,End
+Case4,Start,2016-02-10 09:20:26,2016-02-10 09:20:26,Start
+Case4,Traer informacion estudiante - banner,2016-02-10 09:20:26,2016-02-10 09:20:26,Traer informacion estudiante - banner
+Case4,Radicar Solicitud Homologacion,2016-02-10 09:20:29,2016-02-10 09:20:44,Radicar Solicitud Homologacion
+Case4,Cancelar Solicitud,2016-02-10 09:24:49,2016-02-10 09:24:49,Cancelar Solicitud
+Case4,Notificacion estudiante cancelacion soli,2016-02-10 12:43:08,2016-02-10 12:43:08,Notificacion estudiante cancelacion soli
+Case4,End,2016-02-10 12:43:08,2016-02-10 12:43:08,End
+Case5,Start,2016-02-10 09:33:51,2016-02-10 09:33:51,Start
+Case5,Traer informacion estudiante - banner,2016-02-10 09:33:51,2016-02-10 09:33:51,Traer informacion estudiante - banner
+Case5,Radicar Solicitud Homologacion,2016-02-10 09:33:58,2016-02-10 09:33:58,Radicar Solicitud Homologacion
+Case5,Validar solicitud,2016-02-10 09:37:27,2016-02-10 09:38:43,Validar solicitud
+Case5,Homologacion por grupo de cursos,2016-02-10 10:14:54,2016-02-10 11:36:09,Homologacion por grupo de cursos
+Case5,Revisar curso,2016-02-16 10:18:58,2016-02-16 10:35:37,Revisar curso
+Case5,Evaluacion curso,2016-02-16 10:36:13,2016-02-16 14:39:36,Evaluacion curso
+Case5,Validacion final,2016-02-17 00:37:53,2016-02-17 00:39:25,Validacion final
+Case5,Visto Bueno Cierre Proceso,2016-02-17 00:43:52,2016-02-17 01:10:29,Visto Bueno Cierre Proceso
+Case5,End,2016-02-17 01:10:29,2016-02-17 01:10:29,End
+Case6,Start,2016-02-10 12:21:53,2016-02-10 12:21:53,Start
+Case6,Traer informacion estudiante - banner,2016-02-10 12:21:53,2016-02-10 12:21:53,Traer informacion estudiante - banner
+Case6,Radicar Solicitud Homologacion,2016-02-10 12:21:56,2016-02-10 12:21:56,Radicar Solicitud Homologacion
+Case6,Validar solicitud,2016-02-10 18:14:55,2016-02-10 18:27:15,Validar solicitud
+Case6,Homologacion por grupo de cursos,2016-02-21 06:17:53,2016-02-21 07:14:12,Homologacion por grupo de cursos
+Case6,End,2016-02-21 07:14:12,2016-02-21 07:14:12,End
+Case7,Start,2016-02-10 12:50:14,2016-02-10 12:50:14,Start
+Case7,Traer informacion estudiante - banner,2016-02-10 12:50:14,2016-02-10 12:50:14,Traer informacion estudiante - banner
+Case7,Radicar Solicitud Homologacion,2016-02-10 12:50:18,2016-02-10 14:19:15,Radicar Solicitud Homologacion
+Case7,Validar solicitud,2016-02-10 14:33:37,2016-02-10 14:39:03,Validar solicitud
+Case7,Homologacion por grupo de cursos,2016-02-24 22:43:54,2016-02-25 02:58:28,Homologacion por grupo de cursos
+Case7,Revisar curso,2016-02-11 21:00:31,2016-02-11 21:42:23,Revisar curso
+Case7,Evaluacion curso,2016-02-11 21:57:21,2016-02-11 22:04:15,Evaluacion curso
+Case7,Validacion final,2016-04-25 19:02:07,2016-04-25 19:10:38,Validacion final
+Case7,Visto Bueno Cierre Proceso,2016-04-25 19:15:36,2016-04-25 19:16:38,Visto Bueno Cierre Proceso
+Case7,Transferir Creditos,2016-05-01 11:37:34,2016-05-01 11:37:34,Transferir Creditos
+Case7,End,2016-05-01 11:37:34,2016-05-01 11:37:34,End
+Case8,Start,2016-02-10 13:43:09,2016-02-10 13:43:09,Start
+Case8,Traer informacion estudiante - banner,2016-02-10 13:43:09,2016-02-10 13:43:09,Traer informacion estudiante - banner
+Case8,Radicar Solicitud Homologacion,2016-02-10 13:43:12,2016-02-10 13:43:26,Radicar Solicitud Homologacion
+Case8,Cancelar Solicitud,2016-02-10 13:57:16,2016-02-10 13:57:20,Cancelar Solicitud
+Case8,Notificacion estudiante cancelacion soli,2016-02-19 00:24:41,2016-02-19 00:24:41,Notificacion estudiante cancelacion soli
+Case8,End,2016-02-19 00:24:41,2016-02-19 00:24:41,End
+Case9,Start,2016-02-10 14:24:34,2016-02-10 14:24:34,Start
+Case9,Traer informacion estudiante - banner,2016-02-10 14:24:34,2016-02-10 14:24:34,Traer informacion estudiante - banner
+Case9,Radicar Solicitud Homologacion,2016-02-10 14:24:39,2016-02-10 14:24:44,Radicar Solicitud Homologacion
+Case9,Validar solicitud,2016-02-10 14:31:11,2016-02-10 14:37:26,Validar solicitud
+Case9,Homologacion por grupo de cursos,2016-02-12 04:48:34,2016-02-12 05:25:13,Homologacion por grupo de cursos
+Case9,End,2016-02-12 05:25:13,2016-02-12 05:25:13,End
+Case10,Start,2016-02-10 16:46:03,2016-02-10 16:46:03,Start
+Case10,Traer informacion estudiante - banner,2016-02-10 16:46:03,2016-02-10 16:46:03,Traer informacion estudiante - banner
+Case10,Radicar Solicitud Homologacion,2016-02-10 16:46:05,2016-02-10 16:47:03,Radicar Solicitud Homologacion
+Case10,Validar solicitud,2016-02-10 16:55:15,2016-02-10 16:55:30,Validar solicitud
+Case10,Homologacion por grupo de cursos,2016-02-10 17:18:21,2016-02-10 17:18:22,Homologacion por grupo de cursos
+Case10,End,2016-02-10 17:18:22,2016-02-10 17:18:22,End
+Case11,Start,2016-02-10 17:53:00,2016-02-10 17:53:00,Start
+Case11,Traer informacion estudiante - banner,2016-02-10 17:53:00,2016-02-10 17:53:00,Traer informacion estudiante - banner
+Case11,Radicar Solicitud Homologacion,2016-02-10 17:53:05,2016-02-10 18:28:57,Radicar Solicitud Homologacion
+Case11,Cancelar Solicitud,2016-02-10 18:34:41,2016-02-10 18:34:41,Cancelar Solicitud
+Case11,Notificacion estudiante cancelacion soli,2016-02-10 18:54:17,2016-02-10 18:54:17,Notificacion estudiante cancelacion soli
+Case11,End,2016-02-10 18:54:17,2016-02-10 18:54:17,End
+Case12,Start,2016-02-10 19:21:16,2016-02-10 19:21:16,Start
+Case12,Traer informacion estudiante - banner,2016-02-10 19:21:16,2016-02-10 19:21:16,Traer informacion estudiante - banner
+Case12,Radicar Solicitud Homologacion,2016-02-10 19:21:23,2016-02-10 19:26:20,Radicar Solicitud Homologacion
+Case12,Cancelar Solicitud,2016-02-10 19:43:27,2016-02-10 22:18:46,Cancelar Solicitud
+Case12,Notificacion estudiante cancelacion soli,2016-02-10 22:25:39,2016-02-10 22:25:39,Notificacion estudiante cancelacion soli
+Case12,End,2016-02-10 22:25:39,2016-02-10 22:25:39,End
+Case13,Start,2016-02-02 09:35:42,2016-02-02 09:35:42,Start
+Case13,Traer informacion estudiante - banner,2016-02-02 09:35:42,2016-02-02 09:35:42,Traer informacion estudiante - banner
+Case13,Radicar Solicitud Homologacion,2016-02-02 09:35:43,2016-02-02 09:35:54,Radicar Solicitud Homologacion
+Case13,Validar solicitud,2016-02-02 09:38:25,2016-02-02 09:45:53,Validar solicitud
+Case13,Homologacion por grupo de cursos,2016-02-08 04:23:53,2016-02-08 07:04:55,Homologacion por grupo de cursos
+Case13,Revisar curso,2016-02-04 21:40:46,2016-02-04 21:54:12,Revisar curso
+Case13,Evaluacion curso,2016-02-04 21:55:25,2016-02-04 21:55:25,Evaluacion curso
+Case13,Validar solicitud / pre-homologacion,2016-03-31 12:31:40,2016-03-31 12:48:04,Validar solicitud / pre-homologacion
+Case13,Validacion final,2016-03-31 14:01:48,2016-03-31 14:07:47,Validacion final
+Case13,Validacion final,2016-04-05 11:21:13,2016-04-05 11:31:37,Validacion final
+Case13,Visto Bueno Cierre Proceso,2016-04-06 05:27:14,2016-04-06 05:56:56,Visto Bueno Cierre Proceso
+Case13,Visto Bueno Cierre Proceso,2016-04-05 11:35:40,2016-04-05 11:37:16,Visto Bueno Cierre Proceso
+Case13,Transferir Creditos,2016-04-10 13:50:30,2016-04-10 13:50:30,Transferir Creditos
+Case13,Transferir creditos homologables,2016-04-10 13:50:30,2016-04-10 13:50:30,Transferir creditos homologables
+Case13,Transferir creditos homologables,2016-04-10 13:50:30,2016-04-10 13:50:30,Transferir creditos homologables
+Case13,Transferir Creditos,2016-04-19 18:00:52,2016-04-19 18:00:52,Transferir Creditos
+Case13,Transferir creditos homologables,2016-04-19 18:00:52,2016-04-19 18:00:52,Transferir creditos homologables
+Case13,Transferir creditos homologables,2016-04-19 18:00:52,2016-04-19 18:00:52,Transferir creditos homologables
+Case13,Transferir creditos homologables,2016-04-19 18:00:54,2016-04-19 18:00:54,Transferir creditos homologables
+Case13,End,2016-04-19 18:00:54,2016-04-19 18:00:54,End
+Case14,Start,2016-02-10 20:08:43,2016-02-10 20:08:43,Start
+Case14,Traer informacion estudiante - banner,2016-02-10 20:08:43,2016-02-10 20:08:43,Traer informacion estudiante - banner
+Case14,Radicar Solicitud Homologacion,2016-02-10 20:08:48,2016-02-10 20:10:13,Radicar Solicitud Homologacion
+Case14,Cancelar Solicitud,2016-02-10 20:11:33,2016-02-10 20:11:34,Cancelar Solicitud
+Case14,Notificacion estudiante cancelacion soli,2016-02-26 09:53:42,2016-02-26 09:53:42,Notificacion estudiante cancelacion soli
+Case14,End,2016-02-26 09:53:42,2016-02-26 09:53:42,End
+Case15,Start,2016-02-10 20:32:52,2016-02-10 20:32:52,Start
+Case15,Traer informacion estudiante - banner,2016-02-10 20:32:52,2016-02-10 20:32:52,Traer informacion estudiante - banner
+Case15,Radicar Solicitud Homologacion,2016-02-10 20:32:56,2016-02-10 20:33:27,Radicar Solicitud Homologacion
+Case15,Cancelar Solicitud,2016-02-10 20:45:58,2016-02-11 00:39:13,Cancelar Solicitud
+Case15,Notificacion estudiante cancelacion soli,2016-02-11 16:25:03,2016-02-11 16:25:03,Notificacion estudiante cancelacion soli
+Case15,End,2016-02-11 16:25:03,2016-02-11 16:25:03,End
+Case16,Start,2016-02-10 21:55:25,2016-02-10 21:55:25,Start
+Case16,Traer informacion estudiante - banner,2016-02-10 21:55:25,2016-02-10 21:55:25,Traer informacion estudiante - banner
+Case16,Radicar Solicitud Homologacion,2016-02-10 21:55:29,2016-02-10 22:01:30,Radicar Solicitud Homologacion
+Case16,Validar solicitud,2016-02-10 22:06:08,2016-02-10 22:07:00,Validar solicitud
+Case16,Homologacion por grupo de cursos,2016-02-16 08:16:25,2016-02-16 08:39:04,Homologacion por grupo de cursos
+Case16,Revisar curso,2016-02-13 05:34:37,2016-02-13 05:34:37,Revisar curso
+Case16,Evaluacion curso,2016-02-16 08:41:08,2016-02-16 10:15:26,Evaluacion curso
+Case16,Validacion final,2016-03-09 14:12:29,2016-03-09 14:12:45,Validacion final
+Case16,Visto Bueno Cierre Proceso,2016-03-12 06:47:02,2016-03-12 07:10:09,Visto Bueno Cierre Proceso
+Case16,Transferir Creditos,2016-04-05 12:39:40,2016-04-05 12:39:56,Transferir Creditos
+Case16,Transferir creditos homologables,2016-04-05 12:39:56,2016-04-05 12:39:56,Transferir creditos homologables
+Case16,End,2016-04-05 12:39:56,2016-04-05 12:39:56,End
+Case17,Start,2016-02-10 23:09:13,2016-02-10 23:09:13,Start
+Case17,Traer informacion estudiante - banner,2016-02-10 23:09:13,2016-02-10 23:09:13,Traer informacion estudiante - banner
+Case17,Radicar Solicitud Homologacion,2016-02-10 23:09:19,2016-02-10 23:09:19,Radicar Solicitud Homologacion
+Case17,Validar solicitud,2016-02-10 23:11:49,2016-02-10 23:15:17,Validar solicitud
+Case17,Homologacion por grupo de cursos,2016-02-12 04:39:40,2016-02-12 07:07:00,Homologacion por grupo de cursos
+Case17,Revisar curso,2016-02-16 05:05:00,2016-02-16 05:05:26,Revisar curso
+Case17,Evaluacion curso,2016-02-16 07:57:24,2016-02-16 07:57:53,Evaluacion curso
+Case17,Validacion final,2016-02-16 08:04:29,2016-02-16 08:25:35,Validacion final
+Case17,Visto Bueno Cierre Proceso,2016-02-16 08:59:57,2016-02-16 09:04:58,Visto Bueno Cierre Proceso
+Case17,End,2016-02-16 09:04:58,2016-02-16 09:04:58,End
+Case18,Start,2016-02-10 23:29:16,2016-02-10 23:29:16,Start
+Case18,Traer informacion estudiante - banner,2016-02-10 23:29:16,2016-02-10 23:29:16,Traer informacion estudiante - banner
+Case18,Radicar Solicitud Homologacion,2016-02-10 23:29:19,2016-02-10 23:29:43,Radicar Solicitud Homologacion
+Case18,Cancelar Solicitud,2016-02-10 23:42:31,2016-02-11 01:17:23,Cancelar Solicitud
+Case18,Notificacion estudiante cancelacion soli,2016-02-11 16:09:05,2016-02-11 16:09:05,Notificacion estudiante cancelacion soli
+Case18,End,2016-02-11 16:09:05,2016-02-11 16:09:05,End
+Case19,Start,2016-02-11 02:42:48,2016-02-11 02:42:48,Start
+Case19,Traer informacion estudiante - banner,2016-02-11 02:42:48,2016-02-11 02:42:48,Traer informacion estudiante - banner
+Case19,Radicar Solicitud Homologacion,2016-02-11 02:42:57,2016-02-11 02:42:57,Radicar Solicitud Homologacion
+Case19,Validar solicitud,2016-02-11 02:48:07,2016-02-11 02:49:49,Validar solicitud
+Case19,Homologacion por grupo de cursos,2016-02-11 22:51:16,2016-02-12 00:57:45,Homologacion por grupo de cursos
+Case19,End,2016-02-12 00:57:45,2016-02-12 00:57:45,End
+Case20,Start,2016-02-11 03:32:52,2016-02-11 03:32:52,Start
+Case20,Traer informacion estudiante - banner,2016-02-11 03:32:52,2016-02-11 03:32:52,Traer informacion estudiante - banner
+Case20,Radicar Solicitud Homologacion,2016-02-11 03:32:54,2016-02-11 03:33:05,Radicar Solicitud Homologacion
+Case20,Validar solicitud,2016-02-11 03:48:57,2016-02-11 03:49:06,Validar solicitud
+Case20,Homologacion por grupo de cursos,2016-02-16 04:27:42,2016-02-16 05:48:03,Homologacion por grupo de cursos
+Case20,End,2016-02-16 05:48:03,2016-02-16 05:48:03,End
+Case21,Start,2016-02-11 06:51:30,2016-02-11 06:51:30,Start
+Case21,Traer informacion estudiante - banner,2016-02-11 06:51:30,2016-02-11 06:51:30,Traer informacion estudiante - banner
+Case21,Radicar Solicitud Homologacion,2016-02-11 06:51:34,2016-02-11 06:51:37,Radicar Solicitud Homologacion
+Case21,Validar solicitud,2016-02-11 07:00:58,2016-02-11 07:14:43,Validar solicitud
+Case21,Homologacion por grupo de cursos,2016-02-18 16:47:45,2016-02-18 17:15:10,Homologacion por grupo de cursos
+Case21,Revisar curso,2016-02-11 07:39:15,2016-02-11 08:15:53,Revisar curso
+Case21,Evaluacion curso,2016-02-18 22:36:40,2016-02-18 22:37:52,Evaluacion curso
+Case21,Validar solicitud / pre-homologacion,2016-03-22 07:31:43,2016-03-22 07:39:03,Validar solicitud / pre-homologacion
+Case21,End,2016-03-22 07:39:03,2016-03-22 07:39:03,End
+Case22,Start,2016-02-11 07:55:23,2016-02-11 07:55:23,Start
+Case22,Traer informacion estudiante - banner,2016-02-11 07:55:23,2016-02-11 07:55:23,Traer informacion estudiante - banner
+Case22,Radicar Solicitud Homologacion,2016-02-11 07:55:26,2016-02-11 08:43:48,Radicar Solicitud Homologacion
+Case22,Validar solicitud,2016-02-11 08:52:17,2016-02-11 08:57:47,Validar solicitud
+Case22,Homologacion por grupo de cursos,2016-02-11 20:36:26,2016-02-11 20:38:14,Homologacion por grupo de cursos
+Case22,End,2016-02-11 20:38:14,2016-02-11 20:38:14,End
+Case23,Start,2016-02-11 08:32:20,2016-02-11 08:32:20,Start
+Case23,Traer informacion estudiante - banner,2016-02-11 08:32:20,2016-02-11 08:32:20,Traer informacion estudiante - banner
+Case23,Radicar Solicitud Homologacion,2016-02-11 08:32:24,2016-02-11 08:32:34,Radicar Solicitud Homologacion
+Case23,Validar solicitud,2016-02-24 19:02:20,2016-02-24 19:08:18,Validar solicitud
+Case23,Homologacion por grupo de cursos,2016-02-24 19:43:05,2016-02-24 22:32:46,Homologacion por grupo de cursos
+Case23,End,2016-02-24 22:32:46,2016-02-24 22:32:46,End
+Case24,Start,2016-02-02 10:46:25,2016-02-02 10:46:25,Start
+Case24,Traer informacion estudiante - banner,2016-02-02 10:46:25,2016-02-02 10:46:25,Traer informacion estudiante - banner
+Case24,Radicar Solicitud Homologacion,2016-02-02 10:46:34,2016-02-02 10:47:20,Radicar Solicitud Homologacion
+Case24,Cancelar Solicitud,2016-02-02 10:52:38,2016-02-02 15:12:20,Cancelar Solicitud
+Case24,Validar solicitud,2016-02-02 11:02:00,2016-02-02 11:02:21,Validar solicitud
+Case24,Notificacion estudiante cancelacion soli,2016-02-03 05:38:57,2016-02-03 05:38:57,Notificacion estudiante cancelacion soli
+Case24,End,2016-02-03 05:38:57,2016-02-03 05:38:57,End
+Case25,Start,2016-02-11 10:46:01,2016-02-11 10:46:01,Start
+Case25,Traer informacion estudiante - banner,2016-02-11 10:46:01,2016-02-11 10:46:01,Traer informacion estudiante - banner
+Case25,Radicar Solicitud Homologacion,2016-02-11 10:46:06,2016-02-11 10:46:06,Radicar Solicitud Homologacion
+Case25,Cancelar Solicitud,2016-02-11 10:57:02,2016-02-11 10:58:25,Cancelar Solicitud
+Case25,Notificacion estudiante cancelacion soli,2016-02-11 11:41:28,2016-02-11 11:41:28,Notificacion estudiante cancelacion soli
+Case25,End,2016-02-11 11:41:28,2016-02-11 11:41:28,End
+Case26,Start,2016-02-11 13:18:30,2016-02-11 13:18:30,Start
+Case26,Traer informacion estudiante - banner,2016-02-11 13:18:30,2016-02-11 13:18:30,Traer informacion estudiante - banner
+Case26,Radicar Solicitud Homologacion,2016-02-11 13:18:34,2016-02-11 13:18:34,Radicar Solicitud Homologacion
+Case26,Validar solicitud,2016-02-11 15:12:52,2016-02-11 16:49:31,Validar solicitud
+Case26,Homologacion por grupo de cursos,2016-03-01 14:31:20,2016-03-01 14:53:34,Homologacion por grupo de cursos
+Case26,Revisar curso,2016-02-11 18:35:22,2016-02-11 18:39:38,Revisar curso
+Case26,Evaluacion curso,2016-02-11 18:42:21,2016-02-11 18:44:16,Evaluacion curso
+Case26,Validar solicitud / pre-homologacion,2016-03-02 20:54:21,2016-03-02 20:54:21,Validar solicitud / pre-homologacion
+Case26,Validacion final,2016-03-07 00:21:00,2016-03-07 00:21:00,Validacion final
+Case26,Visto Bueno Cierre Proceso,2016-03-07 00:21:12,2016-03-07 00:22:00,Visto Bueno Cierre Proceso
+Case26,Transferir Creditos,2016-03-24 09:36:55,2016-03-24 09:36:55,Transferir Creditos
+Case26,Transferir creditos homologables,2016-03-24 09:36:55,2016-03-24 09:36:55,Transferir creditos homologables
+Case26,End,2016-03-24 09:36:55,2016-03-24 09:36:55,End
+Case27,Start,2016-02-11 14:39:05,2016-02-11 14:39:05,Start
+Case27,Traer informacion estudiante - banner,2016-02-11 14:39:05,2016-02-11 14:39:05,Traer informacion estudiante - banner
+Case27,Radicar Solicitud Homologacion,2016-02-11 14:39:07,2016-02-11 14:39:55,Radicar Solicitud Homologacion
+Case27,Validar solicitud,2016-02-11 14:46:25,2016-02-11 14:54:14,Validar solicitud
+Case27,Homologacion por grupo de cursos,2016-02-15 10:45:40,2016-02-15 10:45:40,Homologacion por grupo de cursos
+Case27,End,2016-02-15 10:45:40,2016-02-15 10:45:40,End
+Case28,Start,2016-02-11 15:59:41,2016-02-11 15:59:41,Start
+Case28,Traer informacion estudiante - banner,2016-02-11 15:59:41,2016-02-11 15:59:41,Traer informacion estudiante - banner
+Case28,Radicar Solicitud Homologacion,2016-02-11 15:59:43,2016-02-11 15:59:45,Radicar Solicitud Homologacion
+Case28,Validar solicitud,2016-02-11 16:07:17,2016-02-11 16:40:22,Validar solicitud
+Case28,Homologacion por grupo de cursos,2016-02-11 16:44:14,2016-02-11 19:08:24,Homologacion por grupo de cursos
+Case28,End,2016-02-11 19:08:24,2016-02-11 19:08:24,End
+Case29,Start,2016-02-11 17:07:30,2016-02-11 17:07:30,Start
+Case29,Traer informacion estudiante - banner,2016-02-11 17:07:30,2016-02-11 17:07:30,Traer informacion estudiante - banner
+Case29,Radicar Solicitud Homologacion,2016-02-11 17:07:40,2016-02-11 17:07:40,Radicar Solicitud Homologacion
+Case29,Validar solicitud,2016-02-11 17:07:58,2016-02-11 17:12:20,Validar solicitud
+Case29,Homologacion por grupo de cursos,2016-02-11 19:21:16,2016-02-11 19:58:13,Homologacion por grupo de cursos
+Case29,Revisar curso,2016-02-16 21:35:48,2016-02-16 21:35:51,Revisar curso
+Case29,Evaluacion curso,2016-02-16 21:36:20,2016-02-16 21:36:42,Evaluacion curso
+Case29,Validacion final,2016-03-25 19:33:04,2016-03-25 19:56:05,Validacion final
+Case29,Visto Bueno Cierre Proceso,2016-04-09 02:08:01,2016-04-09 02:10:26,Visto Bueno Cierre Proceso
+Case29,Transferir creditos homologables,2016-04-09 02:10:26,2016-04-09 02:10:26,Transferir creditos homologables
+Case29,Transferir Creditos,2016-04-10 12:18:07,2016-04-10 12:18:07,Transferir Creditos
+Case29,End,2016-04-10 12:18:07,2016-04-10 12:18:07,End
+Case30,Start,2016-02-11 17:54:57,2016-02-11 17:54:57,Start
+Case30,Traer informacion estudiante - banner,2016-02-11 17:54:57,2016-02-11 17:54:57,Traer informacion estudiante - banner
+Case30,Radicar Solicitud Homologacion,2016-02-11 17:54:59,2016-02-11 18:35:47,Radicar Solicitud Homologacion
+Case30,Validar solicitud,2016-02-11 18:54:09,2016-02-11 18:54:09,Validar solicitud
+Case30,Homologacion por grupo de cursos,2016-02-11 22:08:10,2016-02-11 22:08:11,Homologacion por grupo de cursos
+Case30,End,2016-02-11 22:08:11,2016-02-11 22:08:11,End
+Case31,Start,2016-02-11 19:02:53,2016-02-11 19:02:53,Start
+Case31,Traer informacion estudiante - banner,2016-02-11 19:02:53,2016-02-11 19:02:53,Traer informacion estudiante - banner
+Case31,Radicar Solicitud Homologacion,2016-02-11 19:02:56,2016-02-11 19:02:56,Radicar Solicitud Homologacion
+Case31,Cancelar Solicitud,2016-02-11 19:29:22,2016-02-11 19:41:23,Cancelar Solicitud
+Case31,Notificacion estudiante cancelacion soli,2016-02-11 19:41:33,2016-02-11 19:41:33,Notificacion estudiante cancelacion soli
+Case31,End,2016-02-11 19:41:33,2016-02-11 19:41:33,End
+Case32,Start,2016-02-11 20:09:18,2016-02-11 20:09:18,Start
+Case32,Traer informacion estudiante - banner,2016-02-11 20:09:18,2016-02-11 20:09:18,Traer informacion estudiante - banner
+Case32,Radicar Solicitud Homologacion,2016-02-11 20:09:21,2016-02-11 20:09:21,Radicar Solicitud Homologacion
+Case32,Cancelar Solicitud,2016-02-11 20:22:01,2016-02-12 03:10:00,Cancelar Solicitud
+Case32,Notificacion estudiante cancelacion soli,2016-02-16 08:46:56,2016-02-16 08:46:56,Notificacion estudiante cancelacion soli
+Case32,End,2016-02-16 08:46:56,2016-02-16 08:46:56,End
+Case33,Start,2016-02-11 22:03:17,2016-02-11 22:03:17,Start
+Case33,Traer informacion estudiante - banner,2016-02-11 22:03:17,2016-02-11 22:03:17,Traer informacion estudiante - banner
+Case33,Radicar Solicitud Homologacion,2016-02-11 22:03:19,2016-02-11 22:03:19,Radicar Solicitud Homologacion
+Case33,Validar solicitud,2016-02-11 22:06:35,2016-02-11 22:16:58,Validar solicitud
+Case33,Homologacion por grupo de cursos,2016-02-17 05:53:14,2016-02-17 06:23:41,Homologacion por grupo de cursos
+Case33,Revisar curso,2016-02-16 05:49:55,2016-02-16 07:13:04,Revisar curso
+Case33,Evaluacion curso,2016-02-16 07:13:58,2016-02-16 07:24:42,Evaluacion curso
+Case33,Validacion final,2016-03-07 19:54:39,2016-03-07 20:01:27,Validacion final
+Case33,Visto Bueno Cierre Proceso,2016-03-11 15:58:15,2016-03-11 15:59:12,Visto Bueno Cierre Proceso
+Case33,End,2016-03-11 15:59:12,2016-03-11 15:59:12,End
+Case34,Start,2016-02-11 22:46:23,2016-02-11 22:46:23,Start
+Case34,Traer informacion estudiante - banner,2016-02-11 22:46:23,2016-02-11 22:46:23,Traer informacion estudiante - banner
+Case34,Radicar Solicitud Homologacion,2016-02-11 22:46:24,2016-02-11 22:46:24,Radicar Solicitud Homologacion
+Case34,Cancelar Solicitud,2016-02-11 23:07:00,2016-02-11 23:38:51,Cancelar Solicitud
+Case34,Notificacion estudiante cancelacion soli,2016-02-12 05:03:11,2016-02-12 05:03:11,Notificacion estudiante cancelacion soli
+Case34,End,2016-02-12 05:03:11,2016-02-12 05:03:11,End
+Case35,Start,2016-02-02 12:47:51,2016-02-02 12:47:51,Start
+Case35,Traer informacion estudiante - banner,2016-02-02 12:47:51,2016-02-02 12:47:51,Traer informacion estudiante - banner
+Case35,Radicar Solicitud Homologacion,2016-02-02 12:47:54,2016-02-02 13:22:34,Radicar Solicitud Homologacion
+Case35,Notificacion estudiante cancelacion soli,2016-02-02 13:26:17,2016-02-02 13:26:17,Notificacion estudiante cancelacion soli
+Case35,End,2016-02-02 13:26:17,2016-02-02 13:26:17,End
+Case36,Start,2016-02-11 23:27:39,2016-02-11 23:27:39,Start
+Case36,Traer informacion estudiante - banner,2016-02-11 23:27:39,2016-02-11 23:27:39,Traer informacion estudiante - banner
+Case36,Radicar Solicitud Homologacion,2016-02-11 23:27:45,2016-02-11 23:27:45,Radicar Solicitud Homologacion
+Case36,Cancelar Solicitud,2016-02-12 02:38:14,2016-02-12 02:57:33,Cancelar Solicitud
+Case36,Validar solicitud,2016-02-12 02:27:17,2016-02-12 05:27:22,Validar solicitud
+Case36,Notificacion estudiante cancelacion soli,2016-02-12 05:32:14,2016-02-12 05:32:14,Notificacion estudiante cancelacion soli
+Case36,End,2016-02-12 05:32:14,2016-02-12 05:32:14,End
+Case37,Start,2016-02-12 05:16:03,2016-02-12 05:16:03,Start
+Case37,Radicar Solicitud Homologacion,2016-02-12 05:16:10,2016-02-12 05:16:30,Radicar Solicitud Homologacion
+Case37,End,2016-02-12 05:16:30,2016-02-12 05:16:30,End
+Case38,Start,2016-02-12 06:50:19,2016-02-12 06:50:19,Start
+Case38,Traer informacion estudiante - banner,2016-02-12 06:50:19,2016-02-12 06:50:19,Traer informacion estudiante - banner
+Case38,Radicar Solicitud Homologacion,2016-02-12 06:50:20,2016-02-12 06:50:24,Radicar Solicitud Homologacion
+Case38,Validar solicitud,2016-02-15 05:14:55,2016-02-15 05:45:07,Validar solicitud
+Case38,Homologacion por grupo de cursos,2016-03-02 05:46:44,2016-03-02 06:52:23,Homologacion por grupo de cursos
+Case38,End,2016-03-02 06:52:23,2016-03-02 06:52:23,End
+Case39,Start,2016-02-12 08:42:48,2016-02-12 08:42:48,Start
+Case39,Traer informacion estudiante - banner,2016-02-12 09:21:55,2016-02-12 09:21:55,Traer informacion estudiante - banner
+Case39,Radicar Solicitud Homologacion,2016-02-12 09:21:57,2016-02-12 09:22:00,Radicar Solicitud Homologacion
+Case39,Validar solicitud,2016-02-12 09:30:37,2016-02-12 10:23:31,Validar solicitud
+Case39,Homologacion por grupo de cursos,2016-02-16 10:19:48,2016-02-16 12:01:02,Homologacion por grupo de cursos
+Case39,Cancelar curso,2016-02-25 00:32:58,2016-02-25 00:35:08,Cancelar curso
+Case39,End,2016-02-25 00:35:08,2016-02-25 00:35:08,End
+Case40,Start,2016-02-12 10:49:44,2016-02-12 10:49:44,Start
+Case40,Traer informacion estudiante - banner,2016-02-12 10:49:44,2016-02-12 10:49:44,Traer informacion estudiante - banner
+Case40,Radicar Solicitud Homologacion,2016-02-12 10:49:45,2016-02-12 10:49:51,Radicar Solicitud Homologacion
+Case40,Cancelar Solicitud,2016-02-12 10:52:22,2016-02-12 10:58:04,Cancelar Solicitud
+Case40,Notificacion estudiante cancelacion soli,2016-02-19 13:46:36,2016-02-19 13:46:36,Notificacion estudiante cancelacion soli
+Case40,End,2016-02-19 13:46:36,2016-02-19 13:46:36,End
+Case41,Start,2016-02-12 12:03:55,2016-02-12 12:03:55,Start
+Case41,Traer informacion estudiante - banner,2016-02-12 12:03:55,2016-02-12 12:03:55,Traer informacion estudiante - banner
+Case41,Radicar Solicitud Homologacion,2016-02-12 12:04:01,2016-02-12 12:04:18,Radicar Solicitud Homologacion
+Case41,Validar solicitud,2016-02-12 12:35:36,2016-02-12 12:36:02,Validar solicitud
+Case41,Homologacion por grupo de cursos,2016-02-17 22:37:09,2016-02-17 22:54:25,Homologacion por grupo de cursos
+Case41,Revisar curso,2016-02-23 10:26:26,2016-02-23 11:08:31,Revisar curso
+Case41,Evaluacion curso,2016-02-27 12:26:04,2016-02-27 12:42:17,Evaluacion curso
+Case41,Validacion final,2016-02-27 13:02:46,2016-02-27 13:08:45,Validacion final
+Case41,Visto Bueno Cierre Proceso,2016-02-27 13:15:20,2016-02-27 13:32:34,Visto Bueno Cierre Proceso
+Case41,End,2016-02-27 13:32:34,2016-02-27 13:32:34,End
+Case42,Start,2016-02-12 14:08:10,2016-02-12 14:08:10,Start
+Case42,Traer informacion estudiante - banner,2016-02-12 14:08:10,2016-02-12 14:08:10,Traer informacion estudiante - banner
+Case42,Radicar Solicitud Homologacion,2016-02-12 14:08:12,2016-02-12 14:08:18,Radicar Solicitud Homologacion
+Case42,Validar solicitud,2016-02-12 14:13:17,2016-02-12 14:13:32,Validar solicitud
+Case42,Homologacion por grupo de cursos,2016-02-12 14:31:29,2016-02-12 16:11:34,Homologacion por grupo de cursos
+Case42,End,2016-02-12 16:11:34,2016-02-12 16:11:34,End
+Case43,Start,2016-02-12 15:46:54,2016-02-12 15:46:54,Start
+Case43,Traer informacion estudiante - banner,2016-02-12 15:46:54,2016-02-12 15:46:54,Traer informacion estudiante - banner
+Case43,Radicar Solicitud Homologacion,2016-02-12 15:46:58,2016-02-12 15:47:04,Radicar Solicitud Homologacion
+Case43,Validar solicitud,2016-02-12 15:49:54,2016-02-12 15:51:22,Validar solicitud
+Case43,Homologacion por grupo de cursos,2016-02-13 08:10:50,2016-02-13 12:11:36,Homologacion por grupo de cursos
+Case43,Revisar curso,2016-03-15 23:11:10,2016-03-15 23:21:27,Revisar curso
+Case43,Evaluacion curso,2016-03-15 23:22:07,2016-03-16 01:51:22,Evaluacion curso
+Case43,Validar solicitud / pre-homologacion,2016-04-15 20:10:52,2016-04-15 20:42:41,Validar solicitud / pre-homologacion
+Case43,End,2016-04-15 20:42:41,2016-04-15 20:42:41,End
+Case44,Start,2016-02-12 16:28:37,2016-02-12 16:28:37,Start
+Case44,Traer informacion estudiante - banner,2016-02-12 16:28:37,2016-02-12 16:28:37,Traer informacion estudiante - banner
+Case44,Radicar Solicitud Homologacion,2016-02-12 16:28:41,2016-02-12 16:29:38,Radicar Solicitud Homologacion
+Case44,Cancelar Solicitud,2016-02-12 16:41:53,2016-02-12 16:53:56,Cancelar Solicitud
+Case44,Notificacion estudiante cancelacion soli,2016-02-18 01:21:13,2016-02-18 01:21:13,Notificacion estudiante cancelacion soli
+Case44,End,2016-02-18 01:21:13,2016-02-18 01:21:13,End
+Case45,Start,2016-02-12 18:48:07,2016-02-12 18:48:07,Start
+Case45,Traer informacion estudiante - banner,2016-02-12 18:48:07,2016-02-12 18:48:07,Traer informacion estudiante - banner
+Case45,Radicar Solicitud Homologacion,2016-02-12 18:48:09,2016-02-12 18:48:09,Radicar Solicitud Homologacion
+Case45,Cancelar Solicitud,2016-02-12 19:06:40,2016-02-12 19:06:40,Cancelar Solicitud
+Case45,Notificacion estudiante cancelacion soli,2016-02-12 22:32:47,2016-02-12 22:32:47,Notificacion estudiante cancelacion soli
+Case45,End,2016-02-12 22:32:47,2016-02-12 22:32:47,End
+Case46,Start,2016-02-02 16:06:35,2016-02-02 16:06:35,Start
+Case46,Traer informacion estudiante - banner,2016-02-02 16:06:35,2016-02-02 16:06:35,Traer informacion estudiante - banner
+Case46,Radicar Solicitud Homologacion,2016-02-02 16:06:37,2016-02-02 16:06:43,Radicar Solicitud Homologacion
+Case46,Validar solicitud,2016-02-02 16:15:15,2016-02-02 16:29:19,Validar solicitud
+Case46,Homologacion por grupo de cursos,2016-02-08 05:45:35,2016-02-08 10:43:25,Homologacion por grupo de cursos
+Case46,End,2016-02-08 10:43:25,2016-02-08 10:43:25,End
+Case47,Start,2016-02-12 22:04:02,2016-02-12 22:04:02,Start
+Case47,Traer informacion estudiante - banner,2016-02-12 22:04:02,2016-02-12 22:04:02,Traer informacion estudiante - banner
+Case47,Radicar Solicitud Homologacion,2016-02-12 22:04:09,2016-02-12 22:10:21,Radicar Solicitud Homologacion
+Case47,Validar solicitud,2016-02-12 22:14:47,2016-02-12 22:18:57,Validar solicitud
+Case47,Homologacion por grupo de cursos,2016-02-15 12:47:59,2016-02-15 13:58:45,Homologacion por grupo de cursos
+Case47,Validacion final,2016-02-29 23:14:04,2016-02-29 23:18:01,Validacion final
+Case47,Visto Bueno Cierre Proceso,2016-03-03 15:33:49,2016-03-03 17:16:22,Visto Bueno Cierre Proceso
+Case47,End,2016-03-03 17:16:22,2016-03-03 17:16:22,End
+Case48,Start,2016-02-13 00:47:31,2016-02-13 00:47:31,Start
+Case48,Traer informacion estudiante - banner,2016-02-13 00:47:31,2016-02-13 00:47:31,Traer informacion estudiante - banner
+Case48,Radicar Solicitud Homologacion,2016-02-13 00:47:38,2016-02-13 00:48:50,Radicar Solicitud Homologacion
+Case48,Validar solicitud,2016-02-13 00:51:09,2016-02-13 01:02:44,Validar solicitud
+Case48,Homologacion por grupo de cursos,2016-02-13 01:51:27,2016-02-13 02:39:10,Homologacion por grupo de cursos
+Case48,End,2016-02-13 02:39:10,2016-02-13 02:39:10,End
+Case49,Start,2016-02-13 02:12:39,2016-02-13 02:12:39,Start
+Case49,Traer informacion estudiante - banner,2016-02-13 02:12:39,2016-02-13 02:12:39,Traer informacion estudiante - banner
+Case49,Radicar Solicitud Homologacion,2016-02-13 02:12:40,2016-02-13 02:12:42,Radicar Solicitud Homologacion
+Case49,Validar solicitud,2016-02-23 20:08:37,2016-02-23 21:10:22,Validar solicitud
+Case49,Homologacion por grupo de cursos,2016-03-05 11:48:10,2016-03-05 11:51:07,Homologacion por grupo de cursos
+Case49,Revisar curso,2016-03-05 18:52:05,2016-03-05 20:26:00,Revisar curso
+Case49,Evaluacion curso,2016-03-05 20:26:24,2016-03-05 20:31:47,Evaluacion curso
+Case49,Validar solicitud / pre-homologacion,2016-03-07 18:25:52,2016-03-07 18:29:20,Validar solicitud / pre-homologacion
+Case49,End,2016-03-07 18:29:20,2016-03-07 18:29:20,End
+Case50,Start,2016-02-13 03:37:41,2016-02-13 03:37:41,Start
+Case50,Traer informacion estudiante - banner,2016-02-13 03:37:41,2016-02-13 03:37:41,Traer informacion estudiante - banner
+Case50,Radicar Solicitud Homologacion,2016-02-13 03:37:44,2016-02-13 03:37:44,Radicar Solicitud Homologacion
+Case50,Notificacion estudiante cancelacion soli,2016-02-13 03:38:16,2016-02-13 03:38:16,Notificacion estudiante cancelacion soli
+Case50,End,2016-02-13 03:38:16,2016-02-13 03:38:16,End
+Case51,Start,2016-02-13 09:55:18,2016-02-13 09:55:18,Start
+Case51,Traer informacion estudiante - banner,2016-02-13 09:55:35,2016-02-13 09:55:35,Traer informacion estudiante - banner
+Case51,Radicar Solicitud Homologacion,2016-02-13 09:55:38,2016-02-13 09:55:38,Radicar Solicitud Homologacion
+Case51,Cancelar Solicitud,2016-02-13 09:57:37,2016-02-13 09:58:30,Cancelar Solicitud
+Case51,Notificacion estudiante cancelacion soli,2016-02-13 10:01:34,2016-02-13 10:01:34,Notificacion estudiante cancelacion soli
+Case51,End,2016-02-13 10:01:34,2016-02-13 10:01:34,End
+Case52,Start,2016-02-13 12:01:32,2016-02-13 12:01:32,Start
+Case52,Traer informacion estudiante - banner,2016-02-13 12:01:32,2016-02-13 12:01:32,Traer informacion estudiante - banner
+Case52,Radicar Solicitud Homologacion,2016-02-13 12:01:36,2016-02-13 12:01:42,Radicar Solicitud Homologacion
+Case52,Cancelar Solicitud,2016-02-14 09:54:18,2016-02-14 10:35:33,Cancelar Solicitud
+Case52,Validar solicitud,2016-02-13 12:14:44,2016-02-13 12:15:34,Validar solicitud
+Case52,Notificacion estudiante cancelacion soli,2016-02-14 17:00:04,2016-02-14 17:00:04,Notificacion estudiante cancelacion soli
+Case52,End,2016-02-14 17:00:04,2016-02-14 17:00:04,End
+Case53,Start,2016-02-13 14:07:37,2016-02-13 14:07:37,Start
+Case53,Cancelar Solicitud,2016-02-13 14:14:48,2016-02-13 14:14:50,Cancelar Solicitud
+Case53,Traer informacion estudiante - banner,2016-02-13 14:14:50,2016-02-13 14:14:50,Traer informacion estudiante - banner
+Case53,Radicar Solicitud Homologacion,2016-02-13 14:14:55,2016-02-13 14:15:13,Radicar Solicitud Homologacion
+Case53,Notificacion estudiante cancelacion soli,2016-02-15 13:46:20,2016-02-15 13:46:20,Notificacion estudiante cancelacion soli
+Case53,End,2016-02-15 13:46:20,2016-02-15 13:46:20,End
+Case54,Start,2016-02-13 16:37:16,2016-02-13 16:37:16,Start
+Case54,Traer informacion estudiante - banner,2016-02-13 16:37:16,2016-02-13 16:37:16,Traer informacion estudiante - banner
+Case54,Radicar Solicitud Homologacion,2016-02-13 16:37:21,2016-02-13 16:37:21,Radicar Solicitud Homologacion
+Case54,Validar solicitud,2016-02-13 16:42:05,2016-02-13 16:43:04,Validar solicitud
+Case54,Homologacion por grupo de cursos,2016-04-24 14:33:29,2016-04-24 16:04:32,Homologacion por grupo de cursos
+Case54,End,2016-04-24 16:04:32,2016-04-24 16:04:32,End
+Case55,Start,2016-02-13 21:04:42,2016-02-13 21:04:42,Start
+Case55,Traer informacion estudiante - banner,2016-02-13 21:04:42,2016-02-13 21:04:42,Traer informacion estudiante - banner
+Case55,Radicar Solicitud Homologacion,2016-02-13 21:04:47,2016-02-13 21:05:46,Radicar Solicitud Homologacion
+Case55,Cancelar Solicitud,2016-02-25 11:31:31,2016-02-25 13:14:16,Cancelar Solicitud
+Case55,Notificacion estudiante cancelacion soli,2016-02-25 13:17:21,2016-02-25 13:17:21,Notificacion estudiante cancelacion soli
+Case55,End,2016-02-25 13:17:21,2016-02-25 13:17:21,End
+Case56,Start,2016-02-13 21:43:27,2016-02-13 21:43:27,Start
+Case56,Traer informacion estudiante - banner,2016-02-13 21:43:27,2016-02-13 21:43:27,Traer informacion estudiante - banner
+Case56,Radicar Solicitud Homologacion,2016-02-13 21:43:29,2016-02-13 21:43:39,Radicar Solicitud Homologacion
+Case56,Cancelar Solicitud,2016-02-13 21:50:13,2016-02-13 21:50:13,Cancelar Solicitud
+Case56,Notificacion estudiante cancelacion soli,2016-02-17 15:18:07,2016-02-17 15:18:07,Notificacion estudiante cancelacion soli
+Case56,End,2016-02-17 15:18:07,2016-02-17 15:18:07,End
+Case57,Start,2016-02-02 16:35:18,2016-02-02 16:35:18,Start
+Case57,Traer informacion estudiante - banner,2016-02-02 16:35:18,2016-02-02 16:35:18,Traer informacion estudiante - banner
+Case57,Radicar Solicitud Homologacion,2016-02-02 16:35:24,2016-02-02 16:35:24,Radicar Solicitud Homologacion
+Case57,Radicar Solicitud Homologacion,2016-02-02 16:35:38,2016-02-02 16:49:31,Radicar Solicitud Homologacion
+Case57,Cancelar Solicitud,2016-02-02 17:12:37,2016-02-02 17:54:42,Cancelar Solicitud
+Case57,Notificacion estudiante cancelacion soli,2016-02-02 19:53:45,2016-02-02 19:53:45,Notificacion estudiante cancelacion soli
+Case57,End,2016-02-02 19:53:45,2016-02-02 19:53:45,End
+Case58,Start,2016-02-13 22:54:04,2016-02-13 22:54:04,Start
+Case58,Traer informacion estudiante - banner,2016-02-13 22:54:04,2016-02-13 22:54:04,Traer informacion estudiante - banner
+Case58,Radicar Solicitud Homologacion,2016-02-13 22:54:06,2016-02-13 22:54:10,Radicar Solicitud Homologacion
+Case58,Cancelar Solicitud,2016-02-13 23:01:59,2016-02-13 23:04:29,Cancelar Solicitud
+Case58,Notificacion estudiante cancelacion soli,2016-02-14 09:09:29,2016-02-14 09:09:29,Notificacion estudiante cancelacion soli
+Case58,End,2016-02-14 09:09:29,2016-02-14 09:09:29,End
+Case59,Start,2016-02-14 00:11:35,2016-02-14 00:11:35,Start
+Case59,Traer informacion estudiante - banner,2016-02-14 00:11:35,2016-02-14 00:11:35,Traer informacion estudiante - banner
+Case59,Radicar Solicitud Homologacion,2016-02-14 00:11:37,2016-02-14 00:11:37,Radicar Solicitud Homologacion
+Case59,Cancelar Solicitud,2016-02-17 07:11:50,2016-02-17 08:22:52,Cancelar Solicitud
+Case59,Notificacion estudiante cancelacion soli,2016-03-26 02:49:55,2016-03-26 02:49:55,Notificacion estudiante cancelacion soli
+Case59,End,2016-03-26 02:49:55,2016-03-26 02:49:55,End
+Case60,Start,2016-02-14 06:28:38,2016-02-14 06:28:38,Start
+Case60,Traer informacion estudiante - banner,2016-02-14 06:28:38,2016-02-14 06:28:38,Traer informacion estudiante - banner
+Case60,Radicar Solicitud Homologacion,2016-02-14 06:28:44,2016-02-14 06:32:03,Radicar Solicitud Homologacion
+Case60,Cancelar Solicitud,2016-02-14 06:49:29,2016-02-14 06:50:53,Cancelar Solicitud
+Case60,Notificacion estudiante cancelacion soli,2016-02-14 09:35:57,2016-02-14 09:35:57,Notificacion estudiante cancelacion soli
+Case60,End,2016-02-14 09:35:57,2016-02-14 09:35:57,End
+Case61,Start,2016-02-14 14:29:43,2016-02-14 14:29:43,Start
+Case61,Traer informacion estudiante - banner,2016-02-14 14:29:43,2016-02-14 14:29:43,Traer informacion estudiante - banner
+Case61,Radicar Solicitud Homologacion,2016-02-14 14:29:46,2016-02-14 14:29:46,Radicar Solicitud Homologacion
+Case61,Cancelar Solicitud,2016-02-14 14:34:00,2016-02-14 14:42:11,Cancelar Solicitud
+Case61,Validar solicitud,2016-02-14 14:41:51,2016-02-14 15:35:05,Validar solicitud
+Case61,Revisar curso,2016-02-18 02:52:16,2016-02-18 02:53:42,Revisar curso
+Case61,Notificacion estudiante cancelacion soli,2016-02-18 05:01:01,2016-02-18 05:01:01,Notificacion estudiante cancelacion soli
+Case61,End,2016-02-18 05:01:01,2016-02-18 05:01:01,End
+Case62,Start,2016-02-14 15:59:58,2016-02-14 15:59:58,Start
+Case62,Traer informacion estudiante - banner,2016-02-14 15:59:58,2016-02-14 15:59:58,Traer informacion estudiante - banner
+Case62,Radicar Solicitud Homologacion,2016-02-14 15:59:59,2016-02-14 16:00:03,Radicar Solicitud Homologacion
+Case62,Cancelar Solicitud,2016-02-14 16:03:50,2016-02-14 16:06:54,Cancelar Solicitud
+Case62,Notificacion estudiante cancelacion soli,2016-02-24 01:27:02,2016-02-24 01:27:02,Notificacion estudiante cancelacion soli
+Case62,End,2016-02-24 01:27:02,2016-02-24 01:27:02,End
+Case63,Start,2016-02-14 18:21:02,2016-02-14 18:21:02,Start
+Case63,Traer informacion estudiante - banner,2016-02-14 18:21:02,2016-02-14 18:21:02,Traer informacion estudiante - banner
+Case63,Radicar Solicitud Homologacion,2016-02-19 05:26:27,2016-02-19 05:39:33,Radicar Solicitud Homologacion
+Case63,Revisar curso,2016-02-21 15:00:31,2016-02-21 15:10:13,Revisar curso
+Case63,Validar solicitud,2016-02-21 15:13:33,2016-02-21 15:13:33,Validar solicitud
+Case63,Cancelar Solicitud,2016-02-21 15:17:35,2016-02-21 15:17:35,Cancelar Solicitud
+Case63,Notificacion estudiante cancelacion soli,2016-02-22 16:26:34,2016-02-22 16:26:34,Notificacion estudiante cancelacion soli
+Case63,End,2016-02-22 16:26:34,2016-02-22 16:26:34,End
+Case64,Start,2016-02-14 19:00:57,2016-02-14 19:00:57,Start
+Case64,Traer informacion estudiante - banner,2016-02-14 19:00:57,2016-02-14 19:00:57,Traer informacion estudiante - banner
+Case64,Radicar Solicitud Homologacion,2016-02-14 19:01:01,2016-02-14 19:05:20,Radicar Solicitud Homologacion
+Case64,Validar solicitud,2016-02-14 19:32:21,2016-02-14 22:34:00,Validar solicitud
+Case64,Homologacion por grupo de cursos,2016-02-16 04:37:38,2016-02-16 04:38:02,Homologacion por grupo de cursos
+Case64,Revisar curso,2016-02-21 01:48:33,2016-02-21 01:48:33,Revisar curso
+Case64,Evaluacion curso,2016-02-27 02:53:42,2016-02-27 03:00:54,Evaluacion curso
+Case64,End,2016-02-27 03:00:54,2016-02-27 03:00:54,End
+Case65,Start,2016-02-14 22:03:11,2016-02-14 22:03:11,Start
+Case65,Traer informacion estudiante - banner,2016-02-14 22:03:11,2016-02-14 22:03:11,Traer informacion estudiante - banner
+Case65,Radicar Solicitud Homologacion,2016-02-14 22:03:13,2016-02-14 22:03:18,Radicar Solicitud Homologacion
+Case65,Validar solicitud,2016-02-14 22:27:50,2016-02-14 22:33:26,Validar solicitud
+Case65,Homologacion por grupo de cursos,2016-02-19 03:10:13,2016-02-19 03:45:36,Homologacion por grupo de cursos
+Case65,Revisar curso,2016-02-15 16:39:23,2016-02-15 16:39:24,Revisar curso
+Case65,Evaluacion curso,2016-02-19 03:51:32,2016-02-19 03:51:32,Evaluacion curso
+Case65,Validacion final,2016-02-19 17:35:27,2016-02-19 17:37:48,Validacion final
+Case65,Visto Bueno Cierre Proceso,2016-02-19 21:43:58,2016-02-19 21:59:14,Visto Bueno Cierre Proceso
+Case65,End,2016-02-19 21:59:14,2016-02-19 21:59:14,End
+Case66,Start,2016-02-14 22:26:55,2016-02-14 22:26:55,Start
+Case66,Traer informacion estudiante - banner,2016-02-14 22:26:55,2016-02-14 22:26:55,Traer informacion estudiante - banner
+Case66,Radicar Solicitud Homologacion,2016-02-14 22:26:56,2016-02-14 22:26:59,Radicar Solicitud Homologacion
+Case66,Validar solicitud,2016-02-14 22:51:42,2016-02-14 22:51:42,Validar solicitud
+Case66,Homologacion por grupo de cursos,2016-02-19 20:39:35,2016-02-19 21:04:15,Homologacion por grupo de cursos
+Case66,Revisar curso,2016-03-11 22:21:47,2016-03-11 23:35:36,Revisar curso
+Case66,Evaluacion curso,2016-03-11 23:37:25,2016-03-11 23:37:46,Evaluacion curso
+Case66,Validar solicitud / pre-homologacion,2016-03-12 19:48:49,2016-03-12 19:48:57,Validar solicitud / pre-homologacion
+Case66,Evaluacion curso,2016-03-12 19:49:40,2016-03-12 19:58:07,Evaluacion curso
+Case66,End,2016-03-12 19:58:07,2016-03-12 19:58:07,End
+Case67,Start,2016-02-14 23:57:43,2016-02-14 23:57:43,Start
+Case67,Traer informacion estudiante - banner,2016-02-14 23:57:43,2016-02-14 23:57:43,Traer informacion estudiante - banner
+Case67,Radicar Solicitud Homologacion,2016-02-14 23:57:46,2016-02-14 23:57:46,Radicar Solicitud Homologacion
+Case67,Cancelar Solicitud,2016-02-15 00:10:13,2016-02-15 00:10:13,Cancelar Solicitud
+Case67,Notificacion estudiante cancelacion soli,2016-02-15 01:21:03,2016-02-15 01:21:03,Notificacion estudiante cancelacion soli
+Case67,End,2016-02-15 01:21:03,2016-02-15 01:21:03,End
+Case68,Start,2016-02-02 18:48:08,2016-02-02 18:48:08,Start
+Case68,Traer informacion estudiante - banner,2016-02-02 18:48:08,2016-02-02 18:48:08,Traer informacion estudiante - banner
+Case68,Radicar Solicitud Homologacion,2016-02-02 18:48:10,2016-02-02 18:48:12,Radicar Solicitud Homologacion
+Case68,Cancelar Solicitud,2016-02-02 18:55:09,2016-02-02 18:55:09,Cancelar Solicitud
+Case68,Notificacion estudiante cancelacion soli,2016-02-02 18:59:22,2016-02-02 18:59:22,Notificacion estudiante cancelacion soli
+Case68,End,2016-02-02 18:59:22,2016-02-02 18:59:22,End
+Case69,Start,2016-02-15 07:29:17,2016-02-15 07:29:17,Start
+Case69,Traer informacion estudiante - banner,2016-02-15 07:29:17,2016-02-15 07:29:17,Traer informacion estudiante - banner
+Case69,Radicar Solicitud Homologacion,2016-02-15 07:29:23,2016-02-15 07:29:23,Radicar Solicitud Homologacion
+Case69,Revisar curso,2016-02-16 14:34:06,2016-02-16 14:42:38,Revisar curso
+Case69,Revisar curso,2016-02-16 04:36:11,2016-02-16 04:36:11,Revisar curso
+Case69,Validar solicitud,2016-02-18 03:51:16,2016-02-18 04:33:24,Validar solicitud
+Case69,End,2016-02-18 04:33:24,2016-02-18 04:33:24,End
+Case70,Start,2016-02-15 08:56:48,2016-02-15 08:56:48,Start
+Case70,Traer informacion estudiante - banner,2016-02-15 08:56:48,2016-02-15 08:56:48,Traer informacion estudiante - banner
+Case70,Radicar Solicitud Homologacion,2016-02-15 08:56:53,2016-02-15 08:57:14,Radicar Solicitud Homologacion
+Case70,Cancelar Solicitud,2016-02-15 09:01:29,2016-02-15 09:01:29,Cancelar Solicitud
+Case70,Notificacion estudiante cancelacion soli,2016-02-15 14:09:15,2016-02-15 14:09:15,Notificacion estudiante cancelacion soli
+Case70,End,2016-02-15 14:09:15,2016-02-15 14:09:15,End
+Case71,Start,2016-02-15 10:27:10,2016-02-15 10:27:10,Start
+Case71,Homologacion por grupo de cursos,2016-02-15 15:17:33,2016-02-15 15:29:54,Homologacion por grupo de cursos
+Case71,Traer informacion estudiante - banner,2016-02-15 10:27:10,2016-02-15 10:27:10,Traer informacion estudiante - banner
+Case71,Radicar Solicitud Homologacion,2016-02-15 10:27:12,2016-02-15 10:27:14,Radicar Solicitud Homologacion
+Case71,Validar solicitud,2016-02-15 18:36:00,2016-02-15 21:41:50,Validar solicitud
+Case71,End,2016-02-15 21:41:50,2016-02-15 21:41:50,End
+Case72,Start,2016-02-15 13:53:06,2016-02-15 13:53:06,Start
+Case72,Traer informacion estudiante - banner,2016-02-15 13:53:06,2016-02-15 13:53:06,Traer informacion estudiante - banner
+Case72,Radicar Solicitud Homologacion,2016-02-15 13:53:08,2016-02-15 14:39:33,Radicar Solicitud Homologacion
+Case72,Validar solicitud,2016-02-15 15:18:26,2016-02-15 15:36:26,Validar solicitud
+Case72,Homologacion por grupo de cursos,2016-02-15 16:19:00,2016-02-15 16:28:48,Homologacion por grupo de cursos
+Case72,End,2016-02-15 16:28:48,2016-02-15 16:28:48,End
+Case73,Start,2016-02-15 15:41:53,2016-02-15 15:41:53,Start
+Case73,Traer informacion estudiante - banner,2016-02-15 15:41:53,2016-02-15 15:41:53,Traer informacion estudiante - banner
+Case73,Radicar Solicitud Homologacion,2016-02-15 15:41:55,2016-02-15 15:41:58,Radicar Solicitud Homologacion
+Case73,Cancelar Solicitud,2016-02-15 16:05:26,2016-02-15 16:15:46,Cancelar Solicitud
+Case73,Notificacion estudiante cancelacion soli,2016-02-15 16:38:12,2016-02-15 16:38:12,Notificacion estudiante cancelacion soli
+Case73,End,2016-02-15 16:38:12,2016-02-15 16:38:12,End
+Case74,Start,2016-02-15 18:49:20,2016-02-15 18:49:20,Start
+Case74,Traer informacion estudiante - banner,2016-02-15 19:01:41,2016-02-15 19:01:41,Traer informacion estudiante - banner
+Case74,Radicar Solicitud Homologacion,2016-02-15 19:01:43,2016-02-15 19:01:52,Radicar Solicitud Homologacion
+Case74,Validar solicitud,2016-02-15 19:32:28,2016-02-15 19:34:20,Validar solicitud
+Case74,Homologacion por grupo de cursos,2016-02-15 19:34:20,2016-02-15 19:54:35,Homologacion por grupo de cursos
+Case74,Revisar curso,2016-02-15 19:42:09,2016-02-15 21:07:28,Revisar curso
+Case74,Evaluacion curso,2016-02-15 21:07:44,2016-02-15 21:08:21,Evaluacion curso
+Case74,Validacion final,2016-02-15 21:18:51,2016-02-15 21:26:08,Validacion final
+Case74,Visto Bueno Cierre Proceso,2016-02-15 21:26:59,2016-02-15 23:05:31,Visto Bueno Cierre Proceso
+Case74,Transferir Creditos,2016-02-15 23:14:17,2016-02-15 23:14:17,Transferir Creditos
+Case74,Transferir creditos homologables,2016-02-15 23:14:17,2016-02-15 23:14:17,Transferir creditos homologables
+Case74,End,2016-02-15 23:14:17,2016-02-15 23:14:17,End
+Case75,Start,2016-02-15 19:46:05,2016-02-15 19:46:05,Start
+Case75,Traer informacion estudiante - banner,2016-02-15 19:46:05,2016-02-15 19:46:05,Traer informacion estudiante - banner
+Case75,Radicar Solicitud Homologacion,2016-02-15 19:46:08,2016-02-15 19:46:08,Radicar Solicitud Homologacion
+Case75,Cancelar Solicitud,2016-02-15 19:52:44,2016-02-15 19:52:44,Cancelar Solicitud
+Case75,Validar solicitud,2016-02-15 19:53:42,2016-02-15 20:08:57,Validar solicitud
+Case75,Revisar curso,2016-02-15 20:30:51,2016-02-16 00:37:47,Revisar curso
+Case75,Notificacion estudiante cancelacion soli,2016-02-20 00:43:29,2016-02-20 00:43:29,Notificacion estudiante cancelacion soli
+Case75,End,2016-02-20 00:43:29,2016-02-20 00:43:29,End
+Case76,Start,2016-02-15 22:14:06,2016-02-15 22:14:06,Start
+Case76,Traer informacion estudiante - banner,2016-02-15 22:14:06,2016-02-15 22:14:06,Traer informacion estudiante - banner
+Case76,Radicar Solicitud Homologacion,2016-02-15 22:14:07,2016-02-15 22:14:10,Radicar Solicitud Homologacion
+Case76,Validar solicitud,2016-02-15 22:28:39,2016-02-15 22:32:37,Validar solicitud
+Case76,Homologacion por grupo de cursos,2016-02-18 01:20:00,2016-02-18 02:54:30,Homologacion por grupo de cursos
+Case76,End,2016-02-18 02:54:30,2016-02-18 02:54:30,End
+Case77,Start,2016-02-15 23:05:34,2016-02-15 23:05:34,Start
+Case77,Traer informacion estudiante - banner,2016-02-16 01:47:00,2016-02-16 01:47:00,Traer informacion estudiante - banner
+Case77,Radicar Solicitud Homologacion,2016-02-16 01:47:02,2016-02-16 01:47:02,Radicar Solicitud Homologacion
+Case77,Cancelar Solicitud,2016-02-16 02:02:38,2016-02-16 02:19:40,Cancelar Solicitud
+Case77,Validar solicitud,2016-02-16 01:52:54,2016-02-16 01:52:58,Validar solicitud
+Case77,Revisar curso,2016-02-16 02:19:40,2016-02-16 02:19:40,Revisar curso
+Case77,Notificacion estudiante cancelacion soli,2016-02-16 04:47:01,2016-02-16 04:47:01,Notificacion estudiante cancelacion soli
+Case77,End,2016-02-16 04:47:01,2016-02-16 04:47:01,End
+Case78,Start,2016-02-15 23:49:19,2016-02-15 23:49:19,Start
+Case78,Traer informacion estudiante - banner,2016-02-15 23:49:19,2016-02-15 23:49:19,Traer informacion estudiante - banner
+Case78,Radicar Solicitud Homologacion,2016-02-15 23:49:22,2016-02-15 23:49:30,Radicar Solicitud Homologacion
+Case78,Validar solicitud,2016-02-16 00:11:13,2016-02-16 00:13:51,Validar solicitud
+Case78,Homologacion por grupo de cursos,2016-02-16 01:23:54,2016-02-16 02:03:09,Homologacion por grupo de cursos
+Case78,Revisar curso,2016-03-02 02:03:50,2016-03-02 02:05:53,Revisar curso
+Case78,Evaluacion curso,2016-05-05 20:59:01,2016-05-05 21:11:53,Evaluacion curso
+Case78,Validar solicitud / pre-homologacion,2016-05-14 05:31:55,2016-05-14 05:42:28,Validar solicitud / pre-homologacion
+Case78,End,2016-05-14 05:42:28,2016-05-14 05:42:28,End
+Case79,Start,2016-02-02 20:37:50,2016-02-02 20:37:50,Start
+Case79,Traer informacion estudiante - banner,2016-02-02 20:37:50,2016-02-02 20:37:50,Traer informacion estudiante - banner
+Case79,Radicar Solicitud Homologacion,2016-02-02 20:37:54,2016-02-02 20:38:12,Radicar Solicitud Homologacion
+Case79,Cancelar Solicitud,2016-02-02 20:47:10,2016-02-02 21:30:23,Cancelar Solicitud
+Case79,Notificacion estudiante cancelacion soli,2016-02-03 15:11:37,2016-02-03 15:11:37,Notificacion estudiante cancelacion soli
+Case79,End,2016-02-03 15:11:37,2016-02-03 15:11:37,End
+Case80,Start,2016-02-16 01:21:44,2016-02-16 01:21:44,Start
+Case80,Traer informacion estudiante - banner,2016-02-16 01:21:44,2016-02-16 01:21:44,Traer informacion estudiante - banner
+Case80,Radicar Solicitud Homologacion,2016-02-16 01:21:48,2016-02-16 01:21:48,Radicar Solicitud Homologacion
+Case80,Notificacion estudiante cancelacion soli,2016-02-16 01:21:49,2016-02-16 01:21:49,Notificacion estudiante cancelacion soli
+Case80,End,2016-02-16 01:21:49,2016-02-16 01:21:49,End
+Case81,Start,2016-02-16 02:19:30,2016-02-16 02:19:30,Start
+Case81,Traer informacion estudiante - banner,2016-02-16 02:19:30,2016-02-16 02:19:30,Traer informacion estudiante - banner
+Case81,Radicar Solicitud Homologacion,2016-02-16 02:19:42,2016-02-16 02:19:42,Radicar Solicitud Homologacion
+Case81,Cancelar Solicitud,2016-02-16 02:31:06,2016-02-16 02:59:36,Cancelar Solicitud
+Case81,Notificacion estudiante cancelacion soli,2016-02-16 12:01:03,2016-02-16 12:01:03,Notificacion estudiante cancelacion soli
+Case81,End,2016-02-16 12:01:03,2016-02-16 12:01:03,End
+Case82,Start,2016-02-16 02:51:07,2016-02-16 02:51:07,Start
+Case82,Traer informacion estudiante - banner,2016-02-16 02:56:38,2016-02-16 02:56:38,Traer informacion estudiante - banner
+Case82,Radicar Solicitud Homologacion,2016-02-16 02:56:42,2016-02-16 03:58:42,Radicar Solicitud Homologacion
+Case82,Validar solicitud,2016-02-16 04:10:09,2016-02-16 04:13:01,Validar solicitud
+Case82,Homologacion por grupo de cursos,2016-03-11 01:49:28,2016-03-11 03:09:59,Homologacion por grupo de cursos
+Case82,End,2016-03-11 03:09:59,2016-03-11 03:09:59,End
+Case83,Start,2016-02-16 04:00:46,2016-02-16 04:00:46,Start
+Case83,Traer informacion estudiante - banner,2016-02-16 04:00:46,2016-02-16 04:00:46,Traer informacion estudiante - banner
+Case83,Radicar Solicitud Homologacion,2016-02-16 04:00:47,2016-02-16 04:00:54,Radicar Solicitud Homologacion
+Case83,Validar solicitud,2016-02-16 04:12:16,2016-02-16 05:51:11,Validar solicitud
+Case83,Homologacion por grupo de cursos,2016-02-16 12:22:44,2016-02-16 13:14:27,Homologacion por grupo de cursos
+Case83,End,2016-02-16 13:14:27,2016-02-16 13:14:27,End
+Case84,Start,2016-02-16 04:42:19,2016-02-16 04:42:19,Start
+Case84,Traer informacion estudiante - banner,2016-02-16 04:42:19,2016-02-16 04:42:19,Traer informacion estudiante - banner
+Case84,Radicar Solicitud Homologacion,2016-02-16 04:42:22,2016-02-16 04:56:41,Radicar Solicitud Homologacion
+Case84,Cancelar Solicitud,2016-02-16 05:01:00,2016-02-16 05:01:00,Cancelar Solicitud
+Case84,Notificacion estudiante cancelacion soli,2016-02-16 05:40:47,2016-02-16 05:40:47,Notificacion estudiante cancelacion soli
+Case84,End,2016-02-16 05:40:47,2016-02-16 05:40:47,End
+Case85,Start,2016-02-16 05:35:46,2016-02-16 05:35:46,Start
+Case85,Traer informacion estudiante - banner,2016-02-16 05:35:46,2016-02-16 05:35:46,Traer informacion estudiante - banner
+Case85,Radicar Solicitud Homologacion,2016-02-16 05:35:48,2016-02-16 05:35:50,Radicar Solicitud Homologacion
+Case85,Cancelar Solicitud,2016-02-17 20:37:25,2016-02-17 22:51:39,Cancelar Solicitud
+Case85,Notificacion estudiante cancelacion soli,2016-02-20 05:21:40,2016-02-20 05:21:40,Notificacion estudiante cancelacion soli
+Case85,End,2016-02-20 05:21:40,2016-02-20 05:21:40,End
+Case86,Start,2016-02-16 07:23:43,2016-02-16 07:23:43,Start
+Case86,Traer informacion estudiante - banner,2016-02-16 07:23:43,2016-02-16 07:23:43,Traer informacion estudiante - banner
+Case86,Radicar Solicitud Homologacion,2016-02-17 11:44:58,2016-02-17 11:46:09,Radicar Solicitud Homologacion
+Case86,Cancelar Solicitud,2016-02-17 14:03:44,2016-02-17 17:18:18,Cancelar Solicitud
+Case86,Notificacion estudiante cancelacion soli,2016-02-17 17:28:50,2016-02-17 17:28:50,Notificacion estudiante cancelacion soli
+Case86,End,2016-02-17 17:28:50,2016-02-17 17:28:50,End
+Case87,Start,2016-02-16 10:15:06,2016-02-16 10:15:06,Start
+Case87,Traer informacion estudiante - banner,2016-02-16 10:15:06,2016-02-16 10:15:06,Traer informacion estudiante - banner
+Case87,Radicar Solicitud Homologacion,2016-02-16 10:15:07,2016-02-16 10:15:21,Radicar Solicitud Homologacion
+Case87,Cancelar Solicitud,2016-02-16 10:22:45,2016-02-16 13:24:51,Cancelar Solicitud
+Case87,Notificacion estudiante cancelacion soli,2016-02-16 20:07:51,2016-02-16 20:07:51,Notificacion estudiante cancelacion soli
+Case87,End,2016-02-16 20:07:51,2016-02-16 20:07:51,End
+Case88,Start,2016-02-16 15:44:21,2016-02-16 15:44:21,Start
+Case88,Traer informacion estudiante - banner,2016-02-16 15:44:21,2016-02-16 15:44:21,Traer informacion estudiante - banner
+Case88,Radicar Solicitud Homologacion,2016-02-16 15:44:25,2016-02-16 15:44:25,Radicar Solicitud Homologacion
+Case88,Cancelar Solicitud,2016-02-16 15:48:14,2016-02-16 15:48:14,Cancelar Solicitud
+Case88,Notificacion estudiante cancelacion soli,2016-03-09 13:06:44,2016-03-09 13:06:44,Notificacion estudiante cancelacion soli
+Case88,End,2016-03-09 13:06:44,2016-03-09 13:06:44,End
+Case89,Start,2016-02-16 17:06:45,2016-02-16 17:06:45,Start
+Case89,Traer informacion estudiante - banner,2016-02-16 17:06:45,2016-02-16 17:06:45,Traer informacion estudiante - banner
+Case89,Radicar Solicitud Homologacion,2016-02-16 17:06:47,2016-02-16 17:06:50,Radicar Solicitud Homologacion
+Case89,Cancelar Solicitud,2016-02-16 17:16:53,2016-02-16 17:16:53,Cancelar Solicitud
+Case89,Validar solicitud,2016-02-16 17:10:56,2016-02-16 17:13:02,Validar solicitud
+Case89,Notificacion estudiante cancelacion soli,2016-02-16 17:18:30,2016-02-16 17:18:30,Notificacion estudiante cancelacion soli
+Case89,End,2016-02-16 17:18:30,2016-02-16 17:18:30,End
+Case90,Start,2016-02-02 22:18:34,2016-02-02 22:18:34,Start
+Case90,Traer informacion estudiante - banner,2016-02-02 22:18:34,2016-02-02 22:18:34,Traer informacion estudiante - banner
+Case90,Radicar Solicitud Homologacion,2016-02-02 22:18:36,2016-02-02 22:18:42,Radicar Solicitud Homologacion
+Case90,Cancelar Solicitud,2016-02-02 22:28:14,2016-02-02 22:29:55,Cancelar Solicitud
+Case90,Notificacion estudiante cancelacion soli,2016-02-10 08:49:26,2016-02-10 08:49:26,Notificacion estudiante cancelacion soli
+Case90,End,2016-02-10 08:49:26,2016-02-10 08:49:26,End
+Case91,Start,2016-02-16 19:57:02,2016-02-16 19:57:02,Start
+Case91,Traer informacion estudiante - banner,2016-02-16 19:57:02,2016-02-16 19:57:02,Traer informacion estudiante - banner
+Case91,Radicar Solicitud Homologacion,2016-02-16 19:57:06,2016-02-16 19:57:13,Radicar Solicitud Homologacion
+Case91,Validar solicitud,2016-02-16 20:01:09,2016-02-16 20:21:19,Validar solicitud
+Case91,Homologacion por grupo de cursos,2016-02-16 20:22:47,2016-02-16 23:45:16,Homologacion por grupo de cursos
+Case91,End,2016-02-16 23:45:16,2016-02-16 23:45:16,End
+Case92,Start,2016-02-16 22:02:57,2016-02-16 22:02:57,Start
+Case92,Traer informacion estudiante - banner,2016-02-16 22:02:57,2016-02-16 22:02:57,Traer informacion estudiante - banner
+Case92,Radicar Solicitud Homologacion,2016-02-16 22:02:58,2016-02-16 22:03:09,Radicar Solicitud Homologacion
+Case92,Cancelar Solicitud,2016-02-16 22:06:16,2016-02-16 22:06:16,Cancelar Solicitud
+Case92,Notificacion estudiante cancelacion soli,2016-02-16 22:06:52,2016-02-16 22:06:52,Notificacion estudiante cancelacion soli
+Case92,End,2016-02-16 22:06:52,2016-02-16 22:06:52,End
+Case93,Start,2016-02-16 23:05:35,2016-02-16 23:05:35,Start
+Case93,Traer informacion estudiante - banner,2016-02-16 23:05:35,2016-02-16 23:05:35,Traer informacion estudiante - banner
+Case93,Radicar Solicitud Homologacion,2016-02-16 23:05:37,2016-02-16 23:05:39,Radicar Solicitud Homologacion
+Case93,Validar solicitud,2016-02-16 23:10:41,2016-02-16 23:52:33,Validar solicitud
+Case93,Homologacion por grupo de cursos,2016-02-21 21:39:04,2016-02-21 22:25:29,Homologacion por grupo de cursos
+Case93,Revisar curso,2016-02-17 12:03:46,2016-02-17 12:59:02,Revisar curso
+Case93,Evaluacion curso,2016-02-21 22:26:31,2016-02-21 22:53:34,Evaluacion curso
+Case93,Validacion final,2016-02-21 23:40:42,2016-02-21 23:40:42,Validacion final
+Case93,Visto Bueno Cierre Proceso,2016-02-21 23:40:56,2016-02-21 23:42:16,Visto Bueno Cierre Proceso
+Case93,End,2016-02-21 23:42:16,2016-02-21 23:42:16,End
+Case94,Start,2016-02-17 00:19:10,2016-02-17 00:19:10,Start
+Case94,Traer informacion estudiante - banner,2016-02-17 00:19:10,2016-02-17 00:19:10,Traer informacion estudiante - banner
+Case94,Radicar Solicitud Homologacion,2016-02-17 00:19:16,2016-02-17 00:19:16,Radicar Solicitud Homologacion
+Case94,Cancelar Solicitud,2016-02-17 00:22:22,2016-02-17 00:22:22,Cancelar Solicitud
+Case94,Notificacion estudiante cancelacion soli,2016-02-17 08:41:36,2016-02-17 08:41:36,Notificacion estudiante cancelacion soli
+Case94,End,2016-02-17 08:41:36,2016-02-17 08:41:36,End
+Case95,Start,2016-02-17 03:20:00,2016-02-17 03:20:00,Start
+Case95,Traer informacion estudiante - banner,2016-02-17 03:20:00,2016-02-17 03:20:00,Traer informacion estudiante - banner
+Case95,Radicar Solicitud Homologacion,2016-02-17 03:20:06,2016-02-17 04:06:04,Radicar Solicitud Homologacion
+Case95,Validar solicitud,2016-02-17 04:13:12,2016-02-17 04:28:15,Validar solicitud
+Case95,Homologacion por grupo de cursos,2016-02-17 05:28:50,2016-02-17 10:27:20,Homologacion por grupo de cursos
+Case95,End,2016-02-17 10:27:20,2016-02-17 10:27:20,End
+Case96,Start,2016-02-17 10:00:53,2016-02-17 10:00:53,Start
+Case96,Traer informacion estudiante - banner,2016-02-17 10:00:53,2016-02-17 10:00:53,Traer informacion estudiante - banner
+Case96,Radicar Solicitud Homologacion,2016-02-17 10:00:55,2016-02-17 10:01:01,Radicar Solicitud Homologacion
+Case96,Validar solicitud,2016-02-17 10:13:22,2016-02-17 10:23:13,Validar solicitud
+Case96,Homologacion por grupo de cursos,2016-02-20 06:26:41,2016-02-20 07:02:32,Homologacion por grupo de cursos
+Case96,Validar solicitud / pre-homologacion,2016-02-21 00:08:10,2016-02-21 00:22:08,Validar solicitud / pre-homologacion
+Case96,End,2016-02-21 00:22:08,2016-02-21 00:22:08,End
+Case97,Start,2016-02-17 13:11:55,2016-02-17 13:11:55,Start
+Case97,Traer informacion estudiante - banner,2016-02-17 13:11:55,2016-02-17 13:11:55,Traer informacion estudiante - banner
+Case97,Radicar Solicitud Homologacion,2016-02-17 13:11:59,2016-02-17 13:12:09,Radicar Solicitud Homologacion
+Case97,Cancelar Solicitud,2016-02-17 13:26:36,2016-02-17 15:35:34,Cancelar Solicitud
+Case97,Notificacion estudiante cancelacion soli,2016-02-17 16:00:00,2016-02-17 16:00:00,Notificacion estudiante cancelacion soli
+Case97,End,2016-02-17 16:00:00,2016-02-17 16:00:00,End
+Case98,Start,2016-02-17 15:31:42,2016-02-17 15:31:42,Start
+Case98,Traer informacion estudiante - banner,2016-02-17 15:31:42,2016-02-17 15:31:42,Traer informacion estudiante - banner
+Case98,Radicar Solicitud Homologacion,2016-02-17 15:31:51,2016-02-17 16:06:07,Radicar Solicitud Homologacion
+Case98,Cancelar Solicitud,2016-02-18 00:27:26,2016-02-18 00:28:44,Cancelar Solicitud
+Case98,Notificacion estudiante cancelacion soli,2016-02-18 00:29:34,2016-02-18 00:29:34,Notificacion estudiante cancelacion soli
+Case98,End,2016-02-18 00:29:34,2016-02-18 00:29:34,End
+Case99,Start,2016-02-17 16:42:16,2016-02-17 16:42:16,Start
+Case99,Traer informacion estudiante - banner,2016-02-17 16:42:16,2016-02-17 16:42:16,Traer informacion estudiante - banner
+Case99,Radicar Solicitud Homologacion,2016-02-17 16:42:22,2016-02-17 16:42:22,Radicar Solicitud Homologacion
+Case99,Notificacion estudiante cancelacion soli,2016-03-09 15:23:23,2016-03-09 15:23:23,Notificacion estudiante cancelacion soli
+Case99,End,2016-03-09 15:23:23,2016-03-09 15:23:23,End
+Case100,Start,2016-02-17 18:01:33,2016-02-17 18:01:33,Start
+Case100,Traer informacion estudiante - banner,2016-02-17 18:01:33,2016-02-17 18:01:33,Traer informacion estudiante - banner
+Case100,Radicar Solicitud Homologacion,2016-02-17 18:01:34,2016-02-17 18:01:37,Radicar Solicitud Homologacion
+Case100,Cancelar Solicitud,2016-02-17 18:08:12,2016-02-17 18:10:55,Cancelar Solicitud
+Case100,Notificacion estudiante cancelacion soli,2016-02-17 18:11:09,2016-02-17 18:11:09,Notificacion estudiante cancelacion soli
+Case100,End,2016-02-17 18:11:09,2016-02-17 18:11:09,End
+Case101,Start,2016-02-02 23:22:28,2016-02-02 23:22:28,Start
+Case101,Traer informacion estudiante - banner,2016-02-02 23:22:28,2016-02-02 23:22:28,Traer informacion estudiante - banner
+Case101,Radicar Solicitud Homologacion,2016-02-02 23:22:30,2016-02-02 23:22:37,Radicar Solicitud Homologacion
+Case101,Cancelar Solicitud,2016-02-02 23:35:07,2016-02-02 23:35:07,Cancelar Solicitud
+Case101,Validar solicitud,2016-02-03 02:32:09,2016-02-03 02:32:09,Validar solicitud
+Case101,Notificacion estudiante cancelacion soli,2016-02-06 02:17:22,2016-02-06 02:17:22,Notificacion estudiante cancelacion soli
+Case101,End,2016-02-06 02:17:22,2016-02-06 02:17:22,End
+Case102,Start,2016-02-17 18:50:36,2016-02-17 18:50:36,Start
+Case102,Traer informacion estudiante - banner,2016-02-17 18:50:36,2016-02-17 18:50:36,Traer informacion estudiante - banner
+Case102,Radicar Solicitud Homologacion,2016-02-17 18:50:40,2016-02-17 18:50:40,Radicar Solicitud Homologacion
+Case102,Validar solicitud,2016-02-17 19:15:35,2016-02-17 19:15:35,Validar solicitud
+Case102,Homologacion por grupo de cursos,2016-02-18 04:18:19,2016-02-18 04:30:18,Homologacion por grupo de cursos
+Case102,Revisar curso,2016-02-21 00:43:09,2016-02-21 00:43:09,Revisar curso
+Case102,Evaluacion curso,2016-02-21 00:44:25,2016-02-21 01:08:11,Evaluacion curso
+Case102,Validacion final,2016-03-29 11:13:31,2016-03-29 11:13:31,Validacion final
+Case102,Visto Bueno Cierre Proceso,2016-03-29 12:19:59,2016-03-29 12:19:59,Visto Bueno Cierre Proceso
+Case102,Transferir Creditos,2016-03-30 00:06:54,2016-03-30 00:06:54,Transferir Creditos
+Case102,Transferir creditos homologables,2016-03-30 00:06:54,2016-03-30 00:06:54,Transferir creditos homologables
+Case102,End,2016-03-30 00:06:54,2016-03-30 00:06:54,End
+Case103,Start,2016-02-17 19:45:46,2016-02-17 19:45:46,Start
+Case103,Traer informacion estudiante - banner,2016-02-17 19:45:46,2016-02-17 19:45:46,Traer informacion estudiante - banner
+Case103,Radicar Solicitud Homologacion,2016-02-17 19:45:50,2016-02-17 19:48:47,Radicar Solicitud Homologacion
+Case103,Validar solicitud,2016-02-17 19:50:02,2016-02-17 19:53:51,Validar solicitud
+Case103,Homologacion por grupo de cursos,2016-02-28 13:15:49,2016-02-28 13:21:50,Homologacion por grupo de cursos
+Case103,End,2016-02-28 13:21:50,2016-02-28 13:21:50,End
+Case104,Start,2016-02-01 16:54:45,2016-02-01 16:54:45,Start
+Case104,Traer informacion estudiante - banner,2016-02-01 16:54:45,2016-02-01 16:54:45,Traer informacion estudiante - banner
+Case104,Radicar Solicitud Homologacion,2016-02-01 16:54:48,2016-02-01 16:54:48,Radicar Solicitud Homologacion
+Case104,Validar solicitud,2016-02-01 17:03:19,2016-02-01 17:14:04,Validar solicitud
+Case104,Homologacion por grupo de cursos,2016-02-01 17:25:29,2016-02-01 18:32:00,Homologacion por grupo de cursos
+Case104,End,2016-02-01 18:32:00,2016-02-01 18:32:00,End
+Case105,Start,2016-02-02 23:53:44,2016-02-02 23:53:44,Start
+Case105,Traer informacion estudiante - banner,2016-02-02 23:53:44,2016-02-02 23:53:44,Traer informacion estudiante - banner
+Case105,Radicar Solicitud Homologacion,2016-02-02 23:53:51,2016-02-02 23:54:25,Radicar Solicitud Homologacion
+Case105,Validar solicitud,2016-02-03 00:09:35,2016-02-03 01:26:59,Validar solicitud
+Case105,Homologacion por grupo de cursos,2016-02-04 07:16:11,2016-02-04 08:21:15,Homologacion por grupo de cursos
+Case105,End,2016-02-04 08:21:15,2016-02-04 08:21:15,End
+Case106,Start,2016-02-03 00:51:55,2016-02-03 00:51:55,Start
+Case106,Traer informacion estudiante - banner,2016-02-03 00:51:55,2016-02-03 00:51:55,Traer informacion estudiante - banner
+Case106,Radicar Solicitud Homologacion,2016-02-03 00:51:56,2016-02-03 00:51:57,Radicar Solicitud Homologacion
+Case106,Cancelar Solicitud,2016-02-03 00:53:27,2016-02-03 00:53:27,Cancelar Solicitud
+Case106,Validar solicitud,2016-02-03 01:16:28,2016-02-03 01:56:09,Validar solicitud
+Case106,Notificacion estudiante cancelacion soli,2016-02-08 10:44:14,2016-02-08 10:44:14,Notificacion estudiante cancelacion soli
+Case106,End,2016-02-08 10:44:14,2016-02-08 10:44:14,End
+Case107,Start,2016-02-03 03:03:45,2016-02-03 03:03:45,Start
+Case107,Traer informacion estudiante - banner,2016-02-03 03:03:45,2016-02-03 03:03:45,Traer informacion estudiante - banner
+Case107,Radicar Solicitud Homologacion,2016-02-03 03:03:47,2016-02-03 03:03:51,Radicar Solicitud Homologacion
+Case107,Cancelar Solicitud,2016-02-03 03:13:31,2016-02-03 03:49:39,Cancelar Solicitud
+Case107,Notificacion estudiante cancelacion soli,2016-02-03 03:49:44,2016-02-03 03:49:44,Notificacion estudiante cancelacion soli
+Case107,End,2016-02-03 03:49:44,2016-02-03 03:49:44,End
+Case108,Start,2016-02-03 03:26:07,2016-02-03 03:26:07,Start
+Case108,Traer informacion estudiante - banner,2016-02-03 03:26:07,2016-02-03 03:26:07,Traer informacion estudiante - banner
+Case108,Radicar Solicitud Homologacion,2016-02-03 03:26:15,2016-02-03 03:42:17,Radicar Solicitud Homologacion
+Case108,Validar solicitud,2016-02-03 03:48:37,2016-02-03 05:11:37,Validar solicitud
+Case108,Homologacion por grupo de cursos,2016-02-07 21:10:19,2016-02-07 23:13:53,Homologacion por grupo de cursos
+Case108,Revisar curso,2016-02-13 09:37:40,2016-02-13 10:37:41,Revisar curso
+Case108,Evaluacion curso,2016-02-13 11:12:18,2016-02-13 12:06:41,Evaluacion curso
+Case108,Validacion final,2016-02-13 12:15:35,2016-02-13 13:10:11,Validacion final
+Case108,Visto Bueno Cierre Proceso,2016-02-14 02:42:22,2016-02-14 03:04:34,Visto Bueno Cierre Proceso
+Case108,Evaluacion curso,2016-03-03 18:12:14,2016-03-03 18:27:54,Evaluacion curso
+Case108,Transferir Creditos,2016-03-03 18:31:09,2016-03-03 18:31:09,Transferir Creditos
+Case108,Validacion final,2016-04-04 00:54:19,2016-04-04 00:54:31,Validacion final
+Case108,Visto Bueno Cierre Proceso,2016-04-04 00:55:49,2016-04-04 02:03:09,Visto Bueno Cierre Proceso
+Case108,Transferir Creditos,2016-04-04 22:07:33,2016-04-04 22:07:33,Transferir Creditos
+Case108,End,2016-04-04 22:07:33,2016-04-04 22:07:33,End
+Case109,Start,2016-02-03 05:22:29,2016-02-03 05:22:29,Start
+Case109,Validar solicitud,2016-02-03 05:28:18,2016-02-03 05:35:04,Validar solicitud
+Case109,Cancelar Solicitud,2016-02-03 05:39:08,2016-02-03 07:43:01,Cancelar Solicitud
+Case109,Traer informacion estudiante - banner,2016-02-03 08:08:42,2016-02-03 08:08:42,Traer informacion estudiante - banner
+Case109,Radicar Solicitud Homologacion,2016-02-03 08:08:44,2016-02-03 08:08:48,Radicar Solicitud Homologacion
+Case109,Notificacion estudiante cancelacion soli,2016-02-08 10:08:24,2016-02-08 10:08:24,Notificacion estudiante cancelacion soli
+Case109,End,2016-02-08 10:08:24,2016-02-08 10:08:24,End
+Case110,Start,2016-02-03 05:46:31,2016-02-03 05:46:31,Start
+Case110,Traer informacion estudiante - banner,2016-02-03 05:46:31,2016-02-03 05:46:31,Traer informacion estudiante - banner
+Case110,Radicar Solicitud Homologacion,2016-02-03 05:46:38,2016-02-03 05:46:38,Radicar Solicitud Homologacion
+Case110,Validar solicitud,2016-02-03 06:01:39,2016-02-03 08:20:26,Validar solicitud
+Case110,Homologacion por grupo de cursos,2016-02-03 08:29:00,2016-02-03 11:08:31,Homologacion por grupo de cursos
+Case110,End,2016-02-03 11:08:31,2016-02-03 11:08:31,End
+Case111,Start,2016-02-03 12:01:57,2016-02-03 12:01:57,Start
+Case111,Traer informacion estudiante - banner,2016-02-03 12:01:57,2016-02-03 12:01:57,Traer informacion estudiante - banner
+Case111,Radicar Solicitud Homologacion,2016-02-03 12:01:59,2016-02-03 12:02:07,Radicar Solicitud Homologacion
+Case111,Radicar Solicitud Homologacion,2016-02-03 12:02:11,2016-02-03 12:02:11,Radicar Solicitud Homologacion
+Case111,Notificacion estudiante cancelacion soli,2016-02-07 20:15:35,2016-02-07 20:15:35,Notificacion estudiante cancelacion soli
+Case111,End,2016-02-07 20:15:35,2016-02-07 20:15:35,End
+Case112,Start,2016-02-03 18:07:42,2016-02-03 18:07:42,Start
+Case112,Traer informacion estudiante - banner,2016-02-03 18:07:42,2016-02-03 18:07:42,Traer informacion estudiante - banner
+Case112,Radicar Solicitud Homologacion,2016-02-03 18:07:47,2016-02-03 18:07:47,Radicar Solicitud Homologacion
+Case112,Notificacion estudiante cancelacion soli,2016-02-07 02:22:56,2016-02-07 02:22:56,Notificacion estudiante cancelacion soli
+Case112,End,2016-02-07 02:22:56,2016-02-07 02:22:56,End
+Case113,Start,2016-02-03 19:29:41,2016-02-03 19:29:41,Start
+Case113,Traer informacion estudiante - banner,2016-02-03 19:29:41,2016-02-03 19:29:41,Traer informacion estudiante - banner
+Case113,Radicar Solicitud Homologacion,2016-02-03 19:29:43,2016-02-03 19:29:43,Radicar Solicitud Homologacion
+Case113,Validar solicitud,2016-02-03 19:47:08,2016-02-03 20:06:01,Validar solicitud
+Case113,Homologacion por grupo de cursos,2016-02-04 12:12:59,2016-02-04 13:08:23,Homologacion por grupo de cursos
+Case113,Revisar curso,2016-02-03 23:53:24,2016-02-04 01:22:33,Revisar curso
+Case113,Evaluacion curso,2016-02-04 01:23:30,2016-02-04 01:43:18,Evaluacion curso
+Case113,Validar solicitud / pre-homologacion,2016-02-05 03:58:15,2016-02-05 03:58:15,Validar solicitud / pre-homologacion
+Case113,End,2016-02-05 03:58:15,2016-02-05 03:58:15,End
+Case114,Start,2016-02-03 20:26:14,2016-02-03 20:26:14,Start
+Case114,Traer informacion estudiante - banner,2016-02-03 22:02:40,2016-02-03 22:02:40,Traer informacion estudiante - banner
+Case114,Radicar Solicitud Homologacion,2016-02-03 22:02:44,2016-02-04 02:40:05,Radicar Solicitud Homologacion
+Case114,Validar solicitud,2016-02-04 02:43:07,2016-02-04 02:44:03,Validar solicitud
+Case114,Homologacion por grupo de cursos,2016-02-04 04:10:31,2016-02-04 05:30:28,Homologacion por grupo de cursos
+Case114,End,2016-02-04 05:30:28,2016-02-04 05:30:28,End
+Case115,Start,2016-02-01 17:52:02,2016-02-01 17:52:02,Start
+Case115,Traer informacion estudiante - banner,2016-02-01 17:52:02,2016-02-01 17:52:02,Traer informacion estudiante - banner
+Case115,Radicar Solicitud Homologacion,2016-02-01 17:52:07,2016-02-01 17:52:13,Radicar Solicitud Homologacion
+Case115,Validar solicitud,2016-02-01 17:56:23,2016-02-01 18:03:50,Validar solicitud
+Case115,Homologacion por grupo de cursos,2016-02-01 19:52:27,2016-02-01 19:52:51,Homologacion por grupo de cursos
+Case115,End,2016-02-01 19:52:51,2016-02-01 19:52:51,End
+Case116,Start,2016-02-03 21:41:54,2016-02-03 21:41:54,Start
+Case116,Traer informacion estudiante - banner,2016-02-03 21:41:54,2016-02-03 21:41:54,Traer informacion estudiante - banner
+Case116,Radicar Solicitud Homologacion,2016-02-03 21:42:00,2016-02-03 21:42:00,Radicar Solicitud Homologacion
+Case116,Cancelar Solicitud,2016-02-03 21:56:59,2016-02-03 22:02:19,Cancelar Solicitud
+Case116,Notificacion estudiante cancelacion soli,2016-02-03 23:02:28,2016-02-03 23:02:28,Notificacion estudiante cancelacion soli
+Case116,End,2016-02-03 23:02:28,2016-02-03 23:02:28,End
+Case117,Start,2016-02-03 23:06:41,2016-02-03 23:06:41,Start
+Case117,Traer informacion estudiante - banner,2016-02-03 23:06:41,2016-02-03 23:06:41,Traer informacion estudiante - banner
+Case117,Radicar Solicitud Homologacion,2016-02-03 23:06:43,2016-02-03 23:06:54,Radicar Solicitud Homologacion
+Case117,Cancelar Solicitud,2016-02-03 23:13:47,2016-02-03 23:22:54,Cancelar Solicitud
+Case117,Notificacion estudiante cancelacion soli,2016-02-03 23:27:50,2016-02-03 23:27:50,Notificacion estudiante cancelacion soli
+Case117,End,2016-02-03 23:27:50,2016-02-03 23:27:50,End
+Case118,Start,2016-02-04 00:06:55,2016-02-04 00:06:55,Start
+Case118,Traer informacion estudiante - banner,2016-02-04 00:06:55,2016-02-04 00:06:55,Traer informacion estudiante - banner
+Case118,Radicar Solicitud Homologacion,2016-02-04 00:06:58,2016-02-04 00:07:08,Radicar Solicitud Homologacion
+Case118,Cancelar Solicitud,2016-02-04 00:12:48,2016-02-04 00:12:48,Cancelar Solicitud
+Case118,Validar solicitud,2016-02-04 00:17:56,2016-02-04 00:25:36,Validar solicitud
+Case118,Notificacion estudiante cancelacion soli,2016-03-03 04:59:37,2016-03-03 04:59:37,Notificacion estudiante cancelacion soli
+Case118,End,2016-03-03 04:59:37,2016-03-03 04:59:37,End
+Case119,Start,2016-02-04 00:32:25,2016-02-04 00:32:25,Start
+Case119,Traer informacion estudiante - banner,2016-02-04 00:32:25,2016-02-04 00:32:25,Traer informacion estudiante - banner
+Case119,Radicar Solicitud Homologacion,2016-02-04 00:32:27,2016-02-04 00:32:30,Radicar Solicitud Homologacion
+Case119,Validar solicitud,2016-02-04 00:41:20,2016-02-04 00:45:11,Validar solicitud
+Case119,Homologacion por grupo de cursos,2016-02-04 16:45:42,2016-02-04 17:22:43,Homologacion por grupo de cursos
+Case119,Revisar curso,2016-03-02 22:06:14,2016-03-02 23:13:59,Revisar curso
+Case119,Evaluacion curso,2016-03-02 23:14:51,2016-03-02 23:22:23,Evaluacion curso
+Case119,Validar solicitud / pre-homologacion,2016-03-10 16:52:44,2016-03-10 16:52:47,Validar solicitud / pre-homologacion
+Case119,End,2016-03-10 16:52:47,2016-03-10 16:52:47,End
+Case120,Start,2016-02-04 03:29:16,2016-02-04 03:29:16,Start
+Case120,Traer informacion estudiante - banner,2016-02-04 03:29:16,2016-02-04 03:29:16,Traer informacion estudiante - banner
+Case120,Radicar Solicitud Homologacion,2016-02-04 03:29:18,2016-02-04 03:29:25,Radicar Solicitud Homologacion
+Case120,Cancelar Solicitud,2016-02-04 03:32:20,2016-02-04 03:32:20,Cancelar Solicitud
+Case120,Notificacion estudiante cancelacion soli,2016-02-10 08:37:48,2016-02-10 08:37:48,Notificacion estudiante cancelacion soli
+Case120,End,2016-02-10 08:37:48,2016-02-10 08:37:48,End
+Case121,Start,2016-02-04 04:36:51,2016-02-04 04:36:51,Start
+Case121,Traer informacion estudiante - banner,2016-02-04 04:36:51,2016-02-04 04:36:51,Traer informacion estudiante - banner
+Case121,Radicar Solicitud Homologacion,2016-02-04 04:37:00,2016-02-04 04:37:00,Radicar Solicitud Homologacion
+Case121,Cancelar Solicitud,2016-02-04 04:42:29,2016-02-04 04:42:32,Cancelar Solicitud
+Case121,Validar solicitud,2016-02-09 02:58:33,2016-02-09 02:59:57,Validar solicitud
+Case121,Notificacion estudiante cancelacion soli,2016-02-09 22:17:44,2016-02-09 22:17:44,Notificacion estudiante cancelacion soli
+Case121,End,2016-02-09 22:17:44,2016-02-09 22:17:44,End
+Case122,Start,2016-02-04 05:28:56,2016-02-04 05:28:56,Start
+Case122,Traer informacion estudiante - banner,2016-02-04 05:28:56,2016-02-04 05:28:56,Traer informacion estudiante - banner
+Case122,Radicar Solicitud Homologacion,2016-02-04 05:29:00,2016-02-04 05:29:01,Radicar Solicitud Homologacion
+Case122,Validar solicitud,2016-02-04 05:31:51,2016-02-04 05:32:50,Validar solicitud
+Case122,Homologacion por grupo de cursos,2016-03-03 19:58:17,2016-03-03 22:58:25,Homologacion por grupo de cursos
+Case122,Revisar curso,2016-02-04 10:26:17,2016-02-04 10:31:02,Revisar curso
+Case122,Evaluacion curso,2016-03-03 22:59:14,2016-03-04 01:42:35,Evaluacion curso
+Case122,Validacion final,2016-03-04 05:03:43,2016-03-04 05:04:08,Validacion final
+Case122,Visto Bueno Cierre Proceso,2016-03-04 08:00:18,2016-03-04 08:00:24,Visto Bueno Cierre Proceso
+Case122,End,2016-03-04 08:00:24,2016-03-04 08:00:24,End
+Case123,Start,2016-02-04 07:28:40,2016-02-04 07:28:40,Start
+Case123,Traer informacion estudiante - banner,2016-02-04 07:28:40,2016-02-04 07:28:40,Traer informacion estudiante - banner
+Case123,Radicar Solicitud Homologacion,2016-02-04 07:28:42,2016-02-04 07:28:50,Radicar Solicitud Homologacion
+Case123,Validar solicitud,2016-02-04 07:39:23,2016-02-04 07:39:35,Validar solicitud
+Case123,Homologacion por grupo de cursos,2016-02-04 13:21:55,2016-02-04 13:47:25,Homologacion por grupo de cursos
+Case123,Revisar curso,2016-04-25 17:29:11,2016-04-25 18:55:59,Revisar curso
+Case123,Evaluacion curso,2016-05-06 07:40:11,2016-05-06 13:10:07,Evaluacion curso
+Case123,End,2016-05-06 13:10:07,2016-05-06 13:10:07,End
+Case124,Start,2016-02-04 09:52:53,2016-02-04 09:52:53,Start
+Case124,Traer informacion estudiante - banner,2016-02-04 09:52:53,2016-02-04 09:52:53,Traer informacion estudiante - banner
+Case124,Radicar Solicitud Homologacion,2016-02-04 09:52:59,2016-02-04 09:52:59,Radicar Solicitud Homologacion
+Case124,Validar solicitud,2016-02-04 10:04:34,2016-02-04 10:11:55,Validar solicitud
+Case124,Homologacion por grupo de cursos,2016-02-04 19:39:16,2016-02-04 20:18:38,Homologacion por grupo de cursos
+Case124,End,2016-02-04 20:18:38,2016-02-04 20:18:38,End
+Case125,Start,2016-02-04 11:43:29,2016-02-04 11:43:29,Start
+Case125,Traer informacion estudiante - banner,2016-02-04 11:43:29,2016-02-04 11:43:29,Traer informacion estudiante - banner
+Case125,Radicar Solicitud Homologacion,2016-02-04 11:43:30,2016-02-04 11:43:46,Radicar Solicitud Homologacion
+Case125,Validar solicitud,2016-02-04 11:48:31,2016-02-04 11:55:26,Validar solicitud
+Case125,Homologacion por grupo de cursos,2016-02-06 16:24:10,2016-02-06 16:38:59,Homologacion por grupo de cursos
+Case125,Revisar curso,2016-02-04 12:22:20,2016-02-04 12:22:21,Revisar curso
+Case125,Evaluacion curso,2016-02-05 19:32:41,2016-02-05 19:33:55,Evaluacion curso
+Case125,Validacion final,2016-02-15 10:54:28,2016-02-15 11:12:54,Validacion final
+Case125,Visto Bueno Cierre Proceso,2016-02-15 11:15:31,2016-02-15 11:21:28,Visto Bueno Cierre Proceso
+Case125,Transferir Creditos,2016-02-15 17:32:30,2016-02-15 17:32:30,Transferir Creditos
+Case125,Transferir creditos homologables,2016-02-15 17:32:30,2016-02-15 17:32:30,Transferir creditos homologables
+Case125,Transferir creditos homologables,2016-02-15 17:32:31,2016-02-15 17:32:31,Transferir creditos homologables
+Case125,Transferir creditos homologables,2016-02-15 17:32:31,2016-02-15 17:32:31,Transferir creditos homologables
+Case125,End,2016-02-15 17:32:31,2016-02-15 17:32:31,End
+Case126,Start,2016-02-01 18:58:06,2016-02-01 18:58:06,Start
+Case126,Traer informacion estudiante - banner,2016-02-01 18:58:06,2016-02-01 18:58:06,Traer informacion estudiante - banner
+Case126,Radicar Solicitud Homologacion,2016-02-01 18:58:08,2016-02-01 18:58:08,Radicar Solicitud Homologacion
+Case126,Validar solicitud,2016-02-01 19:00:17,2016-02-01 19:06:48,Validar solicitud
+Case126,Homologacion por grupo de cursos,2016-02-01 19:06:48,2016-02-01 19:44:53,Homologacion por grupo de cursos
+Case126,End,2016-02-01 19:44:53,2016-02-01 19:44:53,End
+Case127,Start,2016-02-04 14:09:33,2016-02-04 14:09:33,Start
+Case127,Traer informacion estudiante - banner,2016-02-04 14:09:33,2016-02-04 14:09:33,Traer informacion estudiante - banner
+Case127,Radicar Solicitud Homologacion,2016-02-04 14:09:34,2016-02-04 14:09:46,Radicar Solicitud Homologacion
+Case127,Validar solicitud,2016-02-04 16:45:55,2016-02-04 16:46:28,Validar solicitud
+Case127,Homologacion por grupo de cursos,2016-02-06 14:44:17,2016-02-06 17:04:07,Homologacion por grupo de cursos
+Case127,End,2016-02-06 17:04:07,2016-02-06 17:04:07,End
+Case128,Start,2016-02-04 14:50:03,2016-02-04 14:50:03,Start
+Case128,Traer informacion estudiante - banner,2016-02-04 14:50:03,2016-02-04 14:50:03,Traer informacion estudiante - banner
+Case128,Radicar Solicitud Homologacion,2016-02-04 14:50:05,2016-02-04 14:51:10,Radicar Solicitud Homologacion
+Case128,Cancelar Solicitud,2016-02-04 14:58:31,2016-02-04 14:58:31,Cancelar Solicitud
+Case128,Notificacion estudiante cancelacion soli,2016-02-04 15:00:37,2016-02-04 15:00:37,Notificacion estudiante cancelacion soli
+Case128,End,2016-02-04 15:00:37,2016-02-04 15:00:37,End
+Case129,Start,2016-02-04 15:46:46,2016-02-04 15:46:46,Start
+Case129,Traer informacion estudiante - banner,2016-02-04 15:46:46,2016-02-04 15:46:46,Traer informacion estudiante - banner
+Case129,Radicar Solicitud Homologacion,2016-02-04 15:46:48,2016-02-04 15:46:48,Radicar Solicitud Homologacion
+Case129,Validar solicitud,2016-02-04 16:02:02,2016-02-04 16:04:31,Validar solicitud
+Case129,Homologacion por grupo de cursos,2016-02-04 17:27:42,2016-02-04 21:45:08,Homologacion por grupo de cursos
+Case129,End,2016-02-04 21:45:08,2016-02-04 21:45:08,End
+Case130,Start,2016-02-04 18:05:36,2016-02-04 18:05:36,Start
+Case130,Traer informacion estudiante - banner,2016-02-04 18:05:36,2016-02-04 18:05:36,Traer informacion estudiante - banner
+Case130,Radicar Solicitud Homologacion,2016-02-04 18:05:38,2016-02-04 18:05:42,Radicar Solicitud Homologacion
+Case130,Validar solicitud,2016-02-04 18:17:26,2016-02-04 18:18:01,Validar solicitud
+Case130,Homologacion por grupo de cursos,2016-02-04 21:09:52,2016-02-04 23:35:37,Homologacion por grupo de cursos
+Case130,Revisar curso,2016-02-04 22:20:15,2016-02-04 22:20:15,Revisar curso
+Case130,Evaluacion curso,2016-02-07 08:11:50,2016-02-07 08:29:37,Evaluacion curso
+Case130,Validacion final,2016-03-11 23:46:40,2016-03-12 00:10:48,Validacion final
+Case130,Visto Bueno Cierre Proceso,2016-03-13 16:03:43,2016-03-13 16:46:18,Visto Bueno Cierre Proceso
+Case130,End,2016-03-13 16:46:18,2016-03-13 16:46:18,End
+Case131,Start,2016-02-04 19:31:31,2016-02-04 19:31:31,Start
+Case131,Traer informacion estudiante - banner,2016-02-04 19:31:31,2016-02-04 19:31:31,Traer informacion estudiante - banner
+Case131,Radicar Solicitud Homologacion,2016-02-04 19:31:33,2016-02-04 19:31:41,Radicar Solicitud Homologacion
+Case131,Cancelar Solicitud,2016-02-04 19:31:43,2016-02-04 19:31:54,Cancelar Solicitud
+Case131,Notificacion estudiante cancelacion soli,2016-02-09 09:56:33,2016-02-09 09:56:33,Notificacion estudiante cancelacion soli
+Case131,End,2016-02-09 09:56:33,2016-02-09 09:56:33,End
+Case132,Start,2016-02-04 21:30:27,2016-02-04 21:30:27,Start
+Case132,Notificacion estudiante cancelacion soli,2016-02-19 19:16:24,2016-02-19 19:16:24,Notificacion estudiante cancelacion soli
+Case132,Traer informacion estudiante - banner,2016-02-19 19:16:24,2016-02-19 19:16:24,Traer informacion estudiante - banner
+Case132,Radicar Solicitud Homologacion,2016-02-19 19:16:27,2016-02-19 19:16:29,Radicar Solicitud Homologacion
+Case132,Cancelar Solicitud,2016-02-19 19:26:54,2016-02-19 19:27:40,Cancelar Solicitud
+Case132,End,2016-02-19 19:27:40,2016-02-19 19:27:40,End
+Case133,Start,2016-02-04 23:40:39,2016-02-04 23:40:39,Start
+Case133,Traer informacion estudiante - banner,2016-02-04 23:40:39,2016-02-04 23:40:39,Traer informacion estudiante - banner
+Case133,Radicar Solicitud Homologacion,2016-02-04 23:40:42,2016-02-04 23:41:00,Radicar Solicitud Homologacion
+Case133,Notificacion estudiante cancelacion soli,2016-02-04 23:41:00,2016-02-04 23:41:00,Notificacion estudiante cancelacion soli
+Case133,End,2016-02-04 23:41:00,2016-02-04 23:41:00,End
+Case134,Start,2016-02-05 01:30:23,2016-02-05 01:30:23,Start
+Case134,Traer informacion estudiante - banner,2016-02-05 01:30:23,2016-02-05 01:30:23,Traer informacion estudiante - banner
+Case134,Radicar Solicitud Homologacion,2016-02-05 01:30:25,2016-02-05 01:30:30,Radicar Solicitud Homologacion
+Case134,Cancelar Solicitud,2016-02-11 03:06:29,2016-02-11 03:06:29,Cancelar Solicitud
+Case134,Notificacion estudiante cancelacion soli,2016-02-11 04:38:26,2016-02-11 04:38:26,Notificacion estudiante cancelacion soli
+Case134,End,2016-02-11 04:38:26,2016-02-11 04:38:26,End
+Case135,Start,2016-02-05 05:37:57,2016-02-05 05:37:57,Start
+Case135,Traer informacion estudiante - banner,2016-02-05 06:29:17,2016-02-05 06:29:17,Traer informacion estudiante - banner
+Case135,Radicar Solicitud Homologacion,2016-02-05 06:29:18,2016-02-05 06:29:28,Radicar Solicitud Homologacion
+Case135,Cancelar Solicitud,2016-02-05 06:31:25,2016-02-05 06:39:19,Cancelar Solicitud
+Case135,Notificacion estudiante cancelacion soli,2016-02-05 11:42:28,2016-02-05 11:42:28,Notificacion estudiante cancelacion soli
+Case135,End,2016-02-05 11:42:28,2016-02-05 11:42:28,End
+Case136,Start,2016-02-05 10:29:14,2016-02-05 10:29:14,Start
+Case136,Traer informacion estudiante - banner,2016-02-05 10:29:14,2016-02-05 10:29:14,Traer informacion estudiante - banner
+Case136,Radicar Solicitud Homologacion,2016-02-05 10:29:18,2016-02-05 10:29:18,Radicar Solicitud Homologacion
+Case136,Validar solicitud,2016-02-05 10:37:21,2016-02-05 11:00:57,Validar solicitud
+Case136,Homologacion por grupo de cursos,2016-02-05 11:11:10,2016-02-05 11:16:44,Homologacion por grupo de cursos
+Case136,End,2016-02-05 11:16:44,2016-02-05 11:16:44,End
+Case137,Start,2016-02-01 20:52:35,2016-02-01 20:52:35,Start
+Case137,Traer informacion estudiante - banner,2016-02-01 20:52:35,2016-02-01 20:52:35,Traer informacion estudiante - banner
+Case137,Radicar Solicitud Homologacion,2016-02-01 20:52:36,2016-02-01 20:52:38,Radicar Solicitud Homologacion
+Case137,Notificacion estudiante cancelacion soli,2016-02-01 23:26:38,2016-02-01 23:26:38,Notificacion estudiante cancelacion soli
+Case137,End,2016-02-01 23:26:38,2016-02-01 23:26:38,End
+Case138,Start,2016-02-05 12:11:34,2016-02-05 12:11:34,Start
+Case138,Traer informacion estudiante - banner,2016-02-05 12:13:17,2016-02-05 12:13:17,Traer informacion estudiante - banner
+Case138,Radicar Solicitud Homologacion,2016-02-06 12:18:02,2016-02-06 12:48:34,Radicar Solicitud Homologacion
+Case138,Validar solicitud,2016-02-06 13:02:52,2016-02-06 13:14:15,Validar solicitud
+Case138,Homologacion por grupo de cursos,2016-02-06 13:28:31,2016-02-06 13:28:31,Homologacion por grupo de cursos
+Case138,End,2016-02-06 13:28:31,2016-02-06 13:28:31,End
+Case139,Start,2016-02-05 14:07:34,2016-02-05 14:07:34,Start
+Case139,Traer informacion estudiante - banner,2016-02-05 14:07:34,2016-02-05 14:07:34,Traer informacion estudiante - banner
+Case139,Radicar Solicitud Homologacion,2016-02-05 14:07:38,2016-02-05 14:21:07,Radicar Solicitud Homologacion
+Case139,Validar solicitud,2016-02-05 14:38:09,2016-02-05 14:54:26,Validar solicitud
+Case139,Homologacion por grupo de cursos,2016-02-16 17:59:53,2016-02-16 19:37:51,Homologacion por grupo de cursos
+Case139,End,2016-02-16 19:37:51,2016-02-16 19:37:51,End
+Case140,Start,2016-02-05 15:10:13,2016-02-05 15:10:13,Start
+Case140,Traer informacion estudiante - banner,2016-02-05 15:10:13,2016-02-05 15:10:13,Traer informacion estudiante - banner
+Case140,Radicar Solicitud Homologacion,2016-02-05 15:10:16,2016-02-05 15:10:50,Radicar Solicitud Homologacion
+Case140,Validar solicitud,2016-02-05 15:18:46,2016-02-05 15:31:39,Validar solicitud
+Case140,Homologacion por grupo de cursos,2016-02-07 02:53:11,2016-02-07 03:16:21,Homologacion por grupo de cursos
+Case140,Revisar curso,2016-02-05 15:31:39,2016-02-05 17:41:06,Revisar curso
+Case140,Evaluacion curso,2016-02-07 03:17:44,2016-02-07 05:35:43,Evaluacion curso
+Case140,Validar solicitud / pre-homologacion,2016-02-07 08:28:55,2016-02-07 09:01:47,Validar solicitud / pre-homologacion
+Case140,End,2016-02-07 09:01:47,2016-02-07 09:01:47,End
+Case141,Start,2016-02-05 15:49:55,2016-02-05 15:49:55,Start
+Case141,Traer informacion estudiante - banner,2016-02-05 15:49:55,2016-02-05 15:49:55,Traer informacion estudiante - banner
+Case141,Radicar Solicitud Homologacion,2016-02-05 15:49:57,2016-02-05 15:50:00,Radicar Solicitud Homologacion
+Case141,Homologacion por grupo de cursos,2016-03-01 22:05:22,2016-03-01 23:03:48,Homologacion por grupo de cursos
+Case141,Validar solicitud,2016-02-05 16:13:04,2016-02-05 16:33:23,Validar solicitud
+Case141,End,2016-03-01 23:03:48,2016-03-01 23:03:48,End
+Case142,Start,2016-02-05 17:31:40,2016-02-05 17:31:40,Start
+Case142,Traer informacion estudiante - banner,2016-02-05 17:31:40,2016-02-05 17:31:40,Traer informacion estudiante - banner
+Case142,Radicar Solicitud Homologacion,2016-02-05 17:31:41,2016-02-05 17:31:51,Radicar Solicitud Homologacion
+Case142,Validar solicitud,2016-02-05 17:35:57,2016-02-05 17:42:05,Validar solicitud
+Case142,Homologacion por grupo de cursos,2016-02-10 21:06:23,2016-02-10 21:06:23,Homologacion por grupo de cursos
+Case142,Revisar curso,2016-02-06 04:28:24,2016-02-06 04:28:24,Revisar curso
+Case142,Evaluacion curso,2016-02-07 16:30:28,2016-02-07 16:30:49,Evaluacion curso
+Case142,Validar solicitud / pre-homologacion,2016-02-11 07:00:19,2016-02-11 07:00:20,Validar solicitud / pre-homologacion
+Case142,Validacion final,2016-04-08 00:13:33,2016-04-08 00:14:17,Validacion final
+Case142,Visto Bueno Cierre Proceso,2016-04-08 00:18:19,2016-04-08 01:15:13,Visto Bueno Cierre Proceso
+Case142,Transferir Creditos,2016-04-08 16:18:22,2016-04-08 16:18:22,Transferir Creditos
+Case142,Transferir creditos homologables,2016-04-08 16:18:23,2016-04-08 16:18:23,Transferir creditos homologables
+Case142,Transferir creditos homologables,2016-04-08 16:18:23,2016-04-08 16:18:23,Transferir creditos homologables
+Case142,Transferir creditos homologables,2016-04-08 20:54:10,2016-04-08 21:52:45,Transferir creditos homologables
+Case142,Transferir creditos homologables,2016-04-08 21:52:45,2016-04-08 21:52:45,Transferir creditos homologables
+Case142,Transferir creditos homologables,2016-04-08 21:53:08,2016-04-09 00:03:29,Transferir creditos homologables
+Case142,Transferir creditos homologables,2016-04-09 00:03:29,2016-04-09 00:03:29,Transferir creditos homologables
+Case142,End,2016-04-09 00:03:29,2016-04-09 00:03:29,End
+Case143,Start,2016-02-05 20:23:41,2016-02-05 20:23:41,Start
+Case143,Traer informacion estudiante - banner,2016-02-05 20:24:56,2016-02-05 20:24:56,Traer informacion estudiante - banner
+Case143,Radicar Solicitud Homologacion,2016-02-05 20:24:57,2016-02-05 20:25:06,Radicar Solicitud Homologacion
+Case143,Cancelar Solicitud,2016-02-05 20:43:23,2016-02-05 21:34:09,Cancelar Solicitud
+Case143,Notificacion estudiante cancelacion soli,2016-02-05 23:10:01,2016-02-05 23:10:01,Notificacion estudiante cancelacion soli
+Case143,End,2016-02-05 23:10:01,2016-02-05 23:10:01,End
+Case144,Start,2016-02-05 22:30:22,2016-02-05 22:30:22,Start
+Case144,Traer informacion estudiante - banner,2016-02-05 22:30:22,2016-02-05 22:30:22,Traer informacion estudiante - banner
+Case144,Radicar Solicitud Homologacion,2016-02-05 22:30:25,2016-02-05 22:32:01,Radicar Solicitud Homologacion
+Case144,Homologacion por grupo de cursos,2016-02-10 23:53:11,2016-02-11 00:39:33,Homologacion por grupo de cursos
+Case144,Validar solicitud,2016-02-05 22:53:48,2016-02-05 23:23:21,Validar solicitud
+Case144,Homologacion por grupo de cursos,2016-02-08 23:01:04,2016-02-09 05:10:04,Homologacion por grupo de cursos
+Case144,Evaluacion curso,2016-02-11 00:40:13,2016-02-11 01:00:58,Evaluacion curso
+Case144,Visto Bueno Cierre Proceso,2016-02-11 16:54:37,2016-02-11 17:15:24,Visto Bueno Cierre Proceso
+Case144,Validacion final,2016-02-18 11:48:32,2016-02-18 11:56:14,Validacion final
+Case144,Transferir Creditos,2016-02-19 03:11:29,2016-02-19 03:11:29,Transferir Creditos
+Case144,Transferir creditos homologables,2016-02-19 03:11:29,2016-02-19 03:11:29,Transferir creditos homologables
+Case144,Transferir creditos homologables,2016-02-19 03:11:29,2016-02-19 03:11:29,Transferir creditos homologables
+Case144,Transferir creditos homologables,2016-02-19 03:11:29,2016-02-19 03:11:29,Transferir creditos homologables
+Case144,Transferir creditos homologables,2016-02-19 03:11:29,2016-02-19 03:11:29,Transferir creditos homologables
+Case144,End,2016-02-19 03:11:29,2016-02-19 03:11:29,End
+Case145,Start,2016-02-06 01:05:40,2016-02-06 01:05:40,Start
+Case145,Traer informacion estudiante - banner,2016-02-06 01:05:40,2016-02-06 01:05:40,Traer informacion estudiante - banner
+Case145,Radicar Solicitud Homologacion,2016-02-06 01:05:45,2016-02-06 01:05:45,Radicar Solicitud Homologacion
+Case145,Cancelar Solicitud,2016-02-06 01:46:56,2016-02-06 02:18:36,Cancelar Solicitud
+Case145,Notificacion estudiante cancelacion soli,2016-02-06 02:21:49,2016-02-06 02:21:49,Notificacion estudiante cancelacion soli
+Case145,End,2016-02-06 02:21:49,2016-02-06 02:21:49,End
+Case146,Start,2016-02-06 03:28:49,2016-02-06 03:28:49,Start
+Case146,Traer informacion estudiante - banner,2016-02-06 03:28:49,2016-02-06 03:28:49,Traer informacion estudiante - banner
+Case146,Radicar Solicitud Homologacion,2016-02-06 03:28:53,2016-02-06 03:28:57,Radicar Solicitud Homologacion
+Case146,Validar solicitud,2016-02-06 03:33:10,2016-02-06 05:53:22,Validar solicitud
+Case146,Homologacion por grupo de cursos,2016-03-09 01:38:46,2016-03-09 03:17:17,Homologacion por grupo de cursos
+Case146,Revisar curso,2016-02-06 05:53:24,2016-02-06 06:15:45,Revisar curso
+Case146,Evaluacion curso,2016-02-06 06:16:49,2016-02-06 06:16:49,Evaluacion curso
+Case146,Validacion final,2016-03-12 01:16:18,2016-03-12 01:16:22,Validacion final
+Case146,Visto Bueno Cierre Proceso,2016-03-12 01:17:26,2016-03-12 01:54:39,Visto Bueno Cierre Proceso
+Case146,End,2016-03-12 01:54:39,2016-03-12 01:54:39,End
+Case147,Start,2016-02-06 07:38:50,2016-02-06 07:38:50,Start
+Case147,Traer informacion estudiante - banner,2016-02-06 07:38:50,2016-02-06 07:38:50,Traer informacion estudiante - banner
+Case147,Radicar Solicitud Homologacion,2016-02-06 07:38:55,2016-02-06 07:39:25,Radicar Solicitud Homologacion
+Case147,Validar solicitud,2016-02-06 07:53:14,2016-02-06 08:38:49,Validar solicitud
+Case147,Homologacion por grupo de cursos,2016-02-06 08:38:49,2016-02-06 08:52:45,Homologacion por grupo de cursos
+Case147,End,2016-02-06 08:52:45,2016-02-06 08:52:45,End
+Case148,Start,2016-02-01 21:55:11,2016-02-01 21:55:11,Start
+Case148,Traer informacion estudiante - banner,2016-02-01 21:55:11,2016-02-01 21:55:11,Traer informacion estudiante - banner
+Case148,Radicar Solicitud Homologacion,2016-02-01 21:55:20,2016-02-01 21:55:20,Radicar Solicitud Homologacion
+Case148,Validar solicitud,2016-02-01 22:24:59,2016-02-01 23:14:54,Validar solicitud
+Case148,Homologacion por grupo de cursos,2016-02-02 10:13:12,2016-02-02 10:41:27,Homologacion por grupo de cursos
+Case148,Revisar curso,2016-02-03 04:21:54,2016-02-03 05:20:03,Revisar curso
+Case148,Evaluacion curso,2016-02-03 05:20:39,2016-02-03 09:07:20,Evaluacion curso
+Case148,Validar solicitud / pre-homologacion,2016-02-16 15:23:37,2016-02-16 15:28:45,Validar solicitud / pre-homologacion
+Case148,Validacion final,2016-02-19 04:33:29,2016-02-19 04:33:29,Validacion final
+Case148,Visto Bueno Cierre Proceso,2016-02-20 21:32:57,2016-02-21 00:20:11,Visto Bueno Cierre Proceso
+Case148,Transferir Creditos,2016-02-26 06:14:34,2016-02-26 06:14:34,Transferir Creditos
+Case148,Transferir creditos homologables,2016-02-26 06:14:34,2016-02-26 06:14:34,Transferir creditos homologables
+Case148,Transferir creditos homologables,2016-02-26 06:14:34,2016-02-26 06:14:34,Transferir creditos homologables
+Case148,Transferir creditos homologables,2016-02-26 06:14:34,2016-02-26 06:14:34,Transferir creditos homologables
+Case148,Transferir creditos homologables,2016-02-26 06:14:34,2016-02-26 06:14:34,Transferir creditos homologables
+Case148,Transferir creditos homologables,2016-02-26 06:14:34,2016-02-26 06:14:34,Transferir creditos homologables
+Case148,Transferir creditos homologables,2016-02-26 06:14:34,2016-02-26 06:14:34,Transferir creditos homologables
+Case148,End,2016-02-26 06:14:34,2016-02-26 06:14:34,End
+Case149,Start,2016-02-06 14:17:47,2016-02-06 14:17:47,Start
+Case149,Traer informacion estudiante - banner,2016-02-06 14:17:47,2016-02-06 14:17:47,Traer informacion estudiante - banner
+Case149,Radicar Solicitud Homologacion,2016-02-06 14:17:51,2016-02-06 14:17:51,Radicar Solicitud Homologacion
+Case149,Cancelar Solicitud,2016-02-06 14:25:21,2016-02-06 14:25:21,Cancelar Solicitud
+Case149,Notificacion estudiante cancelacion soli,2016-02-06 16:29:03,2016-02-06 16:29:03,Notificacion estudiante cancelacion soli
+Case149,End,2016-02-06 16:29:03,2016-02-06 16:29:03,End
+Case150,Start,2016-02-06 20:06:25,2016-02-06 20:06:25,Start
+Case150,Radicar Solicitud Homologacion,2016-02-06 20:06:29,2016-02-06 20:06:29,Radicar Solicitud Homologacion
+Case150,End,2016-02-06 20:06:29,2016-02-06 20:06:29,End
+Case151,Start,2016-02-06 20:53:10,2016-02-06 20:53:10,Start
+Case151,Traer informacion estudiante - banner,2016-02-06 20:53:10,2016-02-06 20:53:10,Traer informacion estudiante - banner
+Case151,Radicar Solicitud Homologacion,2016-02-06 20:53:11,2016-02-06 20:53:15,Radicar Solicitud Homologacion
+Case151,Validar solicitud,2016-02-06 21:11:00,2016-02-06 21:36:30,Validar solicitud
+Case151,Homologacion por grupo de cursos,2016-02-06 21:36:30,2016-02-07 01:25:32,Homologacion por grupo de cursos
+Case151,Revisar curso,2016-02-06 22:36:04,2016-02-06 22:36:05,Revisar curso
+Case151,Evaluacion curso,2016-02-07 01:26:13,2016-02-07 01:26:23,Evaluacion curso
+Case151,Validar solicitud / pre-homologacion,2016-02-07 09:15:26,2016-02-07 10:21:09,Validar solicitud / pre-homologacion
+Case151,End,2016-02-07 10:21:09,2016-02-07 10:21:09,End
+Case152,Start,2016-02-06 21:38:33,2016-02-06 21:38:33,Start
+Case152,Traer informacion estudiante - banner,2016-02-06 21:38:33,2016-02-06 21:38:33,Traer informacion estudiante - banner
+Case152,Radicar Solicitud Homologacion,2016-02-06 21:38:36,2016-02-06 21:38:36,Radicar Solicitud Homologacion
+Case152,Cancelar Solicitud,2016-02-06 21:41:08,2016-02-06 21:41:08,Cancelar Solicitud
+Case152,Notificacion estudiante cancelacion soli,2016-02-06 22:48:18,2016-02-06 22:48:18,Notificacion estudiante cancelacion soli
+Case152,End,2016-02-06 22:48:18,2016-02-06 22:48:18,End
+Case153,Start,2016-02-07 00:57:00,2016-02-07 00:57:00,Start
+Case153,Traer informacion estudiante - banner,2016-02-07 00:57:00,2016-02-07 00:57:00,Traer informacion estudiante - banner
+Case153,Radicar Solicitud Homologacion,2016-02-07 00:57:05,2016-02-07 00:57:05,Radicar Solicitud Homologacion
+Case153,Notificacion estudiante cancelacion soli,2016-02-08 21:57:43,2016-02-08 21:57:43,Notificacion estudiante cancelacion soli
+Case153,Cancelar Solicitud,2016-02-08 22:03:47,2016-02-08 22:30:53,Cancelar Solicitud
+Case153,End,2016-02-08 22:30:54,2016-02-08 22:31:04,End
+Case154,Start,2016-02-07 13:02:59,2016-02-07 13:02:59,Start
+Case154,Traer informacion estudiante - banner,2016-02-07 13:02:59,2016-02-07 13:02:59,Traer informacion estudiante - banner
+Case154,Radicar Solicitud Homologacion,2016-02-07 13:03:01,2016-02-07 13:03:01,Radicar Solicitud Homologacion
+Case154,Validar solicitud,2016-02-08 06:18:06,2016-02-08 06:18:28,Validar solicitud
+Case154,Homologacion por grupo de cursos,2016-02-08 09:31:47,2016-02-08 09:40:53,Homologacion por grupo de cursos
+Case154,Revisar curso,2016-02-08 06:29:08,2016-02-08 06:47:57,Revisar curso
+Case154,Evaluacion curso,2016-02-08 06:48:47,2016-02-08 07:50:19,Evaluacion curso
+Case154,Validar solicitud / pre-homologacion,2016-02-08 11:07:18,2016-02-08 11:07:18,Validar solicitud / pre-homologacion
+Case154,End,2016-02-08 11:07:18,2016-02-08 11:07:18,End
+Case155,Start,2016-02-07 17:04:33,2016-02-07 17:04:33,Start
+Case155,Traer informacion estudiante - banner,2016-02-07 17:04:33,2016-02-07 17:04:33,Traer informacion estudiante - banner
+Case155,Radicar Solicitud Homologacion,2016-02-07 17:04:39,2016-02-07 17:04:39,Radicar Solicitud Homologacion
+Case155,Cancelar Solicitud,2016-02-07 17:25:11,2016-02-07 17:25:11,Cancelar Solicitud
+Case155,Notificacion estudiante cancelacion soli,2016-02-10 00:22:17,2016-02-10 00:22:17,Notificacion estudiante cancelacion soli
+Case155,End,2016-02-10 00:22:17,2016-02-10 00:22:17,End
+Case156,Start,2016-02-07 20:00:30,2016-02-07 20:00:30,Start
+Case156,Traer informacion estudiante - banner,2016-02-07 20:00:30,2016-02-07 20:00:30,Traer informacion estudiante - banner
+Case156,Radicar Solicitud Homologacion,2016-02-07 20:00:32,2016-02-07 20:00:40,Radicar Solicitud Homologacion
+Case156,Validar solicitud,2016-02-08 03:47:49,2016-02-08 04:04:52,Validar solicitud
+Case156,Homologacion por grupo de cursos,2016-02-17 17:52:00,2016-02-17 18:10:01,Homologacion por grupo de cursos
+Case156,Revisar curso,2016-02-08 09:50:43,2016-02-08 10:10:06,Revisar curso
+Case156,Evaluacion curso,2016-02-11 06:38:29,2016-02-11 07:54:57,Evaluacion curso
+Case156,Validar solicitud / pre-homologacion,2016-02-11 07:55:12,2016-02-11 09:15:26,Validar solicitud / pre-homologacion
+Case156,End,2016-02-17 18:10:01,2016-02-17 18:10:01,End
+Case157,Start,2016-02-07 20:41:48,2016-02-07 20:41:48,Start
+Case157,Traer informacion estudiante - banner,2016-02-07 20:41:48,2016-02-07 20:41:48,Traer informacion estudiante - banner
+Case157,Radicar Solicitud Homologacion,2016-02-07 20:41:55,2016-02-07 20:45:12,Radicar Solicitud Homologacion
+Case157,Validar solicitud,2016-02-07 21:07:14,2016-02-07 21:23:54,Validar solicitud
+Case157,Homologacion por grupo de cursos,2016-02-16 01:43:46,2016-02-16 01:50:47,Homologacion por grupo de cursos
+Case157,End,2016-02-16 01:50:47,2016-02-16 01:50:47,End
+Case158,Start,2016-02-07 21:33:09,2016-02-07 21:33:09,Start
+Case158,Traer informacion estudiante - banner,2016-02-07 21:33:09,2016-02-07 21:33:09,Traer informacion estudiante - banner
+Case158,Radicar Solicitud Homologacion,2016-02-07 21:33:14,2016-02-07 21:33:21,Radicar Solicitud Homologacion
+Case158,Validar solicitud,2016-02-07 21:40:15,2016-02-07 21:41:50,Validar solicitud
+Case158,Homologacion por grupo de cursos,2016-02-08 06:58:17,2016-02-08 11:42:51,Homologacion por grupo de cursos
+Case158,End,2016-02-08 11:42:51,2016-02-08 11:42:51,End
+Case159,Start,2016-02-02 01:26:17,2016-02-02 01:26:17,Start
+Case159,Traer informacion estudiante - banner,2016-02-02 01:37:10,2016-02-02 01:37:10,Traer informacion estudiante - banner
+Case159,Radicar Solicitud Homologacion,2016-02-02 01:37:18,2016-02-02 03:29:34,Radicar Solicitud Homologacion
+Case159,Cancelar Solicitud,2016-02-02 03:40:43,2016-02-02 07:59:41,Cancelar Solicitud
+Case159,Notificacion estudiante cancelacion soli,2016-02-02 08:23:42,2016-02-02 08:23:42,Notificacion estudiante cancelacion soli
+Case159,End,2016-02-02 08:23:42,2016-02-02 08:23:42,End
+Case160,Start,2016-02-07 23:16:13,2016-02-07 23:16:13,Start
+Case160,Traer informacion estudiante - banner,2016-02-07 23:16:13,2016-02-07 23:16:13,Traer informacion estudiante - banner
+Case160,Radicar Solicitud Homologacion,2016-02-07 23:16:20,2016-02-07 23:18:00,Radicar Solicitud Homologacion
+Case160,Cancelar Solicitud,2016-02-17 10:00:03,2016-02-17 10:02:33,Cancelar Solicitud
+Case160,Notificacion estudiante cancelacion soli,2016-02-17 18:40:51,2016-02-17 18:40:51,Notificacion estudiante cancelacion soli
+Case160,End,2016-02-17 18:40:51,2016-02-17 18:40:51,End
+Case161,Start,2016-02-07 23:55:16,2016-02-07 23:55:16,Start
+Case161,Traer informacion estudiante - banner,2016-02-07 23:55:16,2016-02-07 23:55:16,Traer informacion estudiante - banner
+Case161,Radicar Solicitud Homologacion,2016-02-07 23:55:18,2016-02-07 23:55:49,Radicar Solicitud Homologacion
+Case161,Validar solicitud,2016-02-08 00:06:46,2016-02-08 00:37:23,Validar solicitud
+Case161,Homologacion por grupo de cursos,2016-02-08 00:37:24,2016-02-08 01:39:03,Homologacion por grupo de cursos
+Case161,Recepcion de documentos,2016-02-08 13:37:52,2016-02-08 14:21:09,Recepcion de documentos
+Case161,Revisar curso,2016-02-08 17:30:19,2016-02-08 17:30:20,Revisar curso
+Case161,Evaluacion curso,2016-02-13 05:51:34,2016-02-13 05:51:56,Evaluacion curso
+Case161,Validar solicitud / pre-homologacion,2016-02-15 11:11:33,2016-02-15 11:11:35,Validar solicitud / pre-homologacion
+Case161,End,2016-02-15 11:11:35,2016-02-15 11:11:35,End
+Case162,Start,2016-02-08 00:54:45,2016-02-08 00:54:45,Start
+Case162,Traer informacion estudiante - banner,2016-02-08 00:54:45,2016-02-08 00:54:45,Traer informacion estudiante - banner
+Case162,Radicar Solicitud Homologacion,2016-02-08 00:54:46,2016-02-08 00:54:46,Radicar Solicitud Homologacion
+Case162,Cancelar Solicitud,2016-02-08 00:58:44,2016-02-08 00:58:44,Cancelar Solicitud
+Case162,Validar solicitud,2016-02-08 01:00:37,2016-02-08 02:21:14,Validar solicitud
+Case162,Revisar curso,2016-02-10 00:27:04,2016-02-10 00:42:45,Revisar curso
+Case162,Notificacion estudiante cancelacion soli,2016-02-11 05:10:26,2016-02-11 05:10:26,Notificacion estudiante cancelacion soli
+Case162,End,2016-02-11 05:10:26,2016-02-11 05:10:26,End
+Case163,Start,2016-02-08 01:46:21,2016-02-08 01:46:21,Start
+Case163,Traer informacion estudiante - banner,2016-02-08 01:54:23,2016-02-08 01:54:23,Traer informacion estudiante - banner
+Case163,Radicar Solicitud Homologacion,2016-02-08 01:54:25,2016-02-08 01:54:52,Radicar Solicitud Homologacion
+Case163,Cancelar Solicitud,2016-02-08 01:58:55,2016-02-08 01:59:21,Cancelar Solicitud
+Case163,Notificacion estudiante cancelacion soli,2016-02-12 03:09:00,2016-02-12 03:09:00,Notificacion estudiante cancelacion soli
+Case163,End,2016-02-12 03:09:00,2016-02-12 03:09:00,End
+Case164,Start,2016-02-08 03:02:09,2016-02-08 03:02:09,Start
+Case164,Traer informacion estudiante - banner,2016-02-08 03:02:09,2016-02-08 03:02:09,Traer informacion estudiante - banner
+Case164,Radicar Solicitud Homologacion,2016-02-08 03:02:12,2016-02-08 03:02:12,Radicar Solicitud Homologacion
+Case164,Validar solicitud,2016-02-08 03:05:27,2016-02-08 03:07:17,Validar solicitud
+Case164,Homologacion por grupo de cursos,2016-02-11 12:45:22,2016-02-11 12:45:23,Homologacion por grupo de cursos
+Case164,End,2016-02-11 12:45:23,2016-02-11 12:45:23,End
+Case165,Start,2016-02-08 08:27:56,2016-02-08 08:27:56,Start
+Case165,Traer informacion estudiante - banner,2016-02-08 08:27:56,2016-02-08 08:27:56,Traer informacion estudiante - banner
+Case165,Radicar Solicitud Homologacion,2016-02-08 08:27:57,2016-02-08 08:40:57,Radicar Solicitud Homologacion
+Case165,Validar solicitud,2016-02-08 09:10:04,2016-02-08 10:48:59,Validar solicitud
+Case165,Homologacion por grupo de cursos,2016-02-08 13:43:57,2016-02-08 13:44:40,Homologacion por grupo de cursos
+Case165,End,2016-02-08 13:44:40,2016-02-08 13:44:40,End
+Case166,Start,2016-02-08 11:10:27,2016-02-08 11:10:27,Start
+Case166,Traer informacion estudiante - banner,2016-02-08 11:10:27,2016-02-08 11:10:27,Traer informacion estudiante - banner
+Case166,Radicar Solicitud Homologacion,2016-02-08 11:10:33,2016-02-08 11:10:40,Radicar Solicitud Homologacion
+Case166,Validar solicitud,2016-02-08 11:15:05,2016-02-08 11:48:25,Validar solicitud
+Case166,Homologacion por grupo de cursos,2016-02-12 12:11:37,2016-02-12 13:09:48,Homologacion por grupo de cursos
+Case166,End,2016-02-12 13:09:48,2016-02-12 13:09:48,End
+Case167,Start,2016-02-08 12:35:42,2016-02-08 12:35:42,Start
+Case167,Traer informacion estudiante - banner,2016-02-08 12:35:42,2016-02-08 12:35:42,Traer informacion estudiante - banner
+Case167,Radicar Solicitud Homologacion,2016-02-08 12:35:48,2016-02-08 12:50:53,Radicar Solicitud Homologacion
+Case167,Validar solicitud,2016-02-08 13:25:56,2016-02-08 15:17:18,Validar solicitud
+Case167,Homologacion por grupo de cursos,2016-03-08 18:37:55,2016-03-08 19:05:48,Homologacion por grupo de cursos
+Case167,Cancelar curso,2016-03-08 19:05:49,2016-03-08 19:05:49,Cancelar curso
+Case167,End,2016-03-08 19:05:49,2016-03-08 19:05:49,End
+Case168,Start,2016-02-08 13:47:46,2016-02-08 13:47:46,Start
+Case168,Traer informacion estudiante - banner,2016-02-08 13:47:46,2016-02-08 13:47:46,Traer informacion estudiante - banner
+Case168,Radicar Solicitud Homologacion,2016-02-08 13:47:47,2016-02-08 13:47:47,Radicar Solicitud Homologacion
+Case168,Cancelar Solicitud,2016-02-08 13:51:33,2016-02-08 13:51:33,Cancelar Solicitud
+Case168,Notificacion estudiante cancelacion soli,2016-02-08 18:37:19,2016-02-08 18:37:19,Notificacion estudiante cancelacion soli
+Case168,End,2016-02-08 18:37:19,2016-02-08 18:37:19,End
+Case169,Start,2016-02-08 14:33:21,2016-02-08 14:33:21,Start
+Case169,Traer informacion estudiante - banner,2016-02-08 14:33:21,2016-02-08 14:33:21,Traer informacion estudiante - banner
+Case169,Radicar Solicitud Homologacion,2016-02-08 14:33:22,2016-02-08 14:33:22,Radicar Solicitud Homologacion
+Case169,Validar solicitud,2016-02-09 07:06:47,2016-02-09 07:09:50,Validar solicitud
+Case169,Homologacion por grupo de cursos,2016-02-15 14:41:31,2016-02-15 15:43:57,Homologacion por grupo de cursos
+Case169,End,2016-02-15 15:43:57,2016-02-15 15:43:57,End
+Case170,Start,2016-02-02 02:46:42,2016-02-02 02:46:42,Start
+Case170,Traer informacion estudiante - banner,2016-02-02 02:46:42,2016-02-02 02:46:42,Traer informacion estudiante - banner
+Case170,Radicar Solicitud Homologacion,2016-02-02 02:46:44,2016-02-02 02:47:14,Radicar Solicitud Homologacion
+Case170,Validar solicitud,2016-02-02 03:03:03,2016-02-02 03:11:21,Validar solicitud
+Case170,Homologacion por grupo de cursos,2016-02-06 16:13:53,2016-02-06 20:46:55,Homologacion por grupo de cursos
+Case170,Recepcion de documentos,2016-02-02 03:50:46,2016-02-02 14:28:43,Recepcion de documentos
+Case170,Revisar curso,2016-02-05 12:01:12,2016-02-05 12:01:16,Revisar curso
+Case170,Evaluacion curso,2016-02-06 20:49:20,2016-02-06 23:28:29,Evaluacion curso
+Case170,End,2016-02-06 23:28:29,2016-02-06 23:28:29,End
+Case171,Start,2016-02-08 18:05:52,2016-02-08 18:05:52,Start
+Case171,Traer informacion estudiante - banner,2016-02-08 18:05:52,2016-02-08 18:05:52,Traer informacion estudiante - banner
+Case171,Radicar Solicitud Homologacion,2016-02-08 18:05:56,2016-02-08 18:37:42,Radicar Solicitud Homologacion
+Case171,Validar solicitud,2016-02-08 19:05:39,2016-02-08 21:08:19,Validar solicitud
+Case171,Homologacion por grupo de cursos,2016-02-09 01:57:09,2016-02-09 04:04:57,Homologacion por grupo de cursos
+Case171,End,2016-02-09 04:04:57,2016-02-09 04:04:57,End
+Case172,Start,2016-02-08 19:18:22,2016-02-08 19:18:22,Start
+Case172,Traer informacion estudiante - banner,2016-02-08 19:18:22,2016-02-08 19:18:22,Traer informacion estudiante - banner
+Case172,Radicar Solicitud Homologacion,2016-02-08 19:18:28,2016-02-08 19:18:28,Radicar Solicitud Homologacion
+Case172,Validar solicitud,2016-02-08 19:29:30,2016-02-08 19:44:16,Validar solicitud
+Case172,Homologacion por grupo de cursos,2016-02-11 22:07:00,2016-02-11 22:07:00,Homologacion por grupo de cursos
+Case172,Revisar curso,2016-02-10 01:52:30,2016-02-10 01:52:30,Revisar curso
+Case172,Evaluacion curso,2016-02-16 23:12:18,2016-02-17 00:09:14,Evaluacion curso
+Case172,Validar solicitud / pre-homologacion,2016-02-22 06:42:06,2016-02-22 06:44:06,Validar solicitud / pre-homologacion
+Case172,End,2016-02-22 06:44:06,2016-02-22 06:44:06,End
+Case173,Start,2016-02-08 19:30:35,2016-02-08 19:30:35,Start
+Case173,Traer informacion estudiante - banner,2016-02-08 19:30:35,2016-02-08 19:30:35,Traer informacion estudiante - banner
+Case173,Radicar Solicitud Homologacion,2016-02-08 19:30:38,2016-02-08 19:50:39,Radicar Solicitud Homologacion
+Case173,Cancelar Solicitud,2016-02-08 20:14:15,2016-02-08 20:14:15,Cancelar Solicitud
+Case173,Notificacion estudiante cancelacion soli,2016-02-08 20:19:41,2016-02-08 20:19:41,Notificacion estudiante cancelacion soli
+Case173,End,2016-02-08 20:19:41,2016-02-08 20:19:41,End
+Case174,Start,2016-02-08 20:33:54,2016-02-08 20:33:54,Start
+Case174,Traer informacion estudiante - banner,2016-02-08 20:33:54,2016-02-08 20:33:54,Traer informacion estudiante - banner
+Case174,Radicar Solicitud Homologacion,2016-02-08 20:33:58,2016-02-08 20:35:04,Radicar Solicitud Homologacion
+Case174,Cancelar Solicitud,2016-02-08 20:45:17,2016-02-08 20:45:31,Cancelar Solicitud
+Case174,Notificacion estudiante cancelacion soli,2016-02-13 02:51:55,2016-02-13 02:51:55,Notificacion estudiante cancelacion soli
+Case174,End,2016-02-13 02:51:55,2016-02-13 02:51:55,End
+Case175,Start,2016-02-08 22:08:47,2016-02-08 22:08:47,Start
+Case175,Traer informacion estudiante - banner,2016-02-08 22:16:48,2016-02-08 22:16:48,Traer informacion estudiante - banner
+Case175,Radicar Solicitud Homologacion,2016-02-08 22:16:50,2016-02-08 22:17:09,Radicar Solicitud Homologacion
+Case175,Cancelar Solicitud,2016-02-08 22:23:30,2016-02-08 22:45:29,Cancelar Solicitud
+Case175,Validar solicitud,2016-02-09 03:28:00,2016-02-09 03:28:46,Validar solicitud
+Case175,Notificacion estudiante cancelacion soli,2016-02-23 18:59:02,2016-02-23 18:59:02,Notificacion estudiante cancelacion soli
+Case175,End,2016-02-23 18:59:02,2016-02-23 18:59:02,End
+Case176,Start,2016-02-08 22:44:41,2016-02-08 22:44:41,Start
+Case176,Traer informacion estudiante - banner,2016-02-08 22:44:41,2016-02-08 22:44:41,Traer informacion estudiante - banner
+Case176,Radicar Solicitud Homologacion,2016-02-08 22:44:42,2016-02-08 22:44:49,Radicar Solicitud Homologacion
+Case176,Cancelar Solicitud,2016-02-08 23:44:34,2016-02-09 07:30:00,Cancelar Solicitud
+Case176,Notificacion estudiante cancelacion soli,2016-02-09 07:31:41,2016-02-09 07:31:41,Notificacion estudiante cancelacion soli
+Case176,End,2016-02-09 07:31:41,2016-02-09 07:31:41,End
+Case177,Start,2016-02-09 04:23:32,2016-02-09 04:23:32,Start
+Case177,Traer informacion estudiante - banner,2016-02-09 04:23:32,2016-02-09 04:23:32,Traer informacion estudiante - banner
+Case177,Radicar Solicitud Homologacion,2016-02-09 04:23:38,2016-02-09 04:23:38,Radicar Solicitud Homologacion
+Case177,Validar solicitud,2016-02-09 04:34:23,2016-02-09 04:42:11,Validar solicitud
+Case177,Validacion final,2016-03-25 01:22:31,2016-03-25 01:23:33,Validacion final
+Case177,Homologacion por grupo de cursos,2016-03-28 08:42:11,2016-03-28 09:03:58,Homologacion por grupo de cursos
+Case177,Revisar curso,2016-03-28 19:52:06,2016-03-28 19:52:06,Revisar curso
+Case177,Evaluacion curso,2016-03-28 19:52:48,2016-03-28 19:52:48,Evaluacion curso
+Case177,Visto Bueno Cierre Proceso,2016-05-06 23:17:52,2016-05-06 23:22:37,Visto Bueno Cierre Proceso
+Case177,End,2016-05-06 23:22:37,2016-05-06 23:22:37,End
+Case178,Start,2016-02-09 04:34:25,2016-02-09 04:34:25,Start
+Case178,Traer informacion estudiante - banner,2016-02-09 04:34:25,2016-02-09 04:34:25,Traer informacion estudiante - banner
+Case178,Radicar Solicitud Homologacion,2016-02-09 04:34:32,2016-02-09 04:41:03,Radicar Solicitud Homologacion
+Case178,Cancelar Solicitud,2016-02-09 04:54:48,2016-02-09 08:21:33,Cancelar Solicitud
+Case178,Validar solicitud,2016-02-09 04:53:06,2016-02-09 04:54:31,Validar solicitud
+Case178,Revisar curso,2016-02-17 16:38:45,2016-02-17 20:32:05,Revisar curso
+Case178,Notificacion estudiante cancelacion soli,2016-02-17 20:32:17,2016-02-17 20:32:17,Notificacion estudiante cancelacion soli
+Case178,End,2016-02-17 20:32:17,2016-02-17 20:32:17,End
+Case179,Start,2016-02-09 06:48:02,2016-02-09 06:48:02,Start
+Case179,Traer informacion estudiante - banner,2016-02-09 06:48:02,2016-02-09 06:48:02,Traer informacion estudiante - banner
+Case179,Radicar Solicitud Homologacion,2016-02-09 06:48:12,2016-02-09 07:46:28,Radicar Solicitud Homologacion
+Case179,Validar solicitud,2016-02-09 10:01:00,2016-02-09 10:02:13,Validar solicitud
+Case179,Homologacion por grupo de cursos,2016-02-12 06:29:35,2016-02-12 07:06:41,Homologacion por grupo de cursos
+Case179,Revisar curso,2016-03-05 19:14:08,2016-03-05 20:55:57,Revisar curso
+Case179,Evaluacion curso,2016-03-05 20:56:37,2016-03-05 20:56:37,Evaluacion curso
+Case179,Validacion final,2016-05-01 06:44:45,2016-05-01 06:47:53,Validacion final
+Case179,Visto Bueno Cierre Proceso,2016-05-09 10:37:34,2016-05-09 10:52:35,Visto Bueno Cierre Proceso
+Case179,End,2016-05-09 10:52:35,2016-05-09 10:52:35,End
+Case180,Start,2016-02-09 10:20:50,2016-02-09 10:20:50,Start
+Case180,Traer informacion estudiante - banner,2016-02-09 10:20:50,2016-02-09 10:20:50,Traer informacion estudiante - banner
+Case180,Radicar Solicitud Homologacion,2016-02-09 10:20:54,2016-02-09 10:37:41,Radicar Solicitud Homologacion
+Case180,Cancelar Solicitud,2016-02-09 10:47:33,2016-02-09 10:48:40,Cancelar Solicitud
+Case180,Notificacion estudiante cancelacion soli,2016-02-09 21:34:45,2016-02-09 21:34:45,Notificacion estudiante cancelacion soli
+Case180,End,2016-02-09 21:34:45,2016-02-09 21:34:45,End
+Case181,Start,2016-02-02 06:13:11,2016-02-02 06:13:11,Start
+Case181,Traer informacion estudiante - banner,2016-02-02 06:13:11,2016-02-02 06:13:11,Traer informacion estudiante - banner
+Case181,Radicar Solicitud Homologacion,2016-02-02 06:13:13,2016-02-02 06:59:26,Radicar Solicitud Homologacion
+Case181,Cancelar Solicitud,2016-02-02 07:08:09,2016-02-02 07:57:43,Cancelar Solicitud
+Case181,Notificacion estudiante cancelacion soli,2016-02-05 08:25:48,2016-02-05 08:25:48,Notificacion estudiante cancelacion soli
+Case181,End,2016-02-05 08:25:48,2016-02-05 08:25:48,End
+Case182,Start,2016-02-09 11:57:33,2016-02-09 11:57:33,Start
+Case182,Traer informacion estudiante - banner,2016-02-09 11:57:33,2016-02-09 11:57:33,Traer informacion estudiante - banner
+Case182,Radicar Solicitud Homologacion,2016-02-13 07:55:26,2016-02-13 07:57:29,Radicar Solicitud Homologacion
+Case182,Validar solicitud,2016-02-13 07:59:56,2016-02-13 08:00:46,Validar solicitud
+Case182,Homologacion por grupo de cursos,2016-02-16 05:56:14,2016-02-16 06:23:24,Homologacion por grupo de cursos
+Case182,Revisar curso,2016-03-02 19:21:22,2016-03-02 19:22:17,Revisar curso
+Case182,Evaluacion curso,2016-03-23 12:06:06,2016-03-23 12:22:25,Evaluacion curso
+Case182,Validar solicitud / pre-homologacion,2016-04-18 16:35:40,2016-04-18 17:16:50,Validar solicitud / pre-homologacion
+Case182,End,2016-04-18 17:16:50,2016-04-18 17:16:50,End
+Case183,Start,2016-02-09 12:31:03,2016-02-09 12:31:03,Start
+Case183,Traer informacion estudiante - banner,2016-02-09 12:31:03,2016-02-09 12:31:03,Traer informacion estudiante - banner
+Case183,Radicar Solicitud Homologacion,2016-02-09 12:31:11,2016-02-09 12:35:35,Radicar Solicitud Homologacion
+Case183,Cancelar Solicitud,2016-02-09 12:39:10,2016-02-09 12:39:10,Cancelar Solicitud
+Case183,Notificacion estudiante cancelacion soli,2016-02-10 03:18:11,2016-02-10 03:18:11,Notificacion estudiante cancelacion soli
+Case183,End,2016-02-10 03:18:11,2016-02-10 03:18:11,End
+Case184,Start,2016-02-09 17:23:43,2016-02-09 17:23:43,Start
+Case184,Traer informacion estudiante - banner,2016-02-09 17:23:43,2016-02-09 17:23:43,Traer informacion estudiante - banner
+Case184,Radicar Solicitud Homologacion,2016-02-09 17:23:46,2016-02-09 17:23:46,Radicar Solicitud Homologacion
+Case184,Notificacion estudiante cancelacion soli,2016-02-09 17:27:50,2016-02-09 17:27:50,Notificacion estudiante cancelacion soli
+Case184,End,2016-02-09 17:27:50,2016-02-09 17:27:50,End
+Case185,Start,2016-02-09 18:52:45,2016-02-09 18:52:45,Start
+Case185,Traer informacion estudiante - banner,2016-02-09 18:52:45,2016-02-09 18:52:45,Traer informacion estudiante - banner
+Case185,Radicar Solicitud Homologacion,2016-02-09 18:52:47,2016-02-09 18:52:50,Radicar Solicitud Homologacion
+Case185,Cancelar Solicitud,2016-02-09 19:40:15,2016-02-09 19:40:15,Cancelar Solicitud
+Case185,Validar solicitud,2016-02-09 19:03:27,2016-02-09 19:36:09,Validar solicitud
+Case185,Revisar curso,2016-02-10 06:26:17,2016-02-10 07:24:35,Revisar curso
+Case185,Evaluacion curso,2016-02-12 19:59:33,2016-02-12 20:32:02,Evaluacion curso
+Case185,Validar solicitud / pre-homologacion,2016-03-04 16:37:16,2016-03-04 16:37:18,Validar solicitud / pre-homologacion
+Case185,Notificacion estudiante cancelacion soli,2016-03-05 04:54:26,2016-03-05 04:54:26,Notificacion estudiante cancelacion soli
+Case185,End,2016-03-05 04:54:26,2016-03-05 04:54:26,End
+Case186,Start,2016-02-09 21:15:27,2016-02-09 21:15:27,Start
+Case186,Traer informacion estudiante - banner,2016-02-09 21:15:27,2016-02-09 21:15:27,Traer informacion estudiante - banner
+Case186,Radicar Solicitud Homologacion,2016-02-09 21:15:32,2016-02-09 21:16:24,Radicar Solicitud Homologacion
+Case186,Cancelar Solicitud,2016-02-09 21:24:45,2016-02-09 22:58:36,Cancelar Solicitud
+Case186,Notificacion estudiante cancelacion soli,2016-02-17 09:02:37,2016-02-17 09:02:37,Notificacion estudiante cancelacion soli
+Case186,End,2016-02-17 09:02:37,2016-02-17 09:02:37,End
+Case187,Start,2016-02-09 21:46:56,2016-02-09 21:46:56,Start
+Case187,Traer informacion estudiante - banner,2016-02-09 21:46:56,2016-02-09 21:46:56,Traer informacion estudiante - banner
+Case187,Radicar Solicitud Homologacion,2016-02-09 21:46:58,2016-02-09 21:46:58,Radicar Solicitud Homologacion
+Case187,Validar solicitud,2016-02-09 22:02:35,2016-02-09 22:28:37,Validar solicitud
+Case187,Homologacion por grupo de cursos,2016-02-09 22:31:53,2016-02-10 00:09:46,Homologacion por grupo de cursos
+Case187,End,2016-02-10 00:09:46,2016-02-10 00:09:46,End
+Case188,Start,2016-02-09 22:46:24,2016-02-09 22:46:24,Start
+Case188,Traer informacion estudiante - banner,2016-02-09 22:46:24,2016-02-09 22:46:24,Traer informacion estudiante - banner
+Case188,Radicar Solicitud Homologacion,2016-02-09 22:46:28,2016-02-09 22:51:33,Radicar Solicitud Homologacion
+Case188,Cancelar Solicitud,2016-02-09 23:06:01,2016-02-09 23:06:03,Cancelar Solicitud
+Case188,Notificacion estudiante cancelacion soli,2016-02-10 01:38:57,2016-02-10 01:38:57,Notificacion estudiante cancelacion soli
+Case188,End,2016-02-10 01:38:57,2016-02-10 01:38:57,End
+Case189,Start,2016-02-10 00:10:00,2016-02-10 00:10:00,Start
+Case189,Traer informacion estudiante - banner,2016-02-10 00:34:04,2016-02-10 00:34:04,Traer informacion estudiante - banner
+Case189,Radicar Solicitud Homologacion,2016-02-10 00:34:08,2016-02-10 00:34:11,Radicar Solicitud Homologacion
+Case189,Cancelar Solicitud,2016-02-10 00:38:27,2016-02-10 00:38:27,Cancelar Solicitud
+Case189,Notificacion estudiante cancelacion soli,2016-02-10 00:38:46,2016-02-10 00:38:46,Notificacion estudiante cancelacion soli
+Case189,End,2016-02-10 00:38:46,2016-02-10 00:38:46,End
+Case190,Start,2016-02-10 01:23:23,2016-02-10 01:23:23,Start
+Case190,Traer informacion estudiante - banner,2016-02-10 01:23:23,2016-02-10 01:23:23,Traer informacion estudiante - banner
+Case190,Radicar Solicitud Homologacion,2016-02-10 01:23:32,2016-02-10 01:25:07,Radicar Solicitud Homologacion
+Case190,Cancelar Solicitud,2016-02-10 01:34:49,2016-02-10 01:46:28,Cancelar Solicitud
+Case190,Notificacion estudiante cancelacion soli,2016-02-14 14:22:32,2016-02-14 14:22:32,Notificacion estudiante cancelacion soli
+Case190,End,2016-02-14 14:22:32,2016-02-14 14:22:32,End
+Case191,Start,2016-02-10 01:32:12,2016-02-10 01:32:12,Start
+Case191,Cancelar Solicitud,2016-02-10 01:35:56,2016-02-10 01:35:56,Cancelar Solicitud
+Case191,Traer informacion estudiante - banner,2016-02-10 01:35:56,2016-02-10 01:35:56,Traer informacion estudiante - banner
+Case191,Radicar Solicitud Homologacion,2016-02-10 01:35:58,2016-02-10 01:35:58,Radicar Solicitud Homologacion
+Case191,Notificacion estudiante cancelacion soli,2016-02-13 08:42:15,2016-02-13 08:42:15,Notificacion estudiante cancelacion soli
+Case191,End,2016-02-13 08:42:15,2016-02-13 08:42:15,End

@@ -1,0 +1,11 @@
+run_num,metric,sim_val
+0.0,day_hour_emd,0.1851421404617135
+0.0,dl,0.9251819007054609
+0.0,log_mae,4136656.0
+0.0,mae,400858.40314136125
+0.0,tsd,0.89557934763943
+0.0,clustering_method,kmeans
+0.0,decomposition_method,pca
+0.0,number_clusters,3
+0.0,silhouette_score,0.43855714200274754
+0.0,calinski_harabasz_score,12.63877086017275
