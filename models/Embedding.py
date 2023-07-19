@@ -52,4 +52,4 @@ class TokenEmbedding(nn.Module):
         """
 
     def forward(self, tokens):
-        return self.embedding(tokens.long()) * math.sqrt(self.emb_size)
+        return self.embedding(tokens.long()) * torch.sqrt(self.emb_size)

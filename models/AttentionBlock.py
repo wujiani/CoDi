@@ -49,7 +49,8 @@ class AttentionBlock(nn.Module):
                                    memory_key_padding_mask=memory_key_padding_mask)
         # [tgt_len,batch_size,embed_dim]
         outs = outs.squeeze(0)
-        return outs
+        outs[outs.isnan()] = 0
+        return outs #[batch_size,embed_dim]
 
     def encoder(self, src):
         src_embed = self.src_token_embedding(src)  # [src_len, batch_size, embed_dim]
