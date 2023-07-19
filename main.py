@@ -49,7 +49,7 @@ flags.DEFINE_integer('dis_output_size', None, help='output_size')
 
 flags.DEFINE_integer('src_vocab_size_list', None, help='attention')
 flags.DEFINE_integer('tgt_vocab_size', None, help='attention')
-flags.DEFINE_integer('dmodel', 512, help='attention')
+flags.DEFINE_integer('dmodel', 20, help='attention')
 
 # Training
 flags.DEFINE_integer('training_batch_size', 2100, help='batch size')

@@ -78,7 +78,7 @@ def train(FLAGS):
     FLAGS.cont_output_size = train_cont_data.shape[1]
     FLAGS.encoder_dim =  list(map(int, FLAGS.encoder_dim_con.split(',')))
     FLAGS.nf =  FLAGS.nf_con
-    model_cont = tabularUnet(FLAGS, '0')
+    model_cont = tabularUnet(FLAGS, '-1')
     optim_cont = torch.optim.Adam(model_cont.parameters(), lr=FLAGS.lr_con)
     sched_cont = torch.optim.lr_scheduler.LambdaLR(optim_cont, lr_lambda=warmup_lr)
     trainer_cont = GaussianDiffusionTrainer(model_cont, FLAGS.beta_1, FLAGS.beta_T, FLAGS.T).to(device)
