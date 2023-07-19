@@ -62,7 +62,7 @@ def train(FLAGS):
             if j != i:
                 con_list.append(dis_data)
         k+=num_class[i]
-        con_list.append(train_cont_data)
+        # con_list.append(train_cont_data) #0720
         train_dis_con_data_list.append(con_list)
 
 
@@ -326,7 +326,7 @@ def train(FLAGS):
                 # model_con.eval()
                 model_dis_list[i].eval()
 
-        gen = pd.read_csv(r'C:\Users\19wuj\PycharmProjects\CoDi\tabular_datasets\diffunew_technique_train_bac_cut_time.csv')
+        gen = pd.read_csv(r'C:\Users\19wuj\PycharmProjects\CoDi\tabular_datasets\diffu\new_technique_train_bac_cut_time.csv')
         gen_res = []
         gen_act = list(gen['act'])
         acts_prev = []
@@ -337,6 +337,7 @@ def train(FLAGS):
                 gen_res.append('Start')
             elif gen_act[i] == 'End':
                 gen_res.append('End')
+                # pass
             else:
                 cur_act = [gen_act[i]]
                 if i == start_flag+1:
@@ -345,13 +346,20 @@ def train(FLAGS):
 
                     acts_padding = [True]
                     res_padding = [True]
-                else:
+                elif i == start_flag+2:
+                    acts_prev = []
+                    res_prev = []
                     acts_prev.append(gen_act[i-1])
                     res_prev.append(gen_res[i-1])
 
                     acts_padding = [False for each in acts_prev]
                     res_padding = [False for each in res_prev]
+                else:
+                    acts_prev.append(gen_act[i - 1])
+                    res_prev.append(gen_res[i - 1])
 
+                    acts_padding = [False for each in acts_prev]
+                    res_padding = [False for each in res_prev]
 
                 attention_tensor_list = [torch.tensor(acts_prev), torch.tensor(res_prev),
                                              torch.tensor(acts_padding),torch.tensor(res_padding),torch.tensor(cur_act) ]
@@ -381,28 +389,28 @@ def train(FLAGS):
 
                 gen_res.append(new_res)
 
-        # fake_sample=[]
-            log_x_T_dis_list = [0]*len(num_class)
-            x_dis_list = [0]*len(num_class)
-            with torch.no_grad():
-                x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
-                for i in range(len(num_class)):
-                    log_x_T_dis_list[i] = log_sample_categorical(
-                        torch.zeros((1,train_dis_data_list[i].shape[1]), device=device), num_class[i]).to(device)
-                x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, attention_tensor_list, net_sampler, trainer_dis_list,
-                                                   transformer_con, FLAGS, still_cond_used_for_sampling)
-            sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
-            # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
-            x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
-            x_dis = apply_activate(x_dis, transformer_dis.output_info)
-            sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
-            sample = np.zeros([1, len(con_idx + dis_idx)])
-            for i in range(len(con_idx)):
-                sample[:, con_idx[i]] = sample_cont[:, i]
-            for i in range(len(dis_idx)):
-                sample[:, dis_idx[i]] = sample_dis[:, i]
-            sample_pd = pd.DataFrame(sample).dropna()
-            new_res = sample[:,0][0]
+        # # fake_sample=[]
+        #     log_x_T_dis_list = [0]*len(num_class)
+        #     x_dis_list = [0]*len(num_class)
+        #     with torch.no_grad():
+        #         x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
+        #         for i in range(len(num_class)):
+        #             log_x_T_dis_list[i] = log_sample_categorical(
+        #                 torch.zeros((1,train_dis_data_list[i].shape[1]), device=device), num_class[i]).to(device)
+        #         x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, attention_tensor_list, net_sampler, trainer_dis_list,
+        #                                            transformer_con, FLAGS, still_cond_used_for_sampling)
+        #     sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
+        #     # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
+        #     x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
+        #     x_dis = apply_activate(x_dis, transformer_dis.output_info)
+        #     sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
+        #     sample = np.zeros([1, len(con_idx + dis_idx)])
+        #     for i in range(len(con_idx)):
+        #         sample[:, con_idx[i]] = sample_cont[:, i]
+        #     for i in range(len(dis_idx)):
+        #         sample[:, dis_idx[i]] = sample_dis[:, i]
+        #     sample_pd = pd.DataFrame(sample).dropna()
+        #     new_res = sample[:,0][0]
             # sample_pd.to_csv(os.path.join(FLAGS.logdir, f'{FLAGS.logdir}_sample_{ii}.csv'), index=False)
         # scores, std = evaluation.compute_scores(train=train, test = test, synthesized_data=fake_sample, metadata=meta, eval=ckpt['ml_param'])
         # div_mean, div_std = evaluation.compute_diversity(train=train, fake=fake_sample)

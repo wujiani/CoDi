@@ -80,7 +80,7 @@ def sampling_with(x_T_cont, log_x_T_dis, attention, net_sampler, trainer_dis, tr
                             cond.append(torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[j].device))
                         else:
                             cond.append(x_t_dis[j])
-                cond.append(x_t_cont)
+                # cond.append(x_t_cont) #0720
                 x_t_minus_1_dis = trainer_dis[i].p_sample(x_t_dis[i], t, cond, attention)
 
                 x_t_cont = x_t_minus_1_cont
@@ -127,7 +127,7 @@ def training_with(x_0_cont, x_0_dis, x_attention, trainer_cont, trainer_dis, tra
                         cond.append(x_0_dis[j].to(torch.float32))
                     else:
                         cond.append(x_t_dis[j])
-            cond.append(x_t_cont)
+            # cond.append(x_t_cont) #0720
             kl, ps_0_dis = trainer_dis[i].compute_Lt(log_x_start[i], x_t_dis[i], t, cond, x_attention)
             ps_0_dis = torch.exp(ps_0_dis)
             kl_prior = trainer_dis[i].kl_prior(log_x_start[i])
