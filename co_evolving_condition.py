@@ -386,8 +386,9 @@ def train(FLAGS):
                     acts_padding = [[False for each in acts_prev[0]]]
                     res_padding = [[False for each in res_prev[0]]]
 
-                attention_tensor_list = [torch.tensor(acts_prev), torch.tensor(res_prev),
-                                             torch.tensor(acts_padding),torch.tensor(res_padding),torch.tensor(cur_act) ]
+                attention_tensor_list = [torch.tensor(acts_prev).to(device), torch.tensor(res_prev).to(device),
+                                             torch.tensor(acts_padding).to(device),torch.tensor(res_padding).to(device),
+                                         torch.tensor(cur_act).to(device) ]
                 for i, each in enumerate(attention_tensor_list):
                     if i == 1 or i == 0 or i == 4:
                         attention_tensor_list[i] = each.permute(1, 0)
