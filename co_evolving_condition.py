@@ -26,7 +26,7 @@ def train(FLAGS):
     train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
     # for att_i in attention_train
     attention_tensor_list = [torch.tensor(attention_train).to(device) for attention_train in attention_train_list]
-    print('attention_tensor_list', attention_tensor_list[0].shape, attention_tensor_list[1].shape, attention_tensor_list[2].shape ,attention_tensor_list[3].shape, attention_tensor_list[4].shape)
+    print('attention_tensor_list', attention_tensor_list[0].type(), attention_tensor_list[1].shape, attention_tensor_list[2].type() ,attention_tensor_list[3].shape, attention_tensor_list[4].type())
 
     FLAGS.still_condition = [int(each) for each in FLAGS.still_condition.split(',')]
     print('FLAGS.still_condition',FLAGS.still_condition)
@@ -36,6 +36,7 @@ def train(FLAGS):
     # train_iter_dis = DataLoader(train_dis_data, batch_size=FLAGS.training_batch_size)
     datalooper_train_cont = infiniteloop(train_iter_cont)
     # datalooper_train_dis = infiniteloop(train_iter_dis)
+
 
     num_numeric=[]
     for i in transformer_con.output_info:
@@ -66,6 +67,7 @@ def train(FLAGS):
         k+=num_class[i]
         # con_list.append(train_cont_data) #0720
         train_dis_con_data_list.append(con_list)
+    print('still_cond_used_for_sampling_list', still_cond_used_for_sampling_list)
 
 
     # if meta['problem_type'] == 'binary_classification':
@@ -153,6 +155,9 @@ def train(FLAGS):
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
 
             x_attention_list = [next(datalooper_train_attention).to(device) for datalooper_train_attention in datalooper_train_attention_list]
+            print('x_attention_list')
+            for each in x_attention_list:
+                print('p',each)
             for i, each in enumerate(x_attention_list):
                 if i == 1 or i == 0 or i == 4:
                     x_attention_list[i] = each.permute(1, 0)
@@ -335,7 +340,20 @@ def train(FLAGS):
                 # model_con.eval()
                 model_dis_list[i].eval()
 
-        gen = pd.read_csv(r'C:\Users\19wuj\PycharmProjects\CoDi\tabular_datasets\diffu\new_technique_train_bac_cut_time.csv')
+        def transformer(x):
+            data = [x]
+            info = transformer_dis.meta[0]
+            col_t = np.zeros([len(data), info['size']])
+            idx = list(map(info['i2s'].index, data))
+            col_t[np.arange(len(data)), idx] = 1
+            data_t = col_t
+            return data_t
+
+
+        filename = FLAGS.data+'.csv'
+        DATA_PATH = os.path.join(os.path.dirname(__file__), 'tabular_datasets')
+        local_path = os.path.join(DATA_PATH, filename)
+        gen = pd.read_csv(local_path)
         gen_res = []
         gen_act = list(gen['act'])
         acts_prev = []
@@ -348,34 +366,40 @@ def train(FLAGS):
                 gen_res.append('End')
                 # pass
             else:
-                cur_act = [gen_act[i]]
+                still_cond_used_for_sampling_list = [transformer(int(gen_act[i]))]
+                print('still_cond_used_for_sampling_list',still_cond_used_for_sampling_list)
+                cur_act = [[int(gen_act[i])]]
                 if i == start_flag+1:
-                    acts_prev = [FLAGS.src_vocab_size_list[0]-1]
-                    res_prev = [FLAGS.src_vocab_size_list[1]-1]
+                    acts_prev = [[FLAGS.src_vocab_size_list[0]-1]]
+                    res_prev = [[FLAGS.src_vocab_size_list[1]-1]]
 
-                    acts_padding = [True]
-                    res_padding = [True]
+                    acts_padding = [[True]]
+                    res_padding = [[True]]
                 elif i == start_flag+2:
-                    acts_prev = []
-                    res_prev = []
-                    acts_prev.append(gen_act[i-1])
-                    res_prev.append(gen_res[i-1])
+                    acts_prev = [[]]
+                    res_prev = [[]]
+                    acts_prev[0].append(int(gen_act[i-1]))
+                    res_prev[0].append(int(gen_res[i-1]))
 
-                    acts_padding = [False for each in acts_prev]
-                    res_padding = [False for each in res_prev]
+                    acts_padding = [[False for each in acts_prev[0]]]
+                    res_padding = [[False for each in res_prev[0]]]
                 else:
-                    acts_prev.append(gen_act[i - 1])
-                    res_prev.append(gen_res[i - 1])
+                    acts_prev[0].append(int(gen_act[i - 1]))
+                    res_prev[0].append(int(gen_res[i - 1]))
 
-                    acts_padding = [False for each in acts_prev]
-                    res_padding = [False for each in res_prev]
+                    acts_padding = [[False for each in acts_prev[0]]]
+                    res_padding = [[False for each in res_prev[0]]]
 
                 attention_tensor_list = [torch.tensor(acts_prev), torch.tensor(res_prev),
                                              torch.tensor(acts_padding),torch.tensor(res_padding),torch.tensor(cur_act) ]
+                for i, each in enumerate(attention_tensor_list):
+                    if i == 1 or i == 0 or i == 4:
+                        attention_tensor_list[i] = each.permute(1, 0)
+                print('attention_tensor_list',attention_tensor_list)
                 log_x_T_dis_list = [0] * len(num_class)
                 x_dis_list = [0] * len(num_class)
                 with torch.no_grad():
-                    x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
+                    x_T_cont = torch.randn(1, train_cont_data.shape[1]).to(device)
                     for i in range(len(num_class)):
                         log_x_T_dis_list[i] = log_sample_categorical(
                             torch.zeros((1, train_dis_data_list[i].shape[1]), device=device), num_class[i]).to(
@@ -394,9 +418,11 @@ def train(FLAGS):
                 for i in range(len(dis_idx)):
                     sample[:, dis_idx[i]] = sample_dis[:, i]
                 # sample_pd = pd.DataFrame(sample).dropna()
-                new_res = sample[:, 0][0]
+                new_res = sample[:, 1][0]
 
                 gen_res.append(new_res)
+        gen['res'] = gen_res
+        gen.to_csv(os.path.join(FLAGS.logdir, f'gen_sample.csv'), index=False)
 
         # # fake_sample=[]
         #     log_x_T_dis_list = [0]*len(num_class)
