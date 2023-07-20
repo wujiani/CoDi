@@ -351,6 +351,8 @@ def train(FLAGS):
         local_path = os.path.join(DATA_PATH, filename)
         gen = pd.read_csv(local_path)
         gen_res = []
+        gen_wait = []
+        gen_process = []
         gen_act = list(gen['act'])
         acts_prev = []
         res_prev = []
@@ -358,8 +360,12 @@ def train(FLAGS):
             if gen_act[i] == 'Start':
                 start_flag=i
                 gen_res.append('Start')
+                gen_wait.append(0)
+                gen_process.append(0)
             elif gen_act[i] == 'End':
                 gen_res.append('End')
+                gen_wait.append(0)
+                gen_process.append(0)
                 # pass
             else:
                 still_cond_used_for_sampling_list = [transformer(int(gen_act[i]))]
@@ -413,10 +419,15 @@ def train(FLAGS):
                 for i in range(len(dis_idx)):
                     sample[:, dis_idx[i]] = sample_dis[:, i]
                 # sample_pd = pd.DataFrame(sample).dropna()
+                print('sample', sample)
                 new_res = sample[:, 1][0]
 
                 gen_res.append(new_res)
+                gen_wait.append(sample[:, 2][0])
+                gen_process.append(sample[:, 3][0])
         gen['res'] = gen_res
+        gen['wait'] = gen_wait
+        gen['process'] = gen_process
         gen.to_csv(os.path.join(FLAGS.logdir, f'gen_sample.csv'), index=False)
 
         # # fake_sample=[]
