@@ -13,13 +13,7 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-randomSeed = 2022
-torch.manual_seed(randomSeed)
-torch.cuda.manual_seed(randomSeed)
-torch.cuda.manual_seed_all(randomSeed) 
-torch.backends.cudnn.deterministic = True
-torch.backends.cudnn.benchmark = False
-np.random.seed(randomSeed)
+
 
 FLAGS = flags.FLAGS
 flags.DEFINE_string('data', 'heart', help='dataset')
@@ -27,6 +21,7 @@ flags.DEFINE_string('logdir', './codi_exp', help='log directory')
 flags.DEFINE_bool('train', True, help='train from scratch')
 flags.DEFINE_bool('eval', False, help='load ckpt.pt and evaluate')
 flags.DEFINE_string('still_condition', "0", help='encoder_dim_con')
+flags.DEFINE_integer('seed', 2022, help='random sample')
 
 # Network Architecture
 flags.DEFINE_multi_integer('encoder_dim', None, help='encoder_dim')
@@ -75,9 +70,18 @@ flags.DEFINE_integer('ns_method', 0, help='negative condition method')
 flags.DEFINE_float('lambda_con', 0.2, help='lambda_con')
 flags.DEFINE_float('lambda_dis', 0.2, help='lambda_dis')
 
+
+
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 def main(argv):
+    randomSeed = FLAGS.seed
+    torch.manual_seed(randomSeed)
+    torch.cuda.manual_seed(randomSeed)
+    torch.cuda.manual_seed_all(randomSeed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    np.random.seed(randomSeed)
 
     if FLAGS.eval == True:
         warnings.simplefilter(action='ignore', category=FutureWarning)
