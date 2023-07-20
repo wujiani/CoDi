@@ -91,7 +91,7 @@ class tabularUnet(nn.Module):
       dim_out = FLAGS.dis_output_size[i]
     self.outputs = nn.Linear(dim_in, dim_out) #output layer    nn(64, output)
 
-    self.attention = AttentionBlock(FLAGS.src_vocab_size_list, FLAGS.tgt_vocab_size, len(FLAGS.src_vocab_size_list))
+    # self.attention = AttentionBlock(FLAGS.src_vocab_size_list, FLAGS.tgt_vocab_size, len(FLAGS.src_vocab_size_list))
 
   def forward(self, x, time_cond, cond, x_attention, if_cont):
     modules = self.all_modules   #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
@@ -122,8 +122,9 @@ class tabularUnet(nn.Module):
     # attention
 
 
-      attention = self.attention(src_list=x_attention[:-3], tgt=x_attention[-1], src_key_padding_mask=x_attention[-3:-1])
-      x = torch.cat([x, all_cond, attention], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
+      # attention = self.attention(src_list=x_attention[:-3], tgt=x_attention[-1], src_key_padding_mask=x_attention[-3:-1])
+      # x = torch.cat([x, all_cond, attention], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
+      x = torch.cat([x, all_cond], dim=1).float()
     # x = torch.cat([x], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
     inputs = self.inputs(x) #input layer   nn(input, 64)    #   input  是input data和condition layer的output ,
     # output=64 asa inputs(value)=64
