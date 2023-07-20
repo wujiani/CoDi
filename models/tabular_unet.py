@@ -77,13 +77,13 @@ class tabularUnet(nn.Module):
     dim_out = list(FLAGS.encoder_dim)[0]
     self.inputs = nn.Linear(dim_in, dim_out) # input layer      nn(input, 64)
 
-    self.encoder = layers.Encoder(list(FLAGS.encoder_dim), tdim, FLAGS) # encoder   Encoder([64,128,256],64, FLAGS)
+    self.encoder = layers.Encoder(list(FLAGS.encoder_dim), tdim, cond_size, FLAGS) # encoder   Encoder([64,128,256],64, FLAGS)
 
     dim_in = list(FLAGS.encoder_dim)[-1]   # 256
     dim_out = list(FLAGS.encoder_dim)[-1]   # 256
     self.bottom_block = nn.Linear(dim_in, dim_out) #bottom_block_layer     nn(256,256)
     
-    self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, FLAGS) #decoder     Decoder([256,128,64],64, FLAGS)
+    self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, cond_size, FLAGS) #decoder     Decoder([256,128,64],64, FLAGS)
 
     dim_in = list(FLAGS.encoder_dim)[0]
     if i == '-1':
@@ -129,10 +129,17 @@ class tabularUnet(nn.Module):
     # x = torch.cat([x], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
     inputs = self.inputs(x) #input layer   nn(input, 64)    #   input  是input data和condition layer的output ,
     # output=64 asa inputs(value)=64
-    skip_connections, encoding = self.encoder(inputs, temb)   #encoder input=64, output=256（layers第104行，x=64->128->256)
+    if if_cont:
+      skip_connections, encoding = self.encoder(inputs, temb, -1)   #encoder input=64, output=256（layers第104行，x=64->128->256)
+    else:
+      skip_connections, encoding = self.encoder(inputs, temb, all_cond)
     encoding = self.bottom_block(encoding)   #nn(256,256)  input=256, output=256
     encoding = self.act(encoding)    # relu output=256
-    x = self.decoder(skip_connections, encoding, temb) # decoder([128,256],256,t=64),  output的x=64
+    if if_cont:
+      x = self.decoder(skip_connections, encoding, temb, -1)
+    else:
+
+      x = self.decoder(skip_connections, encoding, temb, all_cond) # decoder([128,256],256,t=64),  output的x=64
 
     outputs = self.outputs(x)    #   nn(64, output)
 
