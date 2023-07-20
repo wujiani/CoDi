@@ -26,7 +26,7 @@ def train(FLAGS):
     train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)
     # for att_i in attention_train
     attention_tensor_list = [torch.tensor(attention_train).to(device) for attention_train in attention_train_list]
-
+    print('attention_tensor_list', attention_tensor_list[0].shape, attention_tensor_list[1].shape, attention_tensor_list[2].shape ,attention_tensor_list[3].shape, attention_tensor_list[4].shape)
 
     still_condition = FLAGS.still_condition
     # print('train_dis_data', type(train_dis_data), train_dis_data.shape)
@@ -151,6 +151,10 @@ def train(FLAGS):
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
 
             x_attention_list = [next(datalooper_train_attention).to(device) for datalooper_train_attention in datalooper_train_attention_list]
+            for i, each in enumerate(x_attention_list):
+                if i == 1 or i == 0 or i == 4:
+                    x_attention_list[i] = each.permute(1, 0)
+
             for i in range(len(num_class)):
                 if i != FLAGS.still_condition:
                     # model_con.train()
@@ -218,6 +222,9 @@ def train(FLAGS):
                 for i in range(len(num_class)):
                     if i != FLAGS.still_condition:
                         model_dis_list[i].eval()
+                for i, each in enumerate(attention_tensor_list):
+                    if i == 1 or i == 0 or i == 4:
+                        attention_tensor_list[i] = each.permute(1, 0)
                 with torch.no_grad():
                     x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
                     for i in range(len(num_class)):

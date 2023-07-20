@@ -120,9 +120,7 @@ class tabularUnet(nn.Module):
       x = torch.cat([x, all_cond], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
     else:
     # attention
-      for i,each in enumerate(x_attention):
-        if i == 1 or i == 0 or i == 4:
-          x_attention[i] = each.permute(1, 0)
+
 
       attention = self.attention(src_list=x_attention[:-3], tgt=x_attention[-1], src_key_padding_mask=x_attention[-3:-1])
       x = torch.cat([x, all_cond, attention], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
