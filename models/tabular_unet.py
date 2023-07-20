@@ -77,7 +77,7 @@ class tabularUnet(nn.Module):
     dim_out = list(FLAGS.encoder_dim)[0]
     self.inputs = nn.Linear(dim_in, dim_out) # input layer      nn(input, 64)
 
-    self.encoder = layers.Encoder(list(FLAGS.encoder_dim), tdim, cond_size, FLAGS) # encoder   Encoder([64,128,256],64, FLAGS)
+    self.encoder = layers.Encoder(list(FLAGS.encoder_dim), tdim, FLAGS.dmodel, FLAGS) # encoder   Encoder([64,128,256],64, FLAGS)
 
     dim_in = list(FLAGS.encoder_dim)[-1]   # 256
     dim_out = list(FLAGS.encoder_dim)[-1]   # 256
@@ -92,7 +92,7 @@ class tabularUnet(nn.Module):
       dim_out = FLAGS.dis_output_size[i]
     self.outputs = nn.Linear(dim_in, dim_out) #output layer    nn(64, output)
 
-    # self.attention = AttentionBlock(FLAGS.src_vocab_size_list, FLAGS.tgt_vocab_size, len(FLAGS.src_vocab_size_list))
+    self.attention = AttentionBlock(FLAGS.src_vocab_size_list, FLAGS.tgt_vocab_size, len(FLAGS.src_vocab_size_list))
 
   def forward(self, x, time_cond, cond, x_attention, if_cont):
     modules = self.all_modules   #[nn(16,64),nn(64,64), nn(condition_size, cond_out(或为input的1半)) ]
@@ -129,10 +129,12 @@ class tabularUnet(nn.Module):
     # x = torch.cat([x], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
     inputs = self.inputs(x) #input layer   nn(input, 64)    #   input  是input data和condition layer的output ,
     # output=64 asa inputs(value)=64
+
     if if_cont:
       skip_connections, encoding = self.encoder(inputs, temb, -1)   #encoder input=64, output=256（layers第104行，x=64->128->256)
     else:
-      skip_connections, encoding = self.encoder(inputs, temb, all_cond)
+      attention = self.attention(src_list=x_attention[:-3], tgt=x_attention[-1], src_key_padding_mask=x_attention[-3:-1])
+      skip_connections, encoding = self.encoder(inputs, temb, attention)
     encoding = self.bottom_block(encoding)   #nn(256,256)  input=256, output=256
     encoding = self.act(encoding)    # relu output=256
     if if_cont:
