@@ -426,11 +426,15 @@ def train(FLAGS):
                 gen_res.append(new_res)
                 gen_wait.append(sample[:, 2][0])
                 gen_process.append(sample[:, 3][0])
-        dict_res_index = {0:"Avanzar_recepcion_documentos",1:"Cancelar_Solicitud",2:"Cancelar_curso",3:"Evaluacion_curso",
-                          4:"Homologacion_por_grupo_de_cursos",5:"Notificacion_estudiante_cancelacion_soli", 6:"Radicar_Solicitud_Homologacion",
-                          7:"Recepcion_de_documentos",8:"Revisar_curso",9:"Traer_informacion_estudiante_-_banner",10:"Transferir_Creditos",
-                          11:"Transferir_creditos_homologables",12:"Validacion_final",13:"Validar_solicitud",
-                          14:"Validar_solicitud_/_pre-homologacion",15:"Visto_Bueno_Cierre_Proceso"}
+        dict_res_index = {0:"Alberto_Duport",1:"Anna_Kaufmann",2:"Anne_Olwada",
+                          3:"Carmen_Finacse",4:"Christian_Francois",5:"Clement_Duchot",
+                          6:"Elvira_Lores",7:"Esmana_Liubiata",8:"Esmeralda_Clay",
+                          9:"Fjodor_Kowalski",10:"Francis_Odell",11:"Francois_de_Perrier",
+                          12:"Heinz_Gutschmidt",13:"Immanuel_Karagianni",14:"Karalda_Nimwada",
+                          15:"Karel_de_Groot",16:"Karen_Clarens",17:"Kim_Passa",
+                          18:"Kiu_Kan",19:"Magdalena_Predutta",20:"Maris_Freeman",
+                          21:"Miu_Hanwan",22:"Nico_Ojenbeer",23:"Pedro_Alvares",
+                          24:"Penn_Osterwalder",25:"Sean_Manney",26:"Tesca_Lobes"}
         gen['res'] = gen_res
         gen['wait'] = gen_wait
         gen['process'] = gen_process
