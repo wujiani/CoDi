@@ -1,0 +1,2147 @@
+caseid,task,user,end_timestamp,start_timestamp
+1,Start,Start,2011-1-1 0:00:00,2011-1-1 0:00:00
+1,Create Purchase Requisition,Kim Passa,2011-1-1 0:37:00,2011-1-1 0:00:00
+1,Create Request for Quotation,Kim Passa,2011-1-1 5:45:00,2011-1-1 5:37:00
+1,Analyze Request for Quotation,Karel de Groot,2011-1-1 6:55:00,2011-1-1 6:41:00
+1,Send Request for Quotation to Supplier,Karel de Groot,2011-1-1 12:09:00,2011-1-1 11:43:00
+1,Create Quotation comparison Map,Magdalena Predutta,2011-1-1 16:03:00,2011-1-1 12:32:00
+1,Analyze Quotation Comparison Map,Immanuel Karagianni,2011-1-1 23:13:00,2011-1-1 22:44:00
+1,Choose best option,Tesca Lobes,2011-1-1 23:13:00,2011-1-1 23:13:00
+1,Settle Conditions With Supplier,Francois de Perrier,2011-1-2 9:20:00,2011-1-2 1:22:00
+1,Create Purchase Order,Karel de Groot,2011-1-2 10:10:00,2011-1-2 9:58:00
+1,Confirm Purchase Order,Sean Manney,2011-1-2 14:43:00,2011-1-2 14:09:00
+1,Deliver Goods Services,Sean Manney,2011-1-3 3:37:00,2011-1-2 20:49:00
+1,Release Purchase Order,Elvira Lores,2011-1-3 11:21:00,2011-1-3 11:20:00
+1,Approve Purchase Order for payment,Karel de Groot,2011-1-3 19:10:00,2011-1-3 19:09:00
+1,Send Invoice,Kiu Kan,2011-1-4 0:54:00,2011-1-4 0:54:00
+1,Release Supplier's Invoice,Karalda Nimwada,2011-1-4 15:13:00,2011-1-4 15:08:00
+1,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-4 15:13:00,2011-1-4 15:13:00
+1,Pay Invoice,Pedro Alvares,2011-1-4 15:31:00,2011-1-4 15:22:00
+1,End,End,2011-1-4 15:31:00,2011-1-4 15:31:00
+1008,Start,Start,2011-5-28 7:27:00,2011-5-28 7:27:00
+1008,Create Purchase Requisition,Fjodor Kowalski,2011-5-28 7:50:00,2011-5-28 7:27:00
+1008,Create Request for Quotation,Miu Hanwan,2011-5-28 14:14:00,2011-5-28 14:05:00
+1008,Analyze Request for Quotation,Magdalena Predutta,2011-6-9 23:20:00,2011-6-9 22:49:00
+1008,End,End,2011-6-9 23:20:00,2011-6-9 23:20:00
+1009,Start,Start,2011-5-28 8:30:00,2011-5-28 8:30:00
+1009,Create Purchase Requisition,Christian Francois,2011-5-28 8:52:00,2011-5-28 8:30:00
+1009,Create Request for Quotation,Immanuel Karagianni,2011-5-28 16:14:00,2011-5-28 16:05:00
+1009,Analyze Request for Quotation,Karel de Groot,2011-5-30 16:54:00,2011-5-30 16:31:00
+1009,Amend Request for Quotation,Kim Passa,2011-5-30 17:55:00,2011-5-30 17:47:00
+1009,Analyze Request for Quotation,Francois de Perrier,2011-6-1 0:09:00,2011-5-31 23:45:00
+1009,Amend Request for Quotation,Immanuel Karagianni,2011-6-1 1:11:00,2011-6-1 1:02:00
+1009,Analyze Request for Quotation,Francois de Perrier,2011-6-1 2:46:00,2011-6-1 2:19:00
+1009,Amend Request for Quotation,Anne Olwada,2011-6-1 3:40:00,2011-6-1 3:30:00
+1009,Analyze Request for Quotation,Karel de Groot,2011-6-9 2:20:00,2011-6-9 1:58:00
+1009,Amend Request for Quotation,Heinz Gutschmidt,2011-6-9 18:35:00,2011-6-9 18:22:00
+1009,Analyze Request for Quotation,Magdalena Predutta,2011-8-8 3:06:00,2011-8-8 2:49:00
+1009,Send Request for Quotation to Supplier,Magdalena Predutta,2011-8-8 13:09:00,2011-8-8 12:40:00
+1009,Create Quotation comparison Map,Magdalena Predutta,2011-8-8 15:05:00,2011-8-8 13:44:00
+1009,Analyze Quotation Comparison Map,Fjodor Kowalski,2011-8-8 22:26:00,2011-8-8 21:56:00
+1009,Choose best option,Esmana Liubiata,2011-8-8 22:26:00,2011-8-8 22:26:00
+1009,Settle Conditions With Supplier,Karel de Groot,2011-8-9 14:47:00,2011-8-9 6:33:00
+1009,Create Purchase Order,Magdalena Predutta,2011-8-10 21:40:00,2011-8-10 21:32:00
+1009,Confirm Purchase Order,Sean Manney,2011-8-17 8:32:00,2011-8-17 8:27:00
+1009,Deliver Goods Services,Carmen Finacse,2011-8-24 4:57:00,2011-8-23 14:05:00
+1009,Release Purchase Order,Nico Ojenbeer,2011-8-24 12:39:00,2011-8-24 12:38:00
+1009,Approve Purchase Order for payment,Magdalena Predutta,2011-8-25 7:37:00,2011-8-25 7:36:00
+1009,Send Invoice,Kiu Kan,2011-8-30 5:40:00,2011-8-30 5:40:00
+1009,Release Supplier's Invoice,Pedro Alvares,2011-8-30 19:52:00,2011-8-30 19:46:00
+1009,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-8-30 19:52:00,2011-8-30 19:52:00
+1009,Pay Invoice,Pedro Alvares,2011-8-30 20:23:00,2011-8-30 20:09:00
+1009,End,End,2011-8-30 20:23:00,2011-8-30 20:23:00
+1011,Start,Start,2011-5-28 12:20:00,2011-5-28 12:20:00
+1011,Create Purchase Requisition,Fjodor Kowalski,2011-5-28 12:59:00,2011-5-28 12:20:00
+1011,Create Request for Quotation,Miu Hanwan,2011-5-28 19:04:00,2011-5-28 18:51:00
+1011,Analyze Request for Quotation,Francois de Perrier,2011-5-29 23:35:00,2011-5-29 23:21:00
+1011,Amend Request for Quotation,Miu Hanwan,2011-5-30 0:31:00,2011-5-30 0:24:00
+1011,Analyze Request for Quotation,Karel de Groot,2011-6-1 13:16:00,2011-6-1 12:57:00
+1011,Amend Request for Quotation,Fjodor Kowalski,2011-6-1 14:02:00,2011-6-1 13:57:00
+1011,Analyze Request for Quotation,Magdalena Predutta,2011-6-18 16:56:00,2011-6-18 16:31:00
+1011,Amend Request for Quotation,Christian Francois,2011-6-18 17:58:00,2011-6-18 17:49:00
+1011,Analyze Request for Quotation,Francois de Perrier,2011-6-21 20:08:00,2011-6-21 19:40:00
+1011,Amend Request for Quotation,Esmana Liubiata,2011-6-21 21:05:00,2011-6-21 20:56:00
+1011,Analyze Request for Quotation,Francois de Perrier,2011-7-9 0:05:00,2011-7-8 23:54:00
+1011,Amend Request for Quotation,Clement Duchot,2011-7-9 1:06:00,2011-7-9 0:58:00
+1011,Analyze Request for Quotation,Magdalena Predutta,2011-8-18 18:10:00,2011-8-18 17:46:00
+1011,Amend Request for Quotation,Nico Ojenbeer,2011-8-18 19:06:00,2011-8-18 19:00:00
+1011,Analyze Request for Quotation,Francois de Perrier,2011-8-22 8:52:00,2011-8-22 8:21:00
+1011,Send Request for Quotation to Supplier,Francois de Perrier,2011-8-22 16:15:00,2011-8-22 15:46:00
+1011,Create Quotation comparison Map,Magdalena Predutta,2011-8-22 21:06:00,2011-8-22 16:55:00
+1011,Analyze Quotation Comparison Map,Immanuel Karagianni,2011-8-23 4:08:00,2011-8-23 3:55:00
+1011,Choose best option,Christian Francois,2011-8-23 4:08:00,2011-8-23 4:08:00
+1011,Settle Conditions With Supplier,Karel de Groot,2011-8-23 23:25:00,2011-8-23 8:52:00
+1011,Create Purchase Order,Magdalena Predutta,2011-8-24 1:32:00,2011-8-24 1:25:00
+1011,Confirm Purchase Order,Carmen Finacse,2011-8-27 6:00:00,2011-8-27 5:53:00
+1011,Deliver Goods Services,Kiu Kan,2011-8-29 18:00:00,2011-8-27 19:34:00
+1011,Release Purchase Order,Tesca Lobes,2011-8-30 1:28:00,2011-8-30 1:27:00
+1011,Approve Purchase Order for payment,Magdalena Predutta,2011-9-1 1:10:00,2011-9-1 1:09:00
+1011,Send Invoice,Sean Manney,2011-9-3 5:14:00,2011-9-3 5:14:00
+1011,Release Supplier's Invoice,Pedro Alvares,2011-9-3 19:38:00,2011-9-3 19:35:00
+1011,Authorize Supplier's Invoice payment,Pedro Alvares,2011-9-3 19:38:00,2011-9-3 19:38:00
+1011,Pay Invoice,Karalda Nimwada,2011-9-3 20:13:00,2011-9-3 20:04:00
+1011,End,End,2011-9-3 20:13:00,2011-9-3 20:13:00
+1020,Start,Start,2011-5-29 0:56:00,2011-5-29 0:56:00
+1020,Create Purchase Requisition,Immanuel Karagianni,2011-5-29 1:28:00,2011-5-29 0:56:00
+1020,Analyze Purchase Requisition,Heinz Gutschmidt,2011-5-30 0:59:00,2011-5-30 0:54:00
+1020,Create Request for Quotation,Maris Freeman,2011-5-30 1:04:00,2011-5-30 1:03:00
+1020,Analyze Request for Quotation,Magdalena Predutta,2011-6-9 22:49:00,2011-6-9 22:29:00
+1020,Amend Request for Quotation,Anne Olwada,2011-6-9 23:42:00,2011-6-9 23:36:00
+1020,Analyze Request for Quotation,Francois de Perrier,2011-7-11 1:51:00,2011-7-11 1:23:00
+1020,Send Request for Quotation to Supplier,Magdalena Predutta,2011-7-11 9:28:00,2011-7-11 8:59:00
+1020,Create Quotation comparison Map,Magdalena Predutta,2011-7-11 19:36:00,2011-7-11 15:12:00
+1020,Analyze Quotation Comparison Map,Christian Francois,2011-7-12 2:44:00,2011-7-12 2:29:00
+1020,Choose best option,Elvira Lores,2011-7-12 2:44:00,2011-7-12 2:44:00
+1020,Settle Conditions With Supplier,Magdalena Predutta,2011-7-12 21:26:00,2011-7-12 15:26:00
+1020,Create Purchase Order,Magdalena Predutta,2011-7-13 14:36:00,2011-7-13 14:26:00
+1020,Confirm Purchase Order,Karen Clarens,2011-8-3 4:18:00,2011-8-3 3:51:00
+1020,Deliver Goods Services,Carmen Finacse,2011-8-28 12:55:00,2011-8-28 7:12:00
+1020,Release Purchase Order,Kim Passa,2011-8-28 20:27:00,2011-8-28 20:26:00
+1020,Approve Purchase Order for payment,Francois de Perrier,2011-8-29 4:17:00,2011-8-29 4:16:00
+1020,Send Invoice,Karen Clarens,2011-8-30 8:17:00,2011-8-30 8:17:00
+1020,Release Supplier's Invoice,Pedro Alvares,2011-8-30 22:43:00,2011-8-30 22:37:00
+1020,Settle Dispute With Supplier,Pedro Alvares,2011-8-30 23:38:00,2011-8-30 23:21:00
+1020,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-8-30 23:38:00,2011-8-30 23:38:00
+1020,Pay Invoice,Karalda Nimwada,2011-8-31 0:57:00,2011-8-31 0:45:00
+1020,End,End,2011-8-31 0:57:00,2011-8-31 0:57:00
+103,Start,Start,2011-1-13 13:56:00,2011-1-13 13:56:00
+103,Create Purchase Requisition,Nico Ojenbeer,2011-1-13 14:07:00,2011-1-13 13:56:00
+103,Analyze Purchase Requisition,Maris Freeman,2011-1-14 13:10:00,2011-1-14 13:05:00
+103,Create Request for Quotation,Heinz Gutschmidt,2011-1-14 13:16:00,2011-1-14 13:14:00
+103,Analyze Request for Quotation,Karel de Groot,2011-1-14 19:13:00,2011-1-14 18:54:00
+103,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-15 17:37:00,2011-1-15 17:03:00
+103,Create Quotation comparison Map,Karel de Groot,2011-1-15 23:01:00,2011-1-15 18:03:00
+103,Analyze Quotation Comparison Map,Clement Duchot,2011-1-16 6:16:00,2011-1-16 5:57:00
+103,Choose best option,Clement Duchot,2011-1-16 6:16:00,2011-1-16 6:16:00
+103,Settle Conditions With Supplier,Magdalena Predutta,2011-1-16 21:30:00,2011-1-16 11:26:00
+103,Create Purchase Order,Karel de Groot,2011-1-16 23:09:00,2011-1-16 23:03:00
+103,Confirm Purchase Order,Esmeralda Clay,2011-1-17 6:35:00,2011-1-17 6:09:00
+103,Deliver Goods Services,Esmeralda Clay,2011-1-19 11:15:00,2011-1-18 16:26:00
+103,Release Purchase Order,Miu Hanwan,2011-1-19 18:58:00,2011-1-19 18:57:00
+103,Approve Purchase Order for payment,Magdalena Predutta,2011-1-19 21:26:00,2011-1-19 21:25:00
+103,Send Invoice,Kiu Kan,2011-1-20 12:11:00,2011-1-20 12:11:00
+103,Release Supplier's Invoice,Karalda Nimwada,2011-1-21 2:40:00,2011-1-21 2:33:00
+103,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-21 2:40:00,2011-1-21 2:40:00
+103,Pay Invoice,Karalda Nimwada,2011-1-21 3:49:00,2011-1-21 3:45:00
+103,End,End,2011-1-21 3:49:00,2011-1-21 3:49:00
+1035,Start,Start,2011-5-31 12:37:00,2011-5-31 12:37:00
+1035,Create Purchase Requisition,Penn Osterwalder,2011-5-31 12:55:00,2011-5-31 12:37:00
+1035,Analyze Purchase Requisition,Francis Odell,2011-6-1 1:53:00,2011-6-1 1:46:00
+1035,Create Request for Quotation,Francis Odell,2011-6-1 2:03:00,2011-6-1 2:00:00
+1035,Analyze Request for Quotation,Francois de Perrier,2011-6-3 5:14:00,2011-6-3 4:54:00
+1035,Send Request for Quotation to Supplier,Francois de Perrier,2011-6-3 18:54:00,2011-6-3 18:36:00
+1035,Create Quotation comparison Map,Karel de Groot,2011-6-4 2:55:00,2011-6-3 21:37:00
+1035,Analyze Quotation Comparison Map,Esmana Liubiata,2011-6-4 9:57:00,2011-6-4 9:39:00
+1035,Choose best option,Anne Olwada,2011-6-4 9:57:00,2011-6-4 9:57:00
+1035,Settle Conditions With Supplier,Karel de Groot,2011-6-4 20:28:00,2011-6-4 16:31:00
+1035,Create Purchase Order,Francois de Perrier,2011-6-6 22:30:00,2011-6-6 22:20:00
+1035,Confirm Purchase Order,Kiu Kan,2011-6-11 1:49:00,2011-6-11 1:35:00
+1035,Deliver Goods Services,Sean Manney,2011-6-15 18:23:00,2011-6-13 18:43:00
+1035,Release Purchase Order,Nico Ojenbeer,2011-6-16 2:01:00,2011-6-16 2:00:00
+1035,Approve Purchase Order for payment,Francois de Perrier,2011-6-16 13:48:00,2011-6-16 13:47:00
+1035,Send Invoice,Carmen Finacse,2011-6-17 0:45:00,2011-6-17 0:45:00
+1035,Release Supplier's Invoice,Pedro Alvares,2011-6-17 15:21:00,2011-6-17 15:19:00
+1035,Authorize Supplier's Invoice payment,Pedro Alvares,2011-6-17 15:21:00,2011-6-17 15:21:00
+1035,Pay Invoice,Karalda Nimwada,2011-6-17 15:56:00,2011-6-17 15:48:00
+1035,End,End,2011-6-17 15:56:00,2011-6-17 15:56:00
+1047,Start,Start,2011-6-2 10:49:00,2011-6-2 10:49:00
+1047,Create Purchase Requisition,Kim Passa,2011-6-2 11:16:00,2011-6-2 10:49:00
+1047,Analyze Purchase Requisition,Maris Freeman,2011-6-3 0:11:00,2011-6-3 0:05:00
+1047,Create Request for Quotation,Francis Odell,2011-6-3 0:20:00,2011-6-3 0:18:00
+1047,Analyze Request for Quotation,Karel de Groot,2011-6-8 5:11:00,2011-6-8 4:41:00
+1047,End,End,2011-6-8 5:11:00,2011-6-8 5:11:00
+1048,Start,Start,2011-6-2 13:38:00,2011-6-2 13:38:00
+1048,Create Purchase Requisition,Fjodor Kowalski,2011-6-2 13:52:00,2011-6-2 13:38:00
+1048,Analyze Purchase Requisition,Heinz Gutschmidt,2011-6-3 8:36:00,2011-6-3 8:27:00
+1048,Create Request for Quotation,Maris Freeman,2011-6-3 8:42:00,2011-6-3 8:41:00
+1048,Analyze Request for Quotation,Karel de Groot,2011-6-8 20:28:00,2011-6-8 20:13:00
+1048,Amend Request for Quotation,Maris Freeman,2011-6-9 12:41:00,2011-6-9 12:17:00
+1048,Analyze Request for Quotation,Francois de Perrier,2011-6-19 23:49:00,2011-6-19 23:20:00
+1048,Amend Request for Quotation,Heinz Gutschmidt,2011-6-20 16:01:00,2011-6-20 15:43:00
+1048,Analyze Request for Quotation,Magdalena Predutta,2011-6-22 1:50:00,2011-6-22 1:21:00
+1048,Amend Request for Quotation,Christian Francois,2011-6-22 2:58:00,2011-6-22 2:46:00
+1048,Analyze Request for Quotation,Karel de Groot,2011-6-28 18:18:00,2011-6-28 17:45:00
+1048,Amend Request for Quotation,Penn Osterwalder,2011-6-28 19:16:00,2011-6-28 19:09:00
+1048,Analyze Request for Quotation,Karel de Groot,2011-7-12 7:40:00,2011-7-12 7:31:00
+1048,Send Request for Quotation to Supplier,Magdalena Predutta,2011-7-13 3:46:00,2011-7-13 3:36:00
+1048,Create Quotation comparison Map,Magdalena Predutta,2011-7-13 20:30:00,2011-7-13 16:47:00
+1048,Analyze Quotation Comparison Map,Clement Duchot,2011-7-14 3:21:00,2011-7-14 3:14:00
+1048,Choose best option,Clement Duchot,2011-7-14 3:21:00,2011-7-14 3:21:00
+1048,Settle Conditions With Supplier,Magdalena Predutta,2011-7-15 5:44:00,2011-7-14 17:53:00
+1048,Create Purchase Order,Magdalena Predutta,2011-7-15 7:05:00,2011-7-15 6:56:00
+1048,Confirm Purchase Order,Karen Clarens,2011-8-3 0:50:00,2011-8-3 0:17:00
+1048,Deliver Goods Services,Karen Clarens,2011-8-22 7:47:00,2011-8-20 6:53:00
+1048,Release Purchase Order,Clement Duchot,2011-8-22 15:40:00,2011-8-22 15:39:00
+1048,Approve Purchase Order for payment,Magdalena Predutta,2011-8-23 15:36:00,2011-8-23 15:35:00
+1048,Send Invoice,Carmen Finacse,2011-8-26 0:03:00,2011-8-26 0:03:00
+1048,Release Supplier's Invoice,Pedro Alvares,2011-8-26 14:41:00,2011-8-26 14:36:00
+1048,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-8-26 14:41:00,2011-8-26 14:41:00
+1048,Pay Invoice,Karalda Nimwada,2011-8-26 14:59:00,2011-8-26 14:51:00
+1048,End,End,2011-8-26 14:59:00,2011-8-26 14:59:00
+1088,Start,Start,2011-6-7 6:51:00,2011-6-7 6:51:00
+1088,Create Purchase Requisition,Immanuel Karagianni,2011-6-7 7:34:00,2011-6-7 6:51:00
+1088,Create Request for Quotation,Esmana Liubiata,2011-6-7 7:57:00,2011-6-7 7:46:00
+1088,Analyze Request for Quotation,Karel de Groot,2011-6-9 18:47:00,2011-6-9 18:35:00
+1088,Send Request for Quotation to Supplier,Magdalena Predutta,2011-6-10 8:42:00,2011-6-10 8:06:00
+1088,Create Quotation comparison Map,Francois de Perrier,2011-6-11 2:24:00,2011-6-10 22:45:00
+1088,Analyze Quotation Comparison Map,Penn Osterwalder,2011-6-11 8:55:00,2011-6-11 8:43:00
+1088,Choose best option,Fjodor Kowalski,2011-6-11 8:55:00,2011-6-11 8:55:00
+1088,Settle Conditions With Supplier,Francois de Perrier,2011-6-12 22:21:00,2011-6-12 11:31:00
+1088,Create Purchase Order,Francois de Perrier,2011-6-13 4:14:00,2011-6-13 4:05:00
+1088,Confirm Purchase Order,Esmeralda Clay,2011-6-15 0:12:00,2011-6-14 23:42:00
+1088,Deliver Goods Services,Carmen Finacse,2011-6-19 23:10:00,2011-6-19 4:11:00
+1088,Release Purchase Order,Tesca Lobes,2011-6-20 6:36:00,2011-6-20 6:35:00
+1088,Approve Purchase Order for payment,Francois de Perrier,2011-6-21 7:19:00,2011-6-21 7:18:00
+1088,Send Invoice,Sean Manney,2011-6-21 21:47:00,2011-6-21 21:47:00
+1088,Release Supplier's Invoice,Karalda Nimwada,2011-6-22 12:04:00,2011-6-22 12:01:00
+1088,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-6-22 12:04:00,2011-6-22 12:04:00
+1088,Pay Invoice,Pedro Alvares,2011-6-22 12:30:00,2011-6-22 12:21:00
+1088,End,End,2011-6-22 12:30:00,2011-6-22 12:30:00
+1114,Start,Start,2011-6-10 18:28:00,2011-6-10 18:28:00
+1114,Create Purchase Requisition,Miu Hanwan,2011-6-10 19:05:00,2011-6-10 18:28:00
+1114,Analyze Purchase Requisition,Maris Freeman,2011-6-11 10:28:00,2011-6-11 10:19:00
+1114,End,End,2011-6-11 10:28:00,2011-6-11 10:28:00
+1118,Start,Start,2011-6-11 1:44:00,2011-6-11 1:44:00
+1118,Create Purchase Requisition,Anne Olwada,2011-6-11 2:34:00,2011-6-11 1:44:00
+1118,Create Request for Quotation,Clement Duchot,2011-6-11 6:21:00,2011-6-11 6:11:00
+1118,Analyze Request for Quotation,Karel de Groot,2011-6-14 12:45:00,2011-6-14 12:32:00
+1118,Send Request for Quotation to Supplier,Francois de Perrier,2011-6-14 15:44:00,2011-6-14 15:30:00
+1118,Create Quotation comparison Map,Francois de Perrier,2011-6-14 19:11:00,2011-6-14 16:28:00
+1118,Analyze Quotation Comparison Map,Kim Passa,2011-6-15 2:09:00,2011-6-15 1:49:00
+1118,Choose best option,Immanuel Karagianni,2011-6-15 2:09:00,2011-6-15 2:09:00
+1118,Settle Conditions With Supplier,Francois de Perrier,2011-6-17 19:57:00,2011-6-17 13:23:00
+1118,Create Purchase Order,Magdalena Predutta,2011-6-17 21:48:00,2011-6-17 21:41:00
+1118,Confirm Purchase Order,Kiu Kan,2011-6-21 0:13:00,2011-6-21 0:05:00
+1118,Deliver Goods Services,Sean Manney,2011-6-24 6:10:00,2011-6-23 12:31:00
+1118,Release Purchase Order,Esmana Liubiata,2011-6-24 13:52:00,2011-6-24 13:51:00
+1118,Approve Purchase Order for payment,Francois de Perrier,2011-6-25 5:44:00,2011-6-25 5:43:00
+1118,Send Invoice,Kiu Kan,2011-6-25 19:00:00,2011-6-25 19:00:00
+1118,Release Supplier's Invoice,Karalda Nimwada,2011-6-26 9:26:00,2011-6-26 9:20:00
+1118,Settle Dispute With Supplier,Pedro Alvares,2011-6-26 10:19:00,2011-6-26 10:05:00
+1118,Authorize Supplier's Invoice payment,Pedro Alvares,2011-6-26 10:19:00,2011-6-26 10:19:00
+1118,Pay Invoice,Karalda Nimwada,2011-6-26 11:07:00,2011-6-26 10:56:00
+1118,End,End,2011-6-26 11:07:00,2011-6-26 11:07:00
+1128,Start,Start,2011-6-13 19:58:00,2011-6-13 19:58:00
+1128,Create Purchase Requisition,Fjodor Kowalski,2011-6-13 20:24:00,2011-6-13 19:58:00
+1128,Create Request for Quotation,Immanuel Karagianni,2011-6-14 3:06:00,2011-6-14 2:56:00
+1128,Analyze Request for Quotation,Karel de Groot,2011-6-19 23:46:00,2011-6-19 23:18:00
+1128,Amend Request for Quotation,Clement Duchot,2011-6-20 0:51:00,2011-6-20 0:43:00
+1128,Analyze Request for Quotation,Karel de Groot,2011-7-12 7:31:00,2011-7-12 7:13:00
+1128,Amend Request for Quotation,Penn Osterwalder,2011-7-12 8:30:00,2011-7-12 8:20:00
+1128,Analyze Request for Quotation,Magdalena Predutta,2011-7-22 13:20:00,2011-7-22 13:07:00
+1128,Send Request for Quotation to Supplier,Francois de Perrier,2011-7-23 17:07:00,2011-7-23 16:49:00
+1128,Create Quotation comparison Map,Francois de Perrier,2011-7-24 7:36:00,2011-7-24 5:19:00
+1128,Analyze Quotation Comparison Map,Elvira Lores,2011-7-24 14:49:00,2011-7-24 14:36:00
+1128,Choose best option,Clement Duchot,2011-7-24 14:49:00,2011-7-24 14:49:00
+1128,Settle Conditions With Supplier,Francois de Perrier,2011-7-25 19:17:00,2011-7-25 5:55:00
+1128,Create Purchase Order,Francois de Perrier,2011-7-26 9:46:00,2011-7-26 9:37:00
+1128,Confirm Purchase Order,Karen Clarens,2011-8-3 2:25:00,2011-8-3 2:09:00
+1128,Deliver Goods Services,Sean Manney,2011-8-29 9:16:00,2011-8-28 16:14:00
+1128,Release Purchase Order,Nico Ojenbeer,2011-8-29 16:31:00,2011-8-29 16:30:00
+1128,Approve Purchase Order for payment,Karel de Groot,2011-8-30 5:55:00,2011-8-30 5:54:00
+1128,Send Invoice,Kiu Kan,2011-9-1 5:40:00,2011-9-1 5:40:00
+1128,Release Supplier's Invoice,Karalda Nimwada,2011-9-1 20:13:00,2011-9-1 20:06:00
+1128,Authorize Supplier's Invoice payment,Pedro Alvares,2011-9-1 20:13:00,2011-9-1 20:13:00
+1128,Pay Invoice,Pedro Alvares,2011-9-1 20:59:00,2011-9-1 20:47:00
+1128,End,End,2011-9-1 20:59:00,2011-9-1 20:59:00
+1141,Start,Start,2011-6-15 13:46:00,2011-6-15 13:46:00
+1141,Create Purchase Requisition,Miu Hanwan,2011-6-15 14:22:00,2011-6-15 13:46:00
+1141,Create Request for Quotation,Tesca Lobes,2011-6-15 17:03:00,2011-6-15 16:50:00
+1141,Analyze Request for Quotation,Magdalena Predutta,2011-6-20 22:58:00,2011-6-20 22:33:00
+1141,Amend Request for Quotation,Nico Ojenbeer,2011-6-21 0:10:00,2011-6-20 23:58:00
+1141,Analyze Request for Quotation,Karel de Groot,2011-7-9 4:25:00,2011-7-9 3:46:00
+1141,Amend Request for Quotation,Elvira Lores,2011-7-9 5:27:00,2011-7-9 5:16:00
+1141,Analyze Request for Quotation,Karel de Groot,2011-7-18 17:37:00,2011-7-18 17:13:00
+1141,Amend Request for Quotation,Penn Osterwalder,2011-7-18 18:20:00,2011-7-18 18:15:00
+1141,Analyze Request for Quotation,Francois de Perrier,2011-8-10 18:13:00,2011-8-10 17:51:00
+1141,Send Request for Quotation to Supplier,Karel de Groot,2011-8-11 7:57:00,2011-8-11 7:37:00
+1141,Create Quotation comparison Map,Karel de Groot,2011-8-11 13:22:00,2011-8-11 8:45:00
+1141,Analyze Quotation Comparison Map,Anna Kaufmann,2011-8-11 20:52:00,2011-8-11 20:26:00
+1141,Choose best option,Elvira Lores,2011-8-11 20:52:00,2011-8-11 20:52:00
+1141,Settle Conditions With Supplier,Francois de Perrier,2011-8-14 9:00:00,2011-8-13 23:30:00
+1141,Create Purchase Order,Francois de Perrier,2011-8-14 11:39:00,2011-8-14 11:29:00
+1141,Confirm Purchase Order,Sean Manney,2011-8-15 19:16:00,2011-8-15 19:01:00
+1141,Deliver Goods Services,Sean Manney,2011-8-22 10:07:00,2011-8-21 16:21:00
+1141,Release Purchase Order,Esmana Liubiata,2011-8-22 18:01:00,2011-8-22 18:00:00
+1141,Approve Purchase Order for payment,Magdalena Predutta,2011-8-23 15:05:00,2011-8-23 15:04:00
+1141,Send Invoice,Esmeralda Clay,2011-8-29 23:17:00,2011-8-29 23:17:00
+1141,Release Supplier's Invoice,Pedro Alvares,2011-8-30 13:48:00,2011-8-30 13:42:00
+1141,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-8-30 13:48:00,2011-8-30 13:48:00
+1141,Pay Invoice,Pedro Alvares,2011-8-30 14:18:00,2011-8-30 14:09:00
+1141,End,End,2011-8-30 14:18:00,2011-8-30 14:18:00
+1144,Start,Start,2011-6-16 0:39:00,2011-6-16 0:39:00
+1144,Create Purchase Requisition,Esmana Liubiata,2011-6-16 1:03:00,2011-6-16 0:39:00
+1144,Create Request for Quotation,Kim Passa,2011-6-16 2:09:00,2011-6-16 1:58:00
+1144,Analyze Request for Quotation,Magdalena Predutta,2011-6-28 16:48:00,2011-6-28 16:28:00
+1144,End,End,2011-6-28 16:48:00,2011-6-28 16:48:00
+115,Start,Start,2011-1-14 17:40:00,2011-1-14 17:40:00
+115,Create Purchase Requisition,Nico Ojenbeer,2011-1-14 18:16:00,2011-1-14 17:40:00
+115,Create Request for Quotation,Christian Francois,2011-1-14 22:28:00,2011-1-14 22:17:00
+115,Analyze Request for Quotation,Karel de Groot,2011-1-17 0:41:00,2011-1-17 0:33:00
+115,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-17 12:38:00,2011-1-17 12:17:00
+115,Create Quotation comparison Map,Karel de Groot,2011-1-17 19:59:00,2011-1-17 15:17:00
+115,Analyze Quotation Comparison Map,Clement Duchot,2011-1-18 2:50:00,2011-1-18 2:35:00
+115,Choose best option,Anne Olwada,2011-1-18 2:50:00,2011-1-18 2:50:00
+115,Settle Conditions With Supplier,Francois de Perrier,2011-1-18 17:11:00,2011-1-18 6:31:00
+115,Create Purchase Order,Magdalena Predutta,2011-1-18 23:34:00,2011-1-18 23:26:00
+115,Confirm Purchase Order,Kiu Kan,2011-1-19 10:10:00,2011-1-19 9:55:00
+115,Deliver Goods Services,Karen Clarens,2011-1-22 22:46:00,2011-1-22 2:36:00
+115,Release Purchase Order,Christian Francois,2011-1-23 6:41:00,2011-1-23 6:40:00
+115,Approve Purchase Order for payment,Francois de Perrier,2011-1-23 20:37:00,2011-1-23 20:36:00
+115,Send Invoice,Sean Manney,2011-1-24 6:59:00,2011-1-24 6:59:00
+115,Release Supplier's Invoice,Karalda Nimwada,2011-1-24 21:13:00,2011-1-24 21:07:00
+115,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-24 21:13:00,2011-1-24 21:13:00
+115,Pay Invoice,Karalda Nimwada,2011-1-24 22:23:00,2011-1-24 22:13:00
+115,End,End,2011-1-24 22:23:00,2011-1-24 22:23:00
+118,Start,Start,2011-1-15 10:31:00,2011-1-15 10:31:00
+118,Create Purchase Requisition,Tesca Lobes,2011-1-15 11:16:00,2011-1-15 10:31:00
+118,Analyze Purchase Requisition,Francis Odell,2011-1-15 21:40:00,2011-1-15 21:33:00
+118,Create Request for Quotation,Maris Freeman,2011-1-15 21:47:00,2011-1-15 21:45:00
+118,Analyze Request for Quotation,Magdalena Predutta,2011-1-16 3:46:00,2011-1-16 3:12:00
+118,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-16 18:24:00,2011-1-16 18:10:00
+118,Create Quotation comparison Map,Francois de Perrier,2011-1-16 19:32:00,2011-1-16 18:54:00
+118,Analyze Quotation Comparison Map,Fjodor Kowalski,2011-1-17 2:26:00,2011-1-17 2:00:00
+118,Choose best option,Penn Osterwalder,2011-1-17 2:26:00,2011-1-17 2:26:00
+118,Settle Conditions With Supplier,Magdalena Predutta,2011-1-17 16:00:00,2011-1-17 6:37:00
+118,Create Purchase Order,Magdalena Predutta,2011-1-18 3:24:00,2011-1-18 3:13:00
+118,Confirm Purchase Order,Kiu Kan,2011-1-19 10:42:00,2011-1-19 10:10:00
+118,Deliver Goods Services,Esmeralda Clay,2011-1-21 11:54:00,2011-1-20 8:17:00
+118,Release Purchase Order,Anne Olwada,2011-1-21 18:46:00,2011-1-21 18:45:00
+118,Approve Purchase Order for payment,Francois de Perrier,2011-1-22 9:06:00,2011-1-22 9:05:00
+118,Send Invoice,Carmen Finacse,2011-1-25 10:53:00,2011-1-25 10:53:00
+118,Release Supplier's Invoice,Karalda Nimwada,2011-1-26 1:32:00,2011-1-26 1:30:00
+118,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-26 1:32:00,2011-1-26 1:32:00
+118,Pay Invoice,Pedro Alvares,2011-1-26 1:50:00,2011-1-26 1:43:00
+118,End,End,2011-1-26 1:50:00,2011-1-26 1:50:00
+1197,Start,Start,2011-6-21 21:55:00,2011-6-21 21:55:00
+1197,Create Purchase Requisition,Nico Ojenbeer,2011-6-21 22:29:00,2011-6-21 21:55:00
+1197,Analyze Purchase Requisition,Heinz Gutschmidt,2011-6-22 11:33:00,2011-6-22 11:29:00
+1197,End,End,2011-6-22 11:33:00,2011-6-22 11:33:00
+12,Start,Start,2011-1-2 5:31:00,2011-1-2 5:31:00
+12,Create Purchase Requisition,Alberto Duport,2011-1-2 5:41:00,2011-1-2 5:31:00
+12,Analyze Purchase Requisition,Francis Odell,2011-1-2 23:41:00,2011-1-2 23:35:00
+12,Amend Purchase Requisition,Penn Osterwalder,2011-1-3 11:57:00,2011-1-3 11:31:00
+12,Create Request for Quotation,Tesca Lobes,2011-1-3 17:28:00,2011-1-3 17:18:00
+12,Analyze Request for Quotation,Karel de Groot,2011-1-3 18:36:00,2011-1-3 18:32:00
+12,Amend Request for Quotation,Penn Osterwalder,2011-1-3 19:27:00,2011-1-3 19:22:00
+12,Analyze Request for Quotation,Karel de Groot,2011-1-3 20:46:00,2011-1-3 20:24:00
+12,Amend Request for Quotation,Penn Osterwalder,2011-1-3 21:40:00,2011-1-3 21:35:00
+12,Analyze Request for Quotation,Magdalena Predutta,2011-1-3 22:52:00,2011-1-3 22:41:00
+12,Amend Request for Quotation,Penn Osterwalder,2011-1-3 23:54:00,2011-1-3 23:40:00
+12,Analyze Request for Quotation,Francois de Perrier,2011-1-4 1:35:00,2011-1-4 0:45:00
+12,Send Request for Quotation to Supplier,Magdalena Predutta,2011-1-4 19:03:00,2011-1-4 18:40:00
+12,Create Quotation comparison Map,Magdalena Predutta,2011-1-5 0:34:00,2011-1-4 19:42:00
+12,Analyze Quotation Comparison Map,Esmana Liubiata,2011-1-5 7:41:00,2011-1-5 7:34:00
+12,Choose best option,Immanuel Karagianni,2011-1-5 7:41:00,2011-1-5 7:41:00
+12,Settle Conditions With Supplier,Magdalena Predutta,2011-1-6 5:00:00,2011-1-6 0:30:00
+12,Create Purchase Order,Francois de Perrier,2011-1-6 13:27:00,2011-1-6 13:20:00
+12,Confirm Purchase Order,Kiu Kan,2011-1-7 1:39:00,2011-1-7 1:33:00
+12,Deliver Goods Services,Sean Manney,2011-1-8 13:08:00,2011-1-7 7:08:00
+12,Release Purchase Order,Christian Francois,2011-1-8 20:17:00,2011-1-8 20:16:00
+12,Approve Purchase Order for payment,Magdalena Predutta,2011-1-8 22:49:00,2011-1-8 22:48:00
+12,Send Invoice,Karen Clarens,2011-1-10 1:16:00,2011-1-10 1:16:00
+12,Release Supplier's Invoice,Pedro Alvares,2011-1-10 15:46:00,2011-1-10 15:41:00
+12,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-10 15:46:00,2011-1-10 15:46:00
+12,Pay Invoice,Pedro Alvares,2011-1-10 16:02:00,2011-1-10 15:53:00
+12,End,End,2011-1-10 16:02:00,2011-1-10 16:02:00
+122,Start,Start,2011-1-16 11:29:00,2011-1-16 11:29:00
+122,Create Purchase Requisition,Tesca Lobes,2011-1-16 11:54:00,2011-1-16 11:29:00
+122,Create Request for Quotation,Nico Ojenbeer,2011-1-16 12:59:00,2011-1-16 12:52:00
+122,Analyze Request for Quotation,Francois de Perrier,2011-1-17 0:08:00,2011-1-16 23:22:00
+122,Amend Request for Quotation,Elvira Lores,2011-1-17 1:09:00,2011-1-17 1:02:00
+122,Analyze Request for Quotation,Karel de Groot,2011-1-17 2:39:00,2011-1-17 2:22:00
+122,Amend Request for Quotation,Miu Hanwan,2011-1-17 3:31:00,2011-1-17 3:23:00
+122,Analyze Request for Quotation,Francois de Perrier,2011-1-17 5:20:00,2011-1-17 4:46:00
+122,Amend Request for Quotation,Immanuel Karagianni,2011-1-17 6:11:00,2011-1-17 6:05:00
+122,Analyze Request for Quotation,Magdalena Predutta,2011-1-19 20:13:00,2011-1-19 19:52:00
+122,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-20 14:48:00,2011-1-20 14:15:00
+122,Create Quotation comparison Map,Karel de Groot,2011-1-21 4:09:00,2011-1-21 1:04:00
+122,Analyze Quotation Comparison Map,Anne Olwada,2011-1-21 10:50:00,2011-1-21 10:24:00
+122,Choose best option,Alberto Duport,2011-1-21 10:50:00,2011-1-21 10:50:00
+122,Settle Conditions With Supplier,Magdalena Predutta,2011-1-22 16:24:00,2011-1-22 3:46:00
+122,Create Purchase Order,Magdalena Predutta,2011-1-22 17:23:00,2011-1-22 17:16:00
+122,Confirm Purchase Order,Carmen Finacse,2011-1-23 21:41:00,2011-1-23 21:23:00
+122,Deliver Goods Services,Sean Manney,2011-1-25 19:54:00,2011-1-24 10:43:00
+122,Release Purchase Order,Anna Kaufmann,2011-1-26 3:46:00,2011-1-26 3:45:00
+122,Approve Purchase Order for payment,Francois de Perrier,2011-1-26 13:27:00,2011-1-26 13:26:00
+122,Send Invoice,Carmen Finacse,2011-1-27 7:55:00,2011-1-27 7:55:00
+122,Release Supplier's Invoice,Karalda Nimwada,2011-1-27 22:24:00,2011-1-27 22:20:00
+122,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-27 22:24:00,2011-1-27 22:24:00
+122,Pay Invoice,Karalda Nimwada,2011-1-27 22:32:00,2011-1-27 22:27:00
+122,End,End,2011-1-27 22:32:00,2011-1-27 22:32:00
+1227,Start,Start,2011-6-26 16:35:00,2011-6-26 16:35:00
+1227,Create Purchase Requisition,Esmana Liubiata,2011-6-26 16:55:00,2011-6-26 16:35:00
+1227,Analyze Purchase Requisition,Maris Freeman,2011-6-27 4:52:00,2011-6-27 4:45:00
+1227,Create Request for Quotation,Francis Odell,2011-6-27 5:01:00,2011-6-27 4:59:00
+1227,Analyze Request for Quotation,Karel de Groot,2011-6-28 17:45:00,2011-6-28 17:31:00
+1227,Amend Request for Quotation,Immanuel Karagianni,2011-6-28 18:44:00,2011-6-28 18:32:00
+1227,Analyze Request for Quotation,Magdalena Predutta,2011-9-11 10:14:00,2011-9-11 9:51:00
+1227,Send Request for Quotation to Supplier,Magdalena Predutta,2011-9-12 11:08:00,2011-9-12 10:52:00
+1227,Create Quotation comparison Map,Magdalena Predutta,2011-9-12 17:29:00,2011-9-12 11:29:00
+1227,Analyze Quotation Comparison Map,Tesca Lobes,2011-9-13 0:44:00,2011-9-13 0:20:00
+1227,Choose best option,Alberto Duport,2011-9-13 0:44:00,2011-9-13 0:44:00
+1227,Settle Conditions With Supplier,Francois de Perrier,2011-9-14 1:27:00,2011-9-13 18:03:00
+1227,Create Purchase Order,Francois de Perrier,2011-9-14 16:21:00,2011-9-14 16:14:00
+1227,Confirm Purchase Order,Carmen Finacse,2011-9-14 20:46:00,2011-9-14 20:27:00
+1227,Deliver Goods Services,Kiu Kan,2011-9-18 23:35:00,2011-9-18 1:41:00
+1227,Release Purchase Order,Kim Passa,2011-9-19 6:54:00,2011-9-19 6:53:00
+1227,Approve Purchase Order for payment,Magdalena Predutta,2011-9-19 15:40:00,2011-9-19 15:39:00
+1227,Send Invoice,Sean Manney,2011-9-22 21:37:00,2011-9-22 21:37:00
+1227,Release Supplier's Invoice,Pedro Alvares,2011-9-23 12:05:00,2011-9-23 12:00:00
+1227,Authorize Supplier's Invoice payment,Pedro Alvares,2011-9-23 12:05:00,2011-9-23 12:05:00
+1227,Pay Invoice,Karalda Nimwada,2011-9-23 12:41:00,2011-9-23 12:34:00
+1227,End,End,2011-9-23 12:41:00,2011-9-23 12:41:00
+1259,Start,Start,2011-7-1 6:52:00,2011-7-1 6:52:00
+1259,Create Purchase Requisition,Elvira Lores,2011-7-1 7:44:00,2011-7-1 6:52:00
+1259,Create Request for Quotation,Miu Hanwan,2011-7-1 12:32:00,2011-7-1 12:22:00
+1259,Analyze Request for Quotation,Magdalena Predutta,2011-7-4 11:28:00,2011-7-4 11:01:00
+1259,Amend Request for Quotation,Fjodor Kowalski,2011-7-4 12:22:00,2011-7-4 12:12:00
+1259,Analyze Request for Quotation,Magdalena Predutta,2011-8-11 14:30:00,2011-8-11 14:00:00
+1259,Amend Request for Quotation,Nico Ojenbeer,2011-8-11 15:47:00,2011-8-11 15:33:00
+1259,Analyze Request for Quotation,Karel de Groot,2011-8-11 20:45:00,2011-8-11 20:19:00
+1259,Amend Request for Quotation,Clement Duchot,2011-8-11 21:45:00,2011-8-11 21:34:00
+1259,Analyze Request for Quotation,Karel de Groot,2011-8-17 0:24:00,2011-8-16 23:53:00
+1259,Send Request for Quotation to Supplier,Karel de Groot,2011-8-17 18:36:00,2011-8-17 18:08:00
+1259,Create Quotation comparison Map,Magdalena Predutta,2011-8-18 9:35:00,2011-8-18 8:46:00
+1259,Analyze Quotation Comparison Map,Kim Passa,2011-8-18 16:38:00,2011-8-18 16:09:00
+1259,Choose best option,Alberto Duport,2011-8-18 16:38:00,2011-8-18 16:38:00
+1259,Settle Conditions With Supplier,Magdalena Predutta,2011-8-19 18:58:00,2011-8-19 11:05:00
+1259,Create Purchase Order,Karel de Groot,2011-8-19 23:19:00,2011-8-19 23:11:00
+1259,Confirm Purchase Order,Kiu Kan,2011-8-20 3:38:00,2011-8-20 3:08:00
+1259,Deliver Goods Services,Sean Manney,2011-9-25 7:25:00,2011-9-25 3:41:00
+1259,Release Purchase Order,Immanuel Karagianni,2011-9-25 15:18:00,2011-9-25 15:17:00
+1259,Approve Purchase Order for payment,Karel de Groot,2011-9-26 7:59:00,2011-9-26 7:58:00
+1259,Send Invoice,Karen Clarens,2011-10-5 13:00:00,2011-10-5 13:00:00
+1259,Release Supplier's Invoice,Karalda Nimwada,2011-10-6 3:28:00,2011-10-6 3:25:00
+1259,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-10-6 3:28:00,2011-10-6 3:28:00
+1259,Pay Invoice,Pedro Alvares,2011-10-6 3:49:00,2011-10-6 3:42:00
+1259,End,End,2011-10-6 3:49:00,2011-10-6 3:49:00
+1287,Start,Start,2011-7-4 13:39:00,2011-7-4 13:39:00
+1287,Create Purchase Requisition,Fjodor Kowalski,2011-7-4 14:25:00,2011-7-4 13:39:00
+1287,Analyze Purchase Requisition,Heinz Gutschmidt,2011-7-5 2:40:00,2011-7-5 2:33:00
+1287,Create Request for Quotation,Heinz Gutschmidt,2011-7-5 2:47:00,2011-7-5 2:45:00
+1287,Analyze Request for Quotation,Karel de Groot,2011-7-5 10:34:00,2011-7-5 10:18:00
+1287,End,End,2011-7-5 10:34:00,2011-7-5 10:34:00
+1305,Start,Start,2011-7-6 15:43:00,2011-7-6 15:43:00
+1305,Create Purchase Requisition,Anne Olwada,2011-7-6 16:12:00,2011-7-6 15:43:00
+1305,Analyze Purchase Requisition,Heinz Gutschmidt,2011-7-7 2:29:00,2011-7-7 2:24:00
+1305,End,End,2011-7-7 2:29:00,2011-7-7 2:29:00
+1328,Start,Start,2011-7-11 12:12:00,2011-7-11 12:12:00
+1328,Create Purchase Requisition,Anne Olwada,2011-7-11 12:33:00,2011-7-11 12:12:00
+1328,Analyze Purchase Requisition,Heinz Gutschmidt,2011-7-12 11:54:00,2011-7-12 11:50:00
+1328,Create Request for Quotation,Francis Odell,2011-7-12 12:01:00,2011-7-12 11:59:00
+1328,Analyze Request for Quotation,Magdalena Predutta,2011-7-14 17:04:00,2011-7-14 16:39:00
+1328,Amend Request for Quotation,Tesca Lobes,2011-7-14 17:57:00,2011-7-14 17:48:00
+1328,Analyze Request for Quotation,Karel de Groot,2011-7-18 3:10:00,2011-7-18 2:54:00
+1328,Amend Request for Quotation,Miu Hanwan,2011-7-18 4:14:00,2011-7-18 4:06:00
+1328,Analyze Request for Quotation,Francois de Perrier,2011-7-31 16:51:00,2011-7-31 16:41:00
+1328,Amend Request for Quotation,Immanuel Karagianni,2011-7-31 17:44:00,2011-7-31 17:34:00
+1328,Analyze Request for Quotation,Magdalena Predutta,2011-8-26 10:01:00,2011-8-26 9:46:00
+1328,Amend Request for Quotation,Anna Kaufmann,2011-8-26 11:03:00,2011-8-26 10:55:00
+1328,Analyze Request for Quotation,Magdalena Predutta,2011-9-15 8:03:00,2011-9-15 7:29:00
+1328,Send Request for Quotation to Supplier,Magdalena Predutta,2011-9-15 17:15:00,2011-9-15 16:46:00
+1328,Create Quotation comparison Map,Francois de Perrier,2011-9-15 23:33:00,2011-9-15 21:51:00
+1328,Analyze Quotation Comparison Map,Anne Olwada,2011-9-16 6:50:00,2011-9-16 6:20:00
+1328,Choose best option,Penn Osterwalder,2011-9-16 6:50:00,2011-9-16 6:50:00
+1328,Settle Conditions With Supplier,Francois de Perrier,2011-9-17 8:00:00,2011-9-16 21:12:00
+1328,Create Purchase Order,Magdalena Predutta,2011-9-17 13:05:00,2011-9-17 12:58:00
+1328,Confirm Purchase Order,Karen Clarens,2011-9-24 12:29:00,2011-9-24 12:13:00
+1328,Deliver Goods Services,Kiu Kan,2011-10-1 2:16:00,2011-9-30 19:55:00
+1328,Release Purchase Order,Nico Ojenbeer,2011-10-1 9:47:00,2011-10-1 9:46:00
+1328,Approve Purchase Order for payment,Francois de Perrier,2011-10-1 19:00:00,2011-10-1 18:59:00
+1328,Send Invoice,Kiu Kan,2011-10-6 16:50:00,2011-10-6 16:50:00
+1328,Release Supplier's Invoice,Karalda Nimwada,2011-10-7 7:17:00,2011-10-7 7:13:00
+1328,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-10-7 7:17:00,2011-10-7 7:17:00
+1328,Pay Invoice,Pedro Alvares,2011-10-7 7:40:00,2011-10-7 7:27:00
+1328,End,End,2011-10-7 7:40:00,2011-10-7 7:40:00
+1358,Start,Start,2011-7-14 21:51:00,2011-7-14 21:51:00
+1358,Create Purchase Requisition,Alberto Duport,2011-7-14 22:07:00,2011-7-14 21:51:00
+1358,Analyze Purchase Requisition,Maris Freeman,2011-7-15 14:21:00,2011-7-15 14:14:00
+1358,Create Request for Quotation,Heinz Gutschmidt,2011-7-15 14:31:00,2011-7-15 14:28:00
+1358,Analyze Request for Quotation,Francois de Perrier,2011-8-14 9:09:00,2011-8-14 9:00:00
+1358,Amend Request for Quotation,Kim Passa,2011-8-14 10:12:00,2011-8-14 10:02:00
+1358,Analyze Request for Quotation,Francois de Perrier,2011-8-24 6:41:00,2011-8-24 6:10:00
+1358,Amend Request for Quotation,Anne Olwada,2011-8-24 7:39:00,2011-8-24 7:32:00
+1358,Analyze Request for Quotation,Francois de Perrier,2011-8-28 1:33:00,2011-8-28 1:19:00
+1358,Amend Request for Quotation,Fjodor Kowalski,2011-8-28 2:48:00,2011-8-28 2:34:00
+1358,Analyze Request for Quotation,Magdalena Predutta,2011-8-28 8:50:00,2011-8-28 8:30:00
+1358,Send Request for Quotation to Supplier,Francois de Perrier,2011-8-29 4:27:00,2011-8-29 4:17:00
+1358,Create Quotation comparison Map,Karel de Groot,2011-9-1 11:47:00,2011-9-1 8:24:00
+1358,Analyze Quotation Comparison Map,Penn Osterwalder,2011-9-1 18:15:00,2011-9-1 17:59:00
+1358,Choose best option,Penn Osterwalder,2011-9-1 18:15:00,2011-9-1 18:15:00
+1358,Settle Conditions With Supplier,Magdalena Predutta,2011-9-2 21:18:00,2011-9-2 10:47:00
+1358,Create Purchase Order,Magdalena Predutta,2011-9-3 17:25:00,2011-9-3 17:17:00
+1358,Confirm Purchase Order,Carmen Finacse,2011-9-11 2:24:00,2011-9-11 1:54:00
+1358,Deliver Goods Services,Carmen Finacse,2011-10-3 22:37:00,2011-10-3 8:32:00
+1358,Release Purchase Order,Penn Osterwalder,2011-10-4 5:59:00,2011-10-4 5:58:00
+1358,Approve Purchase Order for payment,Magdalena Predutta,2011-10-4 13:23:00,2011-10-4 13:22:00
+1358,Send Invoice,Esmeralda Clay,2011-10-11 6:41:00,2011-10-11 6:41:00
+1358,Release Supplier's Invoice,Pedro Alvares,2011-10-11 20:57:00,2011-10-11 20:53:00
+1358,Authorize Supplier's Invoice payment,Pedro Alvares,2011-10-11 20:57:00,2011-10-11 20:57:00
+1358,Pay Invoice,Pedro Alvares,2011-10-11 22:02:00,2011-10-11 21:52:00
+1358,End,End,2011-10-11 22:02:00,2011-10-11 22:02:00
+1380,Start,Start,2011-7-18 4:06:00,2011-7-18 4:06:00
+1380,Create Purchase Requisition,Anne Olwada,2011-7-18 4:34:00,2011-7-18 4:06:00
+1380,Create Request for Quotation,Anne Olwada,2011-7-18 5:12:00,2011-7-18 5:03:00
+1380,Analyze Request for Quotation,Francois de Perrier,2011-7-27 22:16:00,2011-7-27 21:55:00
+1380,End,End,2011-7-27 22:16:00,2011-7-27 22:16:00
+139,Start,Start,2011-1-18 5:48:00,2011-1-18 5:48:00
+139,Create Purchase Requisition,Anna Kaufmann,2011-1-18 6:16:00,2011-1-18 5:48:00
+139,Analyze Purchase Requisition,Francis Odell,2011-1-18 21:12:00,2011-1-18 21:07:00
+139,Create Request for Quotation,Maris Freeman,2011-1-18 21:22:00,2011-1-18 21:20:00
+139,Analyze Request for Quotation,Magdalena Predutta,2011-1-19 4:31:00,2011-1-19 3:58:00
+139,End,End,2011-1-19 4:31:00,2011-1-19 4:31:00
+1395,Start,Start,2011-7-21 9:15:00,2011-7-21 9:15:00
+1395,Create Purchase Requisition,Christian Francois,2011-7-21 10:00:00,2011-7-21 9:15:00
+1395,Analyze Purchase Requisition,Francis Odell,2011-7-21 20:59:00,2011-7-21 20:50:00
+1395,End,End,2011-7-21 20:59:00,2011-7-21 20:59:00
+1404,Start,Start,2011-7-22 2:38:00,2011-7-22 2:38:00
+1404,Create Purchase Requisition,Kim Passa,2011-7-22 2:47:00,2011-7-22 2:38:00
+1404,Create Request for Quotation,Tesca Lobes,2011-7-22 5:13:00,2011-7-22 5:04:00
+1404,Analyze Request for Quotation,Karel de Groot,2011-7-25 20:18:00,2011-7-25 19:52:00
+1404,End,End,2011-7-25 20:18:00,2011-7-25 20:18:00
+1452,Start,Start,2011-7-28 18:38:00,2011-7-28 18:38:00
+1452,Create Purchase Requisition,Elvira Lores,2011-7-28 18:55:00,2011-7-28 18:38:00
+1452,Analyze Purchase Requisition,Francis Odell,2011-7-29 7:01:00,2011-7-29 6:53:00
+1452,Create Request for Quotation,Heinz Gutschmidt,2011-7-29 7:10:00,2011-7-29 7:08:00
+1452,Analyze Request for Quotation,Karel de Groot,2011-8-13 6:43:00,2011-8-13 6:22:00
+1452,End,End,2011-8-13 6:43:00,2011-8-13 6:43:00
+1476,Start,Start,2011-7-31 6:04:00,2011-7-31 6:04:00
+1476,Create Purchase Requisition,Esmana Liubiata,2011-7-31 6:51:00,2011-7-31 6:04:00
+1476,Create Request for Quotation,Fjodor Kowalski,2011-7-31 10:52:00,2011-7-31 10:40:00
+1476,Analyze Request for Quotation,Francois de Perrier,2011-8-2 3:45:00,2011-8-2 3:15:00
+1476,Send Request for Quotation to Supplier,Francois de Perrier,2011-8-2 11:37:00,2011-8-2 11:07:00
+1476,Create Quotation comparison Map,Francois de Perrier,2011-8-2 18:49:00,2011-8-2 16:11:00
+1476,Analyze Quotation Comparison Map,Christian Francois,2011-8-3 1:36:00,2011-8-3 1:12:00
+1476,Choose best option,Christian Francois,2011-8-3 1:36:00,2011-8-3 1:36:00
+1476,Settle Conditions With Supplier,Francois de Perrier,2011-8-3 11:47:00,2011-8-3 5:48:00
+1476,Create Purchase Order,Francois de Perrier,2011-8-4 1:01:00,2011-8-4 0:52:00
+1476,Confirm Purchase Order,Karen Clarens,2011-8-4 5:30:00,2011-8-4 5:12:00
+1476,Deliver Goods Services,Carmen Finacse,2011-8-8 9:47:00,2011-8-7 7:35:00
+1476,Release Purchase Order,Kim Passa,2011-8-8 17:34:00,2011-8-8 17:33:00
+1476,Approve Purchase Order for payment,Magdalena Predutta,2011-8-10 8:45:00,2011-8-10 8:44:00
+1476,Send Invoice,Sean Manney,2011-8-12 9:12:00,2011-8-12 9:12:00
+1476,Release Supplier's Invoice,Karalda Nimwada,2011-8-12 23:50:00,2011-8-12 23:46:00
+1476,Authorize Supplier's Invoice payment,Pedro Alvares,2011-8-12 23:50:00,2011-8-12 23:50:00
+1476,Pay Invoice,Karalda Nimwada,2011-8-13 0:55:00,2011-8-13 0:47:00
+1476,End,End,2011-8-13 0:55:00,2011-8-13 0:55:00
+1488,Start,Start,2011-8-2 6:02:00,2011-8-2 6:02:00
+1488,Create Purchase Requisition,Alberto Duport,2011-8-2 6:22:00,2011-8-2 6:02:00
+1488,Analyze Purchase Requisition,Maris Freeman,2011-8-3 1:58:00,2011-8-3 1:52:00
+1488,End,End,2011-8-3 1:58:00,2011-8-3 1:58:00
+154,Start,Start,2011-1-20 10:40:00,2011-1-20 10:40:00
+154,Create Purchase Requisition,Miu Hanwan,2011-1-20 11:06:00,2011-1-20 10:40:00
+154,Create Request for Quotation,Tesca Lobes,2011-1-20 18:46:00,2011-1-20 18:36:00
+154,Analyze Request for Quotation,Francois de Perrier,2011-1-23 2:20:00,2011-1-23 1:44:00
+154,Amend Request for Quotation,Maris Freeman,2011-1-23 18:25:00,2011-1-23 18:12:00
+154,Analyze Request for Quotation,Magdalena Predutta,2011-1-24 4:47:00,2011-1-24 4:36:00
+154,Send Request for Quotation to Supplier,Magdalena Predutta,2011-1-25 12:43:00,2011-1-25 12:13:00
+154,Create Quotation comparison Map,Magdalena Predutta,2011-1-25 15:33:00,2011-1-25 13:09:00
+154,Analyze Quotation Comparison Map,Esmana Liubiata,2011-1-25 22:34:00,2011-1-25 22:01:00
+154,Choose best option,Tesca Lobes,2011-1-25 22:34:00,2011-1-25 22:34:00
+154,Settle Conditions With Supplier,Francois de Perrier,2011-1-26 13:26:00,2011-1-26 1:14:00
+154,Create Purchase Order,Magdalena Predutta,2011-1-26 23:30:00,2011-1-26 23:19:00
+154,Confirm Purchase Order,Esmeralda Clay,2011-1-28 6:46:00,2011-1-28 6:21:00
+154,Deliver Goods Services,Karen Clarens,2011-1-31 20:06:00,2011-1-30 22:20:00
+154,Release Purchase Order,Alberto Duport,2011-2-1 3:19:00,2011-2-1 3:18:00
+154,Approve Purchase Order for payment,Karel de Groot,2011-2-1 11:14:00,2011-2-1 11:13:00
+154,Send Invoice,Esmeralda Clay,2011-2-2 13:20:00,2011-2-2 13:20:00
+154,Release Supplier's Invoice,Pedro Alvares,2011-2-3 3:39:00,2011-2-3 3:36:00
+154,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-3 3:39:00,2011-2-3 3:39:00
+154,Pay Invoice,Karalda Nimwada,2011-2-3 4:38:00,2011-2-3 4:25:00
+154,End,End,2011-2-3 4:38:00,2011-2-3 4:38:00
+159,Start,Start,2011-1-21 15:02:00,2011-1-21 15:02:00
+159,Create Purchase Requisition,Elvira Lores,2011-1-21 15:42:00,2011-1-21 15:02:00
+159,Analyze Purchase Requisition,Francis Odell,2011-1-22 3:05:00,2011-1-22 2:58:00
+159,Create Request for Quotation,Maris Freeman,2011-1-22 3:14:00,2011-1-22 3:11:00
+159,Analyze Request for Quotation,Francois de Perrier,2011-1-23 3:59:00,2011-1-23 3:45:00
+159,Amend Request for Quotation,Christian Francois,2011-1-23 4:54:00,2011-1-23 4:48:00
+159,Analyze Request for Quotation,Karel de Groot,2011-1-23 6:36:00,2011-1-23 6:20:00
+159,Amend Request for Quotation,Miu Hanwan,2011-1-23 7:43:00,2011-1-23 7:31:00
+159,Analyze Request for Quotation,Francois de Perrier,2011-1-25 23:38:00,2011-1-25 23:12:00
+159,Send Request for Quotation to Supplier,Magdalena Predutta,2011-1-27 6:07:00,2011-1-27 5:39:00
+159,Create Quotation comparison Map,Karel de Groot,2011-1-27 12:45:00,2011-1-27 10:59:00
+159,Analyze Quotation Comparison Map,Elvira Lores,2011-1-27 19:37:00,2011-1-27 19:17:00
+159,Choose best option,Kim Passa,2011-1-27 19:37:00,2011-1-27 19:37:00
+159,Settle Conditions With Supplier,Francois de Perrier,2011-1-30 19:48:00,2011-1-30 7:21:00
+159,Create Purchase Order,Magdalena Predutta,2011-1-31 3:20:00,2011-1-31 3:09:00
+159,Confirm Purchase Order,Kiu Kan,2011-1-31 18:25:00,2011-1-31 17:59:00
+159,Deliver Goods Services,Karen Clarens,2011-2-3 15:33:00,2011-2-2 22:12:00
+159,Release Purchase Order,Anna Kaufmann,2011-2-3 23:38:00,2011-2-3 23:37:00
+159,Approve Purchase Order for payment,Karel de Groot,2011-2-4 9:16:00,2011-2-4 9:15:00
+159,Send Invoice,Karen Clarens,2011-2-4 22:13:00,2011-2-4 22:13:00
+159,Release Supplier's Invoice,Karalda Nimwada,2011-2-5 12:28:00,2011-2-5 12:25:00
+159,Settle Dispute With Supplier,Karalda Nimwada,2011-2-5 13:10:00,2011-2-5 12:52:00
+159,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-2-5 13:10:00,2011-2-5 13:10:00
+159,Pay Invoice,Pedro Alvares,2011-2-5 14:23:00,2011-2-5 14:13:00
+159,End,End,2011-2-5 14:23:00,2011-2-5 14:23:00
+1624,Start,Start,2011-8-23 13:48:00,2011-8-23 13:48:00
+1624,Create Purchase Requisition,Miu Hanwan,2011-8-23 14:31:00,2011-8-23 13:48:00
+1624,Analyze Purchase Requisition,Maris Freeman,2011-8-24 2:03:00,2011-8-24 1:59:00
+1624,Create Request for Quotation,Maris Freeman,2011-8-24 2:09:00,2011-8-24 2:07:00
+1624,Analyze Request for Quotation,Magdalena Predutta,2011-8-28 11:44:00,2011-8-28 11:09:00
+1624,End,End,2011-8-28 11:44:00,2011-8-28 11:44:00
+164,Start,Start,2011-1-22 2:13:00,2011-1-22 2:13:00
+164,Create Purchase Requisition,Fjodor Kowalski,2011-1-22 2:57:00,2011-1-22 2:13:00
+164,Analyze Purchase Requisition,Francis Odell,2011-1-22 15:30:00,2011-1-22 15:24:00
+164,Create Request for Quotation,Maris Freeman,2011-1-22 15:37:00,2011-1-22 15:35:00
+164,Analyze Request for Quotation,Magdalena Predutta,2011-1-23 5:56:00,2011-1-23 5:43:00
+164,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-24 2:12:00,2011-1-24 1:52:00
+164,Create Quotation comparison Map,Francois de Perrier,2011-1-24 11:52:00,2011-1-24 7:03:00
+164,Analyze Quotation Comparison Map,Penn Osterwalder,2011-1-24 18:45:00,2011-1-24 18:20:00
+164,Choose best option,Fjodor Kowalski,2011-1-24 18:45:00,2011-1-24 18:45:00
+164,Settle Conditions With Supplier,Francois de Perrier,2011-1-25 8:25:00,2011-1-25 2:31:00
+164,Create Purchase Order,Magdalena Predutta,2011-1-25 13:09:00,2011-1-25 13:02:00
+164,Confirm Purchase Order,Carmen Finacse,2011-1-27 8:47:00,2011-1-27 8:33:00
+164,Deliver Goods Services,Esmeralda Clay,2011-1-28 13:59:00,2011-1-28 7:29:00
+164,Release Purchase Order,Nico Ojenbeer,2011-1-28 21:55:00,2011-1-28 21:54:00
+164,Approve Purchase Order for payment,Magdalena Predutta,2011-1-30 0:22:00,2011-1-30 0:21:00
+164,Send Invoice,Karen Clarens,2011-1-30 22:20:00,2011-1-30 22:20:00
+164,Release Supplier's Invoice,Karalda Nimwada,2011-1-31 12:31:00,2011-1-31 12:28:00
+164,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-31 12:31:00,2011-1-31 12:31:00
+164,Pay Invoice,Karalda Nimwada,2011-1-31 13:01:00,2011-1-31 12:49:00
+164,End,End,2011-1-31 13:01:00,2011-1-31 13:01:00
+1682,Start,Start,2011-8-30 11:34:00,2011-8-30 11:34:00
+1682,Create Purchase Requisition,Penn Osterwalder,2011-8-30 11:41:00,2011-8-30 11:34:00
+1682,Create Request for Quotation,Fjodor Kowalski,2011-8-30 16:43:00,2011-8-30 16:34:00
+1682,Analyze Request for Quotation,Karel de Groot,2011-9-4 1:00:00,2011-9-4 0:40:00
+1682,Send Request for Quotation to Supplier,Karel de Groot,2011-9-5 3:43:00,2011-9-5 3:21:00
+1682,Create Quotation comparison Map,Karel de Groot,2011-9-5 8:36:00,2011-9-5 4:12:00
+1682,Analyze Quotation Comparison Map,Esmana Liubiata,2011-9-5 15:40:00,2011-9-5 15:31:00
+1682,Choose best option,Esmana Liubiata,2011-9-5 15:40:00,2011-9-5 15:40:00
+1682,Settle Conditions With Supplier,Francois de Perrier,2011-9-6 8:41:00,2011-9-6 0:10:00
+1682,Create Purchase Order,Francois de Perrier,2011-9-6 23:22:00,2011-9-6 23:10:00
+1682,Confirm Purchase Order,Esmeralda Clay,2011-9-7 5:11:00,2011-9-7 4:43:00
+1682,Deliver Goods Services,Carmen Finacse,2011-9-10 10:34:00,2011-9-10 5:29:00
+1682,Release Purchase Order,Kim Passa,2011-9-10 17:55:00,2011-9-10 17:54:00
+1682,Approve Purchase Order for payment,Francois de Perrier,2011-9-10 21:48:00,2011-9-10 21:47:00
+1682,Send Invoice,Karen Clarens,2011-9-11 19:08:00,2011-9-11 19:08:00
+1682,Release Supplier's Invoice,Karalda Nimwada,2011-9-12 9:35:00,2011-9-12 9:33:00
+1682,Settle Dispute With Supplier,Pedro Alvares,2011-9-12 10:33:00,2011-9-12 10:02:00
+1682,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-9-12 10:33:00,2011-9-12 10:33:00
+1682,Pay Invoice,Pedro Alvares,2011-9-12 11:41:00,2011-9-12 11:34:00
+1682,End,End,2011-9-12 11:41:00,2011-9-12 11:41:00
+17,Start,Start,2011-1-2 19:32:00,2011-1-2 19:32:00
+17,Create Purchase Requisition,Anne Olwada,2011-1-2 20:17:00,2011-1-2 19:32:00
+17,Create Request for Quotation,Alberto Duport,2011-1-3 4:12:00,2011-1-3 4:02:00
+17,Analyze Request for Quotation,Francois de Perrier,2011-1-3 14:02:00,2011-1-3 13:41:00
+17,Amend Request for Quotation,Penn Osterwalder,2011-1-3 14:58:00,2011-1-3 14:53:00
+17,Analyze Request for Quotation,Karel de Groot,2011-1-3 16:28:00,2011-1-3 16:19:00
+17,Amend Request for Quotation,Anne Olwada,2011-1-3 17:27:00,2011-1-3 17:13:00
+17,Analyze Request for Quotation,Karel de Groot,2011-1-3 19:24:00,2011-1-3 19:10:00
+17,Amend Request for Quotation,Anna Kaufmann,2011-1-3 20:31:00,2011-1-3 20:17:00
+17,Analyze Request for Quotation,Francois de Perrier,2011-1-3 22:36:00,2011-1-3 22:16:00
+17,End,End,2011-1-3 22:36:00,2011-1-3 22:36:00
+170,Start,Start,2011-1-22 22:35:00,2011-1-22 22:35:00
+170,Create Purchase Requisition,Miu Hanwan,2011-1-22 23:20:00,2011-1-22 22:35:00
+170,Analyze Purchase Requisition,Francis Odell,2011-1-23 15:16:00,2011-1-23 15:11:00
+170,Create Request for Quotation,Heinz Gutschmidt,2011-1-23 15:23:00,2011-1-23 15:21:00
+170,Analyze Request for Quotation,Francois de Perrier,2011-1-26 0:25:00,2011-1-25 23:48:00
+170,Send Request for Quotation to Supplier,Karel de Groot,2011-1-26 3:06:00,2011-1-26 2:45:00
+170,Create Quotation comparison Map,Karel de Groot,2011-1-26 6:47:00,2011-1-26 3:25:00
+170,Analyze Quotation Comparison Map,Esmana Liubiata,2011-1-26 14:00:00,2011-1-26 13:28:00
+170,Choose best option,Tesca Lobes,2011-1-26 14:00:00,2011-1-26 14:00:00
+170,Settle Conditions With Supplier,Karel de Groot,2011-1-27 10:27:00,2011-1-26 20:26:00
+170,Create Purchase Order,Karel de Groot,2011-1-27 22:50:00,2011-1-27 22:40:00
+170,Confirm Purchase Order,Esmeralda Clay,2011-1-28 7:19:00,2011-1-28 7:12:00
+170,Deliver Goods Services,Esmeralda Clay,2011-2-1 8:56:00,2011-1-31 0:41:00
+170,Release Purchase Order,Kim Passa,2011-2-1 16:36:00,2011-2-1 16:35:00
+170,Approve Purchase Order for payment,Magdalena Predutta,2011-2-2 0:16:00,2011-2-2 0:15:00
+170,Send Invoice,Sean Manney,2011-2-2 14:17:00,2011-2-2 14:17:00
+170,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-2-3 4:57:00,2011-2-3 4:57:00
+170,Pay Invoice,Pedro Alvares,2011-2-3 5:55:00,2011-2-3 5:49:00
+170,End,End,2011-2-3 5:55:00,2011-2-3 5:55:00
+1749,Start,Start,2011-9-11 12:06:00,2011-9-11 12:06:00
+1749,Create Purchase Requisition,Nico Ojenbeer,2011-9-11 12:32:00,2011-9-11 12:06:00
+1749,Analyze Purchase Requisition,Heinz Gutschmidt,2011-9-12 13:03:00,2011-9-12 12:55:00
+1749,Create Request for Quotation,Francis Odell,2011-9-12 13:11:00,2011-9-12 13:09:00
+1749,Analyze Request for Quotation,Francois de Perrier,2011-9-24 13:06:00,2011-9-24 12:29:00
+1749,End,End,2011-9-24 13:06:00,2011-9-24 13:06:00
+176,Start,Start,2011-1-24 6:41:00,2011-1-24 6:41:00
+176,Create Purchase Requisition,Kim Passa,2011-1-24 7:32:00,2011-1-24 6:41:00
+176,Analyze Purchase Requisition,Maris Freeman,2011-1-25 0:55:00,2011-1-25 0:47:00
+176,Create Request for Quotation,Heinz Gutschmidt,2011-1-25 1:01:00,2011-1-25 1:00:00
+176,Analyze Request for Quotation,Francois de Perrier,2011-1-25 23:12:00,2011-1-25 22:51:00
+176,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-26 14:02:00,2011-1-26 13:27:00
+176,Create Quotation comparison Map,Francois de Perrier,2011-1-26 18:21:00,2011-1-26 14:17:00
+176,Analyze Quotation Comparison Map,Nico Ojenbeer,2011-1-27 1:11:00,2011-1-27 1:01:00
+176,Choose best option,Kim Passa,2011-1-27 1:11:00,2011-1-27 1:11:00
+176,Settle Conditions With Supplier,Francois de Perrier,2011-1-28 11:58:00,2011-1-28 0:24:00
+176,Create Purchase Order,Francois de Perrier,2011-1-30 7:08:00,2011-1-30 6:58:00
+176,Confirm Purchase Order,Kiu Kan,2011-1-31 17:59:00,2011-1-31 17:42:00
+176,Deliver Goods Services,Esmeralda Clay,2011-2-2 19:12:00,2011-2-2 13:20:00
+176,Release Purchase Order,Kim Passa,2011-2-3 3:10:00,2011-2-3 3:09:00
+176,Approve Purchase Order for payment,Karel de Groot,2011-2-5 8:29:00,2011-2-5 8:28:00
+176,Send Invoice,Karen Clarens,2011-2-6 0:45:00,2011-2-6 0:45:00
+176,Release Supplier's Invoice,Karalda Nimwada,2011-2-6 15:09:00,2011-2-6 15:05:00
+176,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-2-6 15:09:00,2011-2-6 15:09:00
+176,Pay Invoice,Karalda Nimwada,2011-2-6 16:01:00,2011-2-6 15:55:00
+176,End,End,2011-2-6 16:01:00,2011-2-6 16:01:00
+182,Start,Start,2011-1-24 20:06:00,2011-1-24 20:06:00
+182,Create Purchase Requisition,Fjodor Kowalski,2011-1-24 20:52:00,2011-1-24 20:06:00
+182,Analyze Purchase Requisition,Maris Freeman,2011-1-25 13:23:00,2011-1-25 13:17:00
+182,Create Request for Quotation,Maris Freeman,2011-1-25 13:31:00,2011-1-25 13:30:00
+182,Analyze Request for Quotation,Karel de Groot,2011-1-25 18:41:00,2011-1-25 18:20:00
+182,Amend Request for Quotation,Christian Francois,2011-1-25 19:35:00,2011-1-25 19:29:00
+182,Analyze Request for Quotation,Karel de Groot,2011-1-26 2:11:00,2011-1-26 1:48:00
+182,Amend Request for Quotation,Christian Francois,2011-1-26 3:06:00,2011-1-26 2:58:00
+182,Analyze Request for Quotation,Karel de Groot,2011-1-30 9:41:00,2011-1-30 9:17:00
+182,Amend Request for Quotation,Immanuel Karagianni,2011-1-30 10:43:00,2011-1-30 10:36:00
+182,Analyze Request for Quotation,Magdalena Predutta,2011-1-31 7:29:00,2011-1-31 7:05:00
+182,Send Request for Quotation to Supplier,Magdalena Predutta,2011-1-31 15:14:00,2011-1-31 15:03:00
+182,Create Quotation comparison Map,Karel de Groot,2011-1-31 19:49:00,2011-1-31 15:59:00
+182,Analyze Quotation Comparison Map,Penn Osterwalder,2011-2-1 3:49:00,2011-2-1 3:21:00
+182,Choose best option,Fjodor Kowalski,2011-2-1 3:49:00,2011-2-1 3:49:00
+182,Settle Conditions With Supplier,Francois de Perrier,2011-2-2 7:35:00,2011-2-1 19:49:00
+182,Create Purchase Order,Magdalena Predutta,2011-2-3 6:23:00,2011-2-3 6:13:00
+182,Confirm Purchase Order,Carmen Finacse,2011-2-3 10:41:00,2011-2-3 10:18:00
+182,Deliver Goods Services,Carmen Finacse,2011-2-6 3:06:00,2011-2-4 23:52:00
+182,Release Purchase Order,Christian Francois,2011-2-6 11:03:00,2011-2-6 11:02:00
+182,Settle Dispute With Supplier,Karel de Groot,2011-2-7 6:32:00,2011-2-6 21:45:00
+182,Release Purchase Order,Kim Passa,2011-2-7 14:42:00,2011-2-7 14:41:00
+182,Approve Purchase Order for payment,Magdalena Predutta,2011-2-7 19:12:00,2011-2-7 19:11:00
+182,Send Invoice,Esmeralda Clay,2011-2-8 1:24:00,2011-2-8 1:24:00
+182,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-8 15:33:00,2011-2-8 15:33:00
+182,Pay Invoice,Pedro Alvares,2011-2-8 16:25:00,2011-2-8 16:18:00
+182,End,End,2011-2-8 16:25:00,2011-2-8 16:25:00
+186,Start,Start,2011-1-25 0:57:00,2011-1-25 0:57:00
+186,Create Purchase Requisition,Esmana Liubiata,2011-1-25 1:10:00,2011-1-25 0:57:00
+186,Analyze Purchase Requisition,Maris Freeman,2011-1-25 21:05:00,2011-1-25 20:58:00
+186,Create Request for Quotation,Francis Odell,2011-1-25 21:11:00,2011-1-25 21:09:00
+186,Analyze Request for Quotation,Karel de Groot,2011-1-25 22:34:00,2011-1-25 22:22:00
+186,Send Request for Quotation to Supplier,Magdalena Predutta,2011-1-26 23:19:00,2011-1-26 23:07:00
+186,Create Quotation comparison Map,Karel de Groot,2011-1-28 3:28:00,2011-1-27 22:51:00
+186,Analyze Quotation Comparison Map,Christian Francois,2011-1-28 10:04:00,2011-1-28 9:34:00
+186,Choose best option,Elvira Lores,2011-1-28 10:04:00,2011-1-28 10:04:00
+186,Settle Conditions With Supplier,Karel de Groot,2011-1-28 20:03:00,2011-1-28 15:23:00
+186,Create Purchase Order,Francois de Perrier,2011-1-29 2:37:00,2011-1-29 2:29:00
+186,Confirm Purchase Order,Carmen Finacse,2011-1-29 8:18:00,2011-1-29 7:44:00
+186,Deliver Goods Services,Kiu Kan,2011-1-31 3:13:00,2011-1-29 17:09:00
+186,Release Purchase Order,Esmana Liubiata,2011-1-31 10:53:00,2011-1-31 10:52:00
+186,Approve Purchase Order for payment,Karel de Groot,2011-1-31 19:50:00,2011-1-31 19:49:00
+186,Send Invoice,Sean Manney,2011-2-2 1:56:00,2011-2-2 1:56:00
+186,Release Supplier's Invoice,Karalda Nimwada,2011-2-2 16:13:00,2011-2-2 16:10:00
+186,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-2 16:13:00,2011-2-2 16:13:00
+186,Pay Invoice,Pedro Alvares,2011-2-2 17:02:00,2011-2-2 16:56:00
+186,End,End,2011-2-2 17:02:00,2011-2-2 17:02:00
+1874,Start,Start,2011-10-1 3:03:00,2011-10-1 3:03:00
+1874,Create Purchase Requisition,Christian Francois,2011-10-1 3:11:00,2011-10-1 3:03:00
+1874,Analyze Purchase Requisition,Heinz Gutschmidt,2011-10-2 1:19:00,2011-10-2 1:12:00
+1874,Create Request for Quotation,Francis Odell,2011-10-2 1:24:00,2011-10-2 1:23:00
+1874,Analyze Request for Quotation,Karel de Groot,2011-10-8 2:40:00,2011-10-8 2:10:00
+1874,End,End,2011-10-8 2:40:00,2011-10-8 2:40:00
+19,Start,Start,2011-1-2 20:47:00,2011-1-2 20:47:00
+19,Create Purchase Requisition,Penn Osterwalder,2011-1-2 21:36:00,2011-1-2 20:47:00
+19,Analyze Purchase Requisition,Francis Odell,2011-1-3 21:43:00,2011-1-3 21:35:00
+19,Create Request for Quotation,Maris Freeman,2011-1-3 21:50:00,2011-1-3 21:49:00
+19,Analyze Request for Quotation,Francois de Perrier,2011-1-3 23:30:00,2011-1-3 23:00:00
+19,Send Request for Quotation to Supplier,Karel de Groot,2011-1-4 5:30:00,2011-1-4 5:17:00
+19,Create Quotation comparison Map,Francois de Perrier,2011-1-4 20:45:00,2011-1-4 16:44:00
+19,Analyze Quotation Comparison Map,Anne Olwada,2011-1-5 3:52:00,2011-1-5 3:23:00
+19,Choose best option,Esmana Liubiata,2011-1-5 3:52:00,2011-1-5 3:52:00
+19,Settle Conditions With Supplier,Karel de Groot,2011-1-5 17:09:00,2011-1-5 9:16:00
+19,Create Purchase Order,Magdalena Predutta,2011-1-6 0:29:00,2011-1-6 0:22:00
+19,Confirm Purchase Order,Esmeralda Clay,2011-1-6 4:40:00,2011-1-6 4:24:00
+19,Deliver Goods Services,Esmeralda Clay,2011-1-7 9:08:00,2011-1-6 10:27:00
+19,Release Purchase Order,Immanuel Karagianni,2011-1-7 16:55:00,2011-1-7 16:54:00
+19,Approve Purchase Order for payment,Magdalena Predutta,2011-1-8 3:40:00,2011-1-8 3:39:00
+19,Send Invoice,Sean Manney,2011-1-8 13:28:00,2011-1-8 13:28:00
+19,Release Supplier's Invoice,Karalda Nimwada,2011-1-9 3:52:00,2011-1-9 3:48:00
+19,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-9 3:52:00,2011-1-9 3:52:00
+19,Pay Invoice,Pedro Alvares,2011-1-9 4:13:00,2011-1-9 4:07:00
+19,End,End,2011-1-9 4:13:00,2011-1-9 4:13:00
+195,Start,Start,2011-1-25 14:50:00,2011-1-25 14:50:00
+195,Create Purchase Requisition,Fjodor Kowalski,2011-1-25 14:57:00,2011-1-25 14:50:00
+195,Create Request for Quotation,Fjodor Kowalski,2011-1-25 18:21:00,2011-1-25 18:12:00
+195,Analyze Request for Quotation,Francois de Perrier,2011-1-26 0:47:00,2011-1-26 0:25:00
+195,Amend Request for Quotation,Anna Kaufmann,2011-1-26 1:40:00,2011-1-26 1:28:00
+195,Analyze Request for Quotation,Francois de Perrier,2011-1-31 19:05:00,2011-1-31 18:44:00
+195,Amend Request for Quotation,Anne Olwada,2011-1-31 20:09:00,2011-1-31 20:02:00
+195,Analyze Request for Quotation,Magdalena Predutta,2011-2-2 20:19:00,2011-2-2 20:06:00
+195,Amend Request for Quotation,Christian Francois,2011-2-2 21:13:00,2011-2-2 21:06:00
+195,Analyze Request for Quotation,Magdalena Predutta,2011-2-4 7:30:00,2011-2-4 7:29:00
+195,Amend Request for Quotation,Fjodor Kowalski,2011-2-4 8:28:00,2011-2-4 8:18:00
+195,Analyze Request for Quotation,Francois de Perrier,2011-2-5 11:11:00,2011-2-5 10:39:00
+195,End,End,2011-2-5 11:11:00,2011-2-5 11:11:00
+206,Start,Start,2011-1-27 1:02:00,2011-1-27 1:02:00
+206,Create Purchase Requisition,Penn Osterwalder,2011-1-27 1:12:00,2011-1-27 1:02:00
+206,Analyze Purchase Requisition,Maris Freeman,2011-1-27 13:37:00,2011-1-27 13:30:00
+206,Create Request for Quotation,Francis Odell,2011-1-27 13:43:00,2011-1-27 13:40:00
+206,Analyze Request for Quotation,Francois de Perrier,2011-1-31 10:03:00,2011-1-31 9:43:00
+206,Amend Request for Quotation,Kim Passa,2011-1-31 11:01:00,2011-1-31 10:55:00
+206,Analyze Request for Quotation,Magdalena Predutta,2011-1-31 21:03:00,2011-1-31 20:33:00
+206,Send Request for Quotation to Supplier,Magdalena Predutta,2011-2-1 20:01:00,2011-2-1 19:32:00
+206,Create Quotation comparison Map,Magdalena Predutta,2011-2-2 0:15:00,2011-2-1 20:38:00
+206,Analyze Quotation Comparison Map,Elvira Lores,2011-2-2 6:53:00,2011-2-2 6:44:00
+206,Choose best option,Esmana Liubiata,2011-2-2 6:53:00,2011-2-2 6:53:00
+206,Settle Conditions With Supplier,Magdalena Predutta,2011-2-4 7:29:00,2011-2-3 20:29:00
+206,Create Purchase Order,Magdalena Predutta,2011-2-5 7:45:00,2011-2-5 7:36:00
+206,Confirm Purchase Order,Karen Clarens,2011-2-6 1:23:00,2011-2-6 1:10:00
+206,Deliver Goods Services,Carmen Finacse,2011-2-8 7:01:00,2011-2-6 7:46:00
+206,Release Purchase Order,Fjodor Kowalski,2011-2-8 15:10:00,2011-2-8 15:09:00
+206,Approve Purchase Order for payment,Magdalena Predutta,2011-2-8 21:50:00,2011-2-8 21:49:00
+206,Send Invoice,Kiu Kan,2011-2-9 11:53:00,2011-2-9 11:53:00
+206,Release Supplier's Invoice,Pedro Alvares,2011-2-10 2:18:00,2011-2-10 2:13:00
+206,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-10 2:18:00,2011-2-10 2:18:00
+206,Pay Invoice,Pedro Alvares,2011-2-10 2:30:00,2011-2-10 2:21:00
+206,End,End,2011-2-10 2:30:00,2011-2-10 2:30:00
+207,Start,Start,2011-1-27 2:05:00,2011-1-27 2:05:00
+207,Create Purchase Requisition,Esmana Liubiata,2011-1-27 2:57:00,2011-1-27 2:05:00
+207,Analyze Purchase Requisition,Francis Odell,2011-1-27 19:58:00,2011-1-27 19:53:00
+207,Create Request for Quotation,Maris Freeman,2011-1-27 20:04:00,2011-1-27 20:02:00
+207,Analyze Request for Quotation,Magdalena Predutta,2011-1-31 9:34:00,2011-1-31 9:00:00
+207,Send Request for Quotation to Supplier,Karel de Groot,2011-1-31 23:33:00,2011-1-31 23:17:00
+207,Create Quotation comparison Map,Francois de Perrier,2011-2-1 12:50:00,2011-2-1 7:29:00
+207,Analyze Quotation Comparison Map,Anne Olwada,2011-2-1 19:50:00,2011-2-1 19:17:00
+207,Choose best option,Fjodor Kowalski,2011-2-1 19:50:00,2011-2-1 19:50:00
+207,Settle Conditions With Supplier,Magdalena Predutta,2011-2-2 19:54:00,2011-2-2 12:57:00
+207,Create Purchase Order,Magdalena Predutta,2011-2-2 20:30:00,2011-2-2 20:19:00
+207,Confirm Purchase Order,Kiu Kan,2011-2-3 7:14:00,2011-2-3 6:44:00
+207,Deliver Goods Services,Kiu Kan,2011-2-7 1:29:00,2011-2-5 12:11:00
+207,Release Purchase Order,Miu Hanwan,2011-2-7 9:13:00,2011-2-7 9:12:00
+207,Approve Purchase Order for payment,Magdalena Predutta,2011-2-7 19:53:00,2011-2-7 19:52:00
+207,Send Invoice,Kiu Kan,2011-2-8 20:37:00,2011-2-8 20:37:00
+207,Release Supplier's Invoice,Pedro Alvares,2011-2-9 10:55:00,2011-2-9 10:52:00
+207,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-9 10:55:00,2011-2-9 10:55:00
+207,Pay Invoice,Pedro Alvares,2011-2-9 11:16:00,2011-2-9 11:11:00
+207,End,End,2011-2-9 11:16:00,2011-2-9 11:16:00
+210,Start,Start,2011-1-27 11:34:00,2011-1-27 11:34:00
+210,Create Purchase Requisition,Elvira Lores,2011-1-27 11:57:00,2011-1-27 11:34:00
+210,Analyze Purchase Requisition,Maris Freeman,2011-1-28 12:16:00,2011-1-28 12:12:00
+210,Create Request for Quotation,Heinz Gutschmidt,2011-1-28 12:22:00,2011-1-28 12:21:00
+210,Analyze Request for Quotation,Francois de Perrier,2011-1-31 10:42:00,2011-1-31 10:03:00
+210,Send Request for Quotation to Supplier,Francois de Perrier,2011-2-2 8:08:00,2011-2-2 7:35:00
+210,Create Quotation comparison Map,Magdalena Predutta,2011-2-3 1:05:00,2011-2-2 20:30:00
+210,Analyze Quotation Comparison Map,Fjodor Kowalski,2011-2-3 8:23:00,2011-2-3 7:53:00
+210,Choose best option,Kim Passa,2011-2-3 8:23:00,2011-2-3 8:23:00
+210,Settle Conditions With Supplier,Karel de Groot,2011-2-4 8:46:00,2011-2-3 21:53:00
+210,Create Purchase Order,Karel de Groot,2011-2-5 5:20:00,2011-2-5 5:07:00
+210,Confirm Purchase Order,Karen Clarens,2011-2-6 1:10:00,2011-2-6 1:02:00
+210,Deliver Goods Services,Kiu Kan,2011-2-9 11:53:00,2011-2-8 20:37:00
+210,Release Purchase Order,Elvira Lores,2011-2-9 19:46:00,2011-2-9 19:45:00
+210,Approve Purchase Order for payment,Francois de Perrier,2011-2-9 23:48:00,2011-2-9 23:47:00
+210,Send Invoice,Carmen Finacse,2011-2-10 7:45:00,2011-2-10 7:45:00
+210,Release Supplier's Invoice,Karalda Nimwada,2011-2-10 21:59:00,2011-2-10 21:53:00
+210,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-2-10 21:59:00,2011-2-10 21:59:00
+210,Pay Invoice,Pedro Alvares,2011-2-10 22:27:00,2011-2-10 22:12:00
+210,End,End,2011-2-10 22:27:00,2011-2-10 22:27:00
+217,Start,Start,2011-1-28 6:55:00,2011-1-28 6:55:00
+217,Create Purchase Requisition,Kim Passa,2011-1-28 7:07:00,2011-1-28 6:55:00
+217,Create Request for Quotation,Alberto Duport,2011-1-28 8:12:00,2011-1-28 8:00:00
+217,Analyze Request for Quotation,Magdalena Predutta,2011-1-31 6:09:00,2011-1-31 5:50:00
+217,Amend Request for Quotation,Fjodor Kowalski,2011-1-31 7:13:00,2011-1-31 7:04:00
+217,Analyze Request for Quotation,Magdalena Predutta,2011-1-31 15:36:00,2011-1-31 15:14:00
+217,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-31 19:47:00,2011-1-31 19:27:00
+217,Create Quotation comparison Map,Karel de Groot,2011-2-1 0:19:00,2011-1-31 23:33:00
+217,Analyze Quotation Comparison Map,Anna Kaufmann,2011-2-1 6:54:00,2011-2-1 6:38:00
+217,Choose best option,Anna Kaufmann,2011-2-1 6:54:00,2011-2-1 6:54:00
+217,Settle Conditions With Supplier,Karel de Groot,2011-2-2 4:14:00,2011-2-1 17:14:00
+217,Create Purchase Order,Magdalena Predutta,2011-2-2 20:06:00,2011-2-2 19:54:00
+217,Confirm Purchase Order,Carmen Finacse,2011-2-3 10:55:00,2011-2-3 10:41:00
+217,Deliver Goods Services,Esmeralda Clay,2011-2-5 7:57:00,2011-2-4 7:26:00
+217,Release Purchase Order,Esmana Liubiata,2011-2-5 16:00:00,2011-2-5 15:59:00
+217,Approve Purchase Order for payment,Magdalena Predutta,2011-2-6 0:20:00,2011-2-6 0:19:00
+217,Send Invoice,Karen Clarens,2011-2-6 5:59:00,2011-2-6 5:59:00
+217,Release Supplier's Invoice,Karalda Nimwada,2011-2-6 20:17:00,2011-2-6 20:15:00
+217,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-2-6 20:17:00,2011-2-6 20:17:00
+217,Pay Invoice,Pedro Alvares,2011-2-6 20:38:00,2011-2-6 20:26:00
+217,End,End,2011-2-6 20:38:00,2011-2-6 20:38:00
+221,Start,Start,2011-1-28 17:54:00,2011-1-28 17:54:00
+221,Create Purchase Requisition,Anna Kaufmann,2011-1-28 18:36:00,2011-1-28 17:54:00
+221,Create Request for Quotation,Tesca Lobes,2011-1-28 19:16:00,2011-1-28 19:06:00
+221,Analyze Request for Quotation,Magdalena Predutta,2011-1-31 3:02:00,2011-1-31 2:44:00
+221,Amend Request for Quotation,Penn Osterwalder,2011-1-31 4:06:00,2011-1-31 3:54:00
+221,Analyze Request for Quotation,Magdalena Predutta,2011-1-31 5:50:00,2011-1-31 5:46:00
+221,Amend Request for Quotation,Miu Hanwan,2011-1-31 6:52:00,2011-1-31 6:41:00
+221,Analyze Request for Quotation,Magdalena Predutta,2011-1-31 22:38:00,2011-1-31 22:24:00
+221,Send Request for Quotation to Supplier,Francois de Perrier,2011-2-2 13:09:00,2011-2-2 12:53:00
+221,Create Quotation comparison Map,Francois de Perrier,2011-2-2 18:28:00,2011-2-2 13:33:00
+221,Analyze Quotation Comparison Map,Alberto Duport,2011-2-3 2:03:00,2011-2-3 1:46:00
+221,Choose best option,Esmana Liubiata,2011-2-3 2:03:00,2011-2-3 2:03:00
+221,Settle Conditions With Supplier,Karel de Groot,2011-2-3 10:49:00,2011-2-3 4:08:00
+221,Create Purchase Order,Francois de Perrier,2011-2-3 12:07:00,2011-2-3 11:55:00
+221,Confirm Purchase Order,Kiu Kan,2011-2-3 20:08:00,2011-2-3 20:01:00
+221,Deliver Goods Services,Karen Clarens,2011-2-6 0:24:00,2011-2-4 22:19:00
+221,Release Purchase Order,Elvira Lores,2011-2-6 8:15:00,2011-2-6 8:14:00
+221,Approve Purchase Order for payment,Magdalena Predutta,2011-2-6 17:47:00,2011-2-6 17:46:00
+221,Send Invoice,Karen Clarens,2011-2-7 1:10:00,2011-2-7 1:10:00
+221,Release Supplier's Invoice,Karalda Nimwada,2011-2-7 15:33:00,2011-2-7 15:31:00
+221,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-7 15:33:00,2011-2-7 15:33:00
+221,Pay Invoice,Karalda Nimwada,2011-2-7 15:50:00,2011-2-7 15:40:00
+221,End,End,2011-2-7 15:50:00,2011-2-7 15:50:00
+226,Start,Start,2011-1-30 1:12:00,2011-1-30 1:12:00
+226,Create Purchase Requisition,Kim Passa,2011-1-30 1:44:00,2011-1-30 1:12:00
+226,Analyze Purchase Requisition,Francis Odell,2011-1-30 23:16:00,2011-1-30 23:10:00
+226,Create Request for Quotation,Heinz Gutschmidt,2011-1-30 23:23:00,2011-1-30 23:22:00
+226,Analyze Request for Quotation,Magdalena Predutta,2011-1-31 11:13:00,2011-1-31 11:10:00
+226,Send Request for Quotation to Supplier,Francois de Perrier,2011-2-1 7:29:00,2011-2-1 7:05:00
+226,Create Quotation comparison Map,Magdalena Predutta,2011-2-1 15:06:00,2011-2-1 12:51:00
+226,Analyze Quotation Comparison Map,Elvira Lores,2011-2-1 21:47:00,2011-2-1 21:31:00
+226,Choose best option,Anne Olwada,2011-2-1 21:47:00,2011-2-1 21:47:00
+226,Settle Conditions With Supplier,Magdalena Predutta,2011-2-3 20:15:00,2011-2-3 6:23:00
+226,Create Purchase Order,Karel de Groot,2011-2-4 9:22:00,2011-2-4 9:16:00
+226,Confirm Purchase Order,Karen Clarens,2011-2-4 22:19:00,2011-2-4 22:13:00
+226,Deliver Goods Services,Sean Manney,2011-2-5 21:50:00,2011-2-5 18:11:00
+226,Release Purchase Order,Elvira Lores,2011-2-6 5:40:00,2011-2-6 5:39:00
+226,Approve Purchase Order for payment,Francois de Perrier,2011-2-7 2:19:00,2011-2-7 2:18:00
+226,Send Invoice,Esmeralda Clay,2011-2-8 18:00:00,2011-2-8 18:00:00
+226,Release Supplier's Invoice,Karalda Nimwada,2011-2-9 8:21:00,2011-2-9 8:19:00
+226,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-2-9 8:21:00,2011-2-9 8:21:00
+226,Pay Invoice,Pedro Alvares,2011-2-9 9:09:00,2011-2-9 9:02:00
+226,End,End,2011-2-9 9:09:00,2011-2-9 9:09:00
+250,Start,Start,2011-2-3 5:38:00,2011-2-3 5:38:00
+250,Create Purchase Requisition,Nico Ojenbeer,2011-2-3 5:56:00,2011-2-3 5:38:00
+250,Analyze Purchase Requisition,Heinz Gutschmidt,2011-2-4 5:54:00,2011-2-4 5:50:00
+250,Create Request for Quotation,Francis Odell,2011-2-4 6:03:00,2011-2-4 6:01:00
+250,Analyze Request for Quotation,Magdalena Predutta,2011-2-5 23:55:00,2011-2-5 23:21:00
+250,Send Request for Quotation to Supplier,Karel de Groot,2011-2-7 7:32:00,2011-2-7 7:07:00
+250,Create Quotation comparison Map,Karel de Groot,2011-2-7 9:56:00,2011-2-7 8:40:00
+250,Analyze Quotation Comparison Map,Fjodor Kowalski,2011-2-7 17:06:00,2011-2-7 16:56:00
+250,Choose best option,Esmana Liubiata,2011-2-7 17:06:00,2011-2-7 17:06:00
+250,Settle Conditions With Supplier,Karel de Groot,2011-2-8 3:17:00,2011-2-7 21:27:00
+250,Create Purchase Order,Magdalena Predutta,2011-2-8 5:02:00,2011-2-8 4:51:00
+250,Confirm Purchase Order,Sean Manney,2011-2-8 12:48:00,2011-2-8 12:14:00
+250,Deliver Goods Services,Karen Clarens,2011-2-12 4:20:00,2011-2-11 0:22:00
+250,Release Purchase Order,Anne Olwada,2011-2-12 12:27:00,2011-2-12 12:26:00
+250,Approve Purchase Order for payment,Karel de Groot,2011-2-13 0:11:00,2011-2-13 0:10:00
+250,Send Invoice,Kiu Kan,2011-2-13 17:56:00,2011-2-13 17:56:00
+250,Release Supplier's Invoice,Pedro Alvares,2011-2-14 8:16:00,2011-2-14 8:14:00
+250,Settle Dispute With Supplier,Pedro Alvares,2011-2-14 8:45:00,2011-2-14 8:22:00
+250,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-14 8:45:00,2011-2-14 8:45:00
+250,Pay Invoice,Pedro Alvares,2011-2-14 10:03:00,2011-2-14 9:50:00
+250,End,End,2011-2-14 10:03:00,2011-2-14 10:03:00
+252,Start,Start,2011-2-4 9:39:00,2011-2-4 9:39:00
+252,Create Purchase Requisition,Alberto Duport,2011-2-4 9:47:00,2011-2-4 9:39:00
+252,Analyze Purchase Requisition,Maris Freeman,2011-2-5 0:56:00,2011-2-5 0:51:00
+252,Create Request for Quotation,Francis Odell,2011-2-5 1:05:00,2011-2-5 1:04:00
+252,Analyze Request for Quotation,Magdalena Predutta,2011-2-5 15:05:00,2011-2-5 14:37:00
+252,Amend Request for Quotation,Anna Kaufmann,2011-2-5 16:15:00,2011-2-5 16:02:00
+252,Analyze Request for Quotation,Magdalena Predutta,2011-2-8 2:33:00,2011-2-8 2:08:00
+252,Amend Request for Quotation,Heinz Gutschmidt,2011-2-8 18:58:00,2011-2-8 18:42:00
+252,Analyze Request for Quotation,Magdalena Predutta,2011-2-13 21:26:00,2011-2-13 21:17:00
+252,End,End,2011-2-13 21:26:00,2011-2-13 21:26:00
+278,Start,Start,2011-2-7 14:53:00,2011-2-7 14:53:00
+278,Create Purchase Requisition,Elvira Lores,2011-2-7 15:34:00,2011-2-7 14:53:00
+278,Analyze Purchase Requisition,Maris Freeman,2011-2-8 14:45:00,2011-2-8 14:38:00
+278,Create Request for Quotation,Francis Odell,2011-2-8 14:54:00,2011-2-8 14:51:00
+278,Analyze Request for Quotation,Francois de Perrier,2011-2-9 23:47:00,2011-2-9 23:11:00
+278,Amend Request for Quotation,Fjodor Kowalski,2011-2-10 0:46:00,2011-2-10 0:35:00
+278,Analyze Request for Quotation,Magdalena Predutta,2011-2-10 5:12:00,2011-2-10 4:53:00
+278,Send Request for Quotation to Supplier,Karel de Groot,2011-2-10 10:17:00,2011-2-10 9:48:00
+278,Create Quotation comparison Map,Magdalena Predutta,2011-2-10 17:41:00,2011-2-10 14:22:00
+278,Analyze Quotation Comparison Map,Nico Ojenbeer,2011-2-11 0:52:00,2011-2-11 0:36:00
+278,Choose best option,Penn Osterwalder,2011-2-11 0:52:00,2011-2-11 0:52:00
+278,Settle Conditions With Supplier,Karel de Groot,2011-2-11 16:25:00,2011-2-11 8:51:00
+278,Create Purchase Order,Karel de Groot,2011-2-11 17:16:00,2011-2-11 17:08:00
+278,Confirm Purchase Order,Esmeralda Clay,2011-2-11 22:32:00,2011-2-11 22:04:00
+278,Deliver Goods Services,Kiu Kan,2011-2-12 19:52:00,2011-2-12 9:47:00
+278,Release Purchase Order,Esmana Liubiata,2011-2-13 3:38:00,2011-2-13 3:37:00
+278,Approve Purchase Order for payment,Magdalena Predutta,2011-2-13 18:06:00,2011-2-13 18:05:00
+278,Send Invoice,Karen Clarens,2011-2-14 8:42:00,2011-2-14 8:42:00
+278,Release Supplier's Invoice,Pedro Alvares,2011-2-14 23:06:00,2011-2-14 23:01:00
+278,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-14 23:06:00,2011-2-14 23:06:00
+278,Pay Invoice,Karalda Nimwada,2011-2-14 23:40:00,2011-2-14 23:34:00
+278,End,End,2011-2-14 23:40:00,2011-2-14 23:40:00
+282,Start,Start,2011-2-8 2:28:00,2011-2-8 2:28:00
+282,Create Purchase Requisition,Anna Kaufmann,2011-2-8 3:23:00,2011-2-8 2:28:00
+282,Create Request for Quotation,Miu Hanwan,2011-2-8 8:58:00,2011-2-8 8:49:00
+282,Analyze Request for Quotation,Magdalena Predutta,2011-2-9 8:24:00,2011-2-9 7:50:00
+282,Amend Request for Quotation,Miu Hanwan,2011-2-9 9:26:00,2011-2-9 9:18:00
+282,Analyze Request for Quotation,Karel de Groot,2011-2-12 8:15:00,2011-2-12 7:50:00
+282,Send Request for Quotation to Supplier,Francois de Perrier,2011-2-12 11:20:00,2011-2-12 10:47:00
+282,Create Quotation comparison Map,Magdalena Predutta,2011-2-13 2:28:00,2011-2-13 0:41:00
+282,Analyze Quotation Comparison Map,Elvira Lores,2011-2-13 9:09:00,2011-2-13 8:54:00
+282,Choose best option,Fjodor Kowalski,2011-2-13 9:09:00,2011-2-13 9:09:00
+282,Settle Conditions With Supplier,Francois de Perrier,2011-2-14 4:12:00,2011-2-13 20:48:00
+282,Create Purchase Order,Karel de Groot,2011-2-14 6:37:00,2011-2-14 6:28:00
+282,Confirm Purchase Order,Karen Clarens,2011-2-15 9:36:00,2011-2-15 9:10:00
+282,Deliver Goods Services,Esmeralda Clay,2011-2-20 17:32:00,2011-2-18 17:30:00
+282,Release Purchase Order,Miu Hanwan,2011-2-21 1:31:00,2011-2-21 1:30:00
+282,Approve Purchase Order for payment,Francois de Perrier,2011-2-21 19:15:00,2011-2-21 19:14:00
+282,Send Invoice,Karen Clarens,2011-2-23 2:48:00,2011-2-23 2:48:00
+282,Release Supplier's Invoice,Karalda Nimwada,2011-2-23 17:13:00,2011-2-23 17:07:00
+282,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-2-23 17:13:00,2011-2-23 17:13:00
+282,Pay Invoice,Karalda Nimwada,2011-2-23 18:17:00,2011-2-23 18:04:00
+282,End,End,2011-2-23 18:17:00,2011-2-23 18:17:00
+284,Start,Start,2011-2-8 7:42:00,2011-2-8 7:42:00
+284,Create Purchase Requisition,Immanuel Karagianni,2011-2-8 7:54:00,2011-2-8 7:42:00
+284,Create Request for Quotation,Tesca Lobes,2011-2-8 11:43:00,2011-2-8 11:35:00
+284,Analyze Request for Quotation,Francois de Perrier,2011-2-9 6:51:00,2011-2-9 6:34:00
+284,Amend Request for Quotation,Kim Passa,2011-2-9 7:51:00,2011-2-9 7:42:00
+284,Analyze Request for Quotation,Francois de Perrier,2011-2-14 18:18:00,2011-2-14 18:06:00
+284,Send Request for Quotation to Supplier,Magdalena Predutta,2011-2-14 22:51:00,2011-2-14 22:24:00
+284,Create Quotation comparison Map,Magdalena Predutta,2011-2-15 3:42:00,2011-2-14 23:29:00
+284,Analyze Quotation Comparison Map,Anna Kaufmann,2011-2-15 10:12:00,2011-2-15 9:54:00
+284,Choose best option,Kim Passa,2011-2-15 10:12:00,2011-2-15 10:12:00
+284,Settle Conditions With Supplier,Francois de Perrier,2011-2-17 1:05:00,2011-2-16 15:59:00
+284,Create Purchase Order,Magdalena Predutta,2011-2-18 4:28:00,2011-2-18 4:18:00
+284,Confirm Purchase Order,Esmeralda Clay,2011-2-18 17:21:00,2011-2-18 17:10:00
+284,Deliver Goods Services,Kiu Kan,2011-2-19 20:04:00,2011-2-19 11:08:00
+284,Release Purchase Order,Kim Passa,2011-2-20 4:06:00,2011-2-20 4:05:00
+284,Approve Purchase Order for payment,Francois de Perrier,2011-2-20 8:11:00,2011-2-20 8:10:00
+284,Send Invoice,Sean Manney,2011-2-21 9:33:00,2011-2-21 9:33:00
+284,Release Supplier's Invoice,Karalda Nimwada,2011-2-21 23:58:00,2011-2-21 23:54:00
+284,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-2-21 23:58:00,2011-2-21 23:58:00
+284,Pay Invoice,Pedro Alvares,2011-2-22 1:01:00,2011-2-22 0:55:00
+284,End,End,2011-2-22 1:01:00,2011-2-22 1:01:00
+287,Start,Start,2011-2-8 18:38:00,2011-2-8 18:38:00
+287,Create Purchase Requisition,Esmana Liubiata,2011-2-8 19:13:00,2011-2-8 18:38:00
+287,Analyze Purchase Requisition,Heinz Gutschmidt,2011-2-9 8:48:00,2011-2-9 8:41:00
+287,Amend Purchase Requisition,Miu Hanwan,2011-2-9 20:50:00,2011-2-9 20:27:00
+287,Create Request for Quotation,Anna Kaufmann,2011-2-10 3:06:00,2011-2-10 2:54:00
+287,Analyze Request for Quotation,Francois de Perrier,2011-2-23 6:37:00,2011-2-23 6:14:00
+287,End,End,2011-2-23 6:37:00,2011-2-23 6:37:00
+290,Start,Start,2011-2-9 7:31:00,2011-2-9 7:31:00
+290,Create Purchase Requisition,Clement Duchot,2011-2-9 8:14:00,2011-2-9 7:31:00
+290,Create Request for Quotation,Alberto Duport,2011-2-9 16:08:00,2011-2-9 15:59:00
+290,Analyze Request for Quotation,Francois de Perrier,2011-2-9 19:58:00,2011-2-9 19:17:00
+290,Send Request for Quotation to Supplier,Francois de Perrier,2011-2-11 22:21:00,2011-2-11 21:50:00
+290,Create Quotation comparison Map,Karel de Groot,2011-2-13 4:39:00,2011-2-13 1:16:00
+290,Analyze Quotation Comparison Map,Alberto Duport,2011-2-13 11:23:00,2011-2-13 10:59:00
+290,Choose best option,Nico Ojenbeer,2011-2-13 11:23:00,2011-2-13 11:23:00
+290,Settle Conditions With Supplier,Magdalena Predutta,2011-2-14 20:11:00,2011-2-14 6:25:00
+290,Create Purchase Order,Karel de Groot,2011-2-14 21:18:00,2011-2-14 21:07:00
+290,Confirm Purchase Order,Karen Clarens,2011-2-15 21:46:00,2011-2-15 21:16:00
+290,Deliver Goods Services,Karen Clarens,2011-2-18 17:21:00,2011-2-18 8:21:00
+290,Release Purchase Order,Immanuel Karagianni,2011-2-19 0:34:00,2011-2-19 0:33:00
+290,Approve Purchase Order for payment,Francois de Perrier,2011-2-19 8:47:00,2011-2-19 8:46:00
+290,Send Invoice,Karen Clarens,2011-2-22 9:59:00,2011-2-22 9:59:00
+290,Release Supplier's Invoice,Pedro Alvares,2011-2-23 0:18:00,2011-2-23 0:15:00
+290,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-23 0:18:00,2011-2-23 0:18:00
+290,Pay Invoice,Karalda Nimwada,2011-2-23 0:57:00,2011-2-23 0:51:00
+290,End,End,2011-2-23 0:57:00,2011-2-23 0:57:00
+3,Start,Start,2011-1-1 2:23:00,2011-1-1 2:23:00
+3,Create Purchase Requisition,Kim Passa,2011-1-1 3:03:00,2011-1-1 2:23:00
+3,Analyze Purchase Requisition,Heinz Gutschmidt,2011-1-2 1:58:00,2011-1-2 1:50:00
+3,Create Request for Quotation,Francis Odell,2011-1-2 2:03:00,2011-1-2 2:01:00
+3,Analyze Request for Quotation,Karel de Groot,2011-1-2 3:48:00,2011-1-2 3:27:00
+3,Send Request for Quotation to Supplier,Magdalena Predutta,2011-1-2 15:55:00,2011-1-2 15:29:00
+3,Create Quotation comparison Map,Francois de Perrier,2011-1-2 21:00:00,2011-1-2 16:00:00
+3,Analyze Quotation Comparison Map,Clement Duchot,2011-1-3 3:47:00,2011-1-3 3:18:00
+3,Choose best option,Christian Francois,2011-1-3 3:47:00,2011-1-3 3:47:00
+3,Settle Conditions With Supplier,Francois de Perrier,2011-1-3 22:16:00,2011-1-3 14:14:00
+3,Create Purchase Order,Francois de Perrier,2011-1-3 23:59:00,2011-1-3 23:51:00
+3,Confirm Purchase Order,Karen Clarens,2011-1-4 4:10:00,2011-1-4 3:47:00
+3,Deliver Goods Services,Esmeralda Clay,2011-1-5 14:20:00,2011-1-4 14:53:00
+3,Release Purchase Order,Elvira Lores,2011-1-5 21:55:00,2011-1-5 21:54:00
+3,Approve Purchase Order for payment,Francois de Perrier,2011-1-6 13:47:00,2011-1-6 13:46:00
+3,Send Invoice,Kiu Kan,2011-1-7 1:33:00,2011-1-7 1:33:00
+3,Release Supplier's Invoice,Karalda Nimwada,2011-1-7 15:55:00,2011-1-7 15:51:00
+3,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-7 15:55:00,2011-1-7 15:55:00
+3,Pay Invoice,Karalda Nimwada,2011-1-7 16:31:00,2011-1-7 16:24:00
+3,End,End,2011-1-7 16:31:00,2011-1-7 16:31:00
+30,Start,Start,2011-1-4 12:33:00,2011-1-4 12:33:00
+30,Create Purchase Requisition,Alberto Duport,2011-1-4 13:17:00,2011-1-4 12:33:00
+30,Analyze Purchase Requisition,Francis Odell,2011-1-5 13:09:00,2011-1-5 13:03:00
+30,Create Request for Quotation,Maris Freeman,2011-1-5 13:15:00,2011-1-5 13:14:00
+30,Analyze Request for Quotation,Magdalena Predutta,2011-1-5 18:24:00,2011-1-5 17:54:00
+30,Amend Request for Quotation,Alberto Duport,2011-1-5 19:28:00,2011-1-5 19:14:00
+30,Analyze Request for Quotation,Magdalena Predutta,2011-1-6 21:29:00,2011-1-6 21:11:00
+30,Amend Request for Quotation,Alberto Duport,2011-1-6 22:22:00,2011-1-6 22:11:00
+30,Analyze Request for Quotation,Karel de Groot,2011-1-7 7:53:00,2011-1-7 7:26:00
+30,Amend Request for Quotation,Fjodor Kowalski,2011-1-7 9:02:00,2011-1-7 8:48:00
+30,Analyze Request for Quotation,Magdalena Predutta,2011-1-8 2:36:00,2011-1-8 2:17:00
+30,Send Request for Quotation to Supplier,Karel de Groot,2011-1-8 9:51:00,2011-1-8 9:35:00
+30,Create Quotation comparison Map,Magdalena Predutta,2011-1-9 21:14:00,2011-1-9 17:48:00
+30,Analyze Quotation Comparison Map,Christian Francois,2011-1-10 4:12:00,2011-1-10 4:05:00
+30,Choose best option,Christian Francois,2011-1-10 4:12:00,2011-1-10 4:12:00
+30,Settle Conditions With Supplier,Magdalena Predutta,2011-1-10 19:36:00,2011-1-10 6:14:00
+30,Create Purchase Order,Francois de Perrier,2011-1-11 7:14:00,2011-1-11 7:05:00
+30,Confirm Purchase Order,Carmen Finacse,2011-1-11 12:04:00,2011-1-11 11:44:00
+30,Deliver Goods Services,Kiu Kan,2011-1-14 2:49:00,2011-1-12 12:19:00
+30,Release Purchase Order,Esmana Liubiata,2011-1-14 10:35:00,2011-1-14 10:34:00
+30,Approve Purchase Order for payment,Francois de Perrier,2011-1-15 18:05:00,2011-1-15 18:04:00
+30,Send Invoice,Kiu Kan,2011-1-17 5:35:00,2011-1-17 5:35:00
+30,Release Supplier's Invoice,Pedro Alvares,2011-1-17 19:58:00,2011-1-17 19:54:00
+30,Settle Dispute With Supplier,Karalda Nimwada,2011-1-17 20:41:00,2011-1-17 20:16:00
+30,Authorize Supplier's Invoice payment,Pedro Alvares,2011-1-17 20:41:00,2011-1-17 20:41:00
+30,Pay Invoice,Karalda Nimwada,2011-1-17 21:09:00,2011-1-17 21:04:00
+30,End,End,2011-1-17 21:09:00,2011-1-17 21:09:00
+303,Start,Start,2011-2-11 11:02:00,2011-2-11 11:02:00
+303,Create Purchase Requisition,Penn Osterwalder,2011-2-11 11:56:00,2011-2-11 11:02:00
+303,Create Request for Quotation,Anne Olwada,2011-2-11 14:30:00,2011-2-11 14:20:00
+303,Analyze Request for Quotation,Francois de Perrier,2011-2-14 18:59:00,2011-2-14 18:59:00
+303,Send Request for Quotation to Supplier,Karel de Groot,2011-2-15 14:40:00,2011-2-15 14:20:00
+303,Create Quotation comparison Map,Magdalena Predutta,2011-2-16 5:38:00,2011-2-16 0:36:00
+303,Analyze Quotation Comparison Map,Elvira Lores,2011-2-16 12:24:00,2011-2-16 12:15:00
+303,Choose best option,Miu Hanwan,2011-2-16 12:24:00,2011-2-16 12:24:00
+303,Settle Conditions With Supplier,Francois de Perrier,2011-2-17 13:28:00,2011-2-17 1:37:00
+303,Create Purchase Order,Magdalena Predutta,2011-2-19 2:58:00,2011-2-19 2:51:00
+303,Confirm Purchase Order,Carmen Finacse,2011-2-20 12:18:00,2011-2-20 12:13:00
+303,Deliver Goods Services,Sean Manney,2011-2-21 8:57:00,2011-2-21 1:58:00
+303,Release Purchase Order,Esmana Liubiata,2011-2-21 15:45:00,2011-2-21 15:44:00
+303,Approve Purchase Order for payment,Francois de Perrier,2011-2-22 8:11:00,2011-2-22 8:10:00
+303,Send Invoice,Sean Manney,2011-2-23 3:02:00,2011-2-23 3:02:00
+303,Release Supplier's Invoice,Karalda Nimwada,2011-2-23 17:37:00,2011-2-23 17:34:00
+303,Authorize Supplier's Invoice payment,Pedro Alvares,2011-2-23 17:37:00,2011-2-23 17:37:00
+303,Pay Invoice,Karalda Nimwada,2011-2-23 18:35:00,2011-2-23 18:20:00
+303,End,End,2011-2-23 18:35:00,2011-2-23 18:35:00
+330,Start,Start,2011-2-15 13:26:00,2011-2-15 13:26:00
+330,Create Purchase Requisition,Nico Ojenbeer,2011-2-15 14:06:00,2011-2-15 13:26:00
+330,Analyze Purchase Requisition,Francis Odell,2011-2-16 9:18:00,2011-2-16 9:12:00
+330,Create Request for Quotation,Heinz Gutschmidt,2011-2-16 9:27:00,2011-2-16 9:24:00
+330,Analyze Request for Quotation,Francois de Perrier,2011-2-16 11:21:00,2011-2-16 10:49:00
+330,Amend Request for Quotation,Anne Olwada,2011-2-16 12:33:00,2011-2-16 12:27:00
+330,Analyze Request for Quotation,Francois de Perrier,2011-2-20 11:39:00,2011-2-20 11:11:00
+330,Amend Request for Quotation,Clement Duchot,2011-2-20 12:40:00,2011-2-20 12:26:00
+330,Analyze Request for Quotation,Magdalena Predutta,2011-2-21 7:59:00,2011-2-21 7:26:00
+330,End,End,2011-2-21 7:59:00,2011-2-21 7:59:00
+335,Start,Start,2011-2-16 5:46:00,2011-2-16 5:46:00
+335,Create Purchase Requisition,Kim Passa,2011-2-16 5:53:00,2011-2-16 5:46:00
+335,Analyze Purchase Requisition,Maris Freeman,2011-2-16 17:01:00,2011-2-16 16:55:00
+335,Create Request for Quotation,Francis Odell,2011-2-16 17:06:00,2011-2-16 17:05:00
+335,Analyze Request for Quotation,Karel de Groot,2011-2-20 12:07:00,2011-2-20 11:40:00
+335,Send Request for Quotation to Supplier,Francois de Perrier,2011-2-20 17:59:00,2011-2-20 17:30:00
+335,Create Quotation comparison Map,Francois de Perrier,2011-2-20 23:30:00,2011-2-20 18:24:00
+335,Analyze Quotation Comparison Map,Immanuel Karagianni,2011-2-21 6:35:00,2011-2-21 6:07:00
+335,Choose best option,Alberto Duport,2011-2-21 6:35:00,2011-2-21 6:35:00
+335,Settle Conditions With Supplier,Karel de Groot,2011-2-21 23:14:00,2011-2-21 9:26:00
+335,Create Purchase Order,Magdalena Predutta,2011-2-22 9:34:00,2011-2-22 9:26:00
+335,Confirm Purchase Order,Karen Clarens,2011-2-23 2:53:00,2011-2-23 2:48:00
+335,Deliver Goods Services,Esmeralda Clay,2011-2-25 17:39:00,2011-2-23 21:39:00
+335,Release Purchase Order,Miu Hanwan,2011-2-26 1:44:00,2011-2-26 1:43:00
+335,Approve Purchase Order for payment,Francois de Perrier,2011-2-28 8:35:00,2011-2-28 8:34:00
+335,Send Invoice,Kiu Kan,2011-2-28 20:12:00,2011-2-28 20:12:00
+335,Release Supplier's Invoice,Pedro Alvares,2011-3-1 10:34:00,2011-3-1 10:29:00
+335,Authorize Supplier's Invoice payment,Pedro Alvares,2011-3-1 10:34:00,2011-3-1 10:34:00
+335,Pay Invoice,Karalda Nimwada,2011-3-1 11:09:00,2011-3-1 10:54:00
+335,End,End,2011-3-1 11:09:00,2011-3-1 11:09:00
+339,Start,Start,2011-2-16 14:31:00,2011-2-16 14:31:00
+339,Create Purchase Requisition,Nico Ojenbeer,2011-2-16 15:23:00,2011-2-16 14:31:00
+339,Analyze Purchase Requisition,Maris Freeman,2011-2-17 9:40:00,2011-2-17 9:34:00
+339,Amend Purchase Requisition,Elvira Lores,2011-2-17 21:52:00,2011-2-17 21:29:00
+339,Analyze Purchase Requisition,Heinz Gutschmidt,2011-2-18 17:30:00,2011-2-18 17:24:00
+339,Create Request for Quotation,Francis Odell,2011-2-18 17:38:00,2011-2-18 17:36:00
+339,Analyze Request for Quotation,Magdalena Predutta,2011-2-22 9:58:00,2011-2-22 9:34:00
+339,Amend Request for Quotation,Penn Osterwalder,2011-2-22 11:03:00,2011-2-22 10:50:00
+339,Analyze Request for Quotation,Francois de Perrier,2011-2-28 8:34:00,2011-2-28 8:10:00
+339,End,End,2011-2-28 8:34:00,2011-2-28 8:34:00
+344,Start,Start,2011-2-17 5:43:00,2011-2-17 5:43:00
+344,Create Purchase Requisition,Esmana Liubiata,2011-2-17 6:27:00,2011-2-17 5:43:00
+344,Create Request for Quotation,Tesca Lobes,2011-2-17 12:39:00,2011-2-17 12:29:00
+344,Analyze Request for Quotation,Magdalena Predutta,2011-2-20 13:20:00,2011-2-20 13:03:00
+344,Send Request for Quotation to Supplier,Magdalena Predutta,2011-2-22 9:26:00,2011-2-22 9:04:00
+344,Create Quotation comparison Map,Magdalena Predutta,2011-2-23 5:23:00,2011-2-23 0:58:00
+344,Analyze Quotation Comparison Map,Anne Olwada,2011-2-23 12:44:00,2011-2-23 12:27:00
+344,Choose best option,Fjodor Kowalski,2011-2-23 12:44:00,2011-2-23 12:44:00
+344,Settle Conditions With Supplier,Francois de Perrier,2011-2-24 14:24:00,2011-2-24 5:43:00
+344,Create Purchase Order,Karel de Groot,2011-2-24 19:11:00,2011-2-24 18:58:00
+344,Confirm Purchase Order,Carmen Finacse,2011-2-26 2:30:00,2011-2-26 1:58:00
+344,Deliver Goods Services,Esmeralda Clay,2011-3-1 19:06:00,2011-2-28 2:53:00
+344,Release Purchase Order,Esmana Liubiata,2011-3-2 2:39:00,2011-3-2 2:38:00
+344,Approve Purchase Order for payment,Magdalena Predutta,2011-3-2 16:49:00,2011-3-2 16:48:00
+344,Send Invoice,Carmen Finacse,2011-3-3 12:14:00,2011-3-3 12:14:00
+344,Release Supplier's Invoice,Karalda Nimwada,2011-3-4 2:41:00,2011-3-4 2:35:00
+344,Authorize Supplier's Invoice payment,Pedro Alvares,2011-3-4 2:42:00,2011-3-4 2:42:00
+344,Pay Invoice,Pedro Alvares,2011-3-4 3:48:00,2011-3-4 3:41:00
+344,End,End,2011-3-4 3:48:00,2011-3-4 3:48:00
+349,Start,Start,2011-2-18 0:41:00,2011-2-18 0:41:00
+349,Create Purchase Requisition,Immanuel Karagianni,2011-2-18 1:21:00,2011-2-18 0:41:00
+349,Analyze Purchase Requisition,Maris Freeman,2011-2-18 16:19:00,2011-2-18 16:12:00
+349,Create Request for Quotation,Francis Odell,2011-2-18 16:28:00,2011-2-18 16:25:00
+349,Analyze Request for Quotation,Karel de Groot,2011-2-20 14:03:00,2011-2-20 13:49:00
+349,Send Request for Quotation to Supplier,Magdalena Predutta,2011-2-21 18:36:00,2011-2-21 18:23:00
+349,Create Quotation comparison Map,Karel de Groot,2011-2-22 4:08:00,2011-2-21 23:41:00
+349,Analyze Quotation Comparison Map,Christian Francois,2011-2-22 11:15:00,2011-2-22 10:49:00
+349,Choose best option,Miu Hanwan,2011-2-22 11:15:00,2011-2-22 11:15:00
+349,Settle Conditions With Supplier,Francois de Perrier,2011-2-22 21:49:00,2011-2-22 15:04:00
+349,Create Purchase Order,Magdalena Predutta,2011-2-23 5:48:00,2011-2-23 5:40:00
+349,Confirm Purchase Order,Kiu Kan,2011-2-23 19:33:00,2011-2-23 19:03:00
+349,Deliver Goods Services,Sean Manney,2011-2-26 18:46:00,2011-2-24 18:06:00
+349,Release Purchase Order,Anna Kaufmann,2011-2-27 2:42:00,2011-2-27 2:41:00
+349,Approve Purchase Order for payment,Francois de Perrier,2011-2-28 8:10:00,2011-2-28 8:09:00
+349,Send Invoice,Carmen Finacse,2011-3-3 12:14:00,2011-3-3 12:14:00
+349,Release Supplier's Invoice,Pedro Alvares,2011-3-4 2:42:00,2011-3-4 2:35:00
+349,Authorize Supplier's Invoice payment,Pedro Alvares,2011-3-4 2:42:00,2011-3-4 2:42:00
+349,Pay Invoice,Karalda Nimwada,2011-3-4 3:11:00,2011-3-4 3:04:00
+349,End,End,2011-3-4 3:11:00,2011-3-4 3:11:00
+35,Start,Start,2011-1-4 17:08:00,2011-1-4 17:08:00
+35,Create Purchase Requisition,Kim Passa,2011-1-4 17:47:00,2011-1-4 17:08:00
+35,Analyze Purchase Requisition,Maris Freeman,2011-1-5 10:15:00,2011-1-5 10:09:00
+35,Create Request for Quotation,Heinz Gutschmidt,2011-1-5 10:25:00,2011-1-5 10:22:00
+35,Analyze Request for Quotation,Karel de Groot,2011-1-5 17:36:00,2011-1-5 17:10:00
+35,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-6 15:44:00,2011-1-6 15:13:00
+35,Create Quotation comparison Map,Magdalena Predutta,2011-1-6 20:59:00,2011-1-6 16:11:00
+35,Analyze Quotation Comparison Map,Tesca Lobes,2011-1-7 3:47:00,2011-1-7 3:37:00
+35,Choose best option,Anna Kaufmann,2011-1-7 3:47:00,2011-1-7 3:47:00
+35,Settle Conditions With Supplier,Francois de Perrier,2011-1-7 20:17:00,2011-1-7 8:23:00
+35,Create Purchase Order,Francois de Perrier,2011-1-7 21:01:00,2011-1-7 20:53:00
+35,Confirm Purchase Order,Sean Manney,2011-1-8 14:35:00,2011-1-8 14:14:00
+35,Deliver Goods Services,Sean Manney,2011-1-10 20:27:00,2011-1-9 15:46:00
+35,Release Purchase Order,Elvira Lores,2011-1-11 4:26:00,2011-1-11 4:25:00
+35,Approve Purchase Order for payment,Karel de Groot,2011-1-12 2:02:00,2011-1-12 2:01:00
+35,Send Invoice,Esmeralda Clay,2011-1-12 14:42:00,2011-1-12 14:42:00
+35,Release Supplier's Invoice,Karalda Nimwada,2011-1-13 5:01:00,2011-1-13 4:57:00
+35,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-13 5:01:00,2011-1-13 5:01:00
+35,Pay Invoice,Pedro Alvares,2011-1-13 5:24:00,2011-1-13 5:13:00
+35,End,End,2011-1-13 5:24:00,2011-1-13 5:24:00
+363,Start,Start,2011-2-21 0:56:00,2011-2-21 0:56:00
+363,Create Purchase Requisition,Miu Hanwan,2011-2-21 1:16:00,2011-2-21 0:56:00
+363,Create Request for Quotation,Elvira Lores,2011-2-21 6:01:00,2011-2-21 5:48:00
+363,Analyze Request for Quotation,Magdalena Predutta,2011-2-24 12:47:00,2011-2-24 12:16:00
+363,Send Request for Quotation to Supplier,Karel de Groot,2011-2-24 21:47:00,2011-2-24 21:22:00
+363,Create Quotation comparison Map,Francois de Perrier,2011-2-25 2:52:00,2011-2-24 22:21:00
+363,Analyze Quotation Comparison Map,Kim Passa,2011-2-25 9:50:00,2011-2-25 9:17:00
+363,Choose best option,Nico Ojenbeer,2011-2-25 9:50:00,2011-2-25 9:50:00
+363,Settle Conditions With Supplier,Francois de Perrier,2011-2-26 1:56:00,2011-2-25 13:30:00
+363,Create Purchase Order,Karel de Groot,2011-2-26 9:30:00,2011-2-26 9:21:00
+363,Confirm Purchase Order,Karen Clarens,2011-2-27 23:16:00,2011-2-27 22:58:00
+363,Deliver Goods Services,Karen Clarens,2011-3-2 15:20:00,2011-3-1 0:32:00
+363,Release Purchase Order,Anne Olwada,2011-3-2 23:04:00,2011-3-2 23:03:00
+363,Approve Purchase Order for payment,Karel de Groot,2011-3-3 19:08:00,2011-3-3 19:07:00
+363,Send Invoice,Sean Manney,2011-3-4 11:52:00,2011-3-4 11:52:00
+363,Release Supplier's Invoice,Pedro Alvares,2011-3-5 2:26:00,2011-3-5 2:19:00
+363,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-3-5 2:26:00,2011-3-5 2:26:00
+363,Pay Invoice,Karalda Nimwada,2011-3-5 3:21:00,2011-3-5 3:13:00
+363,End,End,2011-3-5 3:21:00,2011-3-5 3:21:00
+37,Start,Start,2011-1-4 20:48:00,2011-1-4 20:48:00
+37,Create Purchase Requisition,Christian Francois,2011-1-4 21:20:00,2011-1-4 20:48:00
+37,Analyze Purchase Requisition,Francis Odell,2011-1-5 18:38:00,2011-1-5 18:32:00
+37,Create Request for Quotation,Francis Odell,2011-1-5 18:47:00,2011-1-5 18:44:00
+37,Analyze Request for Quotation,Karel de Groot,2011-1-6 14:53:00,2011-1-6 14:34:00
+37,Amend Request for Quotation,Esmana Liubiata,2011-1-6 15:47:00,2011-1-6 15:39:00
+37,Analyze Request for Quotation,Karel de Groot,2011-1-6 18:46:00,2011-1-6 18:04:00
+37,Amend Request for Quotation,Nico Ojenbeer,2011-1-6 19:48:00,2011-1-6 19:41:00
+37,Analyze Request for Quotation,Magdalena Predutta,2011-1-7 12:33:00,2011-1-7 11:54:00
+37,Send Request for Quotation to Supplier,Magdalena Predutta,2011-1-8 4:06:00,2011-1-8 3:40:00
+37,Create Quotation comparison Map,Magdalena Predutta,2011-1-8 19:03:00,2011-1-8 15:16:00
+37,Analyze Quotation Comparison Map,Christian Francois,2011-1-9 2:16:00,2011-1-9 2:02:00
+37,Choose best option,Alberto Duport,2011-1-9 2:16:00,2011-1-9 2:16:00
+37,Settle Conditions With Supplier,Francois de Perrier,2011-1-9 14:39:00,2011-1-9 7:44:00
+37,Create Purchase Order,Magdalena Predutta,2011-1-10 4:01:00,2011-1-10 3:53:00
+37,Confirm Purchase Order,Carmen Finacse,2011-1-11 1:52:00,2011-1-11 1:37:00
+37,Deliver Goods Services,Esmeralda Clay,2011-1-14 5:19:00,2011-1-12 14:42:00
+37,Release Purchase Order,Tesca Lobes,2011-1-14 13:13:00,2011-1-14 13:12:00
+37,Approve Purchase Order for payment,Francois de Perrier,2011-1-15 18:04:00,2011-1-15 18:03:00
+37,Send Invoice,Sean Manney,2011-1-16 20:52:00,2011-1-16 20:52:00
+37,Release Supplier's Invoice,Pedro Alvares,2011-1-17 11:27:00,2011-1-17 11:22:00
+37,Authorize Supplier's Invoice payment,Pedro Alvares,2011-1-17 11:27:00,2011-1-17 11:27:00
+37,Pay Invoice,Karalda Nimwada,2011-1-17 11:55:00,2011-1-17 11:50:00
+37,End,End,2011-1-17 11:55:00,2011-1-17 11:55:00
+371,Start,Start,2011-2-22 18:59:00,2011-2-22 18:59:00
+371,Create Purchase Requisition,Esmana Liubiata,2011-2-22 19:05:00,2011-2-22 18:59:00
+371,Create Request for Quotation,Nico Ojenbeer,2011-2-22 22:23:00,2011-2-22 22:13:00
+371,Analyze Request for Quotation,Francois de Perrier,2011-2-26 2:51:00,2011-2-26 2:30:00
+371,Send Request for Quotation to Supplier,Francois de Perrier,2011-2-27 5:06:00,2011-2-27 4:44:00
+371,Create Quotation comparison Map,Francois de Perrier,2011-2-28 7:34:00,2011-2-28 5:28:00
+371,Analyze Quotation Comparison Map,Nico Ojenbeer,2011-2-28 14:10:00,2011-2-28 13:56:00
+371,Choose best option,Clement Duchot,2011-2-28 14:10:00,2011-2-28 14:10:00
+371,Settle Conditions With Supplier,Francois de Perrier,2011-3-1 9:55:00,2011-2-28 23:55:00
+371,Create Purchase Order,Francois de Perrier,2011-3-2 5:03:00,2011-3-2 4:52:00
+371,Confirm Purchase Order,Carmen Finacse,2011-3-3 11:59:00,2011-3-3 11:40:00
+371,Deliver Goods Services,Sean Manney,2011-3-6 10:12:00,2011-3-4 16:25:00
+371,Release Purchase Order,Anna Kaufmann,2011-3-6 17:53:00,2011-3-6 17:52:00
+371,Approve Purchase Order for payment,Karel de Groot,2011-3-7 5:30:00,2011-3-7 5:29:00
+371,Send Invoice,Kiu Kan,2011-3-7 23:30:00,2011-3-7 23:30:00
+371,Release Supplier's Invoice,Pedro Alvares,2011-3-8 13:48:00,2011-3-8 13:43:00
+371,Settle Dispute With Supplier,Pedro Alvares,2011-3-8 15:04:00,2011-3-8 14:32:00
+371,Authorize Supplier's Invoice payment,Pedro Alvares,2011-3-8 15:04:00,2011-3-8 15:04:00
+371,Pay Invoice,Karalda Nimwada,2011-3-8 16:07:00,2011-3-8 15:53:00
+371,End,End,2011-3-8 16:07:00,2011-3-8 16:07:00
+398,Start,Start,2011-2-26 13:48:00,2011-2-26 13:48:00
+398,Create Purchase Requisition,Penn Osterwalder,2011-2-26 14:00:00,2011-2-26 13:48:00
+398,Analyze Purchase Requisition,Francis Odell,2011-2-27 4:36:00,2011-2-27 4:31:00
+398,Create Request for Quotation,Maris Freeman,2011-2-27 4:43:00,2011-2-27 4:40:00
+398,Analyze Request for Quotation,Francois de Perrier,2011-3-5 1:43:00,2011-3-5 1:25:00
+398,Send Request for Quotation to Supplier,Karel de Groot,2011-3-5 9:55:00,2011-3-5 9:28:00
+398,Create Quotation comparison Map,Francois de Perrier,2011-3-5 16:05:00,2011-3-5 10:28:00
+398,Analyze Quotation Comparison Map,Alberto Duport,2011-3-5 22:56:00,2011-3-5 22:30:00
+398,Choose best option,Elvira Lores,2011-3-5 22:56:00,2011-3-5 22:56:00
+398,Settle Conditions With Supplier,Karel de Groot,2011-3-6 13:20:00,2011-3-6 4:27:00
+398,Create Purchase Order,Magdalena Predutta,2011-3-6 17:30:00,2011-3-6 17:22:00
+398,Confirm Purchase Order,Sean Manney,2011-3-7 14:02:00,2011-3-7 13:42:00
+398,Deliver Goods Services,Carmen Finacse,2011-3-9 14:45:00,2011-3-8 12:19:00
+398,Release Purchase Order,Fjodor Kowalski,2011-3-9 22:24:00,2011-3-9 22:23:00
+398,Approve Purchase Order for payment,Magdalena Predutta,2011-3-10 21:08:00,2011-3-10 21:07:00
+398,Send Invoice,Kiu Kan,2011-3-14 1:19:00,2011-3-14 1:19:00
+398,Release Supplier's Invoice,Karalda Nimwada,2011-3-14 15:44:00,2011-3-14 15:38:00
+398,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-3-14 15:44:00,2011-3-14 15:44:00
+398,Pay Invoice,Pedro Alvares,2011-3-14 16:06:00,2011-3-14 16:01:00
+398,End,End,2011-3-14 16:06:00,2011-3-14 16:06:00
+4,Start,Start,2011-1-1 8:39:00,2011-1-1 8:39:00
+4,Create Purchase Requisition,Fjodor Kowalski,2011-1-1 9:00:00,2011-1-1 8:39:00
+4,Analyze Purchase Requisition,Maris Freeman,2011-1-1 18:51:00,2011-1-1 18:45:00
+4,Create Request for Quotation,Heinz Gutschmidt,2011-1-1 18:58:00,2011-1-1 18:56:00
+4,Analyze Request for Quotation,Francois de Perrier,2011-1-1 20:19:00,2011-1-1 19:58:00
+4,Amend Request for Quotation,Nico Ojenbeer,2011-1-1 21:14:00,2011-1-1 21:06:00
+4,Analyze Request for Quotation,Francois de Perrier,2011-1-1 22:24:00,2011-1-1 22:01:00
+4,Send Request for Quotation to Supplier,Karel de Groot,2011-1-2 3:01:00,2011-1-2 2:42:00
+4,Create Quotation comparison Map,Karel de Groot,2011-1-2 9:08:00,2011-1-2 3:48:00
+4,Analyze Quotation Comparison Map,Elvira Lores,2011-1-2 16:13:00,2011-1-2 15:59:00
+4,Choose best option,Kim Passa,2011-1-2 16:13:00,2011-1-2 16:13:00
+4,Settle Conditions With Supplier,Magdalena Predutta,2011-1-3 7:45:00,2011-1-2 19:13:00
+4,Create Purchase Order,Magdalena Predutta,2011-1-3 12:17:00,2011-1-3 12:08:00
+4,Confirm Purchase Order,Carmen Finacse,2011-1-3 16:38:00,2011-1-3 16:13:00
+4,Deliver Goods Services,Carmen Finacse,2011-1-5 2:30:00,2011-1-3 23:05:00
+4,Release Purchase Order,Miu Hanwan,2011-1-5 9:58:00,2011-1-5 9:57:00
+4,Approve Purchase Order for payment,Magdalena Predutta,2011-1-6 0:30:00,2011-1-6 0:29:00
+4,Send Invoice,Esmeralda Clay,2011-1-6 6:13:00,2011-1-6 6:13:00
+4,Authorize Supplier's Invoice payment,Pedro Alvares,2011-1-6 20:39:00,2011-1-6 20:39:00
+4,Pay Invoice,Karalda Nimwada,2011-1-6 21:32:00,2011-1-6 21:25:00
+4,End,End,2011-1-6 21:32:00,2011-1-6 21:32:00
+41,Start,Start,2011-1-5 10:01:00,2011-1-5 10:01:00
+41,Create Purchase Requisition,Alberto Duport,2011-1-5 10:33:00,2011-1-5 10:01:00
+41,Analyze Purchase Requisition,Heinz Gutschmidt,2011-1-6 3:15:00,2011-1-6 3:07:00
+41,Create Request for Quotation,Francis Odell,2011-1-6 3:20:00,2011-1-6 3:19:00
+41,Analyze Request for Quotation,Karel de Groot,2011-1-6 16:15:00,2011-1-6 15:49:00
+41,Send Request for Quotation to Supplier,Karel de Groot,2011-1-6 21:23:00,2011-1-6 20:59:00
+41,Create Quotation comparison Map,Karel de Groot,2011-1-7 3:15:00,2011-1-6 23:27:00
+41,Analyze Quotation Comparison Map,Christian Francois,2011-1-7 10:11:00,2011-1-7 9:46:00
+41,Choose best option,Elvira Lores,2011-1-7 10:11:00,2011-1-7 10:11:00
+41,Settle Conditions With Supplier,Karel de Groot,2011-1-8 1:07:00,2011-1-7 14:23:00
+41,Create Purchase Order,Francois de Perrier,2011-1-8 6:49:00,2011-1-8 6:37:00
+41,Confirm Purchase Order,Sean Manney,2011-1-8 14:41:00,2011-1-8 14:35:00
+41,Deliver Goods Services,Kiu Kan,2011-1-10 20:42:00,2011-1-9 11:38:00
+41,Release Purchase Order,Miu Hanwan,2011-1-11 4:37:00,2011-1-11 4:36:00
+41,Approve Purchase Order for payment,Francois de Perrier,2011-1-11 21:36:00,2011-1-11 21:35:00
+41,Send Invoice,Karen Clarens,2011-1-13 8:03:00,2011-1-13 8:03:00
+41,Release Supplier's Invoice,Pedro Alvares,2011-1-13 22:21:00,2011-1-13 22:17:00
+41,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-13 22:21:00,2011-1-13 22:21:00
+41,Pay Invoice,Pedro Alvares,2011-1-13 22:58:00,2011-1-13 22:45:00
+41,End,End,2011-1-13 22:58:00,2011-1-13 22:58:00
+418,Start,Start,2011-3-1 6:31:00,2011-3-1 6:31:00
+418,Create Purchase Requisition,Tesca Lobes,2011-3-1 7:02:00,2011-3-1 6:31:00
+418,Analyze Purchase Requisition,Maris Freeman,2011-3-2 6:06:00,2011-3-2 5:58:00
+418,End,End,2011-3-2 6:06:00,2011-3-2 6:06:00
+42,Start,Start,2011-1-5 15:15:00,2011-1-5 15:15:00
+42,Create Purchase Requisition,Christian Francois,2011-1-5 15:21:00,2011-1-5 15:15:00
+42,Create Request for Quotation,Anna Kaufmann,2011-1-5 20:56:00,2011-1-5 20:42:00
+42,Analyze Request for Quotation,Karel de Groot,2011-1-6 16:33:00,2011-1-6 16:15:00
+42,Send Request for Quotation to Supplier,Karel de Groot,2011-1-6 18:04:00,2011-1-6 17:46:00
+42,Create Quotation comparison Map,Karel de Groot,2011-1-6 19:46:00,2011-1-6 18:46:00
+42,Analyze Quotation Comparison Map,Anna Kaufmann,2011-1-7 3:17:00,2011-1-7 2:50:00
+42,Choose best option,Clement Duchot,2011-1-7 3:17:00,2011-1-7 3:17:00
+42,Settle Conditions With Supplier,Magdalena Predutta,2011-1-7 11:17:00,2011-1-7 5:26:00
+42,Create Purchase Order,Francois de Perrier,2011-1-7 20:35:00,2011-1-7 20:26:00
+42,Confirm Purchase Order,Sean Manney,2011-1-8 13:28:00,2011-1-8 13:08:00
+42,Deliver Goods Services,Sean Manney,2011-1-9 15:46:00,2011-1-8 22:22:00
+42,Release Purchase Order,Fjodor Kowalski,2011-1-9 23:19:00,2011-1-9 23:18:00
+42,Approve Purchase Order for payment,Karel de Groot,2011-1-10 17:49:00,2011-1-10 17:48:00
+42,Send Invoice,Carmen Finacse,2011-1-11 1:04:00,2011-1-11 1:04:00
+42,Release Supplier's Invoice,Pedro Alvares,2011-1-11 15:38:00,2011-1-11 15:32:00
+42,Authorize Supplier's Invoice payment,Pedro Alvares,2011-1-11 15:38:00,2011-1-11 15:38:00
+42,Pay Invoice,Karalda Nimwada,2011-1-11 16:41:00,2011-1-11 16:32:00
+42,End,End,2011-1-11 16:41:00,2011-1-11 16:41:00
+43,Start,Start,2011-1-5 20:18:00,2011-1-5 20:18:00
+43,Create Purchase Requisition,Anne Olwada,2011-1-5 21:04:00,2011-1-5 20:18:00
+43,Analyze Purchase Requisition,Heinz Gutschmidt,2011-1-6 15:27:00,2011-1-6 15:18:00
+43,Create Request for Quotation,Heinz Gutschmidt,2011-1-6 15:37:00,2011-1-6 15:35:00
+43,Analyze Request for Quotation,Karel de Groot,2011-1-6 21:50:00,2011-1-6 21:23:00
+43,Send Request for Quotation to Supplier,Karel de Groot,2011-1-8 9:35:00,2011-1-8 9:18:00
+43,Create Quotation comparison Map,Magdalena Predutta,2011-1-9 3:11:00,2011-1-9 2:17:00
+43,Analyze Quotation Comparison Map,Tesca Lobes,2011-1-9 10:06:00,2011-1-9 9:43:00
+43,Choose best option,Immanuel Karagianni,2011-1-9 10:06:00,2011-1-9 10:06:00
+43,Settle Conditions With Supplier,Francois de Perrier,2011-1-10 17:44:00,2011-1-10 5:23:00
+43,Create Purchase Order,Francois de Perrier,2011-1-10 18:25:00,2011-1-10 18:14:00
+43,Confirm Purchase Order,Carmen Finacse,2011-1-11 1:37:00,2011-1-11 1:04:00
+43,Deliver Goods Services,Esmeralda Clay,2011-1-12 13:42:00,2011-1-12 0:55:00
+43,Release Purchase Order,Immanuel Karagianni,2011-1-12 21:24:00,2011-1-12 21:23:00
+43,Approve Purchase Order for payment,Karel de Groot,2011-1-13 7:31:00,2011-1-13 7:30:00
+43,Send Invoice,Carmen Finacse,2011-1-18 17:31:00,2011-1-18 17:31:00
+43,Release Supplier's Invoice,Karalda Nimwada,2011-1-19 7:59:00,2011-1-19 7:53:00
+43,Authorize Supplier's Invoice payment,Pedro Alvares,2011-1-19 7:59:00,2011-1-19 7:59:00
+43,Pay Invoice,Karalda Nimwada,2011-1-19 8:58:00,2011-1-19 8:50:00
+43,End,End,2011-1-19 8:58:00,2011-1-19 8:58:00
+434,Start,Start,2011-3-4 4:42:00,2011-3-4 4:42:00
+434,Create Purchase Requisition,Elvira Lores,2011-3-4 5:32:00,2011-3-4 4:42:00
+434,Create Request for Quotation,Nico Ojenbeer,2011-3-4 8:46:00,2011-3-4 8:38:00
+434,Analyze Request for Quotation,Magdalena Predutta,2011-3-4 19:06:00,2011-3-4 18:53:00
+434,Send Request for Quotation to Supplier,Karel de Groot,2011-3-5 9:27:00,2011-3-5 9:01:00
+434,Create Quotation comparison Map,Francois de Perrier,2011-3-5 21:26:00,2011-3-5 16:05:00
+434,Analyze Quotation Comparison Map,Tesca Lobes,2011-3-6 4:35:00,2011-3-6 4:04:00
+434,Choose best option,Kim Passa,2011-3-6 4:35:00,2011-3-6 4:35:00
+434,Settle Conditions With Supplier,Francois de Perrier,2011-3-7 7:29:00,2011-3-6 17:20:00
+434,Create Purchase Order,Karel de Groot,2011-3-7 23:32:00,2011-3-7 23:20:00
+434,Confirm Purchase Order,Carmen Finacse,2011-3-9 15:14:00,2011-3-9 14:45:00
+434,Deliver Goods Services,Carmen Finacse,2011-3-11 23:03:00,2011-3-10 8:45:00
+434,Release Purchase Order,Elvira Lores,2011-3-12 6:24:00,2011-3-12 6:23:00
+434,Settle Dispute With Supplier,Magdalena Predutta,2011-3-13 7:19:00,2011-3-12 21:54:00
+434,Release Purchase Order,Tesca Lobes,2011-3-13 14:49:00,2011-3-13 14:48:00
+434,Approve Purchase Order for payment,Karel de Groot,2011-3-13 23:14:00,2011-3-13 23:13:00
+434,Send Invoice,Sean Manney,2011-3-15 1:48:00,2011-3-15 1:48:00
+434,Release Supplier's Invoice,Karalda Nimwada,2011-3-15 16:12:00,2011-3-15 16:07:00
+434,Authorize Supplier's Invoice payment,Pedro Alvares,2011-3-15 16:12:00,2011-3-15 16:12:00
+434,Pay Invoice,Pedro Alvares,2011-3-15 17:19:00,2011-3-15 17:12:00
+434,End,End,2011-3-15 17:19:00,2011-3-15 17:19:00
+437,Start,Start,2011-3-4 21:28:00,2011-3-4 21:28:00
+437,Create Purchase Requisition,Anna Kaufmann,2011-3-4 22:15:00,2011-3-4 21:28:00
+437,Create Request for Quotation,Miu Hanwan,2011-3-5 2:58:00,2011-3-5 2:47:00
+437,Analyze Request for Quotation,Karel de Groot,2011-3-8 23:05:00,2011-3-8 22:48:00
+437,Amend Request for Quotation,Anne Olwada,2011-3-8 23:58:00,2011-3-8 23:53:00
+437,Analyze Request for Quotation,Francois de Perrier,2011-3-9 2:37:00,2011-3-9 1:51:00
+437,Send Request for Quotation to Supplier,Karel de Groot,2011-3-9 18:02:00,2011-3-9 17:42:00
+437,Create Quotation comparison Map,Magdalena Predutta,2011-3-11 3:16:00,2011-3-10 21:20:00
+437,Analyze Quotation Comparison Map,Tesca Lobes,2011-3-11 10:46:00,2011-3-11 10:14:00
+437,Choose best option,Christian Francois,2011-3-11 10:46:00,2011-3-11 10:46:00
+437,Settle Conditions With Supplier,Francois de Perrier,2011-3-12 2:44:00,2011-3-11 17:23:00
+437,Create Purchase Order,Francois de Perrier,2011-3-12 4:06:00,2011-3-12 4:00:00
+437,Confirm Purchase Order,Sean Manney,2011-3-12 11:30:00,2011-3-12 11:16:00
+437,Deliver Goods Services,Kiu Kan,2011-3-15 19:28:00,2011-3-14 10:15:00
+437,Release Purchase Order,Anne Olwada,2011-3-16 3:08:00,2011-3-16 3:07:00
+437,Approve Purchase Order for payment,Francois de Perrier,2011-3-17 2:11:00,2011-3-17 2:10:00
+437,Send Invoice,Carmen Finacse,2011-3-20 11:20:00,2011-3-20 11:20:00
+437,Release Supplier's Invoice,Pedro Alvares,2011-3-21 1:33:00,2011-3-21 1:29:00
+437,Settle Dispute With Supplier,Pedro Alvares,2011-3-21 2:27:00,2011-3-21 2:00:00
+437,Authorize Supplier's Invoice payment,Pedro Alvares,2011-3-21 2:27:00,2011-3-21 2:27:00
+437,Pay Invoice,Pedro Alvares,2011-3-21 3:00:00,2011-3-21 2:48:00
+437,End,End,2011-3-21 3:00:00,2011-3-21 3:00:00
+44,Start,Start,2011-1-5 22:04:00,2011-1-5 22:04:00
+44,Create Purchase Requisition,Elvira Lores,2011-1-5 22:28:00,2011-1-5 22:04:00
+44,Analyze Purchase Requisition,Maris Freeman,2011-1-6 18:49:00,2011-1-6 18:44:00
+44,Create Request for Quotation,Francis Odell,2011-1-6 18:54:00,2011-1-6 18:52:00
+44,Analyze Request for Quotation,Francois de Perrier,2011-1-6 20:57:00,2011-1-6 20:33:00
+44,Send Request for Quotation to Supplier,Magdalena Predutta,2011-1-7 13:24:00,2011-1-7 12:55:00
+44,Create Quotation comparison Map,Francois de Perrier,2011-1-8 12:06:00,2011-1-8 6:49:00
+44,Analyze Quotation Comparison Map,Christian Francois,2011-1-8 19:15:00,2011-1-8 18:42:00
+44,Choose best option,Immanuel Karagianni,2011-1-8 19:15:00,2011-1-8 19:15:00
+44,Settle Conditions With Supplier,Karel de Groot,2011-1-9 8:06:00,2011-1-9 4:05:00
+44,Create Purchase Order,Karel de Groot,2011-1-9 9:49:00,2011-1-9 9:41:00
+44,Confirm Purchase Order,Karen Clarens,2011-1-10 0:23:00,2011-1-10 0:11:00
+44,Deliver Goods Services,Kiu Kan,2011-1-12 11:21:00,2011-1-10 20:42:00
+44,Release Purchase Order,Alberto Duport,2011-1-12 18:45:00,2011-1-12 18:44:00
+44,Approve Purchase Order for payment,Karel de Groot,2011-1-13 4:09:00,2011-1-13 4:08:00
+44,Send Invoice,Karen Clarens,2011-1-18 15:57:00,2011-1-18 15:57:00
+44,Release Supplier's Invoice,Pedro Alvares,2011-1-19 6:27:00,2011-1-19 6:21:00
+44,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-19 6:27:00,2011-1-19 6:27:00
+44,Pay Invoice,Pedro Alvares,2011-1-19 7:19:00,2011-1-19 7:11:00
+44,End,End,2011-1-19 7:19:00,2011-1-19 7:19:00
+449,Start,Start,2011-3-7 0:45:00,2011-3-7 0:45:00
+449,Create Purchase Requisition,Anne Olwada,2011-3-7 1:10:00,2011-3-7 0:45:00
+449,Analyze Purchase Requisition,Heinz Gutschmidt,2011-3-7 14:50:00,2011-3-7 14:41:00
+449,Create Request for Quotation,Francis Odell,2011-3-7 14:56:00,2011-3-7 14:54:00
+449,Analyze Request for Quotation,Magdalena Predutta,2011-3-8 23:45:00,2011-3-8 23:28:00
+449,End,End,2011-3-8 23:45:00,2011-3-8 23:45:00
+459,Start,Start,2011-3-7 22:12:00,2011-3-7 22:12:00
+459,Create Purchase Requisition,Christian Francois,2011-3-7 22:28:00,2011-3-7 22:12:00
+459,Create Request for Quotation,Esmana Liubiata,2011-3-7 23:18:00,2011-3-7 23:12:00
+459,Analyze Request for Quotation,Karel de Groot,2011-3-11 15:43:00,2011-3-11 15:10:00
+459,Amend Request for Quotation,Immanuel Karagianni,2011-3-11 16:56:00,2011-3-11 16:42:00
+459,Analyze Request for Quotation,Francois de Perrier,2011-3-17 12:09:00,2011-3-17 11:50:00
+459,Amend Request for Quotation,Anne Olwada,2011-3-17 13:03:00,2011-3-17 12:53:00
+459,Analyze Request for Quotation,Karel de Groot,2011-3-18 14:26:00,2011-3-18 13:38:00
+459,Amend Request for Quotation,Anna Kaufmann,2011-3-18 15:37:00,2011-3-18 15:22:00
+459,Analyze Request for Quotation,Magdalena Predutta,2011-3-29 15:58:00,2011-3-29 15:46:00
+459,Amend Request for Quotation,Kim Passa,2011-3-29 17:06:00,2011-3-29 17:01:00
+459,Analyze Request for Quotation,Karel de Groot,2011-3-29 20:30:00,2011-3-29 20:22:00
+459,Amend Request for Quotation,Maris Freeman,2011-3-30 13:05:00,2011-3-30 12:45:00
+459,Analyze Request for Quotation,Karel de Groot,2011-4-28 20:12:00,2011-4-28 19:44:00
+459,Amend Request for Quotation,Esmana Liubiata,2011-4-28 21:08:00,2011-4-28 20:59:00
+459,Analyze Request for Quotation,Francois de Perrier,2011-5-15 11:05:00,2011-5-15 10:37:00
+459,Send Request for Quotation to Supplier,Magdalena Predutta,2011-5-16 3:29:00,2011-5-16 2:58:00
+459,Create Quotation comparison Map,Magdalena Predutta,2011-5-16 5:13:00,2011-5-16 4:06:00
+459,Analyze Quotation Comparison Map,Alberto Duport,2011-5-16 12:19:00,2011-5-16 11:47:00
+459,Choose best option,Clement Duchot,2011-5-16 12:19:00,2011-5-16 12:19:00
+459,Settle Conditions With Supplier,Karel de Groot,2011-5-17 0:41:00,2011-5-16 15:37:00
+459,Create Purchase Order,Karel de Groot,2011-5-17 7:33:00,2011-5-17 7:27:00
+459,Confirm Purchase Order,Sean Manney,2011-5-20 0:59:00,2011-5-20 0:33:00
+459,Deliver Goods Services,Karen Clarens,2011-5-25 9:31:00,2011-5-25 4:08:00
+459,Release Purchase Order,Nico Ojenbeer,2011-5-25 16:41:00,2011-5-25 16:40:00
+459,Approve Purchase Order for payment,Karel de Groot,2011-5-26 14:42:00,2011-5-26 14:41:00
+459,Send Invoice,Kiu Kan,2011-5-28 1:40:00,2011-5-28 1:40:00
+459,Release Supplier's Invoice,Pedro Alvares,2011-5-28 16:02:00,2011-5-28 15:57:00
+459,Authorize Supplier's Invoice payment,Pedro Alvares,2011-5-28 16:02:00,2011-5-28 16:02:00
+459,Pay Invoice,Karalda Nimwada,2011-5-28 16:36:00,2011-5-28 16:24:00
+459,End,End,2011-5-28 16:36:00,2011-5-28 16:36:00
+470,Start,Start,2011-3-8 22:20:00,2011-3-8 22:20:00
+470,Create Purchase Requisition,Esmana Liubiata,2011-3-8 23:11:00,2011-3-8 22:20:00
+470,Analyze Purchase Requisition,Maris Freeman,2011-3-9 16:38:00,2011-3-9 16:31:00
+470,Create Request for Quotation,Francis Odell,2011-3-9 16:44:00,2011-3-9 16:42:00
+470,Analyze Request for Quotation,Magdalena Predutta,2011-3-13 12:59:00,2011-3-13 12:30:00
+470,Amend Request for Quotation,Heinz Gutschmidt,2011-3-14 5:14:00,2011-3-14 4:58:00
+470,Analyze Request for Quotation,Magdalena Predutta,2011-3-14 8:49:00,2011-3-14 8:04:00
+470,End,End,2011-3-14 8:49:00,2011-3-14 8:49:00
+486,Start,Start,2011-3-11 3:14:00,2011-3-11 3:14:00
+486,Create Purchase Requisition,Tesca Lobes,2011-3-11 3:50:00,2011-3-11 3:14:00
+486,Create Request for Quotation,Penn Osterwalder,2011-3-11 5:57:00,2011-3-11 5:47:00
+486,Analyze Request for Quotation,Francois de Perrier,2011-3-13 3:47:00,2011-3-13 3:17:00
+486,End,End,2011-3-13 3:47:00,2011-3-13 3:47:00
+5,Start,Start,2011-1-1 9:49:00,2011-1-1 9:49:00
+5,Create Purchase Requisition,Esmana Liubiata,2011-1-1 10:35:00,2011-1-1 9:49:00
+5,Analyze Purchase Requisition,Maris Freeman,2011-1-2 1:57:00,2011-1-2 1:50:00
+5,Create Request for Quotation,Maris Freeman,2011-1-2 2:06:00,2011-1-2 2:05:00
+5,Analyze Request for Quotation,Karel de Groot,2011-1-2 3:27:00,2011-1-2 3:02:00
+5,Amend Request for Quotation,Anne Olwada,2011-1-2 4:33:00,2011-1-2 4:21:00
+5,Analyze Request for Quotation,Karel de Groot,2011-1-2 9:42:00,2011-1-2 9:08:00
+5,Send Request for Quotation to Supplier,Karel de Groot,2011-1-2 19:21:00,2011-1-2 18:49:00
+5,Create Quotation comparison Map,Karel de Groot,2011-1-2 20:14:00,2011-1-2 19:36:00
+5,Analyze Quotation Comparison Map,Anne Olwada,2011-1-3 3:30:00,2011-1-3 3:18:00
+5,Choose best option,Nico Ojenbeer,2011-1-3 3:30:00,2011-1-3 3:30:00
+5,Settle Conditions With Supplier,Magdalena Predutta,2011-1-3 19:12:00,2011-1-3 13:18:00
+5,Create Purchase Order,Karel de Groot,2011-1-3 21:09:00,2011-1-3 21:01:00
+5,Confirm Purchase Order,Karen Clarens,2011-1-4 1:24:00,2011-1-4 1:02:00
+5,Deliver Goods Services,Kiu Kan,2011-1-5 4:37:00,2011-1-4 9:08:00
+5,Release Purchase Order,Anna Kaufmann,2011-1-5 12:14:00,2011-1-5 12:13:00
+5,Approve Purchase Order for payment,Francois de Perrier,2011-1-6 2:42:00,2011-1-6 2:41:00
+5,Send Invoice,Esmeralda Clay,2011-1-6 8:23:00,2011-1-6 8:23:00
+5,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-6 22:47:00,2011-1-6 22:47:00
+5,Pay Invoice,Karalda Nimwada,2011-1-6 23:04:00,2011-1-6 22:55:00
+5,End,End,2011-1-6 23:04:00,2011-1-6 23:04:00
+505,Start,Start,2011-3-13 9:57:00,2011-3-13 9:57:00
+505,Create Purchase Requisition,Penn Osterwalder,2011-3-13 10:32:00,2011-3-13 9:57:00
+505,Analyze Purchase Requisition,Heinz Gutschmidt,2011-3-14 7:18:00,2011-3-14 7:12:00
+505,Create Request for Quotation,Heinz Gutschmidt,2011-3-14 7:25:00,2011-3-14 7:23:00
+505,Analyze Request for Quotation,Magdalena Predutta,2011-4-29 14:57:00,2011-4-29 14:18:00
+505,Amend Request for Quotation,Miu Hanwan,2011-4-29 15:49:00,2011-4-29 15:43:00
+505,Analyze Request for Quotation,Francois de Perrier,2011-5-22 0:49:00,2011-5-22 0:25:00
+505,Send Request for Quotation to Supplier,Francois de Perrier,2011-5-22 4:04:00,2011-5-22 3:32:00
+505,Create Quotation comparison Map,Karel de Groot,2011-5-22 22:28:00,2011-5-22 17:47:00
+505,Analyze Quotation Comparison Map,Miu Hanwan,2011-5-23 5:19:00,2011-5-23 5:11:00
+505,Choose best option,Penn Osterwalder,2011-5-23 5:19:00,2011-5-23 5:19:00
+505,Settle Conditions With Supplier,Magdalena Predutta,2011-5-24 12:06:00,2011-5-24 3:06:00
+505,Create Purchase Order,Magdalena Predutta,2011-5-24 21:13:00,2011-5-24 21:01:00
+505,Confirm Purchase Order,Kiu Kan,2011-5-26 3:33:00,2011-5-26 3:09:00
+505,Deliver Goods Services,Kiu Kan,2011-5-29 13:25:00,2011-5-28 1:40:00
+505,Release Purchase Order,Penn Osterwalder,2011-5-29 21:01:00,2011-5-29 21:00:00
+505,Approve Purchase Order for payment,Francois de Perrier,2011-6-1 9:35:00,2011-6-1 9:34:00
+505,Send Invoice,Sean Manney,2011-6-1 15:28:00,2011-6-1 15:28:00
+505,Release Supplier's Invoice,Karalda Nimwada,2011-6-2 5:50:00,2011-6-2 5:48:00
+505,Authorize Supplier's Invoice payment,Pedro Alvares,2011-6-2 5:50:00,2011-6-2 5:50:00
+505,Pay Invoice,Karalda Nimwada,2011-6-2 6:50:00,2011-6-2 6:41:00
+505,End,End,2011-6-2 6:50:00,2011-6-2 6:50:00
+522,Start,Start,2011-3-14 21:21:00,2011-3-14 21:21:00
+522,Create Purchase Requisition,Miu Hanwan,2011-3-14 21:46:00,2011-3-14 21:21:00
+522,Analyze Purchase Requisition,Francis Odell,2011-3-15 17:12:00,2011-3-15 17:04:00
+522,End,End,2011-3-15 17:12:00,2011-3-15 17:12:00
+556,Start,Start,2011-3-21 1:25:00,2011-3-21 1:25:00
+556,Create Purchase Requisition,Alberto Duport,2011-3-21 1:36:00,2011-3-21 1:25:00
+556,Analyze Purchase Requisition,Maris Freeman,2011-3-22 2:22:00,2011-3-22 2:13:00
+556,Create Request for Quotation,Francis Odell,2011-3-22 2:32:00,2011-3-22 2:29:00
+556,Analyze Request for Quotation,Francois de Perrier,2011-3-30 10:40:00,2011-3-30 10:06:00
+556,Send Request for Quotation to Supplier,Magdalena Predutta,2011-3-31 11:24:00,2011-3-31 11:02:00
+556,Create Quotation comparison Map,Magdalena Predutta,2011-3-31 15:39:00,2011-3-31 14:48:00
+556,Analyze Quotation Comparison Map,Penn Osterwalder,2011-3-31 22:35:00,2011-3-31 22:13:00
+556,Choose best option,Kim Passa,2011-3-31 22:35:00,2011-3-31 22:35:00
+556,Settle Conditions With Supplier,Karel de Groot,2011-4-1 15:28:00,2011-4-1 1:40:00
+556,Create Purchase Order,Francois de Perrier,2011-4-1 19:23:00,2011-4-1 19:11:00
+556,Confirm Purchase Order,Sean Manney,2011-4-2 13:07:00,2011-4-2 12:44:00
+556,Deliver Goods Services,Karen Clarens,2011-4-3 11:50:00,2011-4-3 1:58:00
+556,Release Purchase Order,Penn Osterwalder,2011-4-3 19:27:00,2011-4-3 19:26:00
+556,Approve Purchase Order for payment,Francois de Perrier,2011-4-4 10:12:00,2011-4-4 10:11:00
+556,Send Invoice,Carmen Finacse,2011-4-4 21:45:00,2011-4-4 21:45:00
+556,Release Supplier's Invoice,Pedro Alvares,2011-4-5 12:17:00,2011-4-5 12:13:00
+556,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-4-5 12:17:00,2011-4-5 12:17:00
+556,Pay Invoice,Pedro Alvares,2011-4-5 13:07:00,2011-4-5 13:03:00
+556,End,End,2011-4-5 13:07:00,2011-4-5 13:07:00
+563,Start,Start,2011-3-21 18:41:00,2011-3-21 18:41:00
+563,Create Purchase Requisition,Kim Passa,2011-3-21 19:30:00,2011-3-21 18:41:00
+563,Analyze Purchase Requisition,Heinz Gutschmidt,2011-3-22 12:50:00,2011-3-22 12:46:00
+563,Create Request for Quotation,Francis Odell,2011-3-22 12:58:00,2011-3-22 12:57:00
+563,Analyze Request for Quotation,Karel de Groot,2011-3-26 15:18:00,2011-3-26 14:46:00
+563,Send Request for Quotation to Supplier,Karel de Groot,2011-3-27 9:41:00,2011-3-27 9:09:00
+563,Create Quotation comparison Map,Karel de Groot,2011-3-27 12:25:00,2011-3-27 10:24:00
+563,Analyze Quotation Comparison Map,Immanuel Karagianni,2011-3-27 19:50:00,2011-3-27 19:31:00
+563,Choose best option,Immanuel Karagianni,2011-3-27 19:50:00,2011-3-27 19:50:00
+563,Settle Conditions With Supplier,Magdalena Predutta,2011-3-28 5:39:00,2011-3-27 22:36:00
+563,Create Purchase Order,Magdalena Predutta,2011-3-28 8:06:00,2011-3-28 7:57:00
+563,Confirm Purchase Order,Carmen Finacse,2011-3-31 14:10:00,2011-3-31 13:47:00
+563,Deliver Goods Services,Sean Manney,2011-4-4 18:12:00,2011-4-2 19:59:00
+563,Release Purchase Order,Kim Passa,2011-4-5 1:38:00,2011-4-5 1:37:00
+563,Approve Purchase Order for payment,Francois de Perrier,2011-4-5 4:49:00,2011-4-5 4:48:00
+563,Send Invoice,Karen Clarens,2011-4-5 11:40:00,2011-4-5 11:40:00
+563,Release Supplier's Invoice,Karalda Nimwada,2011-4-6 2:04:00,2011-4-6 2:00:00
+563,Settle Dispute With Supplier,Pedro Alvares,2011-4-6 2:57:00,2011-4-6 2:25:00
+563,Authorize Supplier's Invoice payment,Pedro Alvares,2011-4-6 2:57:00,2011-4-6 2:57:00
+563,Pay Invoice,Pedro Alvares,2011-4-6 3:45:00,2011-4-6 3:38:00
+563,End,End,2011-4-6 3:45:00,2011-4-6 3:45:00
+565,Start,Start,2011-3-21 20:21:00,2011-3-21 20:21:00
+565,Create Purchase Requisition,Miu Hanwan,2011-3-21 20:27:00,2011-3-21 20:21:00
+565,Create Request for Quotation,Fjodor Kowalski,2011-3-22 1:57:00,2011-3-22 1:51:00
+565,Analyze Request for Quotation,Magdalena Predutta,2011-3-23 2:48:00,2011-3-23 2:24:00
+565,Send Request for Quotation to Supplier,Magdalena Predutta,2011-3-23 19:55:00,2011-3-23 19:38:00
+565,Create Quotation comparison Map,Francois de Perrier,2011-3-24 23:29:00,2011-3-24 20:55:00
+565,Analyze Quotation Comparison Map,Clement Duchot,2011-3-25 6:26:00,2011-3-25 6:08:00
+565,Choose best option,Miu Hanwan,2011-3-25 6:26:00,2011-3-25 6:26:00
+565,Settle Conditions With Supplier,Karel de Groot,2011-3-25 19:38:00,2011-3-25 9:05:00
+565,Create Purchase Order,Magdalena Predutta,2011-3-26 8:31:00,2011-3-26 8:25:00
+565,Confirm Purchase Order,Karen Clarens,2011-3-27 3:29:00,2011-3-27 0:55:00
+565,Deliver Goods Services,Esmeralda Clay,2011-3-31 10:20:00,2011-3-31 4:06:00
+565,Release Purchase Order,Kim Passa,2011-3-31 17:33:00,2011-3-31 17:32:00
+565,Approve Purchase Order for payment,Karel de Groot,2011-3-31 23:31:00,2011-3-31 23:30:00
+565,Send Invoice,Carmen Finacse,2011-4-4 23:09:00,2011-4-4 23:09:00
+565,Release Supplier's Invoice,Karalda Nimwada,2011-4-5 13:40:00,2011-4-5 13:34:00
+565,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-4-5 13:45:00,2011-4-5 13:45:00
+565,Pay Invoice,Karalda Nimwada,2011-4-5 14:10:00,2011-4-5 13:56:00
+565,End,End,2011-4-5 14:10:00,2011-4-5 14:10:00
+57,Start,Start,2011-1-8 2:37:00,2011-1-8 2:37:00
+57,Create Purchase Requisition,Anne Olwada,2011-1-8 3:23:00,2011-1-8 2:37:00
+57,Analyze Purchase Requisition,Maris Freeman,2011-1-8 17:46:00,2011-1-8 17:41:00
+57,Create Request for Quotation,Maris Freeman,2011-1-8 17:55:00,2011-1-8 17:53:00
+57,Analyze Request for Quotation,Francois de Perrier,2011-1-9 6:39:00,2011-1-9 6:38:00
+57,End,End,2011-1-9 6:39:00,2011-1-9 6:39:00
+596,Start,Start,2011-3-25 19:01:00,2011-3-25 19:01:00
+596,Create Purchase Requisition,Elvira Lores,2011-3-25 19:46:00,2011-3-25 19:01:00
+596,Analyze Purchase Requisition,Francis Odell,2011-3-26 5:24:00,2011-3-26 5:20:00
+596,Create Request for Quotation,Heinz Gutschmidt,2011-3-26 5:31:00,2011-3-26 5:29:00
+596,Analyze Request for Quotation,Karel de Groot,2011-3-26 15:49:00,2011-3-26 15:18:00
+596,Send Request for Quotation to Supplier,Francois de Perrier,2011-3-26 19:53:00,2011-3-26 19:39:00
+596,Create Quotation comparison Map,Francois de Perrier,2011-3-27 0:14:00,2011-3-26 20:12:00
+596,Analyze Quotation Comparison Map,Nico Ojenbeer,2011-3-27 8:15:00,2011-3-27 7:49:00
+596,Choose best option,Anna Kaufmann,2011-3-27 8:15:00,2011-3-27 8:15:00
+596,Settle Conditions With Supplier,Francois de Perrier,2011-3-27 18:51:00,2011-3-27 12:22:00
+596,Create Purchase Order,Francois de Perrier,2011-3-27 20:39:00,2011-3-27 20:27:00
+596,Confirm Purchase Order,Sean Manney,2011-3-29 11:09:00,2011-3-29 10:43:00
+596,Deliver Goods Services,Kiu Kan,2011-3-30 19:14:00,2011-3-30 6:03:00
+596,Release Purchase Order,Penn Osterwalder,2011-3-31 2:54:00,2011-3-31 2:53:00
+596,Approve Purchase Order for payment,Magdalena Predutta,2011-3-31 12:07:00,2011-3-31 12:06:00
+596,Send Invoice,Kiu Kan,2011-4-3 16:22:00,2011-4-3 16:22:00
+596,Release Supplier's Invoice,Karalda Nimwada,2011-4-4 6:45:00,2011-4-4 6:40:00
+596,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-4-4 6:45:00,2011-4-4 6:45:00
+596,Pay Invoice,Pedro Alvares,2011-4-4 7:12:00,2011-4-4 7:05:00
+596,End,End,2011-4-4 7:12:00,2011-4-4 7:12:00
+598,Start,Start,2011-3-25 23:04:00,2011-3-25 23:04:00
+598,Create Purchase Requisition,Nico Ojenbeer,2011-3-25 23:32:00,2011-3-25 23:04:00
+598,Analyze Purchase Requisition,Heinz Gutschmidt,2011-3-26 15:29:00,2011-3-26 15:24:00
+598,Create Request for Quotation,Francis Odell,2011-3-26 15:36:00,2011-3-26 15:35:00
+598,Analyze Request for Quotation,Francois de Perrier,2011-3-30 5:24:00,2011-3-30 4:53:00
+598,End,End,2011-3-30 5:24:00,2011-3-30 5:24:00
+618,Start,Start,2011-3-29 16:16:00,2011-3-29 16:16:00
+618,Create Purchase Requisition,Christian Francois,2011-3-29 17:01:00,2011-3-29 16:16:00
+618,Create Request for Quotation,Anne Olwada,2011-3-30 1:24:00,2011-3-30 1:15:00
+618,Analyze Request for Quotation,Magdalena Predutta,2011-4-1 2:48:00,2011-4-1 2:20:00
+618,Send Request for Quotation to Supplier,Karel de Groot,2011-4-1 20:00:00,2011-4-1 19:23:00
+618,Create Quotation comparison Map,Magdalena Predutta,2011-4-2 22:42:00,2011-4-2 18:42:00
+618,Analyze Quotation Comparison Map,Esmana Liubiata,2011-4-3 5:42:00,2011-4-3 5:13:00
+618,Choose best option,Tesca Lobes,2011-4-3 5:42:00,2011-4-3 5:42:00
+618,Settle Conditions With Supplier,Karel de Groot,2011-4-3 13:22:00,2011-4-3 8:04:00
+618,Create Purchase Order,Francois de Perrier,2011-4-3 22:31:00,2011-4-3 22:23:00
+618,Confirm Purchase Order,Carmen Finacse,2011-4-4 22:18:00,2011-4-4 21:45:00
+618,Deliver Goods Services,Esmeralda Clay,2011-4-5 13:14:00,2011-4-5 7:02:00
+618,Release Purchase Order,Christian Francois,2011-4-5 20:41:00,2011-4-5 20:40:00
+618,Approve Purchase Order for payment,Karel de Groot,2011-4-9 12:46:00,2011-4-9 12:45:00
+618,Send Invoice,Carmen Finacse,2011-4-10 10:32:00,2011-4-10 10:32:00
+618,Release Supplier's Invoice,Karalda Nimwada,2011-4-11 1:05:00,2011-4-11 1:01:00
+618,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-4-11 1:05:00,2011-4-11 1:05:00
+618,Pay Invoice,Pedro Alvares,2011-4-11 1:46:00,2011-4-11 1:35:00
+618,End,End,2011-4-11 1:46:00,2011-4-11 1:46:00
+649,Start,Start,2011-4-4 9:59:00,2011-4-4 9:59:00
+649,Create Purchase Requisition,Elvira Lores,2011-4-4 10:17:00,2011-4-4 9:59:00
+649,Analyze Purchase Requisition,Heinz Gutschmidt,2011-4-4 21:40:00,2011-4-4 21:33:00
+649,Create Request for Quotation,Francis Odell,2011-4-4 21:48:00,2011-4-4 21:47:00
+649,Analyze Request for Quotation,Magdalena Predutta,2011-4-8 22:55:00,2011-4-8 22:42:00
+649,Send Request for Quotation to Supplier,Magdalena Predutta,2011-4-9 9:55:00,2011-4-9 9:30:00
+649,Create Quotation comparison Map,Magdalena Predutta,2011-4-9 16:31:00,2011-4-9 12:56:00
+649,Analyze Quotation Comparison Map,Alberto Duport,2011-4-9 23:42:00,2011-4-9 23:22:00
+649,Choose best option,Christian Francois,2011-4-9 23:42:00,2011-4-9 23:42:00
+649,Settle Conditions With Supplier,Francois de Perrier,2011-4-11 0:06:00,2011-4-10 15:39:00
+649,Create Purchase Order,Francois de Perrier,2011-4-11 5:45:00,2011-4-11 5:37:00
+649,Confirm Purchase Order,Kiu Kan,2011-4-12 17:04:00,2011-4-12 16:37:00
+649,Deliver Goods Services,Carmen Finacse,2011-4-14 17:51:00,2011-4-13 22:55:00
+649,Release Purchase Order,Penn Osterwalder,2011-4-15 1:24:00,2011-4-15 1:23:00
+649,Approve Purchase Order for payment,Magdalena Predutta,2011-4-15 16:36:00,2011-4-15 16:35:00
+649,Send Invoice,Sean Manney,2011-4-16 7:29:00,2011-4-16 7:29:00
+649,Release Supplier's Invoice,Pedro Alvares,2011-4-16 21:59:00,2011-4-16 21:56:00
+649,Authorize Supplier's Invoice payment,Pedro Alvares,2011-4-16 21:59:00,2011-4-16 21:59:00
+649,Pay Invoice,Pedro Alvares,2011-4-16 22:36:00,2011-4-16 22:26:00
+649,End,End,2011-4-16 22:36:00,2011-4-16 22:36:00
+651,Start,Start,2011-4-4 12:26:00,2011-4-4 12:26:00
+651,Create Purchase Requisition,Clement Duchot,2011-4-4 12:39:00,2011-4-4 12:26:00
+651,Analyze Purchase Requisition,Francis Odell,2011-4-4 22:38:00,2011-4-4 22:32:00
+651,Create Request for Quotation,Heinz Gutschmidt,2011-4-4 22:47:00,2011-4-4 22:45:00
+651,Analyze Request for Quotation,Francois de Perrier,2011-4-5 1:51:00,2011-4-5 1:40:00
+651,Amend Request for Quotation,Fjodor Kowalski,2011-4-5 2:52:00,2011-4-5 2:43:00
+651,Analyze Request for Quotation,Karel de Groot,2011-4-15 18:18:00,2011-4-15 18:04:00
+651,Amend Request for Quotation,Kim Passa,2011-4-15 19:31:00,2011-4-15 19:17:00
+651,Analyze Request for Quotation,Francois de Perrier,2011-5-13 5:55:00,2011-5-13 5:17:00
+651,Amend Request for Quotation,Miu Hanwan,2011-5-13 6:59:00,2011-5-13 6:44:00
+651,Analyze Request for Quotation,Magdalena Predutta,2011-5-16 0:23:00,2011-5-15 23:53:00
+651,Amend Request for Quotation,Alberto Duport,2011-5-16 1:20:00,2011-5-16 1:13:00
+651,Analyze Request for Quotation,Francois de Perrier,2011-6-9 19:50:00,2011-6-9 19:30:00
+651,Amend Request for Quotation,Anne Olwada,2011-6-9 20:54:00,2011-6-9 20:40:00
+651,Analyze Request for Quotation,Magdalena Predutta,2011-6-17 13:10:00,2011-6-17 12:30:00
+651,End,End,2011-6-17 13:10:00,2011-6-17 13:10:00
+665,Start,Start,2011-4-6 2:28:00,2011-4-6 2:28:00
+665,Create Purchase Requisition,Clement Duchot,2011-4-6 3:01:00,2011-4-6 2:28:00
+665,Analyze Purchase Requisition,Heinz Gutschmidt,2011-4-6 14:19:00,2011-4-6 14:15:00
+665,Create Request for Quotation,Heinz Gutschmidt,2011-4-6 14:30:00,2011-4-6 14:27:00
+665,Analyze Request for Quotation,Magdalena Predutta,2011-4-14 1:48:00,2011-4-14 1:12:00
+665,Send Request for Quotation to Supplier,Magdalena Predutta,2011-4-15 5:19:00,2011-4-15 5:02:00
+665,Create Quotation comparison Map,Magdalena Predutta,2011-4-15 15:50:00,2011-4-15 10:07:00
+665,Analyze Quotation Comparison Map,Alberto Duport,2011-4-15 23:31:00,2011-4-15 23:10:00
+665,Choose best option,Clement Duchot,2011-4-15 23:31:00,2011-4-15 23:31:00
+665,Settle Conditions With Supplier,Francois de Perrier,2011-4-16 17:30:00,2011-4-16 4:28:00
+665,Create Purchase Order,Magdalena Predutta,2011-4-17 1:42:00,2011-4-17 1:36:00
+665,Confirm Purchase Order,Sean Manney,2011-4-18 7:24:00,2011-4-18 7:02:00
+665,Deliver Goods Services,Kiu Kan,2011-4-19 7:52:00,2011-4-19 3:51:00
+665,Release Purchase Order,Tesca Lobes,2011-4-19 15:25:00,2011-4-19 15:24:00
+665,Approve Purchase Order for payment,Karel de Groot,2011-4-21 1:59:00,2011-4-21 1:58:00
+665,Send Invoice,Esmeralda Clay,2011-4-21 13:40:00,2011-4-21 13:40:00
+665,Release Supplier's Invoice,Karalda Nimwada,2011-4-22 4:10:00,2011-4-22 4:06:00
+665,Authorize Supplier's Invoice payment,Pedro Alvares,2011-4-22 4:10:00,2011-4-22 4:10:00
+665,Pay Invoice,Karalda Nimwada,2011-4-22 5:12:00,2011-4-22 5:01:00
+665,End,End,2011-4-22 5:12:00,2011-4-22 5:12:00
+68,Start,Start,2011-1-9 8:15:00,2011-1-9 8:15:00
+68,Create Purchase Requisition,Nico Ojenbeer,2011-1-9 9:10:00,2011-1-9 8:15:00
+68,Analyze Purchase Requisition,Maris Freeman,2011-1-10 4:34:00,2011-1-10 4:30:00
+68,Create Request for Quotation,Francis Odell,2011-1-10 4:38:00,2011-1-10 4:37:00
+68,Analyze Request for Quotation,Magdalena Predutta,2011-1-12 4:53:00,2011-1-12 4:33:00
+68,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-12 15:27:00,2011-1-12 14:57:00
+68,Create Quotation comparison Map,Karel de Groot,2011-1-12 21:37:00,2011-1-12 16:52:00
+68,Analyze Quotation Comparison Map,Penn Osterwalder,2011-1-13 4:42:00,2011-1-13 4:09:00
+68,Choose best option,Alberto Duport,2011-1-13 4:42:00,2011-1-13 4:42:00
+68,Settle Conditions With Supplier,Karel de Groot,2011-1-13 23:17:00,2011-1-13 8:53:00
+68,Create Purchase Order,Magdalena Predutta,2011-1-14 9:41:00,2011-1-14 9:33:00
+68,Confirm Purchase Order,Karen Clarens,2011-1-16 6:43:00,2011-1-16 6:33:00
+68,Deliver Goods Services,Karen Clarens,2011-1-18 15:57:00,2011-1-16 20:31:00
+68,Release Purchase Order,Clement Duchot,2011-1-18 23:37:00,2011-1-18 23:36:00
+68,Approve Purchase Order for payment,Magdalena Predutta,2011-1-19 19:32:00,2011-1-19 19:31:00
+68,Send Invoice,Esmeralda Clay,2011-1-20 8:17:00,2011-1-20 8:17:00
+68,Release Supplier's Invoice,Pedro Alvares,2011-1-20 22:44:00,2011-1-20 22:38:00
+68,Authorize Supplier's Invoice payment,Pedro Alvares,2011-1-20 22:44:00,2011-1-20 22:44:00
+68,Pay Invoice,Pedro Alvares,2011-1-20 23:27:00,2011-1-20 23:14:00
+68,End,End,2011-1-20 23:27:00,2011-1-20 23:27:00
+680,Start,Start,2011-4-8 20:59:00,2011-4-8 20:59:00
+680,Create Purchase Requisition,Christian Francois,2011-4-8 21:09:00,2011-4-8 20:59:00
+680,Analyze Purchase Requisition,Francis Odell,2011-4-9 17:35:00,2011-4-9 17:28:00
+680,Create Request for Quotation,Francis Odell,2011-4-9 17:41:00,2011-4-9 17:39:00
+680,Analyze Request for Quotation,Magdalena Predutta,2011-4-11 11:38:00,2011-4-11 11:18:00
+680,Send Request for Quotation to Supplier,Karel de Groot,2011-4-11 13:46:00,2011-4-11 13:35:00
+680,Create Quotation comparison Map,Francois de Perrier,2011-4-11 15:47:00,2011-4-11 14:09:00
+680,Analyze Quotation Comparison Map,Christian Francois,2011-4-11 23:05:00,2011-4-11 22:34:00
+680,Choose best option,Anna Kaufmann,2011-4-11 23:05:00,2011-4-11 23:05:00
+680,Settle Conditions With Supplier,Francois de Perrier,2011-4-12 13:41:00,2011-4-12 1:14:00
+680,Create Purchase Order,Karel de Groot,2011-4-13 18:09:00,2011-4-13 17:57:00
+680,Confirm Purchase Order,Kiu Kan,2011-4-15 0:40:00,2011-4-15 0:31:00
+680,Deliver Goods Services,Sean Manney,2011-4-16 1:33:00,2011-4-15 19:21:00
+680,Release Purchase Order,Immanuel Karagianni,2011-4-16 9:29:00,2011-4-16 9:28:00
+680,Approve Purchase Order for payment,Karel de Groot,2011-4-16 23:04:00,2011-4-16 23:03:00
+680,Send Invoice,Kiu Kan,2011-4-18 6:51:00,2011-4-18 6:51:00
+680,Release Supplier's Invoice,Pedro Alvares,2011-4-18 21:19:00,2011-4-18 21:15:00
+680,Settle Dispute With Supplier,Karalda Nimwada,2011-4-18 22:23:00,2011-4-18 21:59:00
+680,Authorize Supplier's Invoice payment,Pedro Alvares,2011-4-18 22:25:00,2011-4-18 22:25:00
+680,Pay Invoice,Karalda Nimwada,2011-4-18 22:45:00,2011-4-18 22:36:00
+680,End,End,2011-4-18 22:45:00,2011-4-18 22:45:00
+70,Start,Start,2011-1-9 14:27:00,2011-1-9 14:27:00
+70,Create Purchase Requisition,Christian Francois,2011-1-9 15:05:00,2011-1-9 14:27:00
+70,Analyze Purchase Requisition,Maris Freeman,2011-1-10 11:44:00,2011-1-10 11:39:00
+70,Create Request for Quotation,Maris Freeman,2011-1-10 11:51:00,2011-1-10 11:49:00
+70,Analyze Request for Quotation,Francois de Perrier,2011-1-12 5:17:00,2011-1-12 4:55:00
+70,Amend Request for Quotation,Nico Ojenbeer,2011-1-12 6:12:00,2011-1-12 6:00:00
+70,Analyze Request for Quotation,Karel de Groot,2011-1-12 8:50:00,2011-1-12 8:24:00
+70,Amend Request for Quotation,Anne Olwada,2011-1-12 9:53:00,2011-1-12 9:41:00
+70,Analyze Request for Quotation,Francois de Perrier,2011-1-13 8:47:00,2011-1-13 8:10:00
+70,Amend Request for Quotation,Alberto Duport,2011-1-13 9:41:00,2011-1-13 9:35:00
+70,Analyze Request for Quotation,Karel de Groot,2011-1-16 21:48:00,2011-1-16 21:28:00
+70,Send Request for Quotation to Supplier,Karel de Groot,2011-1-17 14:59:00,2011-1-17 14:40:00
+70,Create Quotation comparison Map,Magdalena Predutta,2011-1-17 17:33:00,2011-1-17 16:06:00
+70,Analyze Quotation Comparison Map,Christian Francois,2011-1-18 0:56:00,2011-1-18 0:29:00
+70,Choose best option,Penn Osterwalder,2011-1-18 0:56:00,2011-1-18 0:56:00
+70,Settle Conditions With Supplier,Magdalena Predutta,2011-1-18 17:40:00,2011-1-18 3:56:00
+70,Create Purchase Order,Magdalena Predutta,2011-1-18 23:26:00,2011-1-18 23:14:00
+70,Confirm Purchase Order,Kiu Kan,2011-1-19 9:55:00,2011-1-19 9:41:00
+70,Deliver Goods Services,Esmeralda Clay,2011-1-22 10:26:00,2011-1-21 11:54:00
+70,Release Purchase Order,Fjodor Kowalski,2011-1-22 17:36:00,2011-1-22 17:35:00
+70,Approve Purchase Order for payment,Francois de Perrier,2011-1-23 1:10:00,2011-1-23 1:09:00
+70,Send Invoice,Carmen Finacse,2011-1-23 21:55:00,2011-1-23 21:55:00
+70,Release Supplier's Invoice,Pedro Alvares,2011-1-24 12:12:00,2011-1-24 12:09:00
+70,Authorize Supplier's Invoice payment,Pedro Alvares,2011-1-24 12:12:00,2011-1-24 12:12:00
+70,Pay Invoice,Karalda Nimwada,2011-1-24 12:51:00,2011-1-24 12:47:00
+70,End,End,2011-1-24 12:51:00,2011-1-24 12:51:00
+704,Start,Start,2011-4-12 6:33:00,2011-4-12 6:33:00
+704,Create Purchase Requisition,Penn Osterwalder,2011-4-12 7:28:00,2011-4-12 6:33:00
+704,Create Request for Quotation,Clement Duchot,2011-4-12 13:48:00,2011-4-12 13:38:00
+704,Analyze Request for Quotation,Francois de Perrier,2011-4-19 16:58:00,2011-4-19 16:58:00
+704,Amend Request for Quotation,Immanuel Karagianni,2011-4-19 18:07:00,2011-4-19 17:53:00
+704,Analyze Request for Quotation,Francois de Perrier,2011-5-26 5:59:00,2011-5-26 5:32:00
+704,Amend Request for Quotation,Anne Olwada,2011-5-26 6:56:00,2011-5-26 6:48:00
+704,Analyze Request for Quotation,Magdalena Predutta,2011-6-6 20:27:00,2011-6-6 20:05:00
+704,Amend Request for Quotation,Alberto Duport,2011-6-6 21:30:00,2011-6-6 21:19:00
+704,Analyze Request for Quotation,Francois de Perrier,2011-6-9 20:10:00,2011-6-9 20:07:00
+704,Amend Request for Quotation,Francis Odell,2011-6-10 12:28:00,2011-6-10 12:02:00
+704,Analyze Request for Quotation,Francois de Perrier,2011-6-16 23:57:00,2011-6-16 23:25:00
+704,Send Request for Quotation to Supplier,Karel de Groot,2011-6-17 9:54:00,2011-6-17 9:24:00
+704,Create Quotation comparison Map,Magdalena Predutta,2011-6-17 12:11:00,2011-6-17 10:48:00
+704,Analyze Quotation Comparison Map,Anna Kaufmann,2011-6-17 18:36:00,2011-6-17 18:28:00
+704,Choose best option,Anna Kaufmann,2011-6-17 18:36:00,2011-6-17 18:36:00
+704,Settle Conditions With Supplier,Francois de Perrier,2011-6-18 12:27:00,2011-6-18 1:43:00
+704,Create Purchase Order,Magdalena Predutta,2011-6-19 8:52:00,2011-6-19 8:46:00
+704,Confirm Purchase Order,Kiu Kan,2011-6-25 18:55:00,2011-6-25 18:22:00
+704,Deliver Goods Services,Sean Manney,2011-6-28 18:05:00,2011-6-27 19:13:00
+704,Release Purchase Order,Immanuel Karagianni,2011-6-29 1:14:00,2011-6-29 1:13:00
+704,Approve Purchase Order for payment,Karel de Groot,2011-6-30 22:37:00,2011-6-30 22:36:00
+704,Send Invoice,Esmeralda Clay,2011-7-4 8:55:00,2011-7-4 8:55:00
+704,Release Supplier's Invoice,Pedro Alvares,2011-7-4 23:28:00,2011-7-4 23:24:00
+704,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-7-4 23:28:00,2011-7-4 23:28:00
+704,Pay Invoice,Pedro Alvares,2011-7-5 0:30:00,2011-7-5 0:24:00
+704,End,End,2011-7-5 0:30:00,2011-7-5 0:30:00
+707,Start,Start,2011-4-12 13:43:00,2011-4-12 13:43:00
+707,Create Purchase Requisition,Anne Olwada,2011-4-12 14:00:00,2011-4-12 13:43:00
+707,Create Request for Quotation,Anne Olwada,2011-4-12 18:09:00,2011-4-12 18:00:00
+707,Analyze Request for Quotation,Karel de Groot,2011-4-17 6:55:00,2011-4-17 6:26:00
+707,End,End,2011-4-17 6:55:00,2011-4-17 6:55:00
+713,Start,Start,2011-4-13 17:31:00,2011-4-13 17:31:00
+713,Create Purchase Requisition,Elvira Lores,2011-4-13 18:16:00,2011-4-13 17:31:00
+713,Analyze Purchase Requisition,Heinz Gutschmidt,2011-4-14 5:28:00,2011-4-14 5:21:00
+713,Create Request for Quotation,Heinz Gutschmidt,2011-4-14 5:34:00,2011-4-14 5:32:00
+713,Analyze Request for Quotation,Magdalena Predutta,2011-4-18 16:21:00,2011-4-18 15:59:00
+713,Amend Request for Quotation,Kim Passa,2011-4-18 17:38:00,2011-4-18 17:23:00
+713,Analyze Request for Quotation,Francois de Perrier,2011-4-21 14:35:00,2011-4-21 14:16:00
+713,Amend Request for Quotation,Miu Hanwan,2011-4-21 15:35:00,2011-4-21 15:26:00
+713,Analyze Request for Quotation,Karel de Groot,2011-5-13 6:56:00,2011-5-13 6:31:00
+713,Amend Request for Quotation,Fjodor Kowalski,2011-5-13 7:46:00,2011-5-13 7:36:00
+713,Analyze Request for Quotation,Francois de Perrier,2011-6-1 13:50:00,2011-6-1 13:35:00
+713,Amend Request for Quotation,Christian Francois,2011-6-1 14:52:00,2011-6-1 14:43:00
+713,Analyze Request for Quotation,Karel de Groot,2011-6-21 16:11:00,2011-6-21 15:48:00
+713,Send Request for Quotation to Supplier,Francois de Perrier,2011-6-22 8:01:00,2011-6-22 7:43:00
+713,Create Quotation comparison Map,Francois de Perrier,2011-6-23 4:23:00,2011-6-23 0:43:00
+713,Analyze Quotation Comparison Map,Fjodor Kowalski,2011-6-23 11:19:00,2011-6-23 10:53:00
+713,Choose best option,Immanuel Karagianni,2011-6-23 11:19:00,2011-6-23 11:19:00
+713,Settle Conditions With Supplier,Karel de Groot,2011-6-24 7:33:00,2011-6-23 20:13:00
+713,Create Purchase Order,Francois de Perrier,2011-6-24 10:26:00,2011-6-24 10:19:00
+713,Confirm Purchase Order,Carmen Finacse,2011-6-29 2:07:00,2011-6-29 1:47:00
+713,Deliver Goods Services,Sean Manney,2011-7-4 7:50:00,2011-7-3 8:03:00
+713,Release Purchase Order,Anne Olwada,2011-7-4 15:04:00,2011-7-4 15:03:00
+713,Approve Purchase Order for payment,Karel de Groot,2011-7-4 21:28:00,2011-7-4 21:27:00
+713,Send Invoice,Kiu Kan,2011-7-5 18:14:00,2011-7-5 18:14:00
+713,Release Supplier's Invoice,Pedro Alvares,2011-7-6 8:36:00,2011-7-6 8:34:00
+713,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-7-6 8:36:00,2011-7-6 8:36:00
+713,Pay Invoice,Karalda Nimwada,2011-7-6 8:55:00,2011-7-6 8:46:00
+713,End,End,2011-7-6 8:55:00,2011-7-6 8:55:00
+720,Start,Start,2011-4-14 16:34:00,2011-4-14 16:34:00
+720,Create Purchase Requisition,Kim Passa,2011-4-14 16:44:00,2011-4-14 16:34:00
+720,Analyze Purchase Requisition,Heinz Gutschmidt,2011-4-15 7:39:00,2011-4-15 7:33:00
+720,Create Request for Quotation,Francis Odell,2011-4-15 7:47:00,2011-4-15 7:45:00
+720,Analyze Request for Quotation,Karel de Groot,2011-4-17 3:18:00,2011-4-17 3:04:00
+720,Send Request for Quotation to Supplier,Karel de Groot,2011-4-17 14:52:00,2011-4-17 14:38:00
+720,Create Quotation comparison Map,Karel de Groot,2011-4-17 17:27:00,2011-4-17 15:39:00
+720,Analyze Quotation Comparison Map,Kim Passa,2011-4-18 0:53:00,2011-4-18 0:21:00
+720,Choose best option,Immanuel Karagianni,2011-4-18 0:53:00,2011-4-18 0:53:00
+720,Settle Conditions With Supplier,Karel de Groot,2011-4-18 13:05:00,2011-4-18 3:33:00
+720,Create Purchase Order,Francois de Perrier,2011-4-19 8:50:00,2011-4-19 8:40:00
+720,Confirm Purchase Order,Carmen Finacse,2011-4-19 18:40:00,2011-4-19 18:31:00
+720,Deliver Goods Services,Esmeralda Clay,2011-4-20 23:41:00,2011-4-20 4:19:00
+720,Release Purchase Order,Fjodor Kowalski,2011-4-21 7:48:00,2011-4-21 7:47:00
+720,Approve Purchase Order for payment,Karel de Groot,2011-4-21 15:15:00,2011-4-21 15:14:00
+720,Send Invoice,Sean Manney,2011-4-25 2:22:00,2011-4-25 2:22:00
+720,Release Supplier's Invoice,Karalda Nimwada,2011-4-25 16:42:00,2011-4-25 16:35:00
+720,Settle Dispute With Supplier,Karalda Nimwada,2011-4-25 17:32:00,2011-4-25 17:09:00
+720,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-4-25 17:32:00,2011-4-25 17:32:00
+720,Pay Invoice,Karalda Nimwada,2011-4-25 18:37:00,2011-4-25 18:29:00
+720,End,End,2011-4-25 18:37:00,2011-4-25 18:37:00
+733,Start,Start,2011-4-17 3:27:00,2011-4-17 3:27:00
+733,Create Purchase Requisition,Tesca Lobes,2011-4-17 3:35:00,2011-4-17 3:27:00
+733,Analyze Purchase Requisition,Heinz Gutschmidt,2011-4-17 18:35:00,2011-4-17 18:30:00
+733,Create Request for Quotation,Heinz Gutschmidt,2011-4-17 18:42:00,2011-4-17 18:40:00
+733,Analyze Request for Quotation,Magdalena Predutta,2011-4-18 5:42:00,2011-4-18 5:26:00
+733,Send Request for Quotation to Supplier,Karel de Groot,2011-4-18 21:27:00,2011-4-18 21:05:00
+733,Create Quotation comparison Map,Karel de Groot,2011-4-19 1:08:00,2011-4-18 22:51:00
+733,Analyze Quotation Comparison Map,Anne Olwada,2011-4-19 8:09:00,2011-4-19 7:44:00
+733,Choose best option,Tesca Lobes,2011-4-19 8:09:00,2011-4-19 8:09:00
+733,Settle Conditions With Supplier,Karel de Groot,2011-4-20 10:50:00,2011-4-19 22:05:00
+733,Create Purchase Order,Magdalena Predutta,2011-4-20 18:46:00,2011-4-20 18:38:00
+733,Confirm Purchase Order,Esmeralda Clay,2011-4-21 0:13:00,2011-4-20 23:41:00
+733,Deliver Goods Services,Karen Clarens,2011-4-25 10:46:00,2011-4-24 0:04:00
+733,Release Purchase Order,Clement Duchot,2011-4-25 18:43:00,2011-4-25 18:42:00
+733,Approve Purchase Order for payment,Karel de Groot,2011-4-26 6:43:00,2011-4-26 6:42:00
+733,Send Invoice,Kiu Kan,2011-5-1 4:48:00,2011-5-1 4:48:00
+733,Release Supplier's Invoice,Karalda Nimwada,2011-5-1 19:13:00,2011-5-1 19:07:00
+733,Authorize Supplier's Invoice payment,Pedro Alvares,2011-5-1 19:13:00,2011-5-1 19:13:00
+733,Pay Invoice,Pedro Alvares,2011-5-1 20:18:00,2011-5-1 20:04:00
+733,End,End,2011-5-1 20:18:00,2011-5-1 20:18:00
+740,Start,Start,2011-4-17 16:59:00,2011-4-17 16:59:00
+740,Create Purchase Requisition,Tesca Lobes,2011-4-17 17:12:00,2011-4-17 16:59:00
+740,Analyze Purchase Requisition,Maris Freeman,2011-4-18 16:02:00,2011-4-18 15:56:00
+740,End,End,2011-4-18 16:02:00,2011-4-18 16:02:00
+75,Start,Start,2011-1-10 3:12:00,2011-1-10 3:12:00
+75,Create Purchase Requisition,Clement Duchot,2011-1-10 3:30:00,2011-1-10 3:12:00
+75,Create Request for Quotation,Anne Olwada,2011-1-10 5:08:00,2011-1-10 4:57:00
+75,Analyze Request for Quotation,Magdalena Predutta,2011-1-12 0:06:00,2011-1-11 23:41:00
+75,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-12 23:37:00,2011-1-12 23:05:00
+75,Create Quotation comparison Map,Francois de Perrier,2011-1-14 6:01:00,2011-1-14 0:17:00
+75,Analyze Quotation Comparison Map,Miu Hanwan,2011-1-14 13:59:00,2011-1-14 13:34:00
+75,Choose best option,Kim Passa,2011-1-14 13:59:00,2011-1-14 13:59:00
+75,Settle Conditions With Supplier,Magdalena Predutta,2011-1-15 6:38:00,2011-1-14 19:23:00
+75,Create Purchase Order,Karel de Groot,2011-1-15 18:02:00,2011-1-15 17:54:00
+75,Confirm Purchase Order,Esmeralda Clay,2011-1-16 23:37:00,2011-1-16 23:13:00
+75,Deliver Goods Services,Sean Manney,2011-1-19 0:05:00,2011-1-17 10:10:00
+75,Release Purchase Order,Elvira Lores,2011-1-19 8:19:00,2011-1-19 8:18:00
+75,Approve Purchase Order for payment,Magdalena Predutta,2011-1-19 19:02:00,2011-1-19 19:01:00
+75,Send Invoice,Sean Manney,2011-1-20 20:29:00,2011-1-20 20:29:00
+75,Release Supplier's Invoice,Karalda Nimwada,2011-1-21 10:50:00,2011-1-21 10:43:00
+75,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-21 10:50:00,2011-1-21 10:50:00
+75,Pay Invoice,Karalda Nimwada,2011-1-21 11:56:00,2011-1-21 11:44:00
+75,End,End,2011-1-21 11:56:00,2011-1-21 11:56:00
+761,Start,Start,2011-4-21 3:26:00,2011-4-21 3:26:00
+761,Create Purchase Requisition,Anna Kaufmann,2011-4-21 4:22:00,2011-4-21 3:26:00
+761,Create Request for Quotation,Anna Kaufmann,2011-4-21 11:19:00,2011-4-21 11:08:00
+761,Analyze Request for Quotation,Karel de Groot,2011-4-25 19:57:00,2011-4-25 19:33:00
+761,Send Request for Quotation to Supplier,Magdalena Predutta,2011-4-27 1:23:00,2011-4-27 1:07:00
+761,Create Quotation comparison Map,Karel de Groot,2011-4-27 8:37:00,2011-4-27 4:21:00
+761,Analyze Quotation Comparison Map,Tesca Lobes,2011-4-27 15:33:00,2011-4-27 15:08:00
+761,Choose best option,Christian Francois,2011-4-27 15:33:00,2011-4-27 15:33:00
+761,Settle Conditions With Supplier,Francois de Perrier,2011-4-28 1:13:00,2011-4-27 17:48:00
+761,Create Purchase Order,Francois de Perrier,2011-4-28 2:07:00,2011-4-28 1:55:00
+761,Confirm Purchase Order,Karen Clarens,2011-4-30 8:49:00,2011-4-30 8:25:00
+761,Deliver Goods Services,Esmeralda Clay,2011-5-1 1:49:00,2011-4-30 21:27:00
+761,Release Purchase Order,Fjodor Kowalski,2011-5-1 9:46:00,2011-5-1 9:45:00
+761,Approve Purchase Order for payment,Magdalena Predutta,2011-5-1 18:14:00,2011-5-1 18:13:00
+761,Send Invoice,Kiu Kan,2011-5-7 10:41:00,2011-5-7 10:41:00
+761,Release Supplier's Invoice,Pedro Alvares,2011-5-8 0:59:00,2011-5-8 0:56:00
+761,Authorize Supplier's Invoice payment,Pedro Alvares,2011-5-8 0:59:00,2011-5-8 0:59:00
+761,Pay Invoice,Karalda Nimwada,2011-5-8 1:38:00,2011-5-8 1:29:00
+761,End,End,2011-5-8 1:38:00,2011-5-8 1:38:00
+78,Start,Start,2011-1-10 13:35:00,2011-1-10 13:35:00
+78,Create Purchase Requisition,Anna Kaufmann,2011-1-10 14:25:00,2011-1-10 13:35:00
+78,Create Request for Quotation,Miu Hanwan,2011-1-10 20:05:00,2011-1-10 19:59:00
+78,Analyze Request for Quotation,Magdalena Predutta,2011-1-12 2:40:00,2011-1-12 2:12:00
+78,Send Request for Quotation to Supplier,Magdalena Predutta,2011-1-12 18:12:00,2011-1-12 17:51:00
+78,Create Quotation comparison Map,Karel de Groot,2011-1-13 0:44:00,2011-1-12 22:28:00
+78,Analyze Quotation Comparison Map,Esmana Liubiata,2011-1-13 7:57:00,2011-1-13 7:24:00
+78,Choose best option,Penn Osterwalder,2011-1-13 7:57:00,2011-1-13 7:57:00
+78,Settle Conditions With Supplier,Magdalena Predutta,2011-1-13 21:44:00,2011-1-13 16:09:00
+78,Create Purchase Order,Magdalena Predutta,2011-1-14 9:33:00,2011-1-14 9:23:00
+78,Confirm Purchase Order,Karen Clarens,2011-1-18 16:38:00,2011-1-18 16:18:00
+78,Deliver Goods Services,Kiu Kan,2011-1-22 6:49:00,2011-1-20 12:11:00
+78,Release Purchase Order,Alberto Duport,2011-1-22 14:09:00,2011-1-22 14:08:00
+78,Approve Purchase Order for payment,Francois de Perrier,2011-1-23 3:27:00,2011-1-23 3:26:00
+78,Send Invoice,Esmeralda Clay,2011-1-24 22:32:00,2011-1-24 22:32:00
+78,Release Supplier's Invoice,Pedro Alvares,2011-1-25 13:01:00,2011-1-25 12:58:00
+78,Authorize Supplier's Invoice payment,Pedro Alvares,2011-1-25 13:01:00,2011-1-25 13:01:00
+78,Pay Invoice,Pedro Alvares,2011-1-25 13:31:00,2011-1-25 13:20:00
+78,End,End,2011-1-25 13:31:00,2011-1-25 13:31:00
+8,Start,Start,2011-1-1 14:27:00,2011-1-1 14:27:00
+8,Create Purchase Requisition,Fjodor Kowalski,2011-1-1 15:17:00,2011-1-1 14:27:00
+8,Create Request for Quotation,Tesca Lobes,2011-1-1 18:07:00,2011-1-1 18:00:00
+8,Analyze Request for Quotation,Francois de Perrier,2011-1-1 19:27:00,2011-1-1 19:04:00
+8,Amend Request for Quotation,Tesca Lobes,2011-1-1 20:34:00,2011-1-1 20:21:00
+8,Analyze Request for Quotation,Magdalena Predutta,2011-1-1 22:01:00,2011-1-1 21:35:00
+8,Send Request for Quotation to Supplier,Francois de Perrier,2011-1-2 9:48:00,2011-1-2 9:20:00
+8,Create Quotation comparison Map,Karel de Groot,2011-1-2 15:33:00,2011-1-2 10:10:00
+8,Analyze Quotation Comparison Map,Anne Olwada,2011-1-2 22:14:00,2011-1-2 22:08:00
+8,Choose best option,Immanuel Karagianni,2011-1-2 22:14:00,2011-1-2 22:14:00
+8,Settle Conditions With Supplier,Karel de Groot,2011-1-3 12:50:00,2011-1-3 0:40:00
+8,Create Purchase Order,Karel de Groot,2011-1-3 15:19:00,2011-1-3 15:07:00
+8,Confirm Purchase Order,Sean Manney,2011-1-3 19:31:00,2011-1-3 19:06:00
+8,Deliver Goods Services,Sean Manney,2011-1-5 10:34:00,2011-1-4 5:00:00
+8,Release Purchase Order,Esmana Liubiata,2011-1-5 18:12:00,2011-1-5 18:11:00
+8,Approve Purchase Order for payment,Francois de Perrier,2011-1-6 13:48:00,2011-1-6 13:47:00
+8,Send Invoice,Kiu Kan,2011-1-7 1:19:00,2011-1-7 1:19:00
+8,Release Supplier's Invoice,Pedro Alvares,2011-1-7 15:48:00,2011-1-7 15:41:00
+8,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-7 15:48:00,2011-1-7 15:48:00
+8,Pay Invoice,Pedro Alvares,2011-1-7 16:04:00,2011-1-7 15:53:00
+8,End,End,2011-1-7 16:04:00,2011-1-7 16:04:00
+812,Start,Start,2011-5-1 5:18:00,2011-5-1 5:18:00
+812,Create Purchase Requisition,Kim Passa,2011-5-1 6:06:00,2011-5-1 5:18:00
+812,Create Request for Quotation,Clement Duchot,2011-5-1 9:15:00,2011-5-1 9:06:00
+812,Analyze Request for Quotation,Francois de Perrier,2011-5-2 20:44:00,2011-5-2 20:20:00
+812,Send Request for Quotation to Supplier,Karel de Groot,2011-5-3 1:21:00,2011-5-3 0:58:00
+812,Create Quotation comparison Map,Francois de Perrier,2011-5-3 6:14:00,2011-5-3 1:48:00
+812,Analyze Quotation Comparison Map,Tesca Lobes,2011-5-3 13:43:00,2011-5-3 13:12:00
+812,Choose best option,Esmana Liubiata,2011-5-3 13:43:00,2011-5-3 13:43:00
+812,Settle Conditions With Supplier,Francois de Perrier,2011-5-4 5:47:00,2011-5-3 17:57:00
+812,Create Purchase Order,Karel de Groot,2011-5-4 14:58:00,2011-5-4 14:48:00
+812,Confirm Purchase Order,Esmeralda Clay,2011-5-5 0:57:00,2011-5-5 0:33:00
+812,Deliver Goods Services,Kiu Kan,2011-5-9 18:56:00,2011-5-8 21:31:00
+812,Release Purchase Order,Miu Hanwan,2011-5-10 2:42:00,2011-5-10 2:41:00
+812,Approve Purchase Order for payment,Francois de Perrier,2011-5-10 11:50:00,2011-5-10 11:49:00
+812,Send Invoice,Kiu Kan,2011-5-12 8:08:00,2011-5-12 8:08:00
+812,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-5-12 22:33:00,2011-5-12 22:33:00
+812,Pay Invoice,Pedro Alvares,2011-5-12 23:24:00,2011-5-12 23:09:00
+812,End,End,2011-5-12 23:24:00,2011-5-12 23:24:00
+816,Start,Start,2011-5-1 15:25:00,2011-5-1 15:25:00
+816,Create Purchase Requisition,Anna Kaufmann,2011-5-1 15:54:00,2011-5-1 15:25:00
+816,Create Request for Quotation,Alberto Duport,2011-5-1 23:52:00,2011-5-1 23:39:00
+816,Analyze Request for Quotation,Magdalena Predutta,2011-6-9 16:49:00,2011-6-9 16:37:00
+816,Amend Request for Quotation,Kim Passa,2011-6-9 17:48:00,2011-6-9 17:37:00
+816,Analyze Request for Quotation,Magdalena Predutta,2011-6-25 17:32:00,2011-6-25 16:57:00
+816,Send Request for Quotation to Supplier,Karel de Groot,2011-6-26 14:38:00,2011-6-26 14:08:00
+816,Create Quotation comparison Map,Karel de Groot,2011-6-27 1:43:00,2011-6-26 23:24:00
+816,Analyze Quotation Comparison Map,Nico Ojenbeer,2011-6-27 8:42:00,2011-6-27 8:29:00
+816,Choose best option,Esmana Liubiata,2011-6-27 8:42:00,2011-6-27 8:42:00
+816,Settle Conditions With Supplier,Francois de Perrier,2011-6-28 10:34:00,2011-6-28 3:33:00
+816,Create Purchase Order,Francois de Perrier,2011-6-28 13:37:00,2011-6-28 13:27:00
+816,Confirm Purchase Order,Sean Manney,2011-7-4 8:04:00,2011-7-4 7:50:00
+816,Deliver Goods Services,Kiu Kan,2011-7-16 0:13:00,2011-7-14 10:09:00
+816,Release Purchase Order,Anna Kaufmann,2011-7-16 7:47:00,2011-7-16 7:46:00
+816,Approve Purchase Order for payment,Karel de Groot,2011-7-17 22:44:00,2011-7-17 22:43:00
+816,Send Invoice,Carmen Finacse,2011-7-24 9:24:00,2011-7-24 9:24:00
+816,Release Supplier's Invoice,Pedro Alvares,2011-7-24 23:46:00,2011-7-24 23:43:00
+816,Authorize Supplier's Invoice payment,Pedro Alvares,2011-7-24 23:46:00,2011-7-24 23:46:00
+816,Pay Invoice,Karalda Nimwada,2011-7-25 0:41:00,2011-7-25 0:32:00
+816,End,End,2011-7-25 0:41:00,2011-7-25 0:41:00
+818,Start,Start,2011-5-1 17:44:00,2011-5-1 17:44:00
+818,Create Purchase Requisition,Miu Hanwan,2011-5-1 18:28:00,2011-5-1 17:44:00
+818,Create Request for Quotation,Christian Francois,2011-5-1 22:46:00,2011-5-1 22:33:00
+818,Analyze Request for Quotation,Magdalena Predutta,2011-5-8 22:13:00,2011-5-8 21:45:00
+818,Send Request for Quotation to Supplier,Francois de Perrier,2011-5-9 20:11:00,2011-5-9 19:54:00
+818,Create Quotation comparison Map,Magdalena Predutta,2011-5-9 23:01:00,2011-5-9 22:04:00
+818,Analyze Quotation Comparison Map,Immanuel Karagianni,2011-5-10 5:27:00,2011-5-10 5:05:00
+818,Choose best option,Miu Hanwan,2011-5-10 5:27:00,2011-5-10 5:27:00
+818,Settle Conditions With Supplier,Francois de Perrier,2011-5-10 18:15:00,2011-5-10 11:50:00
+818,Create Purchase Order,Magdalena Predutta,2011-5-11 4:03:00,2011-5-11 3:57:00
+818,Confirm Purchase Order,Kiu Kan,2011-5-11 15:13:00,2011-5-11 14:53:00
+818,Deliver Goods Services,Karen Clarens,2011-5-15 0:10:00,2011-5-14 4:21:00
+818,Release Purchase Order,Clement Duchot,2011-5-15 7:18:00,2011-5-15 7:17:00
+818,Approve Purchase Order for payment,Magdalena Predutta,2011-5-15 15:14:00,2011-5-15 15:13:00
+818,Send Invoice,Carmen Finacse,2011-5-17 7:41:00,2011-5-17 7:41:00
+818,Release Supplier's Invoice,Karalda Nimwada,2011-5-17 22:14:00,2011-5-17 22:09:00
+818,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-5-17 22:14:00,2011-5-17 22:14:00
+818,Pay Invoice,Pedro Alvares,2011-5-17 22:49:00,2011-5-17 22:38:00
+818,End,End,2011-5-17 22:49:00,2011-5-17 22:49:00
+819,Start,Start,2011-5-1 20:52:00,2011-5-1 20:52:00
+819,Create Purchase Requisition,Penn Osterwalder,2011-5-1 21:43:00,2011-5-1 20:52:00
+819,Create Request for Quotation,Immanuel Karagianni,2011-5-1 22:14:00,2011-5-1 22:03:00
+819,Analyze Request for Quotation,Francois de Perrier,2011-5-3 0:24:00,2011-5-2 23:51:00
+819,Send Request for Quotation to Supplier,Magdalena Predutta,2011-5-4 1:36:00,2011-5-4 1:16:00
+819,Create Quotation comparison Map,Magdalena Predutta,2011-5-5 9:05:00,2011-5-5 3:30:00
+819,Analyze Quotation Comparison Map,Fjodor Kowalski,2011-5-5 16:16:00,2011-5-5 16:02:00
+819,Choose best option,Esmana Liubiata,2011-5-5 16:16:00,2011-5-5 16:16:00
+819,Settle Conditions With Supplier,Magdalena Predutta,2011-5-6 11:03:00,2011-5-5 22:00:00
+819,Create Purchase Order,Francois de Perrier,2011-5-7 2:24:00,2011-5-7 2:15:00
+819,Confirm Purchase Order,Karen Clarens,2011-5-7 7:01:00,2011-5-7 6:41:00
+819,Deliver Goods Services,Esmeralda Clay,2011-5-12 12:05:00,2011-5-10 20:51:00
+819,Release Purchase Order,Clement Duchot,2011-5-12 19:56:00,2011-5-12 19:55:00
+819,Approve Purchase Order for payment,Francois de Perrier,2011-5-13 2:46:00,2011-5-13 2:45:00
+819,Send Invoice,Carmen Finacse,2011-5-14 6:44:00,2011-5-14 6:44:00
+819,Release Supplier's Invoice,Pedro Alvares,2011-5-14 21:15:00,2011-5-14 21:11:00
+819,Settle Dispute With Supplier,Karalda Nimwada,2011-5-14 21:55:00,2011-5-14 21:39:00
+819,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-5-14 21:55:00,2011-5-14 21:55:00
+819,Pay Invoice,Pedro Alvares,2011-5-14 22:37:00,2011-5-14 22:24:00
+819,End,End,2011-5-14 22:37:00,2011-5-14 22:37:00
+822,Start,Start,2011-5-1 21:41:00,2011-5-1 21:41:00
+822,Create Purchase Requisition,Fjodor Kowalski,2011-5-1 21:52:00,2011-5-1 21:41:00
+822,Analyze Purchase Requisition,Maris Freeman,2011-5-2 17:40:00,2011-5-2 17:33:00
+822,End,End,2011-5-2 17:40:00,2011-5-2 17:40:00
+839,Start,Start,2011-5-4 6:00:00,2011-5-4 6:00:00
+839,Create Purchase Requisition,Miu Hanwan,2011-5-4 6:08:00,2011-5-4 6:00:00
+839,Analyze Purchase Requisition,Francis Odell,2011-5-5 4:47:00,2011-5-5 4:39:00
+839,Create Request for Quotation,Francis Odell,2011-5-5 4:52:00,2011-5-5 4:50:00
+839,Analyze Request for Quotation,Magdalena Predutta,2011-5-9 10:14:00,2011-5-9 9:55:00
+839,Amend Request for Quotation,Anne Olwada,2011-5-9 11:25:00,2011-5-9 11:11:00
+839,Analyze Request for Quotation,Magdalena Predutta,2011-5-22 11:58:00,2011-5-22 11:22:00
+839,Amend Request for Quotation,Tesca Lobes,2011-5-22 13:02:00,2011-5-22 12:52:00
+839,Analyze Request for Quotation,Karel de Groot,2011-6-10 22:17:00,2011-6-10 22:10:00
+839,Amend Request for Quotation,Clement Duchot,2011-6-10 23:16:00,2011-6-10 23:08:00
+839,Analyze Request for Quotation,Magdalena Predutta,2011-6-21 19:30:00,2011-6-21 19:08:00
+839,Amend Request for Quotation,Christian Francois,2011-6-21 20:35:00,2011-6-21 20:29:00
+839,Analyze Request for Quotation,Magdalena Predutta,2011-6-24 10:33:00,2011-6-24 10:33:00
+839,Send Request for Quotation to Supplier,Karel de Groot,2011-6-24 22:09:00,2011-6-24 21:46:00
+839,Create Quotation comparison Map,Karel de Groot,2011-6-25 6:10:00,2011-6-25 1:25:00
+839,Analyze Quotation Comparison Map,Christian Francois,2011-6-25 13:01:00,2011-6-25 12:53:00
+839,Choose best option,Tesca Lobes,2011-6-25 13:01:00,2011-6-25 13:01:00
+839,Settle Conditions With Supplier,Francois de Perrier,2011-6-26 13:20:00,2011-6-25 22:52:00
+839,Create Purchase Order,Francois de Perrier,2011-6-26 19:17:00,2011-6-26 19:10:00
+839,Confirm Purchase Order,Carmen Finacse,2011-7-3 12:50:00,2011-7-3 12:28:00
+839,Deliver Goods Services,Kiu Kan,2011-7-8 7:51:00,2011-7-6 23:34:00
+839,Release Purchase Order,Alberto Duport,2011-7-8 15:20:00,2011-7-8 15:19:00
+839,Approve Purchase Order for payment,Karel de Groot,2011-7-8 22:56:00,2011-7-8 22:55:00
+839,Send Invoice,Karen Clarens,2011-7-26 20:08:00,2011-7-26 20:08:00
+839,Release Supplier's Invoice,Pedro Alvares,2011-7-27 10:27:00,2011-7-27 10:25:00
+839,Authorize Supplier's Invoice payment,Pedro Alvares,2011-7-27 10:27:00,2011-7-27 10:27:00
+839,Pay Invoice,Karalda Nimwada,2011-7-27 11:11:00,2011-7-27 10:58:00
+839,End,End,2011-7-27 11:11:00,2011-7-27 11:11:00
+841,Start,Start,2011-5-4 19:33:00,2011-5-4 19:33:00
+841,Create Purchase Requisition,Esmana Liubiata,2011-5-4 19:47:00,2011-5-4 19:33:00
+841,Create Request for Quotation,Christian Francois,2011-5-4 23:33:00,2011-5-4 23:23:00
+841,Analyze Request for Quotation,Magdalena Predutta,2011-5-6 22:53:00,2011-5-6 22:19:00
+841,Send Request for Quotation to Supplier,Magdalena Predutta,2011-5-7 10:37:00,2011-5-7 10:18:00
+841,Create Quotation comparison Map,Karel de Groot,2011-5-7 14:20:00,2011-5-7 11:17:00
+841,Analyze Quotation Comparison Map,Kim Passa,2011-5-7 21:07:00,2011-5-7 20:37:00
+841,Choose best option,Christian Francois,2011-5-7 21:07:00,2011-5-7 21:07:00
+841,Settle Conditions With Supplier,Karel de Groot,2011-5-8 23:58:00,2011-5-8 13:35:00
+841,Create Purchase Order,Magdalena Predutta,2011-5-9 2:00:00,2011-5-9 1:50:00
+841,Confirm Purchase Order,Karen Clarens,2011-5-10 20:28:00,2011-5-10 20:20:00
+841,Deliver Goods Services,Kiu Kan,2011-5-14 6:46:00,2011-5-13 9:30:00
+841,Release Purchase Order,Tesca Lobes,2011-5-14 14:22:00,2011-5-14 14:21:00
+841,Approve Purchase Order for payment,Karel de Groot,2011-5-14 19:24:00,2011-5-14 19:23:00
+841,Send Invoice,Esmeralda Clay,2011-5-16 12:13:00,2011-5-16 12:13:00
+841,Release Supplier's Invoice,Pedro Alvares,2011-5-17 2:36:00,2011-5-17 2:33:00
+841,Authorize Supplier's Invoice payment,Pedro Alvares,2011-5-17 2:36:00,2011-5-17 2:36:00
+841,Pay Invoice,Pedro Alvares,2011-5-17 2:50:00,2011-5-17 2:42:00
+841,End,End,2011-5-17 2:50:00,2011-5-17 2:50:00
+856,Start,Start,2011-5-6 3:32:00,2011-5-6 3:32:00
+856,Create Purchase Requisition,Tesca Lobes,2011-5-6 4:07:00,2011-5-6 3:32:00
+856,Analyze Purchase Requisition,Heinz Gutschmidt,2011-5-6 21:59:00,2011-5-6 21:53:00
+856,Create Request for Quotation,Maris Freeman,2011-5-6 22:06:00,2011-5-6 22:04:00
+856,Analyze Request for Quotation,Karel de Groot,2011-5-10 4:09:00,2011-5-10 3:35:00
+856,Amend Request for Quotation,Fjodor Kowalski,2011-5-10 5:01:00,2011-5-10 4:55:00
+856,Analyze Request for Quotation,Francois de Perrier,2011-6-11 2:53:00,2011-6-11 2:24:00
+856,Amend Request for Quotation,Francis Odell,2011-6-11 19:09:00,2011-6-11 18:57:00
+856,Analyze Request for Quotation,Francois de Perrier,2011-7-6 9:07:00,2011-7-6 8:49:00
+856,Amend Request for Quotation,Heinz Gutschmidt,2011-7-7 1:36:00,2011-7-7 1:10:00
+856,Analyze Request for Quotation,Karel de Groot,2011-7-16 6:38:00,2011-7-16 6:17:00
+856,Amend Request for Quotation,Miu Hanwan,2011-7-16 7:43:00,2011-7-16 7:29:00
+856,Analyze Request for Quotation,Magdalena Predutta,2011-7-16 16:51:00,2011-7-16 16:36:00
+856,Amend Request for Quotation,Anne Olwada,2011-7-16 17:41:00,2011-7-16 17:35:00
+856,Analyze Request for Quotation,Magdalena Predutta,2011-7-18 8:04:00,2011-7-18 7:32:00
+856,Send Request for Quotation to Supplier,Magdalena Predutta,2011-7-19 8:32:00,2011-7-19 7:46:00
+856,Create Quotation comparison Map,Magdalena Predutta,2011-7-19 23:23:00,2011-7-19 22:22:00
+856,Analyze Quotation Comparison Map,Alberto Duport,2011-7-20 6:26:00,2011-7-20 6:02:00
+856,Choose best option,Immanuel Karagianni,2011-7-20 6:26:00,2011-7-20 6:26:00
+856,Settle Conditions With Supplier,Magdalena Predutta,2011-7-20 16:30:00,2011-7-20 8:29:00
+856,Create Purchase Order,Magdalena Predutta,2011-7-20 22:02:00,2011-7-20 21:54:00
+856,Confirm Purchase Order,Carmen Finacse,2011-7-22 17:05:00,2011-7-22 16:43:00
+856,Deliver Goods Services,Carmen Finacse,2011-7-24 22:01:00,2011-7-24 9:39:00
+856,Release Purchase Order,Tesca Lobes,2011-7-25 5:45:00,2011-7-25 5:44:00
+856,Approve Purchase Order for payment,Francois de Perrier,2011-7-27 7:15:00,2011-7-27 7:14:00
+856,Send Invoice,Karen Clarens,2011-8-1 19:52:00,2011-8-1 19:52:00
+856,Release Supplier's Invoice,Karalda Nimwada,2011-8-2 10:07:00,2011-8-2 10:05:00
+856,Authorize Supplier's Invoice payment,Pedro Alvares,2011-8-2 10:07:00,2011-8-2 10:07:00
+856,Pay Invoice,Pedro Alvares,2011-8-2 10:18:00,2011-8-2 10:12:00
+856,End,End,2011-8-2 10:18:00,2011-8-2 10:18:00
+872,Start,Start,2011-5-9 4:06:00,2011-5-9 4:06:00
+872,Create Purchase Requisition,Christian Francois,2011-5-9 4:20:00,2011-5-9 4:06:00
+872,Create Request for Quotation,Anna Kaufmann,2011-5-9 5:54:00,2011-5-9 5:46:00
+872,Analyze Request for Quotation,Francois de Perrier,2011-5-31 22:43:00,2011-5-31 22:23:00
+872,Amend Request for Quotation,Elvira Lores,2011-5-31 23:40:00,2011-5-31 23:30:00
+872,Analyze Request for Quotation,Francois de Perrier,2011-6-3 16:36:00,2011-6-3 16:06:00
+872,Amend Request for Quotation,Immanuel Karagianni,2011-6-3 17:34:00,2011-6-3 17:27:00
+872,Analyze Request for Quotation,Karel de Groot,2011-6-26 13:06:00,2011-6-26 12:40:00
+872,Amend Request for Quotation,Miu Hanwan,2011-6-26 14:05:00,2011-6-26 14:00:00
+872,Analyze Request for Quotation,Magdalena Predutta,2011-6-28 16:28:00,2011-6-28 16:09:00
+872,Amend Request for Quotation,Esmana Liubiata,2011-6-28 17:34:00,2011-6-28 17:23:00
+872,Analyze Request for Quotation,Karel de Groot,2011-7-7 5:03:00,2011-7-7 4:33:00
+872,Amend Request for Quotation,Clement Duchot,2011-7-7 5:57:00,2011-7-7 5:49:00
+872,Analyze Request for Quotation,Francois de Perrier,2011-7-20 9:42:00,2011-7-20 9:05:00
+872,Amend Request for Quotation,Anne Olwada,2011-7-20 10:43:00,2011-7-20 10:30:00
+872,Analyze Request for Quotation,Magdalena Predutta,2011-7-22 0:57:00,2011-7-22 0:37:00
+872,Amend Request for Quotation,Anne Olwada,2011-7-22 1:55:00,2011-7-22 1:48:00
+872,Analyze Request for Quotation,Karel de Groot,2011-8-2 0:45:00,2011-8-2 0:16:00
+872,Send Request for Quotation to Supplier,Magdalena Predutta,2011-8-2 22:08:00,2011-8-2 21:42:00
+872,Create Quotation comparison Map,Magdalena Predutta,2011-8-3 7:37:00,2011-8-3 3:15:00
+872,Analyze Quotation Comparison Map,Miu Hanwan,2011-8-3 14:34:00,2011-8-3 14:11:00
+872,Choose best option,Esmana Liubiata,2011-8-3 14:34:00,2011-8-3 14:34:00
+872,Settle Conditions With Supplier,Magdalena Predutta,2011-8-4 1:15:00,2011-8-3 17:35:00
+872,Create Purchase Order,Karel de Groot,2011-8-5 20:39:00,2011-8-5 20:30:00
+872,Confirm Purchase Order,Esmeralda Clay,2011-8-8 21:39:00,2011-8-8 21:06:00
+872,Deliver Goods Services,Kiu Kan,2011-8-18 2:12:00,2011-8-17 10:48:00
+872,Release Purchase Order,Esmana Liubiata,2011-8-18 10:02:00,2011-8-18 10:01:00
+872,Approve Purchase Order for payment,Karel de Groot,2011-8-18 23:13:00,2011-8-18 23:12:00
+872,Send Invoice,Kiu Kan,2011-8-20 4:02:00,2011-8-20 4:02:00
+872,Release Supplier's Invoice,Pedro Alvares,2011-8-20 18:21:00,2011-8-20 18:18:00
+872,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-8-20 18:21:00,2011-8-20 18:21:00
+872,Pay Invoice,Pedro Alvares,2011-8-20 19:01:00,2011-8-20 18:55:00
+872,End,End,2011-8-20 19:01:00,2011-8-20 19:01:00
+892,Start,Start,2011-5-11 5:19:00,2011-5-11 5:19:00
+892,Create Purchase Requisition,Miu Hanwan,2011-5-11 6:08:00,2011-5-11 5:19:00
+892,Analyze Purchase Requisition,Heinz Gutschmidt,2011-5-12 3:46:00,2011-5-12 3:39:00
+892,Create Request for Quotation,Maris Freeman,2011-5-12 3:54:00,2011-5-12 3:52:00
+892,Analyze Request for Quotation,Francois de Perrier,2011-5-15 8:08:00,2011-5-15 7:55:00
+892,Amend Request for Quotation,Alberto Duport,2011-5-15 9:18:00,2011-5-15 9:05:00
+892,Analyze Request for Quotation,Francois de Perrier,2011-6-1 2:19:00,2011-6-1 2:09:00
+892,Amend Request for Quotation,Maris Freeman,2011-6-1 18:21:00,2011-6-1 18:05:00
+892,Analyze Request for Quotation,Karel de Groot,2011-7-20 18:19:00,2011-7-20 17:55:00
+892,Amend Request for Quotation,Nico Ojenbeer,2011-7-20 19:20:00,2011-7-20 19:10:00
+892,Analyze Request for Quotation,Magdalena Predutta,2011-8-26 19:23:00,2011-8-26 18:48:00
+892,End,End,2011-8-26 19:23:00,2011-8-26 19:23:00
+96,Start,Start,2011-1-13 2:33:00,2011-1-13 2:33:00
+96,Create Purchase Requisition,Christian Francois,2011-1-13 3:06:00,2011-1-13 2:33:00
+96,Create Request for Quotation,Anne Olwada,2011-1-13 3:41:00,2011-1-13 3:30:00
+96,Analyze Request for Quotation,Karel de Groot,2011-1-13 8:14:00,2011-1-13 7:31:00
+96,Amend Request for Quotation,Christian Francois,2011-1-13 9:21:00,2011-1-13 9:11:00
+96,Analyze Request for Quotation,Magdalena Predutta,2011-1-14 10:21:00,2011-1-14 9:50:00
+96,Send Request for Quotation to Supplier,Karel de Groot,2011-1-15 2:57:00,2011-1-15 2:29:00
+96,Create Quotation comparison Map,Magdalena Predutta,2011-1-15 13:24:00,2011-1-15 10:35:00
+96,Analyze Quotation Comparison Map,Elvira Lores,2011-1-15 20:38:00,2011-1-15 20:07:00
+96,Choose best option,Fjodor Kowalski,2011-1-15 20:38:00,2011-1-15 20:38:00
+96,Settle Conditions With Supplier,Karel de Groot,2011-1-16 8:25:00,2011-1-15 23:01:00
+96,Create Purchase Order,Karel de Groot,2011-1-16 21:15:00,2011-1-16 21:05:00
+96,Confirm Purchase Order,Kiu Kan,2011-1-17 5:01:00,2011-1-17 4:44:00
+96,Deliver Goods Services,Sean Manney,2011-1-20 20:29:00,2011-1-20 4:04:00
+96,Release Purchase Order,Elvira Lores,2011-1-21 4:18:00,2011-1-21 4:17:00
+96,Approve Purchase Order for payment,Magdalena Predutta,2011-1-21 18:15:00,2011-1-21 18:14:00
+96,Send Invoice,Carmen Finacse,2011-1-22 7:58:00,2011-1-22 7:58:00
+96,Release Supplier's Invoice,Pedro Alvares,2011-1-22 22:27:00,2011-1-22 22:21:00
+96,Settle Dispute With Supplier,Pedro Alvares,2011-1-22 23:28:00,2011-1-22 23:11:00
+96,Authorize Supplier's Invoice payment,Karalda Nimwada,2011-1-22 23:28:00,2011-1-22 23:28:00
+96,Pay Invoice,Pedro Alvares,2011-1-22 23:52:00,2011-1-22 23:42:00
+96,End,End,2011-1-22 23:52:00,2011-1-22 23:52:00
