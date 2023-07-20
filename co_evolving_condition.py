@@ -136,7 +136,6 @@ def train(FLAGS):
         datalooper_train_dis_list = [0]*len(num_class)
         x_0_dis_list = [0]*len(num_class)
         epoch = 0
-        print('train_cont_data', train_cont_data)
         train_iter_cont = DataLoader(train_cont_data, batch_size=FLAGS.training_batch_size)
         train_iter_attention_list = [DataLoader(torch.tensor(attention_train), batch_size=FLAGS.training_batch_size) for attention_train in attention_train_list]
         datalooper_train_cont = infiniteloop(train_iter_cont)
@@ -155,7 +154,6 @@ def train(FLAGS):
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
 
             x_attention_list = [next(datalooper_train_attention).to(device) for datalooper_train_attention in datalooper_train_attention_list]
-            print('x_attention_list')
             for i, each in enumerate(x_attention_list):
                 if i == 1 or i == 0 or i == 4:
                     x_attention_list[i] = each.permute(1, 0)
