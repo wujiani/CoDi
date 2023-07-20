@@ -139,7 +139,7 @@ class tabularUnet(nn.Module):
       x = self.decoder(skip_connections, encoding, temb, -1)
     else:
 
-      x = self.decoder(skip_connections, encoding, temb, all_cond) # decoder([128,256],256,t=64),  output的x=64
+      x = self.decoder(skip_connections, encoding, temb, -1) # decoder([128,256],256,t=64),  output的x=64
 
     outputs = self.outputs(x)    #   nn(64, output)
 
