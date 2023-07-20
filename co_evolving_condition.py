@@ -363,7 +363,6 @@ def train(FLAGS):
                 # pass
             else:
                 still_cond_used_for_sampling_list = [transformer(int(gen_act[i]))]
-                print('still_cond_used_for_sampling_list',still_cond_used_for_sampling_list)
                 cur_act = [[int(gen_act[i])]]
                 if i == start_flag+1:
                     acts_prev = [[FLAGS.src_vocab_size_list[0]-1]]
@@ -392,7 +391,6 @@ def train(FLAGS):
                 for i, each in enumerate(attention_tensor_list):
                     if i == 1 or i == 0 or i == 4:
                         attention_tensor_list[i] = each.permute(1, 0)
-                print('attention_tensor_list',attention_tensor_list)
                 log_x_T_dis_list = [0] * len(num_class)
                 x_dis_list = [0] * len(num_class)
                 with torch.no_grad():
