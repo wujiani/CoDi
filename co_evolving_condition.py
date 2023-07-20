@@ -1,5 +1,5 @@
 import os
-
+import math
 import torch
 from absl import flags
 # import torch
@@ -27,6 +27,7 @@ def train(FLAGS):
     # for att_i in attention_train
     attention_tensor_list = [torch.tensor(attention_train).to(device) for attention_train in attention_train_list]
     print('attention_tensor_list', attention_tensor_list[0].type(), attention_tensor_list[1].shape, attention_tensor_list[2].type() ,attention_tensor_list[3].shape, attention_tensor_list[4].type())
+
 
     FLAGS.still_condition = [int(each) for each in FLAGS.still_condition.split(',')]
     print('FLAGS.still_condition',FLAGS.still_condition)
@@ -425,9 +426,17 @@ def train(FLAGS):
                 gen_res.append(new_res)
                 gen_wait.append(sample[:, 2][0])
                 gen_process.append(sample[:, 3][0])
+        dict_res_index = {0:"Avanzar_recepcion_documentos",1:"Cancelar_Solicitud",2:"Cancelar_curso",3:"Evaluacion_curso",
+                          4:"Homologacion_por_grupo_de_cursos",5:"Notificacion_estudiante_cancelacion_soli", 6:"Radicar_Solicitud_Homologacion",
+                          7:"Recepcion_de_documentos",8:"Revisar_curso",9:"Traer_informacion_estudiante_-_banner",10:"Transferir_Creditos",
+                          11:"Transferir_creditos_homologables",12:"Validacion_final",13:"Validar_solicitud",
+                          14:"Validar_solicitud_/_pre-homologacion",15:"Visto_Bueno_Cierre_Proceso"}
         gen['res'] = gen_res
         gen['wait'] = gen_wait
         gen['process'] = gen_process
+        gen['res'] = gen['res'].map(lambda x:x if x=='Start' or x=='End' else dict_res_index[int(x)])
+        gen['wait'] = gen['wait'].map(lambda x: round(math.exp(x) - 1))
+        gen['process'] = gen['process'].map(lambda x: round(math.exp(x) - 1))
         gen.to_csv(os.path.join(FLAGS.logdir, f'gen_sample.csv'), index=False)
 
         # # fake_sample=[]
