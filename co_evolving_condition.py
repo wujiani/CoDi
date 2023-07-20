@@ -420,7 +420,7 @@ def train(FLAGS):
                 for i in range(len(dis_idx)):
                     sample[:, dis_idx[i]] = sample_dis[:, i]
                 # sample_pd = pd.DataFrame(sample).dropna()
-                print('sample', sample)
+                # print('sample', sample)
                 new_res = sample[:, 1][0]
 
                 gen_res.append(new_res)
