@@ -58,8 +58,8 @@ def sampling_with(x_T_cont, log_x_T_dis, attention, net_sampler, trainer_dis, tr
         t = x_t_cont.new_ones([x_t_cont.shape[0], ], dtype=torch.long) * time_step
         cond = []
         for j in range(len(log_x_T_dis)):
-            if j == FLAGS.still_condition:
-                cond.append(torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[j].device))
+            if j in FLAGS.still_condition:
+                cond.append(torch.tensor(still_cond_used_for_sampling[j]).to(torch.float32).to(x_t_dis[j].device))
             else:
                 cond.append(x_t_dis[j])
         mean, log_var = net_sampler.p_mean_variance(x_t=x_t_cont, t=t, cond = cond, attention = attention, trans=trans)
@@ -71,13 +71,13 @@ def sampling_with(x_T_cont, log_x_T_dis, attention, net_sampler, trainer_dis, tr
         x_t_minus_1_cont = torch.clip(x_t_minus_1_cont, -1., 1.)
 
         for i in range(len(log_x_T_dis)):
-            if i != FLAGS.still_condition:
+            if i not in FLAGS.still_condition:
                 t = x_t_dis[i].new_ones([x_t_dis[i].shape[0], ], dtype=torch.long) * time_step
                 cond = []
                 for j in range(len(log_x_T_dis)):
                     if j != i:
-                        if j == FLAGS.still_condition:
-                            cond.append(torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[j].device))
+                        if j in FLAGS.still_condition:
+                            cond.append(torch.tensor(still_cond_used_for_sampling[j]).to(torch.float32).to(x_t_dis[j].device))
                         else:
                             cond.append(x_t_dis[j])
                 # cond.append(x_t_cont) #0720
@@ -86,7 +86,8 @@ def sampling_with(x_T_cont, log_x_T_dis, attention, net_sampler, trainer_dis, tr
                 x_t_cont = x_t_minus_1_cont
                 x_t_dis[i] = x_t_minus_1_dis
 
-    x_t_dis[FLAGS.still_condition] = torch.tensor(still_cond_used_for_sampling).to(torch.float32).to(x_t_dis[FLAGS.still_condition].device)
+    for each in FLAGS.still_condition:
+        x_t_dis[each] = torch.tensor(still_cond_used_for_sampling[each]).to(torch.float32).to(x_t_dis[FLAGS.still_condition[each]].device)
     return  x_t_cont, [x.detach().cpu() for x in x_t_dis]
 
 def training_with(x_0_cont, x_0_dis, x_attention, trainer_cont, trainer_dis, trans, FLAGS, still_cond_used_for_sampling):
@@ -100,13 +101,13 @@ def training_with(x_0_cont, x_0_dis, x_attention, trainer_cont, trainer_dis, tra
     log_x_start = [0] * len(x_0_dis)
     x_t_dis = [0] * len(x_0_dis)
     for i in range(len(x_0_dis)):
-        if i != FLAGS.still_condition:
+        if i not in FLAGS.still_condition:
             log_x_start[i] = torch.log(x_0_dis[i].float().clamp(min=1e-30))
             x_t_dis[i] = trainer_dis[i].q_sample(log_x_start=log_x_start[i], t=t)
     # cond_for_continuous
     cond = []
     for j in range(len(x_0_dis)):
-        if j == FLAGS.still_condition:
+        if j in FLAGS.still_condition:
             cond.append(x_0_dis[j].to(torch.float32))
         else:
             cond.append(x_t_dis[j])
@@ -119,11 +120,11 @@ def training_with(x_0_cont, x_0_dis, x_attention, trainer_cont, trainer_dis, tra
 
     dis_loss = [0]*len(x_0_dis)
     for i in range(len(x_0_dis)):
-        if i != FLAGS.still_condition:
+        if i not in FLAGS.still_condition:
             cond = []
             for j in range(len(x_0_dis)):
                 if j != i:
-                    if j == FLAGS.still_condition:
+                    if j in FLAGS.still_condition:
                         cond.append(x_0_dis[j].to(torch.float32))
                     else:
                         cond.append(x_t_dis[j])

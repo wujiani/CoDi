@@ -28,6 +28,8 @@ def train(FLAGS):
     attention_tensor_list = [torch.tensor(attention_train).to(device) for attention_train in attention_train_list]
     print('attention_tensor_list', attention_tensor_list[0].shape, attention_tensor_list[1].shape, attention_tensor_list[2].shape ,attention_tensor_list[3].shape, attention_tensor_list[4].shape)
 
+    FLAGS.still_condition = [int(each) for each in FLAGS.still_condition.split(',')]
+    print('FLAGS.still_condition',FLAGS.still_condition)
     still_condition = FLAGS.still_condition
     # print('train_dis_data', type(train_dis_data), train_dis_data.shape)
     train_iter_cont = DataLoader(train_cont_data, batch_size=FLAGS.training_batch_size)
@@ -48,11 +50,11 @@ def train(FLAGS):
     print('num_class',num_class)
     train_dis_data_list = []
     train_dis_con_data_list = []
-    still_cond_used_for_sampling = None
+    still_cond_used_for_sampling_list = []
     k = 0
     for i in range(len(num_class)):
-        if i == still_condition:
-            still_cond_used_for_sampling = train_dis_data[:,k:k+num_class[i]]
+        if i in still_condition:
+            still_cond_used_for_sampling_list.append(train_dis_data[:,k:k+num_class[i]])
         train_dis_data_list.append(train_dis_data[:,k:k+num_class[i]])
         con_list = []
         kk = 0
@@ -156,7 +158,7 @@ def train(FLAGS):
                     x_attention_list[i] = each.permute(1, 0)
 
             for i in range(len(num_class)):
-                if i != FLAGS.still_condition:
+                if i not in FLAGS.still_condition:
                     # model_con.train()
                     model_dis_list[i].train()
 
@@ -170,7 +172,7 @@ def train(FLAGS):
             cont_loss, dis_loss_list = training_with(x_0_cont, x_0_dis_list, x_attention_list,
                                                      trainer_cont, trainer_dis_list,
                                                      trainer_cont, FLAGS,
-                                                     still_cond_used_for_sampling)
+                                                     still_cond_used_for_sampling_list)
             # loss_con = con_loss + FLAGS.lambda_con * con_loss_ns
             # loss_dis = dis_loss + FLAGS.lambda_dis * dis_loss_ns
             loss_cont = cont_loss
@@ -183,7 +185,7 @@ def train(FLAGS):
             for i in range(len(num_class)):
                 # loss_con = con_loss + FLAGS.lambda_con * con_loss_ns
                 # loss_dis = dis_loss + FLAGS.lambda_dis * dis_loss_ns
-                if i != FLAGS.still_condition:
+                if i not in FLAGS.still_condition:
                     loss_dis = dis_loss_list[i]
                     loss_dis.backward()
                     optim_dis_list[i].step()
@@ -207,7 +209,7 @@ def train(FLAGS):
                 # logging.info(f"Epoch :{epoch}, Total continuous loss: {loss_con:.3f}, discrete loss: {loss_dis:.3f}")
                 logging.info(f"Epoch :{epoch}, continuous loss: {cont_loss:.6f}")
                 for i in range(len(num_class)):
-                    if i != FLAGS.still_condition:
+                    if i not in FLAGS.still_condition:
                         logging.info(f"Epoch :{epoch}, discrete loss: {dis_loss_list[i]:.6f}")
                 epoch +=1
 
@@ -220,7 +222,7 @@ def train(FLAGS):
 
                 model_cont.eval()
                 for i in range(len(num_class)):
-                    if i != FLAGS.still_condition:
+                    if i not in FLAGS.still_condition:
                         model_dis_list[i].eval()
                 for i, each in enumerate(attention_tensor_list):
                     if i == 1 or i == 0 or i == 4:
@@ -229,7 +231,7 @@ def train(FLAGS):
                     x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
                     for i in range(len(num_class)):
                         log_x_T_dis_list[i] = log_sample_categorical(torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-                    x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, attention_tensor_list, net_sampler, trainer_dis_list, transformer_con, FLAGS, still_cond_used_for_sampling)
+                    x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, attention_tensor_list, net_sampler, trainer_dis_list, transformer_con, FLAGS, still_cond_used_for_sampling_list)
                 sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
                 # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
                 x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
@@ -278,7 +280,7 @@ def train(FLAGS):
         model_cont.load_state_dict(ckpt['model_con'])
         model_cont.eval()
         for i in range(len(num_class)):
-            if i != FLAGS.still_condition:
+            if i not in FLAGS.still_condition:
                 model_dis_list[i].load_state_dict(ckpt[f'model_dis_{i}'])
                 # model_con.eval()
                 model_dis_list[i].eval()
@@ -293,7 +295,7 @@ def train(FLAGS):
                     log_x_T_dis_list[i] = log_sample_categorical(
                         torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
                 x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list,attention_tensor_list, net_sampler, trainer_dis_list,
-                                                   transformer_con, FLAGS, still_cond_used_for_sampling)
+                                                   transformer_con, FLAGS, still_cond_used_for_sampling_list)
             sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
             # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
             x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
@@ -328,7 +330,7 @@ def train(FLAGS):
         model_cont.load_state_dict(ckpt['model_con'])
         model_cont.eval()
         for i in range(len(num_class)):
-            if i != FLAGS.still_condition:
+            if i not in FLAGS.still_condition:
                 model_dis_list[i].load_state_dict(ckpt[f'model_dis_{i}'])
                 # model_con.eval()
                 model_dis_list[i].eval()
@@ -380,7 +382,7 @@ def train(FLAGS):
                             device)
                     x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, attention_tensor_list,
                                                        net_sampler, trainer_dis_list,
-                                                       transformer_con, FLAGS, still_cond_used_for_sampling)
+                                                       transformer_con, FLAGS, still_cond_used_for_sampling_list)
                 sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
                 # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
                 x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
