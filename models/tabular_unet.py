@@ -83,7 +83,7 @@ class tabularUnet(nn.Module):
     dim_out = list(FLAGS.encoder_dim)[-1]   # 256
     self.bottom_block = nn.Linear(dim_in, dim_out) #bottom_block_layer     nn(256,256)
     
-    self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, cond_size, FLAGS) #decoder     Decoder([256,128,64],64, FLAGS)
+    self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, FLAGS.dmodel, FLAGS) #decoder     Decoder([256,128,64],64, FLAGS)
 
     dim_in = list(FLAGS.encoder_dim)[0]
     if i == '-1':
@@ -141,7 +141,7 @@ class tabularUnet(nn.Module):
       x = self.decoder(skip_connections, encoding, temb, -1)
     else:
 
-      x = self.decoder(skip_connections, encoding, temb, -1) # decoder([128,256],256,t=64),  output的x=64
+      x = self.decoder(skip_connections, encoding, temb, attention) # decoder([128,256],256,t=64),  output的x=64
 
     outputs = self.outputs(x)    #   nn(64, output)
 
