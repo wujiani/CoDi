@@ -156,8 +156,6 @@ def train(FLAGS):
 
             x_attention_list = [next(datalooper_train_attention).to(device) for datalooper_train_attention in datalooper_train_attention_list]
             print('x_attention_list')
-            for each in x_attention_list:
-                print('p',each)
             for i, each in enumerate(x_attention_list):
                 if i == 1 or i == 0 or i == 4:
                     x_attention_list[i] = each.permute(1, 0)
