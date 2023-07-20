@@ -37,11 +37,9 @@ class AttentionBlock(nn.Module):
         src_embed_list = [self.pos_embedding(src_embed) for src_embed in src_embed_list]  # [src_len, batch_size, embed_dim]
         tgt_embed = self.src_token_embedding_list[0](tgt)  # [tgt_len, batch_size, embed_dim]
         tgt_embed = self.pos_embedding(tgt_embed)  # [tgt_len, batch_size, embed_dim]
-        src_embed = torch.cat(src_embed_list, dim=1)
+        src_embed = torch.cat(src_embed_list, dim=0)
         src_key_padding_mask = torch.cat(src_key_padding_mask, dim=1)
 
-        src_embed=src_embed.permute(1,0,2)
-        tgt_embed = tgt_embed.permute(1, 0, 2)
         outs = self.my_transformer(src=src_embed, tgt=tgt_embed, src_mask=src_mask,
                                    tgt_mask=tgt_mask, memory_mask=memory_mask,
                                    src_key_padding_mask=src_key_padding_mask,

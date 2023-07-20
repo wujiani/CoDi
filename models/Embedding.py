@@ -36,6 +36,9 @@ class PositionalEncoding(nn.Module):
         :param x: [x_len, batch_size, emb_size]
         :return: [x_len, batch_size, emb_size]
         """
+
+        # print('x',x.shape)
+        # print('self.pe[:x.size(0), :]',self.pe[:x.size(0), :].shape)
         x = x + self.pe[:x.size(0), :]  # [src_len,batch_size, d_model] + [src_len, 1, d_model]
         return self.dropout(x)  # [src_len,batch_size, d_model]
 
