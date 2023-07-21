@@ -436,7 +436,7 @@ def train(FLAGS):
         gen['res'] = gen_res
         gen['wait'] = gen_wait
         gen['process'] = gen_process
-        gen['res'] = gen['res'].map(lambda x:x if x=='Start' or x=='End' else dict_res_index[int(x)])
+        gen['res'] = gen['res'].map(lambda x:x if x=='Start' or x=='End' else dict_res_index[str(int(x))])
         gen['wait'] = gen['wait'].map(lambda x: round(math.exp(x) - 1))
         gen['process'] = gen['process'].map(lambda x: round(math.exp(x) - 1))
         gen.to_csv(os.path.join(FLAGS.logdir, f'gen_sample.csv'), index=False)
