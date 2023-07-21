@@ -427,7 +427,7 @@ def train(FLAGS):
                 gen_res.append(new_res)
                 gen_wait.append(sample[:, 2][0])
                 gen_process.append(sample[:, 3][0])
-        filename = FLAGS.data + 'res_act.csv'
+        filename = FLAGS.data + '_res_act.json'
         DATA_PATH = os.path.join(os.path.dirname(__file__), 'tabular_datasets')
         local_path = os.path.join(DATA_PATH, filename)
         with open(local_path) as json_file:
