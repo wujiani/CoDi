@@ -387,9 +387,13 @@ def train(FLAGS):
                     acts_padding = [[False for each in acts_prev[0]]]
                     res_padding = [[False for each in res_prev[0]]]
                 else:
+
                     acts_prev[0].append(int(gen_act[i - 1]))
                     res_prev[0].append(int(gen_res[i - 1]))
-
+                    if len(acts_prev[0]) >= 30:
+                        acts_prev[0] = acts_prev[0][-30:]
+                    if len(res_prev[0]) >= 30:
+                        res_prev[0] = res_prev[0][-30:]
                     acts_padding = [[False for each in acts_prev[0]]]
                     res_padding = [[False for each in res_prev[0]]]
 
