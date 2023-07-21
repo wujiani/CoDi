@@ -1,0 +1,6 @@
+Unnamed: 0,caseid,act,index,last,next,if_para,start_timestamp,end_timestamp,resource,activity
+1,1,Start,1,None,2,0,,,Start,Start
+2,1,9,2,1,3,0,,,Traer informacion estudiante - banner,Traer informacion estudiante - banner
+3,1,6,3,2,4,0,,,Radicar Solicitud Homologacion,Radicar Solicitud Homologacion
+4,1,5,4,3,5,0,,,Notificacion estudiante cancelacion soli,Notificacion estudiante cancelacion soli
+5,1,End,5,4,None,0,,,End,End
