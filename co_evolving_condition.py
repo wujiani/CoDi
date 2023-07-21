@@ -1,5 +1,6 @@
 import os
 import math
+import json
 import torch
 from absl import flags
 # import torch
@@ -426,15 +427,12 @@ def train(FLAGS):
                 gen_res.append(new_res)
                 gen_wait.append(sample[:, 2][0])
                 gen_process.append(sample[:, 3][0])
-        dict_res_index = {0:"Alberto_Duport",1:"Anna_Kaufmann",2:"Anne_Olwada",
-                          3:"Carmen_Finacse",4:"Christian_Francois",5:"Clement_Duchot",
-                          6:"Elvira_Lores",7:"Esmana_Liubiata",8:"Esmeralda_Clay",
-                          9:"Fjodor_Kowalski",10:"Francis_Odell",11:"Francois_de_Perrier",
-                          12:"Heinz_Gutschmidt",13:"Immanuel_Karagianni",14:"Karalda_Nimwada",
-                          15:"Karel_de_Groot",16:"Karen_Clarens",17:"Kim_Passa",
-                          18:"Kiu_Kan",19:"Magdalena_Predutta",20:"Maris_Freeman",
-                          21:"Miu_Hanwan",22:"Nico_Ojenbeer",23:"Pedro_Alvares",
-                          24:"Penn_Osterwalder",25:"Sean_Manney",26:"Tesca_Lobes"}
+        filename = FLAGS.data + 'res_act.csv'
+        DATA_PATH = os.path.join(os.path.dirname(__file__), 'tabular_datasets')
+        local_path = os.path.join(DATA_PATH, filename)
+        with open(local_path) as json_file:
+            a = json.load(json_file)
+        dict_res_index = a
         gen['res'] = gen_res
         gen['wait'] = gen_wait
         gen['process'] = gen_process
