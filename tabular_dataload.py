@@ -64,8 +64,11 @@ def load_data(name, benchmark=False):
     attention_train_list = [data['train_attention'][:,i].tolist() for i in range(data['train_attention'].shape[1])]
     attention_test_list = [data['train_attention'][:,i].tolist() for i in range(data['train_attention'].shape[1])]
 
+    transformer_data_list = [data['train_transformer'][:, i].tolist() for i in
+                             range(data['train_transformer'].shape[1])]
 
-    return train, test, (categorical_columns, meta), attention_train_list, attention_test_list
+    return train, test, (categorical_columns, meta), attention_train_list, attention_test_list, transformer_data_list
+
 
 def get_dataset(FLAGS, evaluation=False):
 
@@ -77,7 +80,7 @@ def get_dataset(FLAGS, evaluation=False):
 
 
   # Create dataset builders for tabular data.
-  train, test, cols, attention_train_list, attention_test_list = load_data(FLAGS.data)
+  train, test, cols, attention_train_list, attention_test_list, transformer_data_list = load_data(FLAGS.data)
   cols_idx = list(np.arange(train.shape[1]))
   dis_idx = cols[0]
   con_idx = [x for x in cols_idx if x not in dis_idx]
@@ -102,5 +105,4 @@ def get_dataset(FLAGS, evaluation=False):
   FLAGS.tgt_vocab_size = FLAGS.src_vocab_size_list[0]
   print('FLAGS.src_vocab_size_list', FLAGS.tgt_vocab_size)
 
-  return train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, (transformer_con, transformer_dis, cols[1]), con_idx, dis_idx
-      
+  return train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, transformer_data_list, (transformer_con, transformer_dis, cols[1]), con_idx, dis_idx

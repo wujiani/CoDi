@@ -18,7 +18,9 @@ class AttentionBlock(nn.Module):
                                             dim_feedforward=dim_feedforward,
                                             dropout=dropout)
         self.pos_embedding = PositionalEncoding(d_model=d_model, dropout=dropout)
-        self.src_token_embedding_list = [TokenEmbedding(src_vocab_size, d_model) for src_vocab_size in src_vocab_size_list]
+        self.src_token_embedding_list = [TokenEmbedding(src_vocab_size, d_model) for src_vocab_size in
+                                         src_vocab_size_list]
+        self.classification = nn.Linear(d_model, src_vocab_size_list[-1])  # 1
         self._reset_parameters()
 
     def forward(self, src_list=None, tgt=None, src_mask=None,
@@ -33,8 +35,10 @@ class AttentionBlock(nn.Module):
         :param memory_key_padding_mask: 用来Mask掉Encoder输出的memory中不同序列的padding部分 [batch_size, src_len]
         :return:
         """
-        src_embed_list = [self.src_token_embedding_list[i](src) for i, src in enumerate(src_list)]  # [src_len, batch_size, embed_dim]
-        src_embed_list = [self.pos_embedding(src_embed) for src_embed in src_embed_list]  # [src_len, batch_size, embed_dim]
+        src_embed_list = [self.src_token_embedding_list[i](src) for i, src in
+                          enumerate(src_list)]  # [src_len, batch_size, embed_dim]
+        src_embed_list = [self.pos_embedding(src_embed) for src_embed in
+                          src_embed_list]  # [src_len, batch_size, embed_dim]
         tgt_embed = self.src_token_embedding_list[0](tgt)  # [tgt_len, batch_size, embed_dim]
         tgt_embed = self.pos_embedding(tgt_embed)  # [tgt_len, batch_size, embed_dim]
         src_embed = torch.cat(src_embed_list, dim=0)
@@ -45,9 +49,9 @@ class AttentionBlock(nn.Module):
                                    tgt_key_padding_mask=tgt_key_padding_mask,
                                    memory_key_padding_mask=memory_key_padding_mask)
         # [tgt_len,batch_size,embed_dim]
-        outs = outs.squeeze(0)
-        outs[outs.isnan()] = 0
-        return outs #[batch_size,embed_dim]
+
+        outs = self.classification(outs)  # [tgt_len,batch_size,tgt_vocab_size]
+        return outs  # [batch_size,embed_dim]
 
     def encoder(self, src):
         src_embed = self.src_token_embedding(src)  # [src_len, batch_size, embed_dim]
