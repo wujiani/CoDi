@@ -494,7 +494,7 @@ def train(FLAGS):
 
                 attention_tensor_list = [torch.tensor(acts_prev).to(device), torch.tensor(res_prev).to(device),
                                              torch.tensor(acts_padding).to(device),torch.tensor(res_padding).to(device),
-                                         torch.tensor(cur_act).to(device) ]
+                                         torch.tensor(cur_act).to(device), torch.tensor([]).to(device)]
                 for i, each in enumerate(attention_tensor_list):
                     if i == 1 or i == 0 or i == 4:
                         attention_tensor_list[i] = each.permute(1, 0)
