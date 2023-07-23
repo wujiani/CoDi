@@ -224,9 +224,9 @@ def train(FLAGS):
                 for i in range(len(num_class)):
                     if i not in FLAGS.still_condition:
                         model_dis_list[i].eval()
-                for i, each in enumerate(attention_tensor_list):
-                    if i == 1 or i == 0 or i == 4:
-                        attention_tensor_list[i] = each.permute(1, 0)
+                # for i, each in enumerate(attention_tensor_list):
+                #     if i == 1 or i == 0 or i == 4:
+                #         attention_tensor_list[i] = each.permute(1, 0)
                 with torch.no_grad():
                     x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
                     for i in range(len(num_class)):
