@@ -25,7 +25,7 @@ get_act = layers.get_act
 default_initializer = layers.default_init
 
 class tabularUnet(nn.Module):
-  def __init__(self, FLAGS, i, transformer_output_shape=None, transformer_model=None):
+  def __init__(self, FLAGS, i, transformer_model=None):
     super().__init__()
 
     self.embed_dim = FLAGS.nf # 16

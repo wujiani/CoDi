@@ -176,7 +176,7 @@ def train_diff(FLAGS,
     FLAGS.cont_output_size = train_cont_data.shape[1]
     FLAGS.encoder_dim = list(map(int, FLAGS.encoder_dim_con.split(',')))
     FLAGS.nf = FLAGS.nf_con
-    model_cont = tabularUnet(FLAGS, '-1', transformer_output_shape, transformer_model)
+    model_cont = tabularUnet(FLAGS, '-1', transformer_model)
     optim_cont = torch.optim.Adam(model_cont.parameters(), lr=FLAGS.lr_con)
     sched_cont = torch.optim.lr_scheduler.LambdaLR(optim_cont, lr_lambda=warmup_lr)
     trainer_cont = GaussianDiffusionTrainer(model_cont, FLAGS.beta_1, FLAGS.beta_T, FLAGS.T).to(device)
@@ -199,7 +199,7 @@ def train_diff(FLAGS,
         FLAGS.dis_output_size[i] = train_dis_data_list[i].shape[1]
         FLAGS.encoder_dim = list(map(int, FLAGS.encoder_dim_dis.split(',')))
         FLAGS.nf = FLAGS.nf_dis
-        model_dis_list[i] = tabularUnet(FLAGS, i, transformer_output_shape, transformer_model)
+        model_dis_list[i] = tabularUnet(FLAGS, i, transformer_model)
         optim_dis_list[i] = torch.optim.Adam(model_dis_list[i].parameters(), lr=FLAGS.lr_dis)
         sched_dis_list[i] = torch.optim.lr_scheduler.LambdaLR(optim_dis_list[i], lr_lambda=warmup_lr)
         trainer_dis_list[i] = MultinomialDiffusion(num_class[i], train_dis_data_list[i].shape, model_dis_list[i], FLAGS,
@@ -383,7 +383,16 @@ def train(FLAGS):
             k += num_class[i]
             train_dis_con_data_list.append(con_list)
         print('still_cond_used_for_sampling_list', still_cond_used_for_sampling_list)
-        model_cont = tabularUnet(FLAGS, '-1')
+
+        transformer_model = AttentionBlock(FLAGS.src_vocab_size_list, FLAGS.tgt_vocab_size,
+                                           len(FLAGS.src_vocab_size_list),
+                                           d_model=FLAGS.dmodel)
+
+        transformer_model_save_path = os.path.join(FLAGS.logdir, 'transformer_model.pkl')
+        loaded_paras = torch.load(transformer_model_save_path)
+        transformer_model.load_state_dict(loaded_paras)
+
+        model_cont = tabularUnet(FLAGS, '-1', transformer_model)
         net_sampler = GaussianDiffusionSampler(model_cont, FLAGS.beta_1, FLAGS.beta_T, FLAGS.T, FLAGS.mean_type,
                                                FLAGS.var_type).to(device)
         if FLAGS.parallel:
@@ -391,7 +400,7 @@ def train(FLAGS):
         model_dis_list = [0] * len(num_class)
         trainer_dis_list = [0] * len(num_class)
         for i in range(len(num_class)):
-            model_dis_list[i] = tabularUnet(FLAGS, i)
+            model_dis_list[i] = tabularUnet(FLAGS, i, transformer_model)
             trainer_dis_list[i] = MultinomialDiffusion(num_class[i], train_dis_data_list[i].shape, model_dis_list[i],
                                                        FLAGS,
                                                        timesteps=FLAGS.T, loss_type='vb_stochastic').to(device)
