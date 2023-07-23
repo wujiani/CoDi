@@ -343,7 +343,9 @@ def train(FLAGS):
     logging.info("################## train transformer #########################")
     transformer_output_shape, transformer_model = train_transformer(FLAGS, total_steps_both, transformer_data_list)
     logging.info("################## train diffusion model #########################")
-    transformer_model.to(device).eval()
+    for p in transformer_model.parameters():
+        p.requires_grad = False
+    transformer_model.to(device)
     train_diff(FLAGS,
                attention_train_list,
                train_cont_data,
