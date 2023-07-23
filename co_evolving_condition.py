@@ -153,9 +153,9 @@ def train(FLAGS):
                 # con_loss, con_loss_ns, dis_loss, dis_loss_ns = training_with(x_0_con, x_0_dis, trainer, trainer_dis, ns_con, ns_dis, transformer_dis, FLAGS)
 
             x_attention_list = [next(datalooper_train_attention).to(device) for datalooper_train_attention in datalooper_train_attention_list]
-            for i, each in enumerate(x_attention_list):
-                if i == 1 or i == 0 or i == 4:
-                    x_attention_list[i] = each.permute(1, 0)
+            # for i, each in enumerate(x_attention_list):
+            #     if i == 1 or i == 0 or i == 4:
+            #         x_attention_list[i] = each.permute(1, 0)
 
             for i in range(len(num_class)):
                 if i not in FLAGS.still_condition:
