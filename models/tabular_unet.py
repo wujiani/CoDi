@@ -77,13 +77,13 @@ class tabularUnet(nn.Module):
     dim_out = list(FLAGS.encoder_dim)[0]
     self.inputs = nn.Linear(dim_in, dim_out) # input layer      nn(input, 64)
 
-    self.encoder = layers.Encoder(list(FLAGS.encoder_dim), tdim, transformer_output_shape, FLAGS) # encoder   Encoder([64,128,256],64, FLAGS)
+    self.encoder = layers.Encoder(list(FLAGS.encoder_dim), tdim, FLAGS.src_vocab_size_list[-1], FLAGS) # encoder   Encoder([64,128,256],64, FLAGS)
 
     dim_in = list(FLAGS.encoder_dim)[-1]   # 256
     dim_out = list(FLAGS.encoder_dim)[-1]   # 256
     self.bottom_block = nn.Linear(dim_in, dim_out) #bottom_block_layer     nn(256,256)
     
-    self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, transformer_output_shape, FLAGS) #decoder     Decoder([256,128,64],64, FLAGS)
+    self.decoder = layers.Decoder(list(reversed(FLAGS.encoder_dim)), tdim, FLAGS.src_vocab_size_list[-1], FLAGS) #decoder     Decoder([256,128,64],64, FLAGS)
 
     dim_in = list(FLAGS.encoder_dim)[0]
     if i == '-1':
@@ -92,6 +92,7 @@ class tabularUnet(nn.Module):
       dim_out = FLAGS.dis_output_size[i]
     self.outputs = nn.Linear(dim_in, dim_out) #output layer    nn(64, output)
 
+    print("transformer_model", transformer_model)
     self.attention = transformer_model
 
   def forward(self, x, time_cond, cond, x_attention, if_cont):

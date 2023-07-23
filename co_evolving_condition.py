@@ -116,7 +116,8 @@ def train_diff(FLAGS,
                transformer_dis,
                transformer_output_shape,
                transformer_model,
-               total_steps_both
+               total_steps_both,
+               sample_step
                ):
     attention_tensor_list = [torch.tensor(attention_train).to(device) for attention_train in attention_train_list]
     print('attention_tensor_list', attention_tensor_list[0].type(), attention_tensor_list[1].shape,
@@ -215,7 +216,6 @@ def train_diff(FLAGS,
     scores_max_eval = -10
 
     print('total_steps_both', total_steps_both)
-    sample_step = FLAGS.sample_step * int(train.shape[0] / FLAGS.training_batch_size + 1)  # 2000, sample times
     logging.info("Total steps: %d" % total_steps_both)
     logging.info("Sample steps: %d" % sample_step)
     logging.info("Continuous: %d, %d" % (train_cont_data.shape[0], train_cont_data.shape[1]))
@@ -336,6 +336,7 @@ def train(FLAGS):
 
     total_steps_both = FLAGS.total_epochs_both * int(
         train.shape[0] / FLAGS.training_batch_size + 1)  # 20000, training times
+    sample_step = FLAGS.sample_step * int(train.shape[0] / FLAGS.training_batch_size + 1)  # 2000, sample times
 
     logging.info("################## train transformer #########################")
     transformer_output_shape, transformer_model = train_transformer(FLAGS, total_steps_both, transformer_data_list)
@@ -349,7 +350,8 @@ def train(FLAGS):
                transformer_dis,
                transformer_output_shape,
                transformer_model,
-               total_steps_both)
+               total_steps_both,
+               sample_step)
 
     # TODO
     if FLAGS.eval == True:
