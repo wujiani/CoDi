@@ -70,8 +70,8 @@ class tabularUnet(nn.Module):
       dim_in = FLAGS.cont_input_size + cond_size   #  input  是input data和condition layer的output的维度
 
     else:
-      dim_in = FLAGS.dis_input_size[i] + cond_size
-      # dim_in = FLAGS.dis_input_size[i] + cond_size + FLAGS.dmodel  #  input  是input data和condition layer的output的维度
+      # dim_in = FLAGS.dis_input_size[i] + cond_size
+      dim_in = FLAGS.dis_input_size[i] + cond_size + FLAGS.src_vocab_size_list[1] #  input  是input data和condition layer的output的维度
     print('dim_in',i, dim_in, cond_size)
     # dim_in = FLAGS.input_size[i] #  input  是input data和condition layer的output的维度
     dim_out = list(FLAGS.encoder_dim)[0]
