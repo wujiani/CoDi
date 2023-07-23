@@ -50,13 +50,10 @@ def accuracy(logits, y_true):
     return float(correct)
 
 
-def train_transformer(FLAGS, transformer_data_list):
+def train_transformer(FLAGS, transformer_data_list, total_steps_both):
 
     transformer_model = AttentionBlock(FLAGS.src_vocab_size_list, FLAGS.tgt_vocab_size, len(FLAGS.src_vocab_size_list),
                                        d_model=FLAGS.dmodel)
-
-    total_steps_both = FLAGS.total_epochs_both * int(
-        train.shape[0] / FLAGS.training_batch_size + 1)  # 20000, training times
 
     transformer_model_save_path = os.path.join(FLAGS.logdir, 'transformer_model.pkl')
     if os.path.exists(transformer_model_save_path):
@@ -118,7 +115,8 @@ def train_diff(FLAGS,
                transformer_con,
                transformer_dis,
                transformer_output_shape,
-               transformer_model
+               transformer_model,
+               total_steps_both
                ):
     attention_tensor_list = [torch.tensor(attention_train).to(device) for attention_train in attention_train_list]
     print('attention_tensor_list', attention_tensor_list[0].type(), attention_tensor_list[1].shape,
@@ -216,8 +214,6 @@ def train_diff(FLAGS,
 
     scores_max_eval = -10
 
-    total_steps_both = FLAGS.total_epochs_both * int(
-        train.shape[0] / FLAGS.training_batch_size + 1)  # 20000, training times
     print('total_steps_both', total_steps_both)
     sample_step = FLAGS.sample_step * int(train.shape[0] / FLAGS.training_batch_size + 1)  # 2000, sample times
     logging.info("Total steps: %d" % total_steps_both)
@@ -338,8 +334,11 @@ def train(FLAGS):
     train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, transformer_data_list, (
     transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)    # for att_i in attention_train
 
+    total_steps_both = FLAGS.total_epochs_both * int(
+        train.shape[0] / FLAGS.training_batch_size + 1)  # 20000, training times
+
     logging.info("################## train transformer #########################")
-    transformer_output_shape, transformer_model = train_transformer(FLAGS, transformer_data_list)
+    transformer_output_shape, transformer_model = train_transformer(FLAGS, transformer_data_list, total_steps_both)
     logging.info("################## train diffusion model #########################")
     train_diff(FLAGS,
                attention_train_list,
@@ -348,7 +347,8 @@ def train(FLAGS):
                transformer_con,
                transformer_dis,
                transformer_output_shape,
-               transformer_model)
+               transformer_model,
+               total_steps_both)
 
     # TODO
     if FLAGS.eval == True:
