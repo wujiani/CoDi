@@ -57,6 +57,7 @@ flags.DEFINE_float('lr_dis', 2e-03, help='target learning rate')
 flags.DEFINE_integer('total_epochs_both', 2000, help='total training steps')
 flags.DEFINE_float('grad_clip', 1., help="gradient norm clipping")
 flags.DEFINE_bool('parallel', False, help='multi gpu training')
+flags.DEFINE_integer('transfomer_steps', 1000, help='transfomer training steps')
 
 # Sampling
 flags.DEFINE_integer('sample_step', 2000, help='frequency of sampling')

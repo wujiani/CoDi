@@ -50,7 +50,7 @@ def accuracy(logits, y_true):
     return float(correct)
 
 
-def train_transformer(FLAGS, total_steps_both, transformer_data_list):
+def train_transformer(FLAGS, transfomer_steps, transformer_data_list):
 
     transformer_model = AttentionBlock(FLAGS.src_vocab_size_list, FLAGS.tgt_vocab_size, len(FLAGS.src_vocab_size_list),
                                        d_model=FLAGS.dmodel)
@@ -59,7 +59,7 @@ def train_transformer(FLAGS, total_steps_both, transformer_data_list):
     if os.path.exists(transformer_model_save_path):
         loaded_paras = torch.load(transformer_model_save_path)
         transformer_model.load_state_dict(loaded_paras)
-        total_steps_both = 0
+        transfomer_steps = 0
         logging.info("#### 成功载入已有模型...")
     transformer_model = transformer_model.to("cpu")
     trans_loss_fn = torch.nn.CrossEntropyLoss()
@@ -68,8 +68,8 @@ def train_transformer(FLAGS, total_steps_both, transformer_data_list):
                                        lr=0.)
     trans_lr_scheduler = CustomSchedule(FLAGS.dmodel, optimizer=trans_optimizer)
 
-    print('total_steps_both', total_steps_both)
-    logging.info("Total steps: %d" % total_steps_both)
+    print('transfomer_steps', transfomer_steps)
+    logging.info("Total steps: %d" % transfomer_steps)
 
     # Start Training
     output_shape = None
@@ -81,7 +81,7 @@ def train_transformer(FLAGS, total_steps_both, transformer_data_list):
         writer = SummaryWriter(FLAGS.logdir)
         writer.flush()
         transformer_model.train()
-        for step in range(total_steps_both):
+        for step in range(transfomer_steps):
             x_transformer_list = [next(datalooper_train_transformer).to("cpu") for datalooper_train_transformer in
                                   datalooper_train_transformer_list]
             for i, each in enumerate(x_transformer_list):
@@ -342,7 +342,7 @@ def train(FLAGS):
 
     if FLAGS.eval == False:
         logging.info("################## train transformer #########################")
-        transformer_output_shape, transformer_model = train_transformer(FLAGS, total_steps_both, transformer_data_list)
+        transformer_output_shape, transformer_model = train_transformer(FLAGS, FLAGS.transfomer_steps, transformer_data_list)
         logging.info("################## train diffusion model #########################")
         for p in transformer_model.parameters():
             p.requires_grad = False
