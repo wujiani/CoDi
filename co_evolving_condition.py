@@ -50,7 +50,7 @@ def accuracy(logits, y_true):
     return float(correct)
 
 
-def train_transformer(FLAGS, transformer_data_list, total_steps_both):
+def train_transformer(FLAGS, total_steps_both, transformer_data_list):
 
     transformer_model = AttentionBlock(FLAGS.src_vocab_size_list, FLAGS.tgt_vocab_size, len(FLAGS.src_vocab_size_list),
                                        d_model=FLAGS.dmodel)
