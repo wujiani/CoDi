@@ -72,8 +72,8 @@ def train_transformer(FLAGS, total_steps_both, transformer_data_list):
     logging.info("Total steps: %d" % total_steps_both)
 
     # Start Training
+    output_shape = None
     if FLAGS.eval == False:
-        output_shape = None
         train_iter_transformer_list = [DataLoader(torch.tensor(transformer_data), batch_size=FLAGS.training_batch_size)
                                        for transformer_data in transformer_data_list]
         datalooper_train_transformer_list = [infiniteloop(train_iter_transformer) for train_iter_transformer in
@@ -340,26 +340,27 @@ def train(FLAGS):
     sample_step = FLAGS.sample_step * int(train.shape[0] / FLAGS.training_batch_size + 1)  # 2000, sample times
     steps_interval = int(train.shape[0] / FLAGS.training_batch_size + 1)
 
-    logging.info("################## train transformer #########################")
-    transformer_output_shape, transformer_model = train_transformer(FLAGS, total_steps_both, transformer_data_list)
-    logging.info("################## train diffusion model #########################")
-    for p in transformer_model.parameters():
-        p.requires_grad = False
-    transformer_model.to(device)
-    train_diff(FLAGS,
-               attention_train_list,
-               train_cont_data,
-               train_dis_data,
-               transformer_con,
-               transformer_dis,
-               transformer_output_shape,
-               transformer_model,
-               total_steps_both,
-               sample_step,
-               steps_interval)
+    if FLAGS.eval == False:
+        logging.info("################## train transformer #########################")
+        transformer_output_shape, transformer_model = train_transformer(FLAGS, total_steps_both, transformer_data_list)
+        logging.info("################## train diffusion model #########################")
+        for p in transformer_model.parameters():
+            p.requires_grad = False
+        transformer_model.to(device)
+        train_diff(FLAGS,
+                   attention_train_list,
+                   train_cont_data,
+                   train_dis_data,
+                   transformer_con,
+                   transformer_dis,
+                   transformer_output_shape,
+                   transformer_model,
+                   total_steps_both,
+                   sample_step,
+                   steps_interval)
 
     # TODO
-    if FLAGS.eval == True:
+    else:
         num_class = []
         for i in transformer_dis.output_info:
             num_class.append(i[0])
@@ -368,6 +369,7 @@ def train(FLAGS):
         train_dis_data_list = []
         train_dis_con_data_list = []
         still_cond_used_for_sampling_list = []
+        FLAGS.still_condition = [int(each) for each in FLAGS.still_condition.split(',')]
         k = 0
         for i in range(len(num_class)):
             if i in FLAGS.still_condition:
@@ -391,7 +393,14 @@ def train(FLAGS):
         transformer_model_save_path = os.path.join(FLAGS.logdir, 'transformer_model.pkl')
         loaded_paras = torch.load(transformer_model_save_path)
         transformer_model.load_state_dict(loaded_paras)
+        transformer_model.eval()
 
+        FLAGS.cont_input_size = train_cont_data.shape[1]
+        FLAGS.cont_cond_size = [each_cond.shape[1] for each_cond in train_dis_data_list]
+        print('FLAGS.cont_cond_size', FLAGS.cont_cond_size)
+        FLAGS.cont_output_size = train_cont_data.shape[1]
+        FLAGS.encoder_dim = list(map(int, FLAGS.encoder_dim_con.split(',')))
+        FLAGS.nf = FLAGS.nf_con
         model_cont = tabularUnet(FLAGS, '-1', transformer_model)
         net_sampler = GaussianDiffusionSampler(model_cont, FLAGS.beta_1, FLAGS.beta_T, FLAGS.T, FLAGS.mean_type,
                                                FLAGS.var_type).to(device)
@@ -399,7 +408,16 @@ def train(FLAGS):
             net_sampler = torch.nn.DataParallel(net_sampler)
         model_dis_list = [0] * len(num_class)
         trainer_dis_list = [0] * len(num_class)
+        FLAGS.dis_input_size = [0] * len(num_class)
+        FLAGS.dis_cond_size = [0] * len(num_class)
+        FLAGS.dis_output_size = [0] * len(num_class)
         for i in range(len(num_class)):
+            FLAGS.dis_input_size[i] = train_dis_data_list[i].shape[1]
+            FLAGS.dis_cond_size[i] = [each_cond.shape[1] for each_cond in train_dis_con_data_list[i]]
+            print('FLAGS.dis_cond_size[i]', FLAGS.dis_cond_size[i])
+            FLAGS.dis_output_size[i] = train_dis_data_list[i].shape[1]
+            FLAGS.encoder_dim = list(map(int, FLAGS.encoder_dim_dis.split(',')))
+            FLAGS.nf = FLAGS.nf_dis
             model_dis_list[i] = tabularUnet(FLAGS, i, transformer_model)
             trainer_dis_list[i] = MultinomialDiffusion(num_class[i], train_dis_data_list[i].shape, model_dis_list[i],
                                                        FLAGS,
