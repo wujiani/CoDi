@@ -121,11 +121,13 @@ class tabularUnet(nn.Module):
       x = torch.cat([x, all_cond], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
     else:
     # attention
-
+      attention = self.attention(src_list=x_attention[:-4], tgt=x_attention[-2], src_key_padding_mask=x_attention[-4:-2])
+      attention = attention.squeeze(0)
+      attention[attention.isnan()] = 0
 
       # attention = self.attention(src_list=x_attention[:-3], tgt=x_attention[-1], src_key_padding_mask=x_attention[-3:-1])
-      # x = torch.cat([x, all_cond, attention], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
-      x = torch.cat([x, all_cond], dim=1).float()
+      x = torch.cat([x, all_cond, attention], dim=1).float()   #x是continuous data或者discrete data加上condition的维度
+      # x = torch.cat([x, all_cond], dim=1).float()
     # x = torch.cat([x], dim=1).float()  # x是continuous data或者discrete data加上condition的维度
     inputs = self.inputs(x) #input layer   nn(input, 64)    #   input  是input data和condition layer的output ,
     # output=64 asa inputs(value)=64
@@ -133,17 +135,15 @@ class tabularUnet(nn.Module):
     if if_cont:
       skip_connections, encoding = self.encoder(inputs, temb, -1)   #encoder input=64, output=256（layers第104行，x=64->128->256)
     else:
-      attention = self.attention(src_list=x_attention[:-4], tgt=x_attention[-2], src_key_padding_mask=x_attention[-4:-2])
-      attention = attention.squeeze(0)
-      attention[attention.isnan()] = 0
-      skip_connections, encoding = self.encoder(inputs, temb, attention)
+
+      skip_connections, encoding = self.encoder(inputs, temb,-1)
     encoding = self.bottom_block(encoding)   #nn(256,256)  input=256, output=256
     encoding = self.act(encoding)    # relu output=256
     if if_cont:
       x = self.decoder(skip_connections, encoding, temb, -1)
     else:
 
-      x = self.decoder(skip_connections, encoding, temb, attention) # decoder([128,256],256,t=64),  output的x=64
+      x = self.decoder(skip_connections, encoding, temb, -1) # decoder([128,256],256,t=64),  output的x=64
 
     outputs = self.outputs(x)    #   nn(64, output)
 
