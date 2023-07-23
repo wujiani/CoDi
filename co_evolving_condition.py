@@ -117,7 +117,8 @@ def train_diff(FLAGS,
                transformer_output_shape,
                transformer_model,
                total_steps_both,
-               sample_step
+               sample_step,
+               steps_interval
                ):
     attention_tensor_list = [torch.tensor(attention_train).to(device) for attention_train in attention_train_list]
     print('attention_tensor_list', attention_tensor_list[0].type(), attention_tensor_list[1].shape,
@@ -249,7 +250,7 @@ def train_diff(FLAGS,
             x_attention_list = [next(datalooper_train_attention).to(device) for datalooper_train_attention in
                                 datalooper_train_attention_list]
             for i, each in enumerate(x_attention_list):
-                if i == 1 or i == 0 or i == 4:
+                if i == 1 or i == 0 or i == 4 or i == 5:
                     x_attention_list[i] = each.permute(1, 0)
 
             for i in range(len(num_class)):
@@ -298,7 +299,7 @@ def train_diff(FLAGS,
             # writer.add_scalar('total_discrete', loss_dis, step)
             # model_dis_list[i].train(mode=False)
 
-            if (step + 1) % int(train.shape[0] / FLAGS.training_batch_size + 1) == 0:
+            if (step + 1) % steps_interval == 0:
 
                 # logging.info(f"Epoch :{epoch}, diffusion continuous loss: {con_loss:.3f}, discrete loss: {dis_loss:.3f}")
                 # logging.info(f"Epoch :{epoch}, CL continuous loss: {con_loss_ns:.3f}, discrete loss: {dis_loss_ns:.3f}")
@@ -337,6 +338,7 @@ def train(FLAGS):
     total_steps_both = FLAGS.total_epochs_both * int(
         train.shape[0] / FLAGS.training_batch_size + 1)  # 20000, training times
     sample_step = FLAGS.sample_step * int(train.shape[0] / FLAGS.training_batch_size + 1)  # 2000, sample times
+    steps_interval = int(train.shape[0] / FLAGS.training_batch_size + 1)
 
     logging.info("################## train transformer #########################")
     transformer_output_shape, transformer_model = train_transformer(FLAGS, total_steps_both, transformer_data_list)
@@ -351,7 +353,8 @@ def train(FLAGS):
                transformer_output_shape,
                transformer_model,
                total_steps_both,
-               sample_step)
+               sample_step,
+               steps_interval)
 
     # TODO
     if FLAGS.eval == True:
