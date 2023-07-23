@@ -118,7 +118,9 @@ def train_diff(FLAGS,
                transformer_model,
                total_steps_both,
                sample_step,
-               steps_interval
+               steps_interval,
+               con_idx,
+               dis_idx
                ):
     attention_tensor_list = [torch.tensor(attention_train).to(device) for attention_train in attention_train_list]
     print('attention_tensor_list', attention_tensor_list[0].type(), attention_tensor_list[1].shape,
@@ -311,12 +313,46 @@ def train_diff(FLAGS,
                 epoch += 1
 
             if step > 0 and sample_step > 0 and step % sample_step == 0 or step == (total_steps_both - 1):
+                print('llll')
+                log_x_T_dis_list = [0] * len(num_class)
+                x_dis_list = [0] * len(num_class)
+                sample_dis_list = [0] * len(num_class)
+                sample_list = [0] * len(num_class)
+
+                model_cont.eval()
+                for i in range(len(num_class)):
+                    if i not in FLAGS.still_condition:
+                        model_dis_list[i].eval()
+                for i, each in enumerate(attention_tensor_list):
+                    if i == 1 or i == 0 or i == 4:
+                        attention_tensor_list[i] = each.permute(1, 0)
+                with torch.no_grad():
+                    x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
+                    for i in range(len(num_class)):
+                        log_x_T_dis_list[i] = log_sample_categorical(
+                            torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
+                    x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list, attention_tensor_list, net_sampler,
+                                                       trainer_dis_list, transformer_con, FLAGS,
+                                                       still_cond_used_for_sampling_list)
+                sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
+                # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
+                x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
+                x_dis = apply_activate(x_dis, transformer_dis.output_info)
+                sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
+                sample = np.zeros([train_cont_data.shape[0], len(con_idx + dis_idx)])
+                for i in range(len(con_idx)):
+                    sample[:, con_idx[i]] = sample_cont[:, i]
+                for i in range(len(dis_idx)):
+                    sample[:, dis_idx[i]] = sample_dis[:, i]
+                sample_pd = pd.DataFrame(sample).dropna()
+
                 logging.info(f"Save model!")
                 ckpt = {
                     'model_con': model_cont.state_dict(),
                     'sched_con': sched_cont.state_dict(),
                     'optim_con': optim_cont.state_dict(),
-                    'step': step
+                    'step': step,
+                    'sample': sample
                 }
                 for i in range(len(num_class)):
                     ckpt[f'model_dis_{i}'] = model_dis_list[i].state_dict()
@@ -357,7 +393,9 @@ def train(FLAGS):
                    transformer_model,
                    total_steps_both,
                    sample_step,
-                   steps_interval)
+                   steps_interval,
+                   con_idx,
+                   dis_idx)
 
     # TODO
     else:
