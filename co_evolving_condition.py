@@ -331,13 +331,14 @@ def train(FLAGS):
     FLAGS = flags.FLAGS
 
     #Load Datasets
-    train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, (transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)    # for att_i in attention_train
+    train, train_cont_data, train_dis_data, test, attention_train_list, attention_test_list, transformer_data_list, (
+    transformer_con, transformer_dis, meta), con_idx, dis_idx = tabular_dataload.get_dataset(FLAGS)    # for att_i in attention_train
 
     total_steps_both = FLAGS.total_epochs_both * int(
         train.shape[0] / FLAGS.training_batch_size + 1)  # 20000, training times
 
     logging.info("################## train transformer #########################")
-    transformer_output_shape, transformer_model = train_transformer(FLAGS, total_steps_both, attention_train_list)
+    transformer_output_shape, transformer_model = train_transformer(FLAGS, total_steps_both, transformer_data_list)
     logging.info("################## train diffusion model #########################")
     transformer_model.to(device).eval()
     train_diff(FLAGS,
