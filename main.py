@@ -26,10 +26,10 @@ flags.DEFINE_integer('seed', 2022, help='random sample')
 # Network Architecture
 flags.DEFINE_multi_integer('encoder_dim', None, help='encoder_dim')
 flags.DEFINE_string('encoder_dim_con', "64,128,256", help='encoder_dim_con')
-flags.DEFINE_string('encoder_dim_dis', "64,128,256", help='encoder_dim_dis')
+flags.DEFINE_string('encoder_dim_dis', "32,64,128", help='encoder_dim_dis')
 flags.DEFINE_integer('nf', None, help='nf')
 flags.DEFINE_integer('nf_con', 16, help='nf_con')
-flags.DEFINE_integer('nf_dis', 64, help='nf_dis')
+flags.DEFINE_integer('nf_dis', 16, help='nf_dis')
 flags.DEFINE_integer('input_size', None, help='input_size')
 flags.DEFINE_integer('cond_size', None, help='cond_size')
 flags.DEFINE_integer('output_size', None, help='output_size')
@@ -44,7 +44,7 @@ flags.DEFINE_integer('dis_output_size', None, help='output_size')
 
 flags.DEFINE_integer('src_vocab_size_list', None, help='attention')
 flags.DEFINE_integer('tgt_vocab_size', None, help='attention')
-flags.DEFINE_integer('dmodel', 20, help='attention')
+flags.DEFINE_integer('dmodel', 10, help='attention')
 
 # Training
 flags.DEFINE_integer('training_batch_size', 2100, help='batch size')

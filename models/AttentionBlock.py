@@ -7,9 +7,9 @@ from models.Embedding import PositionalEncoding, TokenEmbedding
 
 class AttentionBlock(nn.Module):
     def __init__(self, src_vocab_size_list, tgt_vocab_size, n_dis,
-                 d_model=20, nhead=4, num_encoder_layers=6,
-                 num_decoder_layers=6, dim_feedforward=2048,
-                 dropout=0.1):
+                 d_model=10, nhead=2, num_encoder_layers=3,
+                 num_decoder_layers=3, dim_feedforward=1024,
+                 dropout=0.3):
         super(AttentionBlock, self).__init__()
         self.my_transformer = MyTransformer(d_model=d_model,
                                             nhead=nhead,
