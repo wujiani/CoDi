@@ -134,7 +134,7 @@ class tabularUnet(nn.Module):
       skip_connections, encoding = self.encoder(inputs, temb, -1)   #encoder input=64, output=256（layers第104行，x=64->128->256)
     else:
       attention = self.attention(src_list=x_attention[:-4], tgt=x_attention[-2], src_key_padding_mask=x_attention[-4:-2])
-      print("attention", attention)
+      print("attention", attention.shape)
       attention = attention.squeeze(0)
       attention[attention.isnan()] = 0
       skip_connections, encoding = self.encoder(inputs, temb, attention)
