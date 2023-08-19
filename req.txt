@@ -17,3 +17,4 @@ tensorboardx==2.5.1
 torchdiffeq==0.0.1
 tqdm==4.64.1
 xgboost==1.7.3
+pm4py==2.6.1

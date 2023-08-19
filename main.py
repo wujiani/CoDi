@@ -16,7 +16,12 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 
 FLAGS = flags.FLAGS
-flags.DEFINE_string('data', 'heart', help='dataset')
+flags.DEFINE_string('data', 'train_Production.xes', help='dataset')
+flags.DEFINE_string('id_column', 'caseid', help='dataset')
+flags.DEFINE_string('act_column', 'concept:name', help='dataset')
+flags.DEFINE_string('time_column', 'time:timestamp', help='dataset')
+flags.DEFINE_string('resource_column', 'user', help='dataset')
+flags.DEFINE_string('state_column', 'lifecycle:transition', help='dataset')
 flags.DEFINE_string('logdir', './codi_exp', help='log directory')
 flags.DEFINE_bool('train', True, help='train from scratch')
 flags.DEFINE_bool('eval', False, help='load ckpt.pt and evaluate')

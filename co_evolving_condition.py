@@ -279,38 +279,38 @@ def train(FLAGS):
         logging.info(f"Evaluation best : {scores_max_eval}")
 
         #final test
-        ckpt = torch.load(os.path.join(FLAGS.logdir, 'ckpt.pt'))
-        model_cont.load_state_dict(ckpt['model_con'])
-        model_cont.eval()
-        for i in range(len(num_class)):
-            if i not in FLAGS.still_condition:
-                model_dis_list[i].load_state_dict(ckpt[f'model_dis_{i}'])
-                # model_con.eval()
-                model_dis_list[i].eval()
-
-
-        # fake_sample=[]
-        for ii in range(1):
-            logging.info(f"sampling {ii}")
-            with torch.no_grad():
-                x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
-                for i in range(len(num_class)):
-                    log_x_T_dis_list[i] = log_sample_categorical(
-                        torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
-                x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list,attention_tensor_list, net_sampler, trainer_dis_list,
-                                                   transformer_con, FLAGS, still_cond_used_for_sampling_list)
-            sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
-            # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
-            x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
-            x_dis = apply_activate(x_dis, transformer_dis.output_info)
-            sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
-            sample = np.zeros([train_cont_data.shape[0], len(con_idx + dis_idx)])
-            for i in range(len(con_idx)):
-                sample[:, con_idx[i]] = sample_cont[:, i]
-            for i in range(len(dis_idx)):
-                sample[:, dis_idx[i]] = sample_dis[:, i]
-            sample_pd = pd.DataFrame(sample).dropna()
-            sample_pd.to_csv(os.path.join(FLAGS.logdir, f'{FLAGS.logdir}_sample_{ii}.csv'), index=False)
+        # ckpt = torch.load(os.path.join(FLAGS.logdir, 'ckpt.pt'))
+        # model_cont.load_state_dict(ckpt['model_con'])
+        # model_cont.eval()
+        # for i in range(len(num_class)):
+        #     if i not in FLAGS.still_condition:
+        #         model_dis_list[i].load_state_dict(ckpt[f'model_dis_{i}'])
+        #         # model_con.eval()
+        #         model_dis_list[i].eval()
+        #
+        #
+        # # fake_sample=[]
+        # for ii in range(1):
+        #     logging.info(f"sampling {ii}")
+        #     with torch.no_grad():
+        #         x_T_cont = torch.randn(train_cont_data.shape[0], train_cont_data.shape[1]).to(device)
+        #         for i in range(len(num_class)):
+        #             log_x_T_dis_list[i] = log_sample_categorical(
+        #                 torch.zeros(train_dis_data_list[i].shape, device=device), num_class[i]).to(device)
+        #         x_cont, x_dis_list = sampling_with(x_T_cont, log_x_T_dis_list,attention_tensor_list, net_sampler, trainer_dis_list,
+        #                                            transformer_con, FLAGS, still_cond_used_for_sampling_list)
+        #     sample_cont = transformer_con.inverse_transform(x_cont.detach().cpu().numpy())
+        #     # sample_dis = transformer_dis.inverse_transform(still_cond_used_for_sampling)
+        #     x_dis = torch.tensor(np.concatenate(x_dis_list, axis=1))
+        #     x_dis = apply_activate(x_dis, transformer_dis.output_info)
+        #     sample_dis = transformer_dis.inverse_transform(x_dis.detach().cpu().numpy())
+        #     sample = np.zeros([train_cont_data.shape[0], len(con_idx + dis_idx)])
+        #     for i in range(len(con_idx)):
+        #         sample[:, con_idx[i]] = sample_cont[:, i]
+        #     for i in range(len(dis_idx)):
+        #         sample[:, dis_idx[i]] = sample_dis[:, i]
+        #     sample_pd = pd.DataFrame(sample).dropna()
+        #     sample_pd.to_csv(os.path.join(FLAGS.logdir, f'{FLAGS.logdir}_sample_{ii}.csv'), index=False)
             # sample = np.array()
             # sample = np.zeros([train_dis_data.shape[0], len(dis_idx)])
             # for i in range(len(con_idx)):
@@ -348,7 +348,7 @@ def train(FLAGS):
             return data_t
 
 
-        filename = FLAGS.data+'.csv'
+        filename = FLAGS.data.split('.')[0] + '.csv'
         DATA_PATH = os.path.join(os.path.dirname(__file__), 'tabular_datasets')
         local_path = os.path.join(DATA_PATH, filename)
         gen = pd.read_csv(local_path)
@@ -431,7 +431,7 @@ def train(FLAGS):
                 gen_res.append(new_res)
                 gen_wait.append(sample[:, 2][0])
                 gen_process.append(sample[:, 3][0])
-        filename = FLAGS.data + '_res_act.json'
+        filename = FLAGS.data.split('.')[0] + '_res_act.json'
         DATA_PATH = os.path.join(os.path.dirname(__file__), 'tabular_datasets')
         local_path = os.path.join(DATA_PATH, filename)
         with open(local_path) as json_file:
@@ -443,7 +443,8 @@ def train(FLAGS):
         gen['res'] = gen['res'].map(lambda x:x if x=='Start' or x=='End' else dict_res_index[str(int(x))])
         gen['wait'] = gen['wait'].map(lambda x: round(math.exp(x) - 1))
         gen['process'] = gen['process'].map(lambda x: round(math.exp(x) - 1))
-        gen.to_csv(os.path.join(FLAGS.logdir, f'gen_sample.csv'), index=False)
+        from datetime import datetime
+        gen.to_csv(os.path.join(FLAGS.logdir, f'gen_sample_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'), index=False)
 
         # # fake_sample=[]
         #     log_x_T_dis_list = [0]*len(num_class)
