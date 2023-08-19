@@ -27,6 +27,7 @@ flags.DEFINE_bool('train', True, help='train from scratch')
 flags.DEFINE_bool('eval', False, help='load ckpt.pt and evaluate')
 flags.DEFINE_string('still_condition', "0", help='encoder_dim_con')
 flags.DEFINE_integer('seed', 2022, help='random sample')
+flags.DEFINE_string('gen_seq_output', '', help='dataset')
 
 # Network Architecture
 flags.DEFINE_multi_integer('encoder_dim', None, help='encoder_dim')

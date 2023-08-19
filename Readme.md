@@ -27,7 +27,7 @@ python main.py --data heart --logdir CoDi_exp
 * By run the following script, you can reproduce our experimental result: 
     binary classification result of CoDi on Heart in Table 10. 
 ```bash
-python main.py --data heart --eval True --logdir CoDi_exp
+python main.py --data heart --eval True --logdir CoDi_exp --gen_seq_output ...
 ```
 
 先把我对题主问题的回答写在最前面：因为我们预测的虽然是噪声，但其实预测的是x(t-1)的分布，为什么预测分布而不直接预测x(t-1)这张图？因为为了保证随机性，我们不希望每个x(T)都只唯一对应一个x(0)

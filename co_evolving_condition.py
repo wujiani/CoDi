@@ -347,11 +347,21 @@ def train(FLAGS):
             data_t = col_t
             return data_t
 
-
-        filename = FLAGS.data.split('.')[0] + '.csv'
         DATA_PATH = os.path.join(os.path.dirname(__file__), 'tabular_datasets')
-        local_path = os.path.join(DATA_PATH, filename)
+        meta_filename = os.path.join(DATA_PATH, FLAGS.data.split(".")[0] + "_meta_preprocessed.json")
+        with open(meta_filename, "r") as f:
+            json_input = json.load(f)
+
+        #############
+        res_list = json_input['attention'][1]['i2s']
+        dict_res_index = dict(zip(range(len(res_list)), res_list))
+
+        local_path = os.path.join(DATA_PATH, FLAGS.gen_seq_output)
         gen = pd.read_csv(local_path)
+        gen['activity'] = gen['act']
+        gen['act'] = gen['act'].map(lambda x: '_'.join(x.split()))
+        gen['act'] = gen['act'].map(
+            lambda x: json_input['columns'][0]['i2s'].index(x) if x in json_input['columns'][0]['i2s'] else x)
         gen_res = []
         gen_wait = []
         gen_process = []
@@ -431,16 +441,11 @@ def train(FLAGS):
                 gen_res.append(new_res)
                 gen_wait.append(sample[:, 2][0])
                 gen_process.append(sample[:, 3][0])
-        filename = FLAGS.data.split('.')[0] + '_res_act.json'
-        DATA_PATH = os.path.join(os.path.dirname(__file__), 'tabular_datasets')
-        local_path = os.path.join(DATA_PATH, filename)
-        with open(local_path) as json_file:
-            a = json.load(json_file)
-        dict_res_index = a
+
         gen['res'] = gen_res
         gen['wait'] = gen_wait
         gen['process'] = gen_process
-        gen['res'] = gen['res'].map(lambda x:x if x=='Start' or x=='End' else dict_res_index[str(int(x))])
+        gen['res'] = gen['res'].map(lambda x:x if x=='Start' or x=='End' else dict_res_index[int(x)])
         gen['wait'] = gen['wait'].map(lambda x: round(math.exp(x) - 1))
         gen['process'] = gen['process'].map(lambda x: round(math.exp(x) - 1))
         from datetime import datetime
