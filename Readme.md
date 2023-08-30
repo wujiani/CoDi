@@ -6,6 +6,7 @@ Run the following to install requirements:
 pip install -r req.txt
 ```
 
+
 ## Training
 * You can train our diffusion model from scratch by run (example):
 ```bash
