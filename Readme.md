@@ -41,3 +41,7 @@ python main.py --data train_PurchasingExample.csv --gen_seq_output gen_seq_train
 `--T`: diffusion time steps, same as in the training step
 
 `--seed`: random seed, for generating different resources and times 
+
+
+## Evaluation
+The output of diffusion model is not complete event logs since time duration need to be transformed into timestamps based on the start time of each case. The procedures of generating a complete event log and evaluate the performance of models is described in https://github.com/wujiani/EventLogsGenerator.git.
